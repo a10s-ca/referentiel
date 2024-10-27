@@ -1,4 +1,4 @@
-| {{ utils.tableSubItem('Contribution', 'Types', iucd) }} | Identification du type de contribution.  | Obligatoire | 1..N | Termes d'un vocabulaire contrôlé de type de contribution |
+| {{ utils.tableSubItem('Contribution', 'Types', iucd) }} | Identification des types de contribution.  | Obligatoire | 1..N | Termes d'un vocabulaire contrôlé de type de contribution |
     | {{ utils.tableSubItem('Contribution', 'Type principal', iucd) }} | Préavis: cette propriété pourrait être intégrée dans une future version du référentiel, et imposer un vocabulaire contrôlé. | Ne pas utiliser | 1 | À déterminer |
     | {{ utils.tableSubItem('Contribution', 'Contributeur', iucd) }} | Identification du contributeur. | Obligatoire | 1 | Objet de la classe [Contributeur](./contributeur.md) |
     | {{ utils.tableSubItem('Contribution', 'Numéro de séquence', iucd) }} | Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier). | Optionnel | 1 | Nombre |

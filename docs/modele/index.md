@@ -1,4 +1,4 @@
-# Structure et relations
+# Modèle de données
 
 Le référentiel propose l'utilisation de [classes principales](./classes_principales.md) et de [classes utilitaires](./classes_utilitaires.md) pour structurer les données.
 
@@ -16,3 +16,6 @@ flowchart TD
     Spectacle -- associé à --> Oeuvre
     Série -- inclut la contribution de --> Contributeur
 ```
+
+Les propriétés définissent les attributs d’une classe. Elles servent à en écrire les caractéristiques et peuvent prendre différentes formes telles que des chaînes de caractères, des nombres, des dates ou d'autres types de données.
+
