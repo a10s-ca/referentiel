@@ -5,4 +5,4 @@
 
 | Propriété | Description | Priorité | Cardinalité | Type |
 | ------------ | ------------- | ------------ | ------------ |------------ |
-{% include '/references/proprietes/media_inc.md' %}
+{% include '/references/proprietes/terme_inc.md' %}
