@@ -26,7 +26,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-copyright: Copyright &copy; 2024 Datascence – Référentiel des métadonnées descriptives du spectacle
+copyright: Copyright &copy; 2024 Datascence – Référentiel des métadonnées descriptives du spectacle – <a href="#__consent">Gérer les cookies</a>
 plugins:
     - search
     - macros
@@ -76,5 +76,13 @@ nav:
       - Types de lieux: 'references/vocabulaires/types_de_lieux.md'
     - Types de propriétés: 'references/types.md'
     - Exemples: 'references/exemples.md'
-
-
+extra:
+  analytics:
+    provider: google
+    property: G-PTQ0P6RZLD
+  consent:
+    title: Nous respectons votre vie privée
+    description: >-
+      En cliquant sur « Autoriser tous les cookies », vous acceptez le stockage de cookies sur votre
+      appareil pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos
+      efforts de diffusion de Datascene.
