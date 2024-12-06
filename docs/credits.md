@@ -13,7 +13,7 @@ Coordination : Christian Liboiron ([MCC](https://www.mcc.gouv.qc.ca/)).<br>
 Animation du comité de travail et rédaction : Christian Roy ([A10s](https://a10s.ca/)).<br>
 Membres du comité de travail initial: Pierre-Luc Breton ([Adisq](https://www.adisq.com/)), Viêt Cao ([Synapse C](https://synapsec.ca/)), Geneviève Fabio ([La Vitrine](https://www.lavitrine.com)), Marie-Pier Pilote ([Association RIDEAU](https://associationrideau.ca/fr) / [Scène Pro](https://scenepro.ca/)).<br>
 
-Nous tenons à remercier toutes les autres personnes s'étant impliqué de prêt ou de loin dans l'élaboration du référentiel, notammant les premiers relecteurs:
+Nous tenons à remercier toutes les autres personnes s'étant impliqué de près ou de loin dans l'élaboration du référentiel, notammant les premiers relecteurs:
 
 * Émilie Frenette ([Dia-Log](https://dia-log.ca/))
 * Frédéric Julien ([CAPACOA](https://capacoa.ca/fr/))
