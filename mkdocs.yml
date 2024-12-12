@@ -33,6 +33,7 @@ plugins:
 nav:
   - À propos:
     - Bienvenue: 'index.md'
+    - Contact: 'contact.md'
     - Contribuer: 'contribuer.md'
     - Crédits: 'credits.md'
     - Droits d'utilisation: 'droits.md'
