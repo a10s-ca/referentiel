@@ -17,7 +17,7 @@ Nous tenons à remercier toutes les autres personnes s'étant impliqué de près
 
 * Émilie Frenette ([Dia-Log](https://dia-log.ca/))
 * Frédéric Julien ([CAPACOA](https://capacoa.ca/fr/))
-* Danielle Poirier ([BAnQ](https://www.banq.qc.ca/)),
+* Danielle Poirier ([BAnQ](https://www.banq.qc.ca/))
 * Jovanny Savoie ([CQM](https://www.cqm.qc.ca))
 * Pierre B. Gourde ([MétaMusique](https://metamusique.ca/))
 * Mylaine Albert ([Place des Arts](https://placedesarts.com/fr))
