@@ -26,7 +26,6 @@ iucd: true
     | Associations géographiques: province ou état | Province ou état | Optionnel | 0..1 | Code ISO 3166-2 |
     | Associations géographiques: ville | Ville | Optionnel | 0..1 | Texte court |
     | Composé de  | Énumération des membres des groupes, troupes et collectifs, etc.<br><br>Ne sert pas à indiquer les employés d'une organisation, dans le cas d'un contributeur corporatif.<br><br>*Exemple: le contributeur «Les Denis Drolet» pourrait énumérer «Vincent Léonard» et «Sébastien Dubé» dans la propriété «Composé de».* | Optionnel | 0..N | Objets de la classe [Contributeur](./contributeur.md) |
-    | Appartenance à un groupe | (Propriété à confirmer - besoin de l'avis du comité élargi)<br><br>Indications sur l'appartenance à groupe socio-démo-nationaux (afro-descendants, premières nations, LGBTQ, etc.). On pourrait choisir d'indiquer que la donnée ne doit pas servir lors de l'affichage au grand public, mais pour des fins d'analyse statistiques. | Optionnel | 0..N | À déterminer |
 
 === "Affichage étendu"
 
@@ -50,4 +49,3 @@ iucd: true
     | Associations géographiques: province ou état | Province ou état | Optionnel | 0..1 | Code ISO 3166-2 |
     | Associations géographiques: ville | Ville | Optionnel | 0..1 | Texte court |
     | Composé de | Énumération des membres des groupes, troupes et collectifs, etc.<br><br>Ne sert pas à indiquer les employés d'une organisation, dans le cas d'un contributeur corporatif.<br><br>*Exemple: le contributeur «Les Denis Drolet» pourrait énumérer «Vincent Léonard» et «Sébastien Dubé» dans la propriété «Composé de».* | Optionnel | 0..N | Objets de la classe [Contributeur](./contributeur.md) |
-    | Appartenance à un groupe | (Propriété à confirmer - besoin de l'avis du comité élargi)<br><br>Indications sur l'appartenance à groupe socio-démo-nationaux (afro-descendants, premières nations, LGBTQ, etc.). On pourrait choisir d'indiquer que la donnée ne doit pas servir lors de l'affichage au grand public, mais pour des fins d'analyse statistiques. | Optionnel | 0..N | À déterminer |
