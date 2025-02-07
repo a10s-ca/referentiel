@@ -31,7 +31,7 @@ iucd: true
     | Langues d'appui | Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...) | Optionnel | 0..N | Énumération de codes IETF BCP 47 |
     | Spectacle sans parole | Indication que le spectacle ne contient pas de paroles. | Obligatoire | 0..1 | Booléen |
     | Contenus | Permet d'identifier certains type de contenus qui sont présents dans le spectacle. | Optionnel | 0..N | Objets de la classe [Terme](./terme.md) utilisant un vocabulaire contrôlé de type de contenus |
-    | Avertissements | Permet d'identifier des avertissements associés au spectacle. | Optionnel | 0..N | Objets de la classe [Terme](./terme.md) utilisant un vocabulaire contrôlé des avertissementsç |
+    | Avertissements | Permet d'identifier des avertissements associés au spectacle. | Optionnel | 0..N | Objets de la classe [Terme](./terme.md) utilisant un vocabulaire contrôlé des avertissements |
     | Représentations | Énumération des représentations du spectacle, qu'elles soient passées ou futures. | Optionnel | 0..N | Objets de la classe [Représentation](./representation.md) |
     | Traçabilité | Énumération des spectacles dont est issu le présent spectacle. Utilisé lorsqu'un spectacle est issu de la fusion d'autres spectacles. | Optionnel | 0..N | Objets de la classe [Spectacle](./spectacle.md) |
 
