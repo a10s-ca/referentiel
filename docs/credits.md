@@ -2,10 +2,7 @@
 
 L'évolution de Datascene est coordonné par une équipe terrain composée de:
 
-* [Viêt Cao](mailto:v.cao@synapsec.ca) ([Synapse C](https://synapsec.ca/))
-* [Geneviève Fabio](mailto:genevieve.fabio@lavitrine.com) ([La Vitrine](https://www.lavitrine.com))
-* [Hugo Lebreton](mailto:hlebreton@adisq.com) ([Adisq](https://www.adisq.com/))
-* [Marie-Pier Pilote](mailto:mppilote@associationrideau.ca) ([Association RIDEAU](https://associationrideau.ca/fr) / [Scène Pro](https://scenepro.ca/))
+{% include '/includes/comite_terrain.md' %}
 
 À l'origine, le référentiel fut une initiative du comité des arts de la scène de la mesure 111 du Plan culturel numérique du Québec et s’inscrivait dans le contexte de la mise en œuvre d'une mesure du Plan culturel numérique du Québec, porté par le ministère de la Culture et des Communications. La première version du référentiel a été réalisée par:
 
@@ -15,6 +12,7 @@ Membres du comité de travail initial: Pierre-Luc Breton ([Adisq](https://www.ad
 
 Nous tenons à remercier toutes les autres personnes s'étant impliqué de près ou de loin dans l'élaboration du référentiel, notammant les premiers relecteurs:
 
+* Viêt Cao ([Synapse C](https://synapsec.ca/))
 * Émilie Frenette ([Dia-Log](https://dia-log.ca/))
 * Frédéric Julien ([CAPACOA](https://capacoa.ca/fr/))
 * Danielle Poirier ([BAnQ](https://www.banq.qc.ca/))
