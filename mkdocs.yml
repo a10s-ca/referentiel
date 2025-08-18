@@ -46,21 +46,21 @@ nav:
     - 'modele/index.md'
     - Classes principales:
       - modele/classes_principales/index.md
-      - Spectacle: 'references/proprietes/spectacle.md'
-      - Représentation: 'references/proprietes/representation.md'
-      - Série: 'references/proprietes/serie.md'
-      - Lieu: 'references/proprietes/lieu.md'
-      - Salle: 'references/proprietes/salle.md'
-      - Contributeur: 'references/proprietes/contributeur.md'
-      - Oeuvre: 'references/proprietes/oeuvre.md'
+      - Spectacle (show): 'references/proprietes/show.md'
+      - Représentation (performance): 'references/proprietes/performance.md'
+      - Série (series): 'references/proprietes/series.md'
+      - Lieu (place): 'references/proprietes/place.md'
+      - Salle (room): 'references/proprietes/room.md'
+      - Contributeur (contributor): 'references/proprietes/contributor.md'
+      - Oeuvre (work): 'references/proprietes/work.md'
     - Classes utilitaires:
       - modele/classes_utilitaires/index.md
-      - Identifiant: 'references/proprietes/identifiant.md'
-      - Offre: 'references/proprietes/offre.md'
-      - Contribution: 'references/proprietes/contribution.md'
-      - Terme: 'references/proprietes/terme.md'
-      - Média: 'references/proprietes/media.md'
-      - Adresse: 'references/proprietes/adresse.md'
+      - Identifiant (identifier): 'references/proprietes/utilities/identifier.md'
+      - Offre (offer): 'references/proprietes/utilities/offer.md'
+      - Contribution (contribution): 'references/proprietes/utilities/contribution.md'
+      - Terme (term): 'references/proprietes/utilities/term.md'
+      - Média (term): 'references/proprietes/utilities/media.md'
+      - Adresse (postal_address): 'references/proprietes/utilities/postal_address.md'
     - Propriétés des classes: 'modele/proprietes_des_classes.md'
     - Vocabulaires contrôlés:
       - modele/vocabulaires_controles/index.md
@@ -87,3 +87,5 @@ extra:
       En cliquant sur « Autoriser tous les cookies », vous acceptez le stockage de cookies sur votre
       appareil pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos
       efforts de diffusion de Datascene.
+hooks:
+  - schema_to_markdown.py
