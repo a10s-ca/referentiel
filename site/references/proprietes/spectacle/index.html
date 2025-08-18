@@ -1,0 +1,4302 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../../modele/classes_principales/">
+      
+      
+        <link rel="next" href="../representation/">
+      
+      
+      <link rel="icon" href="../../../assets/Datascene_White_carre.svg">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Spectacle - Datascene – Référentiel des métadonnées descriptives du spectacle</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-PTQ0P6RZLD"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-PTQ0P6RZLD",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-PTQ0P6RZLD",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>var consent;"undefined"==typeof __md_analytics||(consent=__md_get("__consent"))&&consent.analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#spectacle" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../.." title="Datascene – Référentiel des métadonnées descriptives du spectacle" class="md-header__button md-logo" aria-label="Datascene – Référentiel des métadonnées descriptives du spectacle" data-md-component="logo">
+      
+  <img src="../../../assets/Datascene_White.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Datascene – Référentiel des métadonnées descriptives du spectacle
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Spectacle
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+    
+  
+  À propos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../avant_de_commencer/objectifs/" class="md-tabs__link">
+          
+  
+    
+  
+  Avant de commencer
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../modele/" class="md-tabs__link">
+          
+  
+    
+  
+  Modèle de données
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Datascene – Référentiel des métadonnées descriptives du spectacle" class="md-nav__button md-logo" aria-label="Datascene – Référentiel des métadonnées descriptives du spectacle" data-md-component="logo">
+      
+  <img src="../../../assets/Datascene_White.svg" alt="logo">
+
+    </a>
+    Datascene – Référentiel des métadonnées descriptives du spectacle
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    À propos
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            À propos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contact
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contribuer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribuer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../credits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Crédits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../droits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Droits d'utilisation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Avant de commencer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Avant de commencer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avant_de_commencer/objectifs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Objectifs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avant_de_commencer/composantes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Composantes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../avant_de_commencer/lignes_directrices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lignes directrices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossaire/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossaire
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../modele/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Modèle de données
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Modèle de données
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../modele/classes_principales/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Classes principales
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes principales
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Spectacle
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../representation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Représentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../serie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Série
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lieu/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lieu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../salle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Salle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributeur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributeur
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../oeuvre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Oeuvre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../modele/classes_utilitaires/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Classes utilitaires
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Classes utilitaires
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../identifiant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Identifiant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../offre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Offre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contribution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../terme/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Terme
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Média
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adresse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Adresse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../modele/proprietes_des_classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Propriétés des classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../modele/vocabulaires_controles/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Vocabulaires contrôlés
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Vocabulaires contrôlés
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/accessibilite_universelle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Accessibilité universelle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/avertissements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Avertissements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/disciplines_artistiques/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Disciplines artistiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/public_cible/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Public cible
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/statut_d_offre/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Statut d'offre
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_d_associations_geographiques_d_un_contributeur/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types d'associations géographiques
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_de_configurations_de_salles/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de configurations de salles
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_de_contenus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de contenus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_de_contributeurs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de contributeurs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_de_contributions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de contributions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../vocabulaires/types_de_lieux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de lieux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Types de propriétés
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../exemples/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Exemples
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="Sur cette page">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="spectacle">Spectacle<a class="headerlink" href="#spectacle" title="Permanent link">&para;</a></h1>
+<h1 id="spectacle-show">Spectacle (Show)<a class="headerlink" href="#spectacle-show" title="Permanent link">&para;</a></h1>
+<p><strong>Title:</strong> Spectacle (Show)</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td><code>object</code></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Additional properties</strong></td>
+<td>Not allowed</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Description:</strong> la classe centrale du référentiel. Elle permet de documenter ce qui relève du spectacle au sens d'œuvre mise en scène. Par contraste, cela exclut donc les éléments descriptifs des représentations.</p>
+<h2 id="1-if-showwithoutwords-false"><a name="autogenerated_heading_2"></a>1. If (showWithoutWords = false)<a class="headerlink" href="#1-if-showwithoutwords-false" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td><code>object</code></td>
+</tr>
+<tr>
+<td><strong>Required</strong></td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>Additional properties</strong></td>
+<td>Any type allowed</td>
+</tr>
+</tbody>
+</table>
+<h3 id="11-the-following-properties-are-required"><a name="autogenerated_heading_3"></a>1.1. The following properties are required<a class="headerlink" href="#11-the-following-properties-are-required" title="Permanent link">&para;</a></h3>
+<ul>
+<li>inLanguage</li>
+</ul>
+<details>
+<summary>
+<strong> <a name="@context"></a>2. [Required] Property Spectacle (Show) > @context</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"https://datascence.ca/context.jsonld"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="type"></a>3. [Required] Property Spectacle (Show) > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Show"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="identifier"></a>4. [Required] Property Spectacle (Show) > identifier</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** identifier
+
+|                |                                    |
+| -------------- | ---------------------------------- |
+| **Type**       | `array`                            |
+| **Required**   | Yes                                |
+| **Defined in** | ./utilities/identifier.schema.json |
+
+**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | 1                  |
+| **Max items**        | N/A                |
+| **Items unicity**    | True               |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be       | Description |
+| ------------------------------------- | ----------- |
+| [identifier items](#identifier_items) | -           |
+
+### <a name="autogenerated_heading_4"></a>4.1. Spectacle (Show) > identifier > identifier items
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `combining`      |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+<blockquote>
+
+| Any of(Option)                       |
+| ------------------------------------ |
+| [item 0](#identifier_items_anyOf_i0) |
+| [item 1](#identifier_items_anyOf_i1) |
+
+<blockquote>
+
+#### <a name="identifier_items_anyOf_i0"></a>4.1.1. Property `Spectacle (Show) > identifier > identifier items > anyOf > item 0`
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+<details>
+<summary>
+<strong> <a name="identifier_items_anyOf_i0_type"></a>4.1.1.1. [Required] Property Spectacle (Show) > identifier > identifier items > anyOf > item 0 > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"PropertyValue"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="identifier_items_anyOf_i0_propertyID"></a>4.1.1.2. [Required] Property Spectacle (Show) > identifier > identifier items > anyOf > item 0 > propertyID</strong>  
+
+</summary>
+<blockquote>
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+
+**Description:** Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.
+
+| Restrictions   |   |
+| -------------- | - |
+| **Min length** | 1 |
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="identifier_items_anyOf_i0_value"></a>4.1.1.3. [Required] Property Spectacle (Show) > identifier > identifier items > anyOf > item 0 > value</strong>  
+
+</summary>
+<blockquote>
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+
+**Description:** L'identifiant lui-même
+
+| Restrictions   |   |
+| -------------- | - |
+| **Min length** | 1 |
+
+</blockquote>
+</details>
+
+</blockquote>
+<blockquote>
+
+#### <a name="identifier_items_anyOf_i1"></a>4.1.2. Property `Spectacle (Show) > identifier > identifier items > anyOf > item 1`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | No       |
+| **Format**   | `uri`    |
+
+**Description:** Un identifiant URI sous forme de chaîne de caractères.
+
+</blockquote>
+
+</blockquote>
+
+**Examples:**
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PropertyValue&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;propertyID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;isni&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;valeur&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;000000012124423X&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;https://isni.org/isni/000000012124423X&quot;</span>
+</code></pre></div>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="name"></a>5. [Required] Property Spectacle (Show) > name</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                |                                                 |
+| -------------- | ----------------------------------------------- |
+| **Type**       | `array of object`                               |
+| **Required**   | Yes                                             |
+| **Defined in** | ./datatypes/text_short_multilingual.schema.json |
+
+**Description:** Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | True               |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description |
+| ------------------------------- | ----------- |
+| [name items](#name_items)       | -           |
+
+### <a name="autogenerated_heading_5"></a>5.1. Spectacle (Show) > name > name items
+
+|                           |             |
+| ------------------------- | ----------- |
+| **Type**                  | `object`    |
+| **Required**              | No          |
+| **Additional properties** | Not allowed |
+
+<details>
+<summary>
+<strong> <a name="name_items_lang"></a>5.1.1. [Required] Property Spectacle (Show) > name > name items > lang</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code de langue
+
+|                |                                 |
+| -------------- | ------------------------------- |
+| **Type**       | `string`                        |
+| **Required**   | Yes                             |
+| **Defined in** | ./partials/language.schema.json |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+| Restrictions                      |                                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 2                                                                                                     |
+| **Must match regular expression** | ```^[a-z]{2,3}$``` [Test](https://regex101.com/?regex=%5E%5Ba-z%5D%7B2%2C3%7D%24&testString=%22fr%22) |
+
+**Examples:**
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;fr&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;en&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;mul&quot;</span>
+</code></pre></div>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="name_items_value"></a>5.1.2. [Required] Property Spectacle (Show) > name > name items > value</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                |                                |
+| -------------- | ------------------------------ |
+| **Type**       | `string`                       |
+| **Required**   | Yes                            |
+| **Defined in** | ./partials/no_html.schema.json |
+
+**Description:** HTML non-autorisées
+
+| Restrictions                      |                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 1                                                                                                           |
+| **Max length**                    | 500                                                                                                         |
+| **Must match regular expression** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="alternateName"></a>6. [Optional] Property Spectacle (Show) > alternateName</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                |                                                 |
+| -------------- | ----------------------------------------------- |
+| **Type**       | `array of object`                               |
+| **Required**   | No                                              |
+| **Defined in** | ./datatypes/text_short_multilingual.schema.json |
+
+**Description:** Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | True               |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description |
+| ------------------------------- | ----------- |
+| [name items](#name_items)       | -           |
+
+### <a name="autogenerated_heading_6"></a>6.1. Spectacle (Show) > name > name items
+
+|                           |             |
+| ------------------------- | ----------- |
+| **Type**                  | `object`    |
+| **Required**              | No          |
+| **Additional properties** | Not allowed |
+
+<details>
+<summary>
+<strong> <a name="name_items_lang"></a>6.1.1. [Required] Property Spectacle (Show) > name > name items > lang</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code de langue
+
+|                |                                 |
+| -------------- | ------------------------------- |
+| **Type**       | `string`                        |
+| **Required**   | Yes                             |
+| **Defined in** | ./partials/language.schema.json |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+| Restrictions                      |                                                                                                       |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 2                                                                                                     |
+| **Must match regular expression** | ```^[a-z]{2,3}$``` [Test](https://regex101.com/?regex=%5E%5Ba-z%5D%7B2%2C3%7D%24&testString=%22fr%22) |
+
+**Examples:**
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;fr&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;en&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;mul&quot;</span>
+</code></pre></div>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="name_items_value"></a>6.1.2. [Required] Property Spectacle (Show) > name > name items > value</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                |                                |
+| -------------- | ------------------------------ |
+| **Type**       | `string`                       |
+| **Required**   | Yes                            |
+| **Defined in** | ./partials/no_html.schema.json |
+
+**Description:** HTML non-autorisées
+
+| Restrictions                      |                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 1                                                                                                           |
+| **Max length**                    | 500                                                                                                         |
+| **Must match regular expression** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="description"></a>7. [Required] Property Spectacle (Show) > description</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte long multilingue
+
+|                |                                                |
+| -------------- | ---------------------------------------------- |
+| **Type**       | `array of object`                              |
+| **Required**   | Yes                                            |
+| **Defined in** | ./datatypes/text_long_multilingual.schema.json |
+
+**Description:** Description du spectacle
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | True               |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be         | Description |
+| --------------------------------------- | ----------- |
+| [description items](#description_items) | -           |
+
+### <a name="autogenerated_heading_7"></a>7.1. Spectacle (Show) > description > description items
+
+|                           |             |
+| ------------------------- | ----------- |
+| **Type**                  | `object`    |
+| **Required**              | No          |
+| **Additional properties** | Not allowed |
+
+<details>
+<summary>
+<strong> <a name="description_items_lang"></a>7.1.1. [Required] Property Spectacle (Show) > description > description items > lang</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | Yes                      |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="description_items_value"></a>7.1.2. [Required] Property Spectacle (Show) > description > description items > value</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte long
+
+|                |                                        |
+| -------------- | -------------------------------------- |
+| **Type**       | `string`                               |
+| **Required**   | Yes                                    |
+| **Defined in** | ./partials/authorized_html.schema.json |
+
+**Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
+
+| Restrictions                      |                                                                                                                                                                                                                                                                                                 |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Max length**                    | 6000                                                                                                                                                                                                                                                                                            |
+| **Must match regular expression** | ```^(?!.*<[^bius][^>]*>)(?!.*</?(?!b\|i\|u\|sup\|sub)[^>]*>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5Ebius%5D%5B%5E%3E%5D%2A%3E%29%28%3F%21.%2A%3C%2F%3F%28%3F%21b%7Ci%7Cu%7Csup%7Csub%29%5B%5E%3E%5D%2A%3E%29.%2A%24&testString=%22%3Cb%3ETexte+en+gras%3C%2Fb%3E%22) |
+
+**Examples:**
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;&lt;b&gt;Texte en gras&lt;/b&gt;&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;&lt;i&gt;Texte en italique&lt;/i&gt;&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;&lt;u&gt;Texte souligné&lt;/u&gt;&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;&lt;sup&gt;Texte en exposant&lt;/sup&gt;&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s2">&quot;&lt;sub&gt;Texte en indice&lt;/sub&gt;&quot;</span>
+</code></pre></div>
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="shortDescription"></a>8. [Optional] Property Spectacle (Show) > shortDescription</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Description résumée du spectacle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media"></a>9. [Optional] Property Spectacle (Show) > media</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au spectacle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description                                                                                          |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Média](#media_items)           | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
+
+### <a name="autogenerated_heading_8"></a>9.1. Spectacle (Show) > media > Média
+
+**Title:** Média
+
+|                           |                               |
+| ------------------------- | ----------------------------- |
+| **Type**                  | `object`                      |
+| **Required**              | No                            |
+| **Additional properties** | Any type allowed              |
+| **Defined in**            | ./utilities/media.schema.json |
+
+**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
+
+<details>
+<summary>
+<strong> <a name="media_items_type"></a>9.1.1. [Required] Property Spectacle (Show) > media > Média > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Media"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_sequenceNumber"></a>9.1.2. [Optional] Property Spectacle (Show) > media > Média > sequenceNumber</strong>  
+
+</summary>
+<blockquote>
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `integer` |
+| **Required** | No        |
+
+**Description:** Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_usageNote"></a>9.1.3. [Optional] Property Spectacle (Show) > media > Média > usageNote</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                |                                     |
+| -------------- | ----------------------------------- |
+| **Type**       | `string`                            |
+| **Required**   | No                                  |
+| **Defined in** | ../datatypes/text_short.schema.json |
+
+**Description:** Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).
+
+| Restrictions                      |                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 1                                                                                                           |
+| **Max length**                    | 500                                                                                                         |
+| **Must match regular expression** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_url"></a>9.1.4. [Required] Property Spectacle (Show) > media > Média > url</strong>  
+
+</summary>
+<blockquote>
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+| **Format**   | `uri`    |
+
+**Description:** URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_inLanguage"></a>9.1.5. [Optional] Property Spectacle (Show) > media > Média > inLanguage</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | No                       |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Langue au format ISO 639-1.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_license"></a>9.1.6. [Optional] Property Spectacle (Show) > media > Média > license</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                       | Description                                                                                 |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Texte court multilingue](#media_items_license_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+
+##### <a name="autogenerated_heading_9"></a>9.1.6.1. Spectacle (Show) > media > Média > license > Texte court multilingue
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_creditText"></a>9.1.7. [Optional] Property Spectacle (Show) > media > Média > creditText</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Crédits associés au média.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                          | Description                                                                                 |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Texte court multilingue](#media_items_creditText_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+
+##### <a name="autogenerated_heading_10"></a>9.1.7.1. Spectacle (Show) > media > Média > creditText > Texte court multilingue
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_copyrightHolder"></a>9.1.8. [Optional] Property Spectacle (Show) > media > Média > copyrightHolder</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Personne ou organisation détenant les droits d'auteur du média.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="media_items_description"></a>9.1.9. [Optional] Property Spectacle (Show) > media > Média > description</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Description courte (pouvant par exemple servir de «alt description» sur le web).
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                          | Description                                                                     |
+| -------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [Texte long multilingue](#media_items_description_items) | Énumération de textes longs associés à un code de langue au standard ISO 639-1. |
+
+##### <a name="autogenerated_heading_11"></a>9.1.9.1. Spectacle (Show) > media > Média > description > Texte long multilingue
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution"></a>10. [Optional] Property Spectacle (Show) > hasContribution</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).
+
+Le contributeur peut être une personne ou une organisation.
+
+Il s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.
+
+Si un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be        | Description                                                                                                                                                                 |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Contribution](#hasContribution_items) | Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné. |
+
+### <a name="autogenerated_heading_12"></a>10.1. Spectacle (Show) > hasContribution > Contribution
+
+**Title:** Contribution
+
+|                           |                                      |
+| ------------------------- | ------------------------------------ |
+| **Type**                  | `object`                             |
+| **Required**              | No                                   |
+| **Additional properties** | Any type allowed                     |
+| **Defined in**            | ./utilities/contribution.schema.json |
+
+**Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_type"></a>10.1.1. [Required] Property Spectacle (Show) > hasContribution > Contribution > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Contribution"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType"></a>10.1.2. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributionType</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | Yes     |
+
+**Description:** Identification des types de contribution.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                       | Description                                                                             |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#hasContribution_items_contributionType_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+##### <a name="autogenerated_heading_13"></a>10.1.2.1. Spectacle (Show) > hasContribution > Contribution > contributionType > Term
+
+**Title:** Term
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+| **Defined in**            | term.schema.json |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+**Example:**
+
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Term&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;vocabulary&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;datascene&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ToutPublics&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1.0&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;sequenceNumber&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_type"></a>10.1.2.1.1. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Term"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_vocabulary"></a>10.1.2.1.2. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > vocabulary</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                |                                     |
+| -------------- | ----------------------------------- |
+| **Type**       | `string`                            |
+| **Required**   | Yes                                 |
+| **Defined in** | ../datatypes/text_short.schema.json |
+
+**Description:** Identification du vocabulaire duquel est tiré le term.
+
+Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.
+
+| Restrictions                      |                                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Min length**                    | 1                                                                                                           |
+| **Max length**                    | 500                                                                                                         |
+| **Must match regular expression** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_version"></a>10.1.2.1.3. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > version</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | No                                  |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Version du vocabulaire utilisé, lorsque c'est applicable
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_code"></a>10.1.2.1.4. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > code</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | Yes                                 |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_label"></a>10.1.2.1.5. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > label</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Version textuelle du terme tiré du vocabulaire choisi
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributionType_items_sequenceNumber"></a>10.1.2.1.6. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributionType > Term > sequenceNumber</strong>  
+
+</summary>
+<blockquote>
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `integer` |
+| **Required** | Yes       |
+
+**Description:** Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur"></a>10.1.3. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Contributor
+
+|                           |                            |
+| ------------------------- | -------------------------- |
+| **Type**                  | `object`                   |
+| **Required**              | Yes                        |
+| **Additional properties** | Any type allowed           |
+| **Defined in**            | ../contributor.schema.json |
+
+**Description:** Identification du contributeur
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_type"></a>10.1.3.1. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Contributor"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_contributorType"></a>10.1.3.2. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur > contributorType</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Type de contributeur
+
+|                |                                             |
+| -------------- | ------------------------------------------- |
+| **Type**       | `enum (of string)`                          |
+| **Required**   | Yes                                         |
+| **Defined in** | ./vocabularies/contributor_type.schema.json |
+
+**Description:** Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.
+
+Must be one of:
+* "Person"
+* "Group"
+* "Organization"
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_identifier"></a>10.1.3.3. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur > identifier</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** identifier
+
+|                        |                           |
+| ---------------------- | ------------------------- |
+| **Type**               | `array`                   |
+| **Required**           | Yes                       |
+| **Same definition as** | [identifier](#identifier) |
+
+**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_name"></a>10.1.3.4. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur > name</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | Yes               |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.
+
+Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_alternateName"></a>10.1.3.5. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > alternateName</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Autres appellations parfois utilisées pour le contributeur.
+
+Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».
+Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                    | Description                                                                                 |
+| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| [Texte court multilingue](#hasContribution_items_contributeur_alternateName_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+
+###### <a name="autogenerated_heading_14"></a>10.1.3.5.1. Spectacle (Show) > hasContribution > Contribution > contributeur > alternateName > Texte court multilingue
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_description"></a>10.1.3.6. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > description</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_shortDescription"></a>10.1.3.7. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > shortDescription</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_media"></a>10.1.3.8. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > media</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                          | Description                                                                                          |
+| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Média](#hasContribution_items_contributeur_media_items) | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
+
+###### <a name="autogenerated_heading_15"></a>10.1.3.8.1. Spectacle (Show) > hasContribution > Contribution > contributeur > media > Média
+
+**Title:** Média
+
+|                           |                       |
+| ------------------------- | --------------------- |
+| **Type**                  | `object`              |
+| **Required**              | No                    |
+| **Additional properties** | Any type allowed      |
+| **Same definition as**    | [Média](#media_items) |
+
+**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_typicalContributionType"></a>10.1.3.9. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > typicalContributionType</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumération des types de contributions habituellement faites par le contributeur.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                           | Description                                                                             |
+| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#hasContribution_items_contributeur_typicalContributionType_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+###### <a name="autogenerated_heading_16"></a>10.1.3.9.1. Spectacle (Show) > hasContribution > Contribution > contributeur > typicalContributionType > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation"></a>10.1.3.10. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                                                  | Description                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| [Association Géographique (GeographicRelation)](#hasContribution_items_contributeur_hasGeographicRelation_items) | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc. |
+
+###### <a name="autogenerated_heading_17"></a>10.1.3.10.1. Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation)
+
+**Title:** Association Géographique (GeographicRelation)
+
+|                           |                                             |
+| ------------------------- | ------------------------------------------- |
+| **Type**                  | `object`                                    |
+| **Required**              | No                                          |
+| **Additional properties** | Not allowed                                 |
+| **Defined in**            | ./utilities/geographic_relation.schema.json |
+
+**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation_items_type"></a>10.1.3.10.1.1. [Required] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"GeographicRelation"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation_items_relationType"></a>10.1.3.10.1.2. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > relationType</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressCountry"></a>10.1.3.10.1.3. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressCountry</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code Pays
+
+|                |                                       |
+| -------------- | ------------------------------------- |
+| **Type**       | `string`                              |
+| **Required**   | No                                    |
+| **Defined in** | ../datatypes/country_code.schema.json |
+
+**Description:** Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.
+
+| Restrictions                      |                                                                             |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| **Min length**                    | 3                                                                           |
+| **Max length**                    | 3                                                                           |
+| **Must match regular expression** | ```^[A-Z]{3}$``` [Test](https://regex101.com/?regex=%5E%5BA-Z%5D%7B3%7D%24) |
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressRegion"></a>10.1.3.10.1.4. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressRegion</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | No                                  |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressLocality"></a>10.1.3.10.1.5. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressLocality</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | No                                  |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_contributeur_hasMembers"></a>10.1.3.11. [Optional] Property Spectacle (Show) > hasContribution > Contribution > contributeur > hasMembers</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumération des membres des groupes, troupes et collectifs, etc.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Contributor](#hasContribution_items_contributeur_hasMembers_items) | les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre). |
+
+###### <a name="autogenerated_heading_18"></a>10.1.3.11.1. Spectacle (Show) > hasContribution > Contribution > contributeur > hasMembers > Contributor
+
+**Title:** Contributor
+
+|                           |                                                     |
+| ------------------------- | --------------------------------------------------- |
+| **Type**                  | `object`                                            |
+| **Required**              | No                                                  |
+| **Additional properties** | Any type allowed                                    |
+| **Same definition as**    | [contributeur](#hasContribution_items_contributeur) |
+
+**Description:** les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_sequenceNumber"></a>10.1.4. [Optional] Property Spectacle (Show) > hasContribution > Contribution > sequenceNumber</strong>  
+
+</summary>
+<blockquote>
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `integer` |
+| **Required** | No        |
+
+**Description:** Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasContribution_items_usageNote"></a>10.1.5. [Optional] Property Spectacle (Show) > hasContribution > Contribution > usageNote</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | No                                  |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="mainEntityOfPage"></a>11. [Optional] Property Spectacle (Show) > mainEntityOfPage</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Vers des pages web donnant plus d'information sur le spectacle.
+
+Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be    | Description |
+| ---------------------------------- | ----------- |
+| [WebPage](#mainEntityOfPage_items) | -           |
+
+### <a name="autogenerated_heading_19"></a>11.1. Spectacle (Show) > mainEntityOfPage > WebPage
+
+**Title:** WebPage
+
+|                           |                                  |
+| ------------------------- | -------------------------------- |
+| **Type**                  | `object`                         |
+| **Required**              | No                               |
+| **Additional properties** | Any type allowed                 |
+| **Defined in**            | ./utilities/web_page.schema.json |
+
+<details>
+<summary>
+<strong> <a name="mainEntityOfPage_items_type"></a>11.1.1. [Required] Property Spectacle (Show) > mainEntityOfPage > WebPage > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"WebPage"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="mainEntityOfPage_items_url"></a>11.1.2. [Required] Property Spectacle (Show) > mainEntityOfPage > WebPage > url</strong>  
+
+</summary>
+<blockquote>
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+| **Format**   | `uri`    |
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="mainEntityOfPage_items_inLanguage"></a>11.1.3. [Optional] Property Spectacle (Show) > mainEntityOfPage > WebPage > inLanguage</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | No                       |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Langue de la page Web, au format ISO 639-1.
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork"></a>12. [Optional] Property Spectacle (Show) > hasRelatedWork</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.
+
+Exemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.
+
+Exemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.
+
+Contre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be          | Description                        |
+| ---------------------------------------- | ---------------------------------- |
+| [Oeuvre Associée](#hasRelatedWork_items) | Objets d'association à une oeuvre. |
+
+### <a name="autogenerated_heading_20"></a>12.1. Spectacle (Show) > hasRelatedWork > Oeuvre Associée
+
+**Title:** Oeuvre Associée
+
+|                           |                            |
+| ------------------------- | -------------------------- |
+| **Type**                  | `object`                   |
+| **Required**              | No                         |
+| **Additional properties** | Any type allowed           |
+| **Defined in**            | #/definitions/WorkRelation |
+
+**Description:** Objets d'association à une oeuvre.
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_type"></a>12.1.1. [Required] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"WorkRelation"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_work"></a>12.1.2. [Required] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > work</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Oeuvre (Work)
+
+|                           |                    |
+| ------------------------- | ------------------ |
+| **Type**                  | `object`           |
+| **Required**              | Yes                |
+| **Additional properties** | Any type allowed   |
+| **Defined in**            | ./work.schema.json |
+
+**Description:** Identification de l'oeuvre.
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_work_type"></a>12.1.2.1. [Required] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > work > type</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Work"`
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_work_identifier"></a>12.1.2.2. [Required] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > work > identifier</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** identifier
+
+|                        |                           |
+| ---------------------- | ------------------------- |
+| **Type**               | `array`                   |
+| **Required**           | Yes                       |
+| **Same definition as** | [identifier](#identifier) |
+
+**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_work_name"></a>12.1.2.3. [Required] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > work > name</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | Yes               |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Nom de l'oeuvre.
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasRelatedWork_items_usageNote"></a>12.1.3. [Optional] Property Spectacle (Show) > hasRelatedWork > Oeuvre Associée > usageNote</strong>  
+
+</summary>
+<blockquote>
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Notes sur le lien entre l'oeuvre et le spectacle
+
+</blockquote>
+</details>
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="discipline"></a>13. [Required] Property Spectacle (Show) > discipline</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | Yes     |
+
+**Description:** Identification des disciplines artistiques du spectacle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description                                                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#discipline_items)       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+### <a name="autogenerated_heading_21"></a>13.1. Spectacle (Show) > discipline > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="audience"></a>14. [Required] Property Spectacle (Show) > audience</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | Yes     |
+
+**Description:** Identification des publics cibles du spectacle.
+
+Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description                                                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#audience_items)         | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+### <a name="autogenerated_heading_22"></a>14.1. Spectacle (Show) > audience > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="inLanguage"></a>15. [Optional] Property Spectacle (Show) > inLanguage</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Langues utilisées dans le spectacle, en ordre décroissant d'importance. La langue principale doit donc être mentionnée en premier.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be     | Description                                                                                                                                                |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Code de langue](#inLanguage_items) | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). |
+
+### <a name="autogenerated_heading_23"></a>15.1. Spectacle (Show) > inLanguage > Code de langue
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | No                       |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="supportMaterialLanguage"></a>16. [Optional] Property Spectacle (Show) > supportMaterialLanguage</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...)
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                  | Description                                                                                                                                                |
+| ------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Code de langue](#supportMaterialLanguage_items) | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). |
+
+### <a name="autogenerated_heading_24"></a>16.1. Spectacle (Show) > supportMaterialLanguage > Code de langue
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | No                       |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="showWithoutWords"></a>17. [Required] Property Spectacle (Show) > showWithoutWords</strong>  
+
+</summary>
+<blockquote>
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+**Description:** Indication à l'effet que le spectacle ne contient pas de paroles.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="contentType"></a>18. [Optional] Property Spectacle (Show) > contentType</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Permet d'identifier certains type de contenus qui sont présents dans le spectacle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description                                                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#contentType_items)      | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+### <a name="autogenerated_heading_25"></a>18.1. Spectacle (Show) > contentType > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="contentWarning"></a>19. [Optional] Property Spectacle (Show) > contentWarning</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Permet d'identifier des avertissements associés au spectacle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be | Description                                                                             |
+| ------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#contentWarning_items)   | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+### <a name="autogenerated_heading_26"></a>19.1. Spectacle (Show) > contentWarning > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+</blockquote>
+</details>
+
+<details>
+<summary>
+<strong> <a name="hasPerformance"></a>20. [Optional] Property Spectacle (Show) > hasPerformance</strong>  
+
+</summary>
+<blockquote>
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumération des représentations du spectacle, qu'elles soient passées ou futures.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                  | Description                                                                                                   |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| [performance.schema.json](#hasPerformance_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
+
+### <a name="autogenerated_heading_27"></a>20.1. Spectacle (Show) > hasPerformance > performance.schema.json
+
+|                           |                           |
+| ------------------------- | ------------------------- |
+| **Type**                  | `object`                  |
+| **Required**              | No                        |
+| **Additional properties** | Any type allowed          |
+| **Defined in**            | ./performance.schema.json |
+
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
+
+</blockquote>
+</details>
+
+<hr />
+<p>Generated using <a href="https://github.com/coveooss/json-schema-for-humans">json-schema-for-humans</a> on 2025-08-14 at 15:51:27 -0400</p>
+<h1 id="spectacle_1">Spectacle<a class="headerlink" href="#spectacle_1" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Ceci est une classe principale</p>
+<p>Pour faciliter la lecture, certaines propriétés communes à plusieurs classes principales ont été regroupées dans des classes utilitaires. L'onglet de l'affichage condensé se limite à mentionner l'utilisation d'une classe utilitaire. Consultez l'onglet de l'affichage étendu pour voir toutes les propriétés des classes utilitaires.</p>
+</div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Affichage condensé</label><label for="__tabbed_1_2">Affichage étendu</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Propriété</th>
+<th>Description</th>
+<th>Priorité</th>
+<th>Cardinalité</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifiants</td>
+<td>Énumération des identifiants connus</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe utilitaire <a href="../identifiant/">Identifiant</a></td>
+</tr>
+<tr>
+<td>Nom</td>
+<td>Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Autre nom</td>
+<td>Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.<br><br>Par exemple, le spectacle <em>Une Carmen pour tout le Québec</em> a également été connu sous le nom <em>Carmen au grand écran</em>.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description du spectacle.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte long  multilingue</td>
+</tr>
+<tr>
+<td>Description courte</td>
+<td>Description résumée du spectacle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.</td>
+<td>Optionnelle</td>
+<td>1</td>
+<td>Texte long multilingue</td>
+</tr>
+<tr>
+<td>Médias</td>
+<td>Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associés au spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objet de la classe utilitaire <a href="../media/">Média</a></td>
+</tr>
+<tr>
+<td>Contributions</td>
+<td>Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).<br><br>Le contributeur peut être une personne ou une organisation.<br><br>Il s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe <a href="../representation/">Représentation</a>.<br><br>Si un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe <a href="../contribution/">Contribution</a>.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets d'association à une contribution</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>URL vers des pages web donnant plus d'information sur le spectacle, selon l'émetteur de la donnée descriptive sur le spectacle.<br><br>Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Énumération d'URL</td>
+</tr>
+<tr>
+<td>Oeuvres associées</td>
+<td>Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.<br><br><em>Exemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.<br>Exemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.<br>Contre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs.</em></td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets d'association à une oeuvre (voir lignes suivantes)</td>
+</tr>
+<tr>
+<td>Oeuvres associées: oeuvre</td>
+<td>Identification de l'oeuvre</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Objet de la classe <a href="../oeuvre/">Oeuvre</a></td>
+</tr>
+<tr>
+<td>Oeuvres associées: explications</td>
+<td>Notes sur le lien entre l'oeuvre et le spectacle</td>
+<td>Optionnelle</td>
+<td>0..1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Disciplines</td>
+<td>Identification des disciplines artistiques du spectacle.</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de discipline artistique</td>
+</tr>
+<tr>
+<td>Discipline principale</td>
+<td>Préavis: cette propriété pourrait être intégrée dans une future version du référentiel et imposer un vocabulaire contrôlé.</td>
+<td>Ne pas utiliser</td>
+<td>1</td>
+<td>À déterminer</td>
+</tr>
+<tr>
+<td>Publics cibles</td>
+<td>Identification du public cible du spectacle.<br><br>Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de public cible</td>
+</tr>
+<tr>
+<td>Langues</td>
+<td>Langues utilisées dans le spectacle, en ordre décroissant d'importance. La langue principale doit donc être mentionnée en premier.</td>
+<td>Obligatoire, sauf pour les spectacles sans paroles</td>
+<td>0..N</td>
+<td>Énumération de codes IETF BCP 47</td>
+</tr>
+<tr>
+<td>Langues d'appui</td>
+<td>Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...)</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Énumération de codes IETF BCP 47</td>
+</tr>
+<tr>
+<td>Spectacle sans parole</td>
+<td>Indication que le spectacle ne contient pas de paroles.</td>
+<td>Obligatoire</td>
+<td>0..1</td>
+<td>Booléen</td>
+</tr>
+<tr>
+<td>Contenus</td>
+<td>Permet d'identifier certains type de contenus qui sont présents dans le spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de type de contenus</td>
+</tr>
+<tr>
+<td>Avertissements</td>
+<td>Permet d'identifier des avertissements associés au spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé des avertissements</td>
+</tr>
+<tr>
+<td>Représentations</td>
+<td>Énumération des représentations du spectacle, qu'elles soient passées ou futures.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../representation/">Représentation</a></td>
+</tr>
+<tr>
+<td>Traçabilité</td>
+<td>Énumération des spectacles dont est issu le présent spectacle. Utilisé lorsqu'un spectacle est issu de la fusion d'autres spectacles.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="./">Spectacle</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Propriété</th>
+<th>Description</th>
+<th>Prioritété</th>
+<th>Cardinalité</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Identifiants</td>
+<td>Énumération des identifiants connus</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe utilitaire <a href="../identifiant/">Identifiant</a></td>
+</tr>
+<tr>
+<td>➡ <em>Identifiant: Type</em></td>
+<td>Type d'identifiant utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, en spécifiant la valeur <code>uri</code> pour le type, et l'URI complet comme valeur. Lorsque ce n'est pas possible, <a href="https://schema.org/docs/datamodel.html#identifierBg">l'approche préconisée par Schema.org</a> est utilisée: type doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules.<br><br>Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Identifiant: Valeur</em></td>
+<td>L'identifiant lui-même.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>Nom</td>
+<td>Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Autre nom</td>
+<td>Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.<br><br>Par exemple, le spectacle <em>Une Carmen pour tout le Québec</em> a également été connu sous le nom <em>Carmen au grand écran</em>.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Description</td>
+<td>Description du spectacle.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte long  multilingue</td>
+</tr>
+<tr>
+<td>Description courte</td>
+<td>Description résumée du spectacle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.</td>
+<td>Optionnelle</td>
+<td>1</td>
+<td>Texte long multilingue</td>
+</tr>
+<tr>
+<td>Médias</td>
+<td>Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associés au spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objet de la classe utilitaire <a href="../media/">Média</a></td>
+</tr>
+<tr>
+<td>➡ <em>Média: Type</em></td>
+<td>Identification du type de média.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Mime type</td>
+</tr>
+<tr>
+<td>➡ <em>Média:  Numéro de séquence</em></td>
+<td>Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).</td>
+<td>Optionnel</td>
+<td>0..1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>➡ <em>Média: Notes d'usage</em></td>
+<td>Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Média: URL</em></td>
+<td>URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>URL</td>
+</tr>
+<tr>
+<td>➡ <em>Média: Licence</em></td>
+<td>Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.<br><br><em>Exemple 1: «Utilisation permise avec mention des crédits.»<br>Exemple 2: «https://creativecommons.org/licenses/by-nc-sa/4.0/»<br>Exemple 3: «Veuillez nous contacter à droits@domaine.com pour obtenir une licence d'utilisation.»</em></td>
+<td>Optionnel</td>
+<td>0..1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Média: Crédits</em></td>
+<td>Crédits associés au média.</td>
+<td>Optionnel</td>
+<td>0..1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Média: Description</em></td>
+<td>Description courte (pouvant par exemple servir de «alt description» sur le web).</td>
+<td>Optionnel</td>
+<td>0..1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>Contributions</td>
+<td>Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).<br><br>Le contributeur peut être une personne ou une organisation.<br><br>Il s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe <a href="../representation/">Représentation</a>.<br><br>Si un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe <a href="../contribution/">Contribution</a>.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets d'association à une contribution</td>
+</tr>
+<tr>
+<td>➡ <em>Contribution: Types</em></td>
+<td>Identification des types de contribution.</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Termes d'un vocabulaire contrôlé de type de contribution</td>
+</tr>
+<tr>
+<td>➡ <em>Contribution: Type principal</em></td>
+<td>Préavis: cette propriété pourrait être intégrée dans une future version du référentiel, et imposer un vocabulaire contrôlé.</td>
+<td>Ne pas utiliser</td>
+<td>1</td>
+<td>À déterminer</td>
+</tr>
+<tr>
+<td>➡ <em>Contribution: Contributeur</em></td>
+<td>Identification du contributeur.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Objet de la classe <a href="../contributeur/">Contributeur</a></td>
+</tr>
+<tr>
+<td>➡ <em>Contribution: Numéro de séquence</em></td>
+<td>Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>➡ <em>Contribution: Note</em></td>
+<td>Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>URL</td>
+<td>URL vers des pages web donnant plus d'information sur le spectacle, selon l'émetteur de la donnée descriptive sur le spectacle.<br><br>Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Énumération d'URL</td>
+</tr>
+<tr>
+<td>Oeuvres associées</td>
+<td>Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.<br><br><em>Exemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.<br>Exemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.<br>Contre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs.</em></td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets d'association à une oeuvre (voir lignes suivantes)</td>
+</tr>
+<tr>
+<td>➡ <em>Oeuvre associée: Oeuvre</em></td>
+<td>Identification de l'oeuvre</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Objet de la classe <a href="../oeuvre/">Oeuvre</a></td>
+</tr>
+<tr>
+<td>➡ <em>Oeuvre associée: Explications</em></td>
+<td>Notes sur le lien entre l'oeuvre et le spectacle</td>
+<td>Optionnelle</td>
+<td>0..1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>Disciplines</td>
+<td>Identification des disciplines artistiques du spectacle.</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de discipline artistique</td>
+</tr>
+<tr>
+<td>➡ <em>Discipline: Vocabulaire</em></td>
+<td>Identification du vocabulaire duquel est tiré le terme.<br><br>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Discipline: Version</em></td>
+<td>Version du vocabulaire utilisé, lorsque c'est applicable.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Discipline: Code</em></td>
+<td>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Discipline: Étiquette</em></td>
+<td>Version textuelle du terme tiré du vocabulaire choisi.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>➡ <em>Discipline: Numéro de séquence</em></td>
+<td>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>Discipline principale</td>
+<td>Préavis: cette propriété pourrait être intégrée dans une future version du référentiel et imposer un vocabulaire contrôlé.</td>
+<td>Ne pas utiliser</td>
+<td>1</td>
+<td>À déterminer</td>
+</tr>
+<tr>
+<td>Publics cibles</td>
+<td>Identification du public cible du spectacle.<br><br>Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.</td>
+<td>Obligatoire</td>
+<td>1..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de public cible</td>
+</tr>
+<tr>
+<td>➡ <em>Public cible: Vocabulaire</em></td>
+<td>Identification du vocabulaire duquel est tiré le terme.<br><br>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Public cible: Version</em></td>
+<td>Version du vocabulaire utilisé, lorsque c'est applicable.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Public cible: Code</em></td>
+<td>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Public cible: Étiquette</em></td>
+<td>Version textuelle du terme tiré du vocabulaire choisi.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>➡ <em>Public cible: Numéro de séquence</em></td>
+<td>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>Langues</td>
+<td>Langues utilisées dans le spectacle, en ordre décroissant d'importance. La langue principale doit donc être mentionnée en premier.</td>
+<td>Obligatoire, sauf pour les spectacles sans paroles</td>
+<td>0..N</td>
+<td>Énumération de codes IETF BCP 47</td>
+</tr>
+<tr>
+<td>Langues d'appui</td>
+<td>Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...)</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Énumération de codes IETF BCP 47</td>
+</tr>
+<tr>
+<td>Spectacle sans parole</td>
+<td>Indication que le spectacle ne contient pas de paroles.</td>
+<td>Obligatoire</td>
+<td>0..1</td>
+<td>Booléen</td>
+</tr>
+<tr>
+<td>Contenus</td>
+<td>Permet d'identifier certains type de contenus qui sont présents dans le spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé de type de contenus</td>
+</tr>
+<tr>
+<td>➡ <em>Contenu: Vocabulaire</em></td>
+<td>Identification du vocabulaire duquel est tiré le terme.<br><br>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Contenu: Version</em></td>
+<td>Version du vocabulaire utilisé, lorsque c'est applicable.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Contenu: Code</em></td>
+<td>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Contenu: Étiquette</em></td>
+<td>Version textuelle du terme tiré du vocabulaire choisi.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>➡ <em>Contenu: Numéro de séquence</em></td>
+<td>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>Avertissements</td>
+<td>Permet d'identifier des avertissements associés au spectacle.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../terme/">Terme</a> utilisant un vocabulaire contrôlé des avertissements</td>
+</tr>
+<tr>
+<td>➡ <em>Avertissement: Vocabulaire</em></td>
+<td>Identification du vocabulaire duquel est tiré le terme.<br><br>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Avertissement: Version</em></td>
+<td>Version du vocabulaire utilisé, lorsque c'est applicable.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Avertissement: Code</em></td>
+<td>Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Texte court</td>
+</tr>
+<tr>
+<td>➡ <em>Avertissement: Étiquette</em></td>
+<td>Version textuelle du terme tiré du vocabulaire choisi.</td>
+<td>Optionnel</td>
+<td>1</td>
+<td>Texte court multilingue</td>
+</tr>
+<tr>
+<td>➡ <em>Avertissement: Numéro de séquence</em></td>
+<td>Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).</td>
+<td>Obligatoire</td>
+<td>1</td>
+<td>Nombre</td>
+</tr>
+<tr>
+<td>Représentations</td>
+<td>Énumération des représentations du spectacle, qu'elles soient passées ou futures.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="../representation/">Représentation</a></td>
+</tr>
+<tr>
+<td>Traçabilité</td>
+<td>Énumération des spectacles dont est issu le présent spectacle. Utilisé lorsqu'un spectacle est issu de la fusion d'autres spectacles.</td>
+<td>Optionnel</td>
+<td>0..N</td>
+<td>Objets de la classe <a href="./">Spectacle</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!--
+  Copyright (c) 2016-2024 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Ce fichier est personnalisé exclusivement pour être en mesure de
+    traduire la mention "Made with ...". Idéalement on pourrait soumettre
+    un PR à MkDocs pour utilser le vrai mécanismes de I18n. -->
+
+<!-- Copyright and theme information -->
+<div class="md-copyright">
+    
+      <div class="md-copyright__highlight">
+        Copyright &copy; 2024 Datascence – Référentiel des métadonnées descriptives du spectacle – <a href="#__consent">Gérer les cookies</a>
+      </div>
+    
+    
+      Fait avec
+      <a
+        href="https://squidfunk.github.io/mkdocs-material/"
+        target="_blank" rel="noopener"
+      >
+        Material for MkDocs
+      </a>
+    
+  </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+    
+  
+
+
+
+
+  
+
+
+<h4>Nous respectons votre vie privée</h4>
+<p>En cliquant sur « Autoriser tous les cookies », vous acceptez le stockage de cookies sur votre appareil pour améliorer la navigation sur le site, analyser son utilisation et contribuer à nos efforts de diffusion de Datascene.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accepter</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Paramétrer vos choix</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.path", "navigation.indexes"], "search": "../../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

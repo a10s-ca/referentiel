@@ -7,6 +7,7 @@ Documentation interne (pour les contributeurs du référentiel) à venir ici.
 * MkDocs
 * Material for MkDocs
 * [Mkdocs-Macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
+* json-schema-for-humans
 
 ## Conventions
 
