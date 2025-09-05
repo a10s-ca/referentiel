@@ -13,13 +13,13 @@
 | Property                                                         | Title/Description                                                                                                                                                                                                                                                                                       | Type             | Definition                                                                       |
 | ---------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
 | + [type](#type )                                                 | -                                                                                                                                                                                                                                                                                                       | const            | -                                                                                |
-| + [inPlace](#inPlace )                                           | Lieu (Place)                                                                                                                                                                                                                                                                                            | object           | In ./place.schema.json                                                           |
+| + [inPlace](#inPlace )                                           | Lieu (Place)                                                                                                                                                                                                                                                                                            | object           | In ../place.schema.json                                                          |
 | - [inRoom](#inRoom )                                             | Salle (Room)                                                                                                                                                                                                                                                                                            | object           | Same as [Salle (Room)](#inPlace_inRoom_items )                                   |
 | - [roomConfiguration](#roomConfiguration )                       | Configuration de salle                                                                                                                                                                                                                                                                                  | object           | Same as [Configuration de salle](#inPlace_inRoom_items_roomConfiguration_items ) |
 | + [isSoldout](#isSoldout )                                       | Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.                                                                                               | boolean          | -                                                                                |
 | - [soldoutSince](#soldoutSince )                                 | Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                           | string           | -                                                                                |
-| + [offerStatus](#offerStatus )                                   | Statut de l'Offre                                                                                                                                                                                                                                                                                       | enum (of string) | In ./vocabularies/event_status.schema.json                                       |
-| - [price](#price )                                               | Montant Monétaire                                                                                                                                                                                                                                                                                       | string           | In ./datatypes/currency.schema.json                                              |
+| + [offerStatus](#offerStatus )                                   | Statut de l'Offre                                                                                                                                                                                                                                                                                       | enum (of string) | In ../vocabularies/event_status.schema.json                                      |
+| - [price](#price )                                               | Montant Monétaire                                                                                                                                                                                                                                                                                       | string           | In ../datatypes/currency.schema.json                                             |
 | + [isAccessibleForFree](#isAccessibleForFree )                   | Indique que la présente offre est gratuite.                                                                                                                                                                                                                                                             | boolean          | -                                                                                |
 | + [isAccessibleFromAnotherOffer](#isAccessibleFromAnotherOffer ) | Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.                                                                                                                                                                                            | boolean          | -                                                                                |
 | - [preSaleStart](#preSaleStart )                                 | Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                       | string           | -                                                                                |
@@ -51,12 +51,12 @@ Specific value: `"Offer"`
 
 **Title:** Lieu (Place)
 
-|                           |                     |
-| ------------------------- | ------------------- |
-| **Type**                  | `object`            |
-| **Required**              | Yes                 |
-| **Additional properties** | Any type allowed    |
-| **Defined in**            | ./place.schema.json |
+|                           |                      |
+| ------------------------- | -------------------- |
+| **Type**                  | `object`             |
+| **Required**              | Yes                  |
+| **Additional properties** | Any type allowed     |
+| **Defined in**            | ../place.schema.json |
 
 **Description:** Lieu associé à l'offre (physique ou virtuel).
 
@@ -1296,11 +1296,11 @@ Specific value: `"WebPage"`
 
 **Title:** Statut de l'Offre
 
-|                |                                         |
-| -------------- | --------------------------------------- |
-| **Type**       | `enum (of string)`                      |
-| **Required**   | Yes                                     |
-| **Defined in** | ./vocabularies/event_status.schema.json |
+|                |                                          |
+| -------------- | ---------------------------------------- |
+| **Type**       | `enum (of string)`                       |
+| **Required**   | Yes                                      |
+| **Defined in** | ../vocabularies/event_status.schema.json |
 
 **Description:** Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.
 
@@ -1315,11 +1315,11 @@ Must be one of:
 
 **Title:** Montant Monétaire
 
-|                |                                  |
-| -------------- | -------------------------------- |
-| **Type**       | `string`                         |
-| **Required**   | No                               |
-| **Defined in** | ./datatypes/currency.schema.json |
+|                |                                   |
+| -------------- | --------------------------------- |
+| **Type**       | `string`                          |
+| **Required**   | No                                |
+| **Defined in** | ../datatypes/currency.schema.json |
 
 **Description:** Prix de départ en dollars canadiens.
 
@@ -1385,4 +1385,4 @@ Must be one of:
 **Description:** URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2025-08-18 at 15:46:15 -0400
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2025-09-05 at 15:39:36 -0400

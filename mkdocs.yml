@@ -64,17 +64,14 @@ nav:
     - Propriétés des classes: 'modele/proprietes_des_classes.md'
     - Vocabulaires contrôlés:
       - modele/vocabulaires_controles/index.md
-      - Accessibilité universelle: 'references/vocabulaires/accessibilite_universelle.md'
-      - Avertissements: 'references/vocabulaires/avertissements.md'
-      - Disciplines artistiques: 'references/vocabulaires/disciplines_artistiques.md'
-      - Public cible: 'references/vocabulaires/public_cible.md'
-      - Statut d'offre: 'references/vocabulaires/statut_d_offre.md'
-      - Types d'associations géographiques: 'references/vocabulaires/types_d_associations_geographiques_d_un_contributeur.md'
-      - Types de configurations de salles: 'references/vocabulaires/types_de_configurations_de_salles.md'
-      - Types de contenus: 'references/vocabulaires/types_de_contenus.md'
-      - Types de contributeurs: 'references/vocabulaires/types_de_contributeurs.md'
-      - Types de contributions: 'references/vocabulaires/types_de_contributions.md'
-      - Types de lieux: 'references/vocabulaires/types_de_lieux.md'
+      - Accessibilité universelle: 'references/vocabulaires/accessibiliteUniversellesTermes'
+      - Avertissements: 'references/vocabulaires/avertissement.md'
+      - Disciplines artistiques: 'references/vocabulaires/disciplines-asq.md'
+      - Public cible: 'references/vocabulaires/publicCible.md'
+      - Types d'associations géographiques: 'references/vocabulaires/associationGeographiqueType.md'
+      - Types de configurations de salles: 'references/vocabulaires/configurationSalleTermes.md'
+      - Types de contenus: 'references/vocabulaires/contenusType.md'
+      - Types de contributions: 'references/vocabulaires/contributionType.md'
     - Types de propriétés: 'references/types.md'
     - Exemples: 'references/exemples.md'
 extra:
@@ -89,3 +86,4 @@ extra:
       efforts de diffusion de Datascene.
 hooks:
   - schema_to_markdown.py
+  - vocabularies_to_markdown.py

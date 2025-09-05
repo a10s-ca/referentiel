@@ -4,10 +4,20 @@ Documentation interne (pour les contributeurs du référentiel) à venir ici.
 
 ## Dépendences
 
+### Python
+
 * MkDocs
 * Material for MkDocs
 * [Mkdocs-Macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
 * json-schema-for-humans
+
+`pip install -r requirements.txt` devrait tout installer
+
+### Ruby
+
+Ruby est utilisé pour générer les fichiers de présentation des vocabulaires contrôlés.
+
+`gem install linkeddata` (ruby 3.1.2 or higher)
 
 ## Conventions
 
