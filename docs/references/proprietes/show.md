@@ -2259,20 +2259,913 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 | **Additional items** | False              |
 | **Tuple validation** | See below          |
 
-| Each item of this array must be                                          | Description                                                                                                   |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| [offer.schema.json](#hasPerformance_items_inSeries_items_hasOffer_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
+| Each item of this array must be                                      | Description                                                                                                                       |
+| -------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [Offre (Offer)](#hasPerformance_items_inSeries_items_hasOffer_items) | Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité. |
 
-###### <a name="hasPerformance_items_inSeries_items_hasOffer_items"></a>20.1.16.1.12.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > offer.schema.json
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items"></a>20.1.16.1.12.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer)
 
-|                           |                     |
-| ------------------------- | ------------------- |
-| **Type**                  | `object`            |
-| **Required**              | No                  |
-| **Additional properties** | Any type allowed    |
-| **Defined in**            | ./offer.schema.json |
+**Title:** Offre (Offer)
 
-**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
+|                           |                               |
+| ------------------------- | ----------------------------- |
+| **Type**                  | `object`                      |
+| **Required**              | No                            |
+| **Additional properties** | Any type allowed              |
+| **Defined in**            | ./utilities/offer.schema.json |
+
+**Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
+
+| Property                                                                                                            | Title/Description                                                                                                                                                                                                                                                                                       | Type             | Definition                                                                                                                          |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_type )                                                 | -                                                                                                                                                                                                                                                                                                       | const            | -                                                                                                                                   |
+| + [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace )                                           | Lieu (Place)                                                                                                                                                                                                                                                                                            | object           | In ../place.schema.json                                                                                                             |
+| - [inRoom](#hasPerformance_items_inSeries_items_hasOffer_items_inRoom )                                             | Salle (Room)                                                                                                                                                                                                                                                                                            | object           | Same as [Salle (Room)](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items )                                   |
+| - [roomConfiguration](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration )                       | Configuration de salle                                                                                                                                                                                                                                                                                  | object           | Same as [Configuration de salle](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items ) |
+| + [isSoldout](#hasPerformance_items_inSeries_items_hasOffer_items_isSoldout )                                       | Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.                                                                                               | boolean          | -                                                                                                                                   |
+| - [soldoutSince](#hasPerformance_items_inSeries_items_hasOffer_items_soldoutSince )                                 | Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                           | string           | -                                                                                                                                   |
+| + [offerStatus](#hasPerformance_items_inSeries_items_hasOffer_items_offerStatus )                                   | Statut de l'Offre                                                                                                                                                                                                                                                                                       | enum (of string) | In ../vocabularies/event_status.schema.json                                                                                         |
+| - [price](#hasPerformance_items_inSeries_items_hasOffer_items_price )                                               | Montant Monétaire                                                                                                                                                                                                                                                                                       | string           | In ../datatypes/currency.schema.json                                                                                                |
+| + [isAccessibleForFree](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleForFree )                   | Indique que la présente offre est gratuite.                                                                                                                                                                                                                                                             | boolean          | -                                                                                                                                   |
+| + [isAccessibleFromAnotherOffer](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleFromAnotherOffer ) | Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.                                                                                                                                                                                            | boolean          | -                                                                                                                                   |
+| - [preSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_preSaleStart )                                 | Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                       | string           | -                                                                                                                                   |
+| - [generalSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_generalSaleStart )                         | Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times | string           | -                                                                                                                                   |
+| + [ticketLinkNotAvailable](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLinkNotAvailable )             | Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.                                                                                                                                                                                         | boolean          | -                                                                                                                                   |
+| - [ticketLink](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLink )                                     | URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.                                                                                                                                                                                      | string           | -                                                                                                                                   |
+
+###### <a name="autogenerated_heading_4"></a>20.1.16.1.12.1.1. If (isAccessibleForFree = false)
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+###### <a name="autogenerated_heading_5"></a>20.1.16.1.12.1.1.1. The following properties are required
+* ticketLink
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_type"></a>20.1.16.1.12.1.2. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > type`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Offer"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace"></a>20.1.16.1.12.1.3. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace`
+
+**Title:** Lieu (Place)
+
+|                           |                      |
+| ------------------------- | -------------------- |
+| **Type**                  | `object`             |
+| **Required**              | Yes                  |
+| **Additional properties** | Any type allowed     |
+| **Defined in**            | ../place.schema.json |
+
+**Description:** Lieu associé à l'offre (physique ou virtuel).
+
+| Property                                                                                                | Title/Description                                                                                                                                                                                                                                  | Type            | Definition                                                                                           |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_type )                             | -                                                                                                                                                                                                                                                  | const           | -                                                                                                    |
+| - [additionalType](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_additionalType )         | Term                                                                                                                                                                                                                                               | object          | Same as [Term](#hasContribution_items_contributionType_items )                                       |
+| + [identifier](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_identifier )                 | identifier                                                                                                                                                                                                                                         | array           | Same as [identifier](#identifier )                                                                   |
+| + [name](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_name )                             | Texte court multilingue                                                                                                                                                                                                                            | array of object | Same as [name](#name )                                                                               |
+| - [description](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_description )               | Texte long multilingue                                                                                                                                                                                                                             | array of object | In ./datatypes/text_long_multilingual.schema.json                                                    |
+| + [virtualPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_virtualPlace )             | -                                                                                                                                                                                                                                                  | boolean         | -                                                                                                    |
+| - [inRoom](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom )                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | array           | -                                                                                                    |
+| - [address](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_address )                       | Postal Address                                                                                                                                                                                                                                     | object          | Same as [address](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address ) |
+| - [mainEntityOfPage](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_mainEntityOfPage )     | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | array           | -                                                                                                    |
+| - [placeAccessibility](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_placeAccessibility ) | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | array           | -                                                                                                    |
+| - [geoCoordinates](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates )         | Coordonnées géographiques d'un point.                                                                                                                                                                                                              | object          | In ./datatypes/geo_coordinates.schema.json                                                           |
+
+###### <a name="autogenerated_heading_6"></a>20.1.16.1.12.1.3.1. If (virtualPlace = false)
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+###### <a name="autogenerated_heading_7"></a>20.1.16.1.12.1.3.1.1. The following properties are required
+* type
+* address
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_type"></a>20.1.16.1.12.1.3.2. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > type`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Place"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_additionalType"></a>20.1.16.1.12.1.3.3. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > additionalType`
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_identifier"></a>20.1.16.1.12.1.3.4. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > identifier`
+
+**Title:** identifier
+
+|                        |                           |
+| ---------------------- | ------------------------- |
+| **Type**               | `array`                   |
+| **Required**           | Yes                       |
+| **Same definition as** | [identifier](#identifier) |
+
+**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_name"></a>20.1.16.1.12.1.3.5. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > name`
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | Yes               |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_description"></a>20.1.16.1.12.1.3.6. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > description`
+
+**Title:** Texte long multilingue
+
+|                |                                                |
+| -------------- | ---------------------------------------------- |
+| **Type**       | `array of object`                              |
+| **Required**   | No                                             |
+| **Defined in** | ./datatypes/text_long_multilingual.schema.json |
+
+**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | 1                  |
+| **Max items**        | N/A                |
+| **Items unicity**    | True               |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be         | Description |
+| --------------------------------------- | ----------- |
+| [description items](#description_items) | -           |
+
+###### <a name="description_items"></a>20.1.16.1.12.1.3.6.1. Spectacle (Show) > description > description items
+
+|                           |             |
+| ------------------------- | ----------- |
+| **Type**                  | `object`    |
+| **Required**              | No          |
+| **Additional properties** | Not allowed |
+
+| Property                             | Title/Description | Type   | Definition                                |
+| ------------------------------------ | ----------------- | ------ | ----------------------------------------- |
+| + [lang](#description_items_lang )   | Code de langue    | string | Same as [lang](#name_items_lang )         |
+| + [value](#description_items_value ) | Texte long        | string | In ./partials/authorized_html.schema.json |
+
+###### <a name="description_items_lang"></a>20.1.16.1.12.1.3.6.1.1. Property `Spectacle (Show) > description > description items > lang`
+
+**Title:** Code de langue
+
+|                        |                          |
+| ---------------------- | ------------------------ |
+| **Type**               | `string`                 |
+| **Required**           | Yes                      |
+| **Same definition as** | [lang](#name_items_lang) |
+
+**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+
+###### <a name="description_items_value"></a>20.1.16.1.12.1.3.6.1.2. Property `Spectacle (Show) > description > description items > value`
+
+**Title:** Texte long
+
+|                |                                        |
+| -------------- | -------------------------------------- |
+| **Type**       | `string`                               |
+| **Required**   | Yes                                    |
+| **Defined in** | ./partials/authorized_html.schema.json |
+
+**Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
+
+**Examples:**
+
+```json
+"<b>Texte en gras</b>"
+```
+
+```json
+"<i>Texte en italique</i>"
+```
+
+```json
+"<u>Texte souligné</u>"
+```
+
+```json
+"<sup>Texte en exposant</sup>"
+```
+
+```json
+"<sub>Texte en indice</sub>"
+```
+
+| Restrictions                      |                                                                                                                                                                                                                                                                                                 |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Max length**                    | 6000                                                                                                                                                                                                                                                                                            |
+| **Must match regular expression** | ```^(?!.*<[^bius][^>]*>)(?!.*</?(?!b\|i\|u\|sup\|sub)[^>]*>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5Ebius%5D%5B%5E%3E%5D%2A%3E%29%28%3F%21.%2A%3C%2F%3F%28%3F%21b%7Ci%7Cu%7Csup%7Csub%29%5B%5E%3E%5D%2A%3E%29.%2A%24&testString=%22%3Cb%3ETexte+en+gras%3C%2Fb%3E%22) |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_virtualPlace"></a>20.1.16.1.12.1.3.7. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > virtualPlace`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom"></a>20.1.16.1.12.1.3.8. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                          | Description                                                                                                                                             |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Salle (Room)](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items) | Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée. |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items"></a>20.1.16.1.12.1.3.8.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room)
+
+**Title:** Salle (Room)
+
+|                           |                    |
+| ------------------------- | ------------------ |
+| **Type**                  | `object`           |
+| **Required**              | No                 |
+| **Additional properties** | Any type allowed   |
+| **Defined in**            | ./room.schema.json |
+
+**Description:** Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
+
+| Property                                                                                                           | Title/Description                                                                         | Type            | Definition                                                                      |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_type )                           | -                                                                                         | const           | -                                                                               |
+| + [identifier](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_identifier )               | identifier                                                                                | array           | Same as [identifier](#identifier )                                              |
+| - [name](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_name )                           | Texte court multilingue                                                                   | array of object | Same as [name](#name )                                                          |
+| + [nameSameAsPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_nameSameAsPlace )     | -                                                                                         | boolean         | -                                                                               |
+| - [description](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_description )             | Texte long multilingue                                                                    | array of object | Same as [description](#description )                                            |
+| - [shortDescription](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_shortDescription )   | Texte long multilingue                                                                    | array of object | Same as [description](#description )                                            |
+| - [media](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_media )                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux. | array           | -                                                                               |
+| - [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_inPlace )                     | Lieu (Place)                                                                              | object          | Same as [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace ) |
+| - [address](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address )                     | Postal Address                                                                            | object          | In ./utilities/postal_address.schema.json                                       |
+| - [roomAccessibility](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomAccessibility ) | Caractéristiques d'accessibilité universelle pour la salle.                               | array           | -                                                                               |
+| - [roomConfiguration](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration ) | Précisions sur les configurations possibles de la salle.                                  | array           | -                                                                               |
+
+###### <a name="autogenerated_heading_8"></a>20.1.16.1.12.1.3.8.1.1. If (nameSameAsPlace = false)
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+###### <a name="autogenerated_heading_9"></a>20.1.16.1.12.1.3.8.1.1.1. The following properties are required
+* name
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_type"></a>20.1.16.1.12.1.3.8.1.2. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > type`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"Room"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_identifier"></a>20.1.16.1.12.1.3.8.1.3. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > identifier`
+
+**Title:** identifier
+
+|                        |                           |
+| ---------------------- | ------------------------- |
+| **Type**               | `array`                   |
+| **Required**           | Yes                       |
+| **Same definition as** | [identifier](#identifier) |
+
+**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_name"></a>20.1.16.1.12.1.3.8.1.4. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > name`
+
+**Title:** Texte court multilingue
+
+|                        |                   |
+| ---------------------- | ----------------- |
+| **Type**               | `array of object` |
+| **Required**           | No                |
+| **Same definition as** | [name](#name)     |
+
+**Description:** Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_nameSameAsPlace"></a>20.1.16.1.12.1.3.8.1.5. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > nameSameAsPlace`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_description"></a>20.1.16.1.12.1.3.8.1.6. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > description`
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_shortDescription"></a>20.1.16.1.12.1.3.8.1.7. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > shortDescription`
+
+**Title:** Texte long multilingue
+
+|                        |                             |
+| ---------------------- | --------------------------- |
+| **Type**               | `array of object`           |
+| **Required**           | No                          |
+| **Same definition as** | [description](#description) |
+
+**Description:** Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_media"></a>20.1.16.1.12.1.3.8.1.8. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > media`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                               | Description                                                                                          |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| [Média](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_media_items) | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_media_items"></a>20.1.16.1.12.1.3.8.1.8.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > media > Média
+
+**Title:** Média
+
+|                           |                       |
+| ------------------------- | --------------------- |
+| **Type**                  | `object`              |
+| **Required**              | No                    |
+| **Additional properties** | Any type allowed      |
+| **Same definition as**    | [Média](#media_items) |
+
+**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_inPlace"></a>20.1.16.1.12.1.3.8.1.9. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > inPlace`
+
+**Title:** Lieu (Place)
+
+|                           |                                                                        |
+| ------------------------- | ---------------------------------------------------------------------- |
+| **Type**                  | `object`                                                               |
+| **Required**              | No                                                                     |
+| **Additional properties** | Any type allowed                                                       |
+| **Same definition as**    | [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace) |
+
+**Description:** Lieu associé à l'offre (physique ou virtuel).
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address"></a>20.1.16.1.12.1.3.8.1.10. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address`
+
+**Title:** Postal Address
+
+|                           |                                        |
+| ------------------------- | -------------------------------------- |
+| **Type**                  | `object`                               |
+| **Required**              | No                                     |
+| **Additional properties** | Any type allowed                       |
+| **Defined in**            | ./utilities/postal_address.schema.json |
+
+**Description:** Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.
+
+| Property                                                                                                               | Title/Description                                                                                  | Type   | Definition                                                                                                |
+| ---------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------ | --------------------------------------------------------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_type )                       | -                                                                                                  | const  | -                                                                                                         |
+| + [streetAddress](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_streetAddress )     | Texte court                                                                                        | string | Same as [usageNote](#media_items_usageNote )                                                              |
+| + [addressLocality](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressLocality ) | Texte court                                                                                        | string | Same as [usageNote](#media_items_usageNote )                                                              |
+| + [addressRegion](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays. | string | -                                                                                                         |
+| + [addressCountry](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressCountry )   | Code Pays                                                                                          | string | Same as [addressCountry](#hasContribution_items_contributeur_hasGeographicRelation_items_addressCountry ) |
+| + [postalCode](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_postalCode )           | Code Postal Canadien                                                                               | string | In ../datatypes/canada_postal_code.schema.json                                                            |
+
+###### <a name="autogenerated_heading_10"></a>20.1.16.1.12.1.3.8.1.10.1. If (addressCountry = "CAN")
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+| Property                                                                                                                | Title/Description | Type             | Definition |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------- | ---------------- | ---------- |
+| - [addressRegion](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_then_addressRegion ) | -                 | enum (of string) | -          |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_then_addressRegion"></a>20.1.16.1.12.1.3.8.1.10.1.1. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > then > addressRegion`
+
+|              |                    |
+| ------------ | ------------------ |
+| **Type**     | `enum (of string)` |
+| **Required** | No                 |
+
+Must be one of:
+* "AB"
+* "BC"
+* "MB"
+* "NB"
+* "NL"
+* "NS"
+* "NT"
+* "NU"
+* "ON"
+* "PE"
+* "QC"
+* "SK"
+* "YT"
+
+###### <a name="autogenerated_heading_11"></a>20.1.16.1.12.1.3.8.1.10.2. Else (i.e.  addressCountry != "CAN")
+
+|                           |                  |
+| ------------------------- | ---------------- |
+| **Type**                  | `object`         |
+| **Required**              | No               |
+| **Additional properties** | Any type allowed |
+
+| Property                                                                                                                | Title/Description                                                                                          | Type   | Definition |
+| ----------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ------ | ---------- |
+| - [addressRegion](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_else_addressRegion ) | Nom de la région, province ou état. Peut être un code de pays à 2 caractères selon le standard ISO 3166-1. | string | -          |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_else_addressRegion"></a>20.1.16.1.12.1.3.8.1.10.2.1. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > else > addressRegion`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | No       |
+
+**Description:** Nom de la région, province ou état. Peut être un code de pays à 2 caractères selon le standard ISO 3166-1.
+
+| Restrictions                      |                                                                             |
+| --------------------------------- | --------------------------------------------------------------------------- |
+| **Must match regular expression** | ```^[A-Z]{2}$``` [Test](https://regex101.com/?regex=%5E%5BA-Z%5D%7B2%7D%24) |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_type"></a>20.1.16.1.12.1.3.8.1.10.3. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > type`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"PostalAddress"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_streetAddress"></a>20.1.16.1.12.1.3.8.1.10.4. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > streetAddress`
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | Yes                                 |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressLocality"></a>20.1.16.1.12.1.3.8.1.10.5. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > addressLocality`
+
+**Title:** Texte court
+
+|                        |                                     |
+| ---------------------- | ----------------------------------- |
+| **Type**               | `string`                            |
+| **Required**           | Yes                                 |
+| **Same definition as** | [usageNote](#media_items_usageNote) |
+
+**Description:** Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressRegion"></a>20.1.16.1.12.1.3.8.1.10.6. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > addressRegion`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | Yes      |
+
+**Description:** Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_addressCountry"></a>20.1.16.1.12.1.3.8.1.10.7. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > addressCountry`
+
+**Title:** Code Pays
+
+|                        |                                                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------------------------ |
+| **Type**               | `string`                                                                                         |
+| **Required**           | Yes                                                                                              |
+| **Same definition as** | [addressCountry](#hasContribution_items_contributeur_hasGeographicRelation_items_addressCountry) |
+
+**Description:** Code de pays à 3 caractères selon le standard ISO 3166-1
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address_postalCode"></a>20.1.16.1.12.1.3.8.1.10.8. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > address > postalCode`
+
+**Title:** Code Postal Canadien
+
+|                |                                             |
+| -------------- | ------------------------------------------- |
+| **Type**       | `string`                                    |
+| **Required**   | Yes                                         |
+| **Defined in** | ../datatypes/canada_postal_code.schema.json |
+
+**Description:** Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union
+
+| Restrictions                      |                                                                                                                                     |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| **Must match regular expression** | ```^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$``` [Test](https://regex101.com/?regex=%5E%5BA-Za-z%5D%5Cd%5BA-Za-z%5D+%5Cd%5BA-Za-z%5D%5Cd%24) |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomAccessibility"></a>20.1.16.1.12.1.3.8.1.11. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomAccessibility`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Caractéristiques d'accessibilité universelle pour la salle. 
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                                          | Description                                                                             |
+| -------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomAccessibility_items"></a>20.1.16.1.12.1.3.8.1.11.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomAccessibility > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration"></a>20.1.16.1.12.1.3.8.1.12. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomConfiguration`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Précisions sur les configurations possibles de la salle.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                                                            | Description                                           |
+| -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
+| [Configuration de salle](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items) | Précisions sur un configuration possible de la salle. |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items"></a>20.1.16.1.12.1.3.8.1.12.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomConfiguration > Configuration de salle
+
+**Title:** Configuration de salle
+
+|                           |                                            |
+| ------------------------- | ------------------------------------------ |
+| **Type**                  | `object`                                   |
+| **Required**              | No                                         |
+| **Additional properties** | Any type allowed                           |
+| **Defined in**            | ./utilities/room_specification.schema.json |
+
+**Description:** Précisions sur un configuration possible de la salle.
+
+| Property                                                                                                                 | Title/Description                    | Type    | Definition                                                     |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------ | ------- | -------------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_type )         | -                                    | const   | -                                                              |
+| + [layout](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_layout )     | Term                                 | object  | Same as [Term](#hasContribution_items_contributionType_items ) |
+| - [capacity](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_capacity ) | Capacité, en nombre de spectacteurs. | integer | -                                                              |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_type"></a>20.1.16.1.12.1.3.8.1.12.1.1. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomConfiguration > Configuration de salle > type`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `const` |
+| **Required** | Yes     |
+
+Specific value: `"RoomConfiguration"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_layout"></a>20.1.16.1.12.1.3.8.1.12.1.2. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomConfiguration > Configuration de salle > layout`
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | Yes                                                   |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items_capacity"></a>20.1.16.1.12.1.3.8.1.12.1.3. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > inRoom > Salle (Room) > roomConfiguration > Configuration de salle > capacity`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `integer` |
+| **Required** | No        |
+
+**Description:** Capacité, en nombre de spectacteurs.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_address"></a>20.1.16.1.12.1.3.9. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > address`
+
+**Title:** Postal Address
+
+|                           |                                                                                             |
+| ------------------------- | ------------------------------------------------------------------------------------------- |
+| **Type**                  | `object`                                                                                    |
+| **Required**              | No                                                                                          |
+| **Additional properties** | Any type allowed                                                                            |
+| **Same definition as**    | [address](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_address) |
+
+**Description:** Coordonnées complètes du lieu.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_mainEntityOfPage"></a>20.1.16.1.12.1.3.10. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > mainEntityOfPage`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** URL vers des pages web donnant plus d'information sur le lieu.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                               | Description |
+| --------------------------------------------------------------------------------------------- | ----------- |
+| [WebPage](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_mainEntityOfPage_items) | -           |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_mainEntityOfPage_items"></a>20.1.16.1.12.1.3.10.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > mainEntityOfPage > WebPage
+
+**Title:** WebPage
+
+|                           |                                    |
+| ------------------------- | ---------------------------------- |
+| **Type**                  | `object`                           |
+| **Required**              | No                                 |
+| **Additional properties** | Any type allowed                   |
+| **Same definition as**    | [WebPage](#mainEntityOfPage_items) |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_placeAccessibility"></a>20.1.16.1.12.1.3.11. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > placeAccessibility`
+
+|              |         |
+| ------------ | ------- |
+| **Type**     | `array` |
+| **Required** | No      |
+
+**Description:** Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.
+
+|                      | Array restrictions |
+| -------------------- | ------------------ |
+| **Min items**        | N/A                |
+| **Max items**        | N/A                |
+| **Items unicity**    | False              |
+| **Additional items** | False              |
+| **Tuple validation** | See below          |
+
+| Each item of this array must be                                                              | Description                                                                             |
+| -------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Term](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_placeAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_placeAccessibility_items"></a>20.1.16.1.12.1.3.11.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > placeAccessibility > Term
+
+**Title:** Term
+
+|                           |                                                       |
+| ------------------------- | ----------------------------------------------------- |
+| **Type**                  | `object`                                              |
+| **Required**              | No                                                    |
+| **Additional properties** | Any type allowed                                      |
+| **Same definition as**    | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates"></a>20.1.16.1.12.1.3.12. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > geoCoordinates`
+
+**Title:** Coordonnées géographiques d'un point.
+
+|                           |                                         |
+| ------------------------- | --------------------------------------- |
+| **Type**                  | `object`                                |
+| **Required**              | No                                      |
+| **Additional properties** | Any type allowed                        |
+| **Defined in**            | ./datatypes/geo_coordinates.schema.json |
+
+**Description:** Coordonnées géographiques
+
+| Property                                                                                             | Title/Description | Type   | Definition |
+| ---------------------------------------------------------------------------------------------------- | ----------------- | ------ | ---------- |
+| + [longitude](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates_longitude ) | -                 | number | -          |
+| + [latitude](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates_latitude )   | -                 | number | -          |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates_longitude"></a>20.1.16.1.12.1.3.12.1. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > geoCoordinates > longitude`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `number` |
+| **Required** | Yes      |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inPlace_geoCoordinates_latitude"></a>20.1.16.1.12.1.3.12.2. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inPlace > geoCoordinates > latitude`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `number` |
+| **Required** | Yes      |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_inRoom"></a>20.1.16.1.12.1.4. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > inRoom`
+
+**Title:** Salle (Room)
+
+|                           |                                                                                          |
+| ------------------------- | ---------------------------------------------------------------------------------------- |
+| **Type**                  | `object`                                                                                 |
+| **Required**              | No                                                                                       |
+| **Additional properties** | Any type allowed                                                                         |
+| **Same definition as**    | [Salle (Room)](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items) |
+
+**Description:** Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration"></a>20.1.16.1.12.1.5. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > roomConfiguration`
+
+**Title:** Configuration de salle
+
+|                           |                                                                                                                            |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| **Type**                  | `object`                                                                                                                   |
+| **Required**              | No                                                                                                                         |
+| **Additional properties** | Any type allowed                                                                                                           |
+| **Same definition as**    | [Configuration de salle](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace_inRoom_items_roomConfiguration_items) |
+
+**Description:** Configuration de la salle dans le contexte de cette offre.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_isSoldout"></a>20.1.16.1.12.1.6. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > isSoldout`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+**Description:** Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_soldoutSince"></a>20.1.16.1.12.1.7. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > soldoutSince`
+
+|              |             |
+| ------------ | ----------- |
+| **Type**     | `string`    |
+| **Required** | No          |
+| **Format**   | `date-time` |
+
+**Description:** Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_offerStatus"></a>20.1.16.1.12.1.8. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > offerStatus`
+
+**Title:** Statut de l'Offre
+
+|                |                                          |
+| -------------- | ---------------------------------------- |
+| **Type**       | `enum (of string)`                       |
+| **Required**   | Yes                                      |
+| **Defined in** | ../vocabularies/event_status.schema.json |
+
+**Description:** Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.
+
+Must be one of:
+* "EventScheduled"
+* "EventCancelled"
+* "EventRescheduled"
+* "EventPostponed"
+* "EventMovedOnline"
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_price"></a>20.1.16.1.12.1.9. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > price`
+
+**Title:** Montant Monétaire
+
+|                |                                   |
+| -------------- | --------------------------------- |
+| **Type**       | `string`                          |
+| **Required**   | No                                |
+| **Defined in** | ../datatypes/currency.schema.json |
+
+**Description:** Prix de départ en dollars canadiens.
+
+| Restrictions                      |                                                                                                                                                   |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Must match regular expression** | ```^\d{1,3}(,\d{3})*(\.\d{1,2})?$``` [Test](https://regex101.com/?regex=%5E%5Cd%7B1%2C3%7D%28%2C%5Cd%7B3%7D%29%2A%28%5C.%5Cd%7B1%2C2%7D%29%3F%24) |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleForFree"></a>20.1.16.1.12.1.10. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > isAccessibleForFree`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+**Description:** Indique que la présente offre est gratuite.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleFromAnotherOffer"></a>20.1.16.1.12.1.11. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > isAccessibleFromAnotherOffer`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+**Description:** Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_preSaleStart"></a>20.1.16.1.12.1.12. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > preSaleStart`
+
+|              |             |
+| ------------ | ----------- |
+| **Type**     | `string`    |
+| **Required** | No          |
+| **Format**   | `date-time` |
+
+**Description:** Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_generalSaleStart"></a>20.1.16.1.12.1.13. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > generalSaleStart`
+
+|              |             |
+| ------------ | ----------- |
+| **Type**     | `string`    |
+| **Required** | No          |
+| **Format**   | `date-time` |
+
+**Description:** Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_ticketLinkNotAvailable"></a>20.1.16.1.12.1.14. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > ticketLinkNotAvailable`
+
+|              |           |
+| ------------ | --------- |
+| **Type**     | `boolean` |
+| **Required** | Yes       |
+
+**Description:** Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_ticketLink"></a>20.1.16.1.12.1.15. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > ticketLink`
+
+|              |          |
+| ------------ | -------- |
+| **Type**     | `string` |
+| **Required** | No       |
+| **Format**   | `uri`    |
+
+**Description:** URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.
 
 #### <a name="hasPerformance_items_hasOffer"></a>20.1.17. Property `Spectacle (Show) > hasPerformance > Représentation (Performance) > hasOffer`
 
@@ -2291,20 +3184,22 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 | **Additional items** | False              |
 | **Tuple validation** | See below          |
 
-| Each item of this array must be                           | Description                                                                                                   |
-| --------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [offer.schema.json](#hasPerformance_items_hasOffer_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
+| Each item of this array must be                       | Description                                                                                                                       |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| [Offre (Offer)](#hasPerformance_items_hasOffer_items) | Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité. |
 
-##### <a name="hasPerformance_items_hasOffer_items"></a>20.1.17.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > hasOffer > offer.schema.json
+##### <a name="hasPerformance_items_hasOffer_items"></a>20.1.17.1. Spectacle (Show) > hasPerformance > Représentation (Performance) > hasOffer > Offre (Offer)
 
-|                           |                     |
-| ------------------------- | ------------------- |
-| **Type**                  | `object`            |
-| **Required**              | No                  |
-| **Additional properties** | Any type allowed    |
-| **Defined in**            | ./offer.schema.json |
+**Title:** Offre (Offer)
 
-**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
+|                           |                                                                      |
+| ------------------------- | -------------------------------------------------------------------- |
+| **Type**                  | `object`                                                             |
+| **Required**              | No                                                                   |
+| **Additional properties** | Any type allowed                                                     |
+| **Same definition as**    | [Offre (Offer)](#hasPerformance_items_inSeries_items_hasOffer_items) |
+
+**Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2025-08-18 at 15:47:40 -0400
+Generated using [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) on 2025-09-05 at 15:39:36 -0400

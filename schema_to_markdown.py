@@ -8,8 +8,8 @@ json_for_schema_config = GenerationConfiguration(
     template_md_options={'properties_table_columns': ['Property','Title/Description','Type','Definition']}
 )
 
-CLASSES = ['show', 'performance', 'contributor', 'offer', 'place', 'room', 'series', 'work']
-UTILITIES = ['contribution', 'geographic_relations', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page']
+CLASSES = ['show', 'performance', 'contributor', 'place', 'room', 'series', 'work']
+UTILITIES = ['contribution', 'geographic_relations', 'offer', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page']
 
 def on_pre_build(config):
     for klass in CLASSES:
