@@ -3,7 +3,7 @@ from json_schema_for_humans.generation_configuration import GenerationConfigurat
 
 
 json_for_schema_config = GenerationConfiguration(
-    template_name='md',
+    template_name='simplified_fr_md',
     show_toc=False,
     template_md_options={'properties_table_columns': ['Property','Title/Description','Type','Definition']}
 )

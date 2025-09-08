@@ -9,7 +9,7 @@ Documentation interne (pour les contributeurs du référentiel) à venir ici.
 * MkDocs
 * Material for MkDocs
 * [Mkdocs-Macros](https://mkdocs-macros-plugin.readthedocs.io/en/latest/)
-* json-schema-for-humans
+* un fork propriétaire de [json-schema-for-humans](https://github.com/a10s-ca/json-schema-for-humans)
 
 `pip install -r requirements.txt` devrait tout installer
 
