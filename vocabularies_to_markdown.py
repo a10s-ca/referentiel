@@ -5,7 +5,7 @@ VOCABULARIES = ['accessibiliteUniversellesTermes', 'associationGeographiqueType'
 def on_pre_build(config):
     try:
         for vocab in VOCABULARIES:
-            subprocess.run(["ruby", "./schema/vocabularies/skosForHumans.rb", "./schema/vocabularies/" + vocab + ".skos.jsonld", "./docs/references/vocabulaires/" + vocab + ".md"], check=True)
+            subprocess.run(["ruby", "./schema/vocabularies/skosForHumans.rb", "./schema/vocabularies/" + vocab + ".skos.jsonld", "./docs/references/vocabularies/" + vocab + ".md"], check=True)
         print("Ruby script executed successfully!")
     except subprocess.CalledProcessError as e:
         print(f"Error executing Ruby script: {e}")
