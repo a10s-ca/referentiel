@@ -16,7 +16,7 @@
     "contributionType": {
       "type":"array",
       "items": {
-         "$ref": "term.schema.json"
+         "$ref": "./term.schema.json"
       },
       "description": "Identification des types de contribution."
     },
