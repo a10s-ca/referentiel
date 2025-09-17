@@ -13,6 +13,10 @@ Documentation interne (pour les contributeurs du référentiel) à venir ici.
 
 `pip install -r requirements.txt` devrait tout installer
 
+### Au sujet des schéma JSON
+
+Le [fork propriétaire de json-schema-for-humans](https://github.com/a10s-ca/json-schema-for-humans) devait servir à personnaliser l'apparence et adapter les liens à notre inclusion des fichiers générés dans notre instance mkdocs, à partir d'un nouveau template. Toutefois, il n'y a aucun mécanisme de I18n dans la librairie, donc il fut nécessaire de personnaliser le texte dans les templates, mais également dans le code. Il ne sera donc pas possible de bénéficier des améliorations à la librairie.
+
 ### Ruby
 
 Ruby est utilisé pour générer les fichiers de présentation des vocabulaires contrôlés.
