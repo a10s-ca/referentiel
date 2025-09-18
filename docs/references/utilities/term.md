@@ -180,4 +180,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 20:33:49 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400

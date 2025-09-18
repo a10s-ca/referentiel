@@ -14,7 +14,7 @@ UTILITIES = ['contribution', 'geographic_relations', 'identifier', 'media', 'pos
 DATATYPES = ['canada_postal_code', 'country_code', 'currency', 'geo_coordinates', 'text_long_multilingual', 'text_long', 'text_short_multilingual', 'text_short']
 PARTIALS = ['authorized_html', 'language', 'no_html']
 
-def on_pre_build(config):
+def on_startup(command, dirty):
     for klass in CLASSES:
         source_filename = "schema/" + klass + ".schema.json"
         target_filename = "docs/references/" + klass + ".md"
