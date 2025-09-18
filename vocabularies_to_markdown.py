@@ -2,7 +2,7 @@ import subprocess
 
 VOCABULARIES = ['accessibiliteUniversellesTermes', 'associationGeographiqueType', 'avertissement', 'configurationSalleTermes', 'contenusType', 'contributionType', 'disciplines-asq', 'publicCible']
 
-def on_pre_build(config):
+def on_startup(command, dirty):
     try:
         for vocab in VOCABULARIES:
             subprocess.run(["ruby", "./schema/vocabularies/skosForHumans.rb", "./schema/vocabularies/" + vocab + ".skos.jsonld", "./docs/references/vocabularies/" + vocab + ".md"], check=True)

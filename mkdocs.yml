@@ -8,6 +8,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.path
     - navigation.indexes
+    - content.code.copy
   custom_dir: overrides
   logo: assets/Datascene_White.svg
   favicon: assets/Datascene_White_carre.svg
@@ -26,22 +27,20 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-copyright: Copyright &copy; 2024 Datascence – Référentiel des métadonnées descriptives du spectacle – <a href="#__consent">Gérer les cookies</a>
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+copyright: Copyright &copy; 2025 Datascence – Référentiel des métadonnées descriptives du spectacle – <a href="#__consent">Gérer les cookies</a>
 plugins:
     - search
     - macros
 nav:
   - À propos:
     - Bienvenue: 'index.md'
-    - Contact: 'contact.md'
-    - Contribuer: 'contribuer.md'
-    - Crédits: 'credits.md'
     - Droits d'utilisation: 'droits.md'
-  - Avant de commencer:
-    - Objectifs: 'avant_de_commencer/objectifs.md'
-    - Composantes: 'avant_de_commencer/composantes.md'
-    - Lignes directrices: 'avant_de_commencer/lignes_directrices.md'
-    - Glossaire: 'references/glossaire.md'
   - Modèle de données:
     - 'modele/index.md'
     - Classes principales:
@@ -61,19 +60,17 @@ nav:
       - Terme (term): 'references/utilities/term.md'
       - Média (term): 'references/utilities/media.md'
       - Adresse (postal_address): 'references/utilities/postal_address.md'
-    - Propriétés des classes: 'modele/proprietes_des_classes.md'
-    - Vocabulaires contrôlés:
-      - modele/vocabulaires_controles/index.md
-      - Accessibilité universelle: 'references/vocabularies/accessibiliteUniversellesTermes'
-      - Avertissements: 'references/vocabularies/avertissements.md'
-      - Disciplines artistiques: 'references/vocabularies/disciplines-asq.md'
-      - Public cible: 'references/vocabularies/publicCible.md'
-      - Types d'associations géographiques: 'references/vocabularies/associationGeographiqueType.md'
-      - Types de configurations de salles: 'references/vocabularies/configurationSalleTermes.md'
-      - Types de contenus: 'references/vocabularies/contenusType.md'
-      - Types de contributions: 'references/vocabularies/contributionType.md'
-    - Types de propriétés: 'references/types.md'
-    - Exemples: 'references/exemples.md'
+  - Vocabulaires contrôlés:
+    - modele/vocabulaires_controles/index.md
+    - Accessibilité universelle: 'references/vocabularies/accessibiliteUniversellesTermes'
+    - Avertissements: 'references/vocabularies/avertissement.md'
+    - Disciplines artistiques: 'references/vocabularies/disciplines-asq.md'
+    - Public cible: 'references/vocabularies/publicCible.md'
+    - Types d'associations géographiques: 'references/vocabularies/associationGeographiqueType.md'
+    - Types de configurations de salles: 'references/vocabularies/configurationSalleTermes.md'
+    - Types de contenus: 'references/vocabularies/contenusType.md'
+    - Types de contributions: 'references/vocabularies/contributionType.md'
+  - Exemple: 'references/exemples.md'
 extra:
   analytics:
     provider: google
