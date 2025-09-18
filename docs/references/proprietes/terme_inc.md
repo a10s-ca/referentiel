@@ -1,5 +1,0 @@
-| {{ utils.tableSubItem(object or 'Terme', 'Vocabulaire', iucd) }} | Identification du vocabulaire duquel est tiré le terme.<br><br>Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | Obligatoire | 1 | Texte court |
-    | {{ utils.tableSubItem(object or 'Terme', 'Version', iucd) }} | Version du vocabulaire utilisé, lorsque c'est applicable. | Optionnel | 1 | Texte court |
-    | {{ utils.tableSubItem(object or 'Terme', 'Code', iucd) }} | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé. | Obligatoire | 1 | Texte court |
-    | {{ utils.tableSubItem(object or 'Terme', 'Étiquette', iucd) }} | Version textuelle du terme tiré du vocabulaire choisi. | Optionnel | 1 | Texte court multilingue |
-    | {{ utils.tableSubItem(object or 'Terme', 'Numéro de séquence', iucd) }} | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé). | Obligatoire | 1 | Nombre |
