@@ -1,6 +1,6 @@
 import subprocess
 
-VOCABULARIES = ['accessibiliteUniversellesTermes', 'associationGeographiqueType', 'avertissement', 'configurationSalleTermes', 'contenusType', 'contributionType', 'disciplines-asq', 'publicCible']
+VOCABULARIES = ['accessibiliteUniversellesTermes', 'associationGeographiqueType', 'avertissement', 'configurationSalleTermes', 'contenusType', 'contributionType', 'contributor_type', 'disciplines-asq', 'publicCible']
 
 def on_startup(command, dirty):
     try:

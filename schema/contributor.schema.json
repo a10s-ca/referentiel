@@ -19,7 +19,7 @@
       "$ref": "./vocabularies/contributor_type.schema.json"
     },
     "identifier": {
-      "$ref": "./utilities/identifier.schema.json"
+      "$ref": "./identifier.schema.json"
     },
     "name": {
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
@@ -42,14 +42,14 @@
     "media": {
       "type": "array",
       "items": {
-        "$ref": "./utilities/media.schema.json"
+        "$ref": "./media.schema.json"
       },
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
     },
     "typicalContributionType": {
       "type": "array",
        "items": {
-         "$ref": "./utilities/term.schema.json"
+         "$ref": "./term.schema.json"
       },
       "description": "Énumération des types de contributions habituellement faites par le contributeur."
     },
@@ -57,7 +57,7 @@
       "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/geographic_relation.schema.json"
+        "$ref": "./geographic_relation.schema.json"
       }
     },
     "hasMembers": {
