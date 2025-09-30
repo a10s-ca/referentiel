@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/utilities/room_specification.schema.json",
+  "$id": "https://datascene.ca/modele/room_specification.schema.json",
   "title": "Configuration de salle",
   "description": "Précisions sur un configuration possible de la salle.",
   "required": [
@@ -13,7 +13,7 @@
       "const": "RoomConfiguration"
     },
     "layout": {
-      "$ref": "term.schema.json"
+      "$ref": "./term.schema.json"
     },
     "capacity": {
       "description": "Capacité, en nombre de spectacteurs.",

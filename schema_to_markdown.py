@@ -21,8 +21,8 @@ def on_startup(command, dirty):
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
     for klass in UTILITIES:
-        source_filename = "schema/utilities/" + klass + ".schema.json"
-        target_filename = "docs/references/utilities/" + klass + ".md"
+        source_filename = "schema/" + klass + ".schema.json"
+        target_filename = "docs/references/" + klass + ".md"
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
     for klass in DATATYPES:

@@ -16,7 +16,7 @@
       "const": "Series"
     },
     "identifier": {
-      "$ref": "./utilities/identifier.schema.json"
+      "$ref": "./identifier.schema.json"
     },
     "name": {
       "description": "Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
@@ -39,21 +39,21 @@
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/media.schema.json"
+        "$ref": "./media.schema.json"
       }
     },
     "hasContribution": {
       "description": "Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.\n\nExemple: un commanditaire d'un festival a une contribution à la série.\n\nContre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/contribution.schema.json"
+        "$ref": "./contribution.schema.json"
       }
     },
     "mainEntityOfPage": {
       "description": "Pages web donnant plus d'information sur la série.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/web_page.schema.json"
+        "$ref": "./web_page.schema.json"
       }
     },
     "startDateTime": {

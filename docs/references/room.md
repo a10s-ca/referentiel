@@ -13,14 +13,14 @@
 | Propriété                                  | Description                                                                                                                                                      | Type de donnée  | Définition                                                                  |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
 | + [type](#type )                           | -                                                                                                                                                                | const           | -                                                                           |
-| + [identifier](#identifier )               | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | array           | [identifier](../utilities/identifier )                           |
+| + [identifier](#identifier )               | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | array           | [identifier](../identifier )                                     |
 | - [name](#name )                           | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | + [nameSameAsPlace](#nameSameAsPlace )     | -                                                                                                                                                                | boolean         | -                                                                           |
 | - [description](#description )             | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
 | - [shortDescription](#shortDescription )   | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
 | - [media](#media )                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | array           | [Voir les détails](#media )                                                 |
 | - [inPlace](#inPlace )                     | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | object          | [Lieu (Place)](../place )                                        |
-| - [address](#address )                     | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | object          | [Postal Address](../utilities/postal_address )                   |
+| - [address](#address )                     | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | object          | [Postal Address](../postal_address )                             |
 | - [roomAccessibility](#roomAccessibility ) | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | array           | [Voir les détails](#roomAccessibility )                                     |
 | - [roomConfiguration](#roomConfiguration ) | Précisions sur les configurations possibles de la salle.                                                                                                         | array           | [Voir les détails](#roomConfiguration )                                     |
 
@@ -48,11 +48,11 @@ Valeur fixe: `"Room"`
 
 **Nom:** identifier
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `array`                                          |
-| **Requis**      | Oui                                              |
-| **Défini dans** | [identifier](../utilities/identifier) |
+|                 |                                        |
+| --------------- | -------------------------------------- |
+| **Type**        | `array`                                |
+| **Requis**      | Oui                                    |
+| **Défini dans** | [identifier](../identifier) |
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
@@ -372,26 +372,26 @@ Valeur fixe: `"PropertyValue"`
 
 **Nom:** Média
 
-|                               |                                        |
-| ----------------------------- | -------------------------------------- |
-| **Type**                      | `object`                               |
-| **Requis**                    | Non                                    |
-| **Propriétés additionnelles** | Tout type permis                       |
-| **Défini dans**               | [Média](../utilities/media) |
+|                               |                              |
+| ----------------------------- | ---------------------------- |
+| **Type**                      | `object`                     |
+| **Requis**                    | Non                          |
+| **Propriétés additionnelles** | Tout type permis             |
+| **Défini dans**               | [Média](../media) |
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                   |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                            |
-| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                            |
-| - [usageNote](#media_items_usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | string          | [Texte court](../datatypes/text_short )                          |
-| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                            |
-| - [inLanguage](#media_items_inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | string          | [Code de langue](../datatypes/partials/language )                |
-| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#media_items_license )                                    |
-| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#media_items_creditText )                                 |
-| - [copyrightHolder](#media_items_copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#media_items_description )                                |
+| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée | Définition                                            |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- |
+| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const          | -                                                     |
+| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer        | -                                                     |
+| - [usageNote](#media_items_usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | object         | [](../datatypes/text_short )              |
+| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string         | -                                                     |
+| - [inLanguage](#media_items_inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | object         | [](../datatypes/partials/language )       |
+| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array          | [Voir les détails](#media_items_license )             |
+| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array          | [Voir les détails](#media_items_creditText )          |
+| - [copyrightHolder](#media_items_copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | object         | [](../datatypes/text_short_multilingual ) |
+| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array          | [Voir les détails](#media_items_description )         |
 
 #### <a name="media_items_type"></a>8.1.1. Propriété `Salle (Room) > media > Média > type`
 
@@ -413,21 +413,14 @@ Valeur fixe: `"Media"`
 
 #### <a name="media_items_usageNote"></a>8.1.3. Propriété `Salle (Room) > media > Média > usageNote`
 
-**Nom:** Texte court
-
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Non                                              |
-| **Défini dans** | [usageNote](../datatypes/text_short) |
+|                               |                                                  |
+| ----------------------------- | ------------------------------------------------ |
+| **Type**                      | `object`                                         |
+| **Requis**                    | Non                                              |
+| **Propriétés additionnelles** | Tout type permis                                 |
+| **Défini dans**               | [usageNote](../datatypes/text_short) |
 
 **Description:** Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).
-
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
 
 #### <a name="media_items_url"></a>8.1.4. Propriété `Salle (Room) > media > Média > url`
 
@@ -441,13 +434,12 @@ Valeur fixe: `"Media"`
 
 #### <a name="media_items_inLanguage"></a>8.1.5. Propriété `Salle (Room) > media > Média > inLanguage`
 
-**Nom:** Code de langue
-
-|                         |                          |
-| ----------------------- | ------------------------ |
-| **Type**                | `string`                 |
-| **Requis**              | Non                      |
-| **Même définition que** | [lang](#name_items_lang) |
+|                               |                                                          |
+| ----------------------------- | -------------------------------------------------------- |
+| **Type**                      | `object`                                                 |
+| **Requis**                    | Non                                                      |
+| **Propriétés additionnelles** | Tout type permis                                         |
+| **Défini dans**               | [inLanguage](../datatypes/partials/language) |
 
 **Description:** Langue au format ISO 639-1.
 
@@ -468,21 +460,20 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                      | Description                                                                                 |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Texte court multilingue](#media_items_license_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+| Chaque item du tableau doit être                                  | Description                                                                                                   |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_short_multilingual](#media_items_license_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_license_items"></a>8.1.6.1. Salle (Room) > media > Média > license > Texte court multilingue
+##### <a name="media_items_license_items"></a>8.1.6.1. Salle (Room) > media > Média > license > text_short_multilingual
 
-**Nom:** Texte court multilingue
+|                               |                                                                               |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                      |
+| **Requis**                    | Non                                                                           |
+| **Propriétés additionnelles** | Tout type permis                                                              |
+| **Défini dans**               | [media_items_license_items](../datatypes/text_short_multilingual) |
 
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 #### <a name="media_items_creditText"></a>8.1.7. Propriété `Salle (Room) > media > Média > creditText`
 
@@ -501,31 +492,29 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                         | Description                                                                                 |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Texte court multilingue](#media_items_creditText_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+| Chaque item du tableau doit être                                     | Description                                                                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_short_multilingual](#media_items_creditText_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_creditText_items"></a>8.1.7.1. Salle (Room) > media > Média > creditText > Texte court multilingue
+##### <a name="media_items_creditText_items"></a>8.1.7.1. Salle (Room) > media > Média > creditText > text_short_multilingual
 
-**Nom:** Texte court multilingue
+|                               |                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                         |
+| **Requis**                    | Non                                                                              |
+| **Propriétés additionnelles** | Tout type permis                                                                 |
+| **Défini dans**               | [media_items_creditText_items](../datatypes/text_short_multilingual) |
 
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 #### <a name="media_items_copyrightHolder"></a>8.1.8. Propriété `Salle (Room) > media > Média > copyrightHolder`
 
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
+|                               |                                                                     |
+| ----------------------------- | ------------------------------------------------------------------- |
+| **Type**                      | `object`                                                            |
+| **Requis**                    | Non                                                                 |
+| **Propriétés additionnelles** | Tout type permis                                                    |
+| **Défini dans**               | [copyrightHolder](../datatypes/text_short_multilingual) |
 
 **Description:** Personne ou organisation détenant les droits d'auteur du média.
 
@@ -546,21 +535,20 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                         | Description                                                                     |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [Texte long multilingue](#media_items_description_items) | Énumération de textes longs associés à un code de langue au standard ISO 639-1. |
+| Chaque item du tableau doit être                                     | Description                                                                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_long_multilingual](#media_items_description_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_description_items"></a>8.1.9.1. Salle (Room) > media > Média > description > Texte long multilingue
+##### <a name="media_items_description_items"></a>8.1.9.1. Salle (Room) > media > Média > description > text_long_multilingual
 
-**Nom:** Texte long multilingue
+|                               |                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                         |
+| **Requis**                    | Non                                                                              |
+| **Propriétés additionnelles** | Tout type permis                                                                 |
+| **Défini dans**               | [media_items_description_items](../datatypes/text_long_multilingual) |
 
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
-
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 ## <a name="inPlace"></a>9. Propriété `Salle (Room) > inPlace`
 
@@ -578,13 +566,13 @@ Valeur fixe: `"Media"`
 | Propriété                                            | Description                                                                                                                                                                                                                                        | Type de donnée  | Définition                                                                        |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------------- |
 | + [type](#inPlace_type )                             | -                                                                                                                                                                                                                                                  | const           | -                                                                                 |
-| - [additionalType](#inPlace_additionalType )         | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | object          | [Term](../utilities/term )                                             |
-| + [identifier](#inPlace_identifier )                 | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | array           | [identifier](../utilities/identifier )                                 |
+| - [additionalType](#inPlace_additionalType )         | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | object          | [Term](../term )                                                       |
+| + [identifier](#inPlace_identifier )                 | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | array           | [identifier](../identifier )                                           |
 | + [name](#inPlace_name )                             | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)                                                                                                                                                        | array of object | [Texte court multilingue](../datatypes/text_short_multilingual )       |
 | - [description](#inPlace_description )               | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                    | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )         |
 | + [virtualPlace](#inPlace_virtualPlace )             | -                                                                                                                                                                                                                                                  | boolean         | -                                                                                 |
 | - [inRoom](#inPlace_inRoom )                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | array           | [Voir les détails](#inPlace_inRoom )                                              |
-| - [address](#inPlace_address )                       | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | object          | [Postal Address](../utilities/postal_address )                         |
+| - [address](#inPlace_address )                       | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | object          | [Postal Address](../postal_address )                                   |
 | - [mainEntityOfPage](#inPlace_mainEntityOfPage )     | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | array           | [Voir les détails](#inPlace_mainEntityOfPage )                                    |
 | - [placeAccessibility](#inPlace_placeAccessibility ) | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | array           | [Voir les détails](#inPlace_placeAccessibility )                                  |
 | - [geoCoordinates](#inPlace_geoCoordinates )         | Coordonnées géographiques                                                                                                                                                                                                                          | object          | [Coordonnées géographiques d'un point.](../datatypes/geo_coordinates ) |
@@ -614,12 +602,12 @@ Valeur fixe: `"Place"`
 
 **Nom:** Term
 
-|                               |                                                |
-| ----------------------------- | ---------------------------------------------- |
-| **Type**                      | `object`                                       |
-| **Requis**                    | Non                                            |
-| **Propriétés additionnelles** | Tout type permis                               |
-| **Défini dans**               | [additionalType](../utilities/term) |
+|                               |                                      |
+| ----------------------------- | ------------------------------------ |
+| **Type**                      | `object`                             |
+| **Requis**                    | Non                                  |
+| **Propriétés additionnelles** | Tout type permis                     |
+| **Défini dans**               | [additionalType](../term) |
 
 **Description:** Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.
 
@@ -635,14 +623,14 @@ Valeur fixe: `"Place"`
 }
 ```
 
-| Propriété                                                   | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                   |
-| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#inPlace_additionalType_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                            |
-| + [vocabulary](#inPlace_additionalType_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | string          | [Texte court](../datatypes/text_short )                          |
-| - [version](#inPlace_additionalType_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | string          | [Texte court](../datatypes/text_short )                          |
-| + [code](#inPlace_additionalType_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | string          | [Texte court](../datatypes/text_short )                          |
-| - [label](#inPlace_additionalType_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| + [sequenceNumber](#inPlace_additionalType_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                            |
+| Propriété                                                   | Description                                                                                                                                                                                                                                                                      | Type de donnée | Définition                                            |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- |
+| + [type](#inPlace_additionalType_type )                     | -                                                                                                                                                                                                                                                                                | const          | -                                                     |
+| + [vocabulary](#inPlace_additionalType_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | object         | [](../datatypes/text_short )              |
+| - [version](#inPlace_additionalType_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | object         | [](../datatypes/text_short )              |
+| + [code](#inPlace_additionalType_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | object         | [](../datatypes/text_short )              |
+| - [label](#inPlace_additionalType_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | object         | [](../datatypes/text_short_multilingual ) |
+| + [sequenceNumber](#inPlace_additionalType_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer        | -                                                     |
 
 #### <a name="inPlace_additionalType_type"></a>9.3.1. Propriété `Salle (Room) > inPlace > additionalType > type`
 
@@ -655,57 +643,47 @@ Valeur fixe: `"Term"`
 
 #### <a name="inPlace_additionalType_vocabulary"></a>9.3.2. Propriété `Salle (Room) > inPlace > additionalType > vocabulary`
 
-**Nom:** Texte court
-
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Oui                                              |
-| **Défini dans** | [usageNote](../datatypes/text_short) |
+|                               |                                                   |
+| ----------------------------- | ------------------------------------------------- |
+| **Type**                      | `object`                                          |
+| **Requis**                    | Oui                                               |
+| **Propriétés additionnelles** | Tout type permis                                  |
+| **Défini dans**               | [vocabulary](../datatypes/text_short) |
 
 **Description:** Identification du vocabulaire duquel est tiré le term.
 
 Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.
 
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
-
 #### <a name="inPlace_additionalType_version"></a>9.3.3. Propriété `Salle (Room) > inPlace > additionalType > version`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Non                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                                |
+| ----------------------------- | ---------------------------------------------- |
+| **Type**                      | `object`                                       |
+| **Requis**                    | Non                                            |
+| **Propriétés additionnelles** | Tout type permis                               |
+| **Défini dans**               | [version](../datatypes/text_short) |
 
 **Description:** Version du vocabulaire utilisé, lorsque c'est applicable
 
 #### <a name="inPlace_additionalType_code"></a>9.3.4. Propriété `Salle (Room) > inPlace > additionalType > code`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Oui                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                             |
+| ----------------------------- | ------------------------------------------- |
+| **Type**                      | `object`                                    |
+| **Requis**                    | Oui                                         |
+| **Propriétés additionnelles** | Tout type permis                            |
+| **Défini dans**               | [code](../datatypes/text_short) |
 
 **Description:** Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.
 
 #### <a name="inPlace_additionalType_label"></a>9.3.5. Propriété `Salle (Room) > inPlace > additionalType > label`
 
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
+|                               |                                                           |
+| ----------------------------- | --------------------------------------------------------- |
+| **Type**                      | `object`                                                  |
+| **Requis**                    | Non                                                       |
+| **Propriétés additionnelles** | Tout type permis                                          |
+| **Défini dans**               | [label](../datatypes/text_short_multilingual) |
 
 **Description:** Version textuelle du terme tiré du vocabulaire choisi
 
@@ -875,23 +853,23 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 **Nom:** Postal Address
 
-|                               |                                                   |
-| ----------------------------- | ------------------------------------------------- |
-| **Type**                      | `object`                                          |
-| **Requis**                    | Non                                               |
-| **Propriétés additionnelles** | Tout type permis                                  |
-| **Défini dans**               | [address](../utilities/postal_address) |
+|                               |                                         |
+| ----------------------------- | --------------------------------------- |
+| **Type**                      | `object`                                |
+| **Requis**                    | Non                                     |
+| **Propriétés additionnelles** | Tout type permis                        |
+| **Défini dans**               | [address](../postal_address) |
 
 **Description:** Coordonnées complètes du lieu.
 
-| Propriété                                              | Description                                                                                                                                   | Type de donnée | Définition                                                           |
-| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------- |
-| + [type](#inPlace_address_type )                       | -                                                                                                                                             | const          | -                                                                    |
-| + [streetAddress](#inPlace_address_streetAddress )     | Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.                                | string         | [Texte court](../datatypes/text_short )                  |
-| + [addressLocality](#inPlace_address_addressLocality ) | Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.                                                             | string         | [Texte court](../datatypes/text_short )                  |
-| + [addressRegion](#inPlace_address_addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | string         | -                                                                    |
-| + [addressCountry](#inPlace_address_addressCountry )   | Code de pays à 3 caractères selon le standard ISO 3166-1                                                                                      | string         | [Code Pays](../datatypes/country_code )                  |
-| + [postalCode](#inPlace_address_postalCode )           | Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union | string         | [Code Postal Canadien](../datatypes/canada_postal_code ) |
+| Propriété                                              | Description                                                                                                                                   | Type de donnée | Définition                                       |
+| ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------ |
+| + [type](#inPlace_address_type )                       | -                                                                                                                                             | const          | -                                                |
+| + [streetAddress](#inPlace_address_streetAddress )     | Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.                                | object         | [](../datatypes/text_short )         |
+| + [addressLocality](#inPlace_address_addressLocality ) | Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.                                                             | object         | [](../datatypes/text_short )         |
+| + [addressRegion](#inPlace_address_addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | string         | -                                                |
+| + [addressCountry](#inPlace_address_addressCountry )   | Code de pays à 3 caractères selon le standard ISO 3166-1                                                                                      | object         | [](../datatypes/country_code )       |
+| + [postalCode](#inPlace_address_postalCode )           | Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union | object         | [](../datatypes/canada_postal_code ) |
 
 #### <a name="autogenerated_heading_6"></a>9.9.1. If (addressCountry = "CAN")
 
@@ -963,25 +941,23 @@ Valeur fixe: `"PostalAddress"`
 
 #### <a name="inPlace_address_streetAddress"></a>9.9.4. Propriété `Salle (Room) > inPlace > address > streetAddress`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Oui                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                                      |
+| ----------------------------- | ---------------------------------------------------- |
+| **Type**                      | `object`                                             |
+| **Requis**                    | Oui                                                  |
+| **Propriétés additionnelles** | Tout type permis                                     |
+| **Défini dans**               | [streetAddress](../datatypes/text_short) |
 
 **Description:** Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.
 
 #### <a name="inPlace_address_addressLocality"></a>9.9.5. Propriété `Salle (Room) > inPlace > address > addressLocality`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Oui                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                                        |
+| ----------------------------- | ------------------------------------------------------ |
+| **Type**                      | `object`                                               |
+| **Requis**                    | Oui                                                    |
+| **Propriétés additionnelles** | Tout type permis                                       |
+| **Défini dans**               | [addressLocality](../datatypes/text_short) |
 
 **Description:** Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.
 
@@ -996,37 +972,25 @@ Valeur fixe: `"PostalAddress"`
 
 #### <a name="inPlace_address_addressCountry"></a>9.9.7. Propriété `Salle (Room) > inPlace > address > addressCountry`
 
-**Nom:** Code Pays
-
-|                 |                                                         |
-| --------------- | ------------------------------------------------------- |
-| **Type**        | `string`                                                |
-| **Requis**      | Oui                                                     |
-| **Défini dans** | [addressCountry](../datatypes/country_code) |
+|                               |                                                         |
+| ----------------------------- | ------------------------------------------------------- |
+| **Type**                      | `object`                                                |
+| **Requis**                    | Oui                                                     |
+| **Propriétés additionnelles** | Tout type permis                                        |
+| **Défini dans**               | [addressCountry](../datatypes/country_code) |
 
 **Description:** Code de pays à 3 caractères selon le standard ISO 3166-1
 
-| Restrictions                                   |                                                                             |
-| ---------------------------------------------- | --------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 3                                                                           |
-| **Longueur maximale**                          | 3                                                                           |
-| **Doit correspondre à l'expression régulière** | ```^[A-Z]{3}$``` [Test](https://regex101.com/?regex=%5E%5BA-Z%5D%7B3%7D%24) |
-
 #### <a name="inPlace_address_postalCode"></a>9.9.8. Propriété `Salle (Room) > inPlace > address > postalCode`
 
-**Nom:** Code Postal Canadien
-
-|                 |                                                           |
-| --------------- | --------------------------------------------------------- |
-| **Type**        | `string`                                                  |
-| **Requis**      | Oui                                                       |
-| **Défini dans** | [postalCode](../datatypes/canada_postal_code) |
+|                               |                                                           |
+| ----------------------------- | --------------------------------------------------------- |
+| **Type**                      | `object`                                                  |
+| **Requis**                    | Oui                                                       |
+| **Propriétés additionnelles** | Tout type permis                                          |
+| **Défini dans**               | [postalCode](../datatypes/canada_postal_code) |
 
 **Description:** Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union
-
-| Restrictions                                   |                                                                                                                                     |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| **Doit correspondre à l'expression régulière** | ```^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$``` [Test](https://regex101.com/?regex=%5E%5BA-Za-z%5D%5Cd%5BA-Za-z%5D+%5Cd%5BA-Za-z%5D%5Cd%24) |
 
 ### <a name="inPlace_mainEntityOfPage"></a>9.10. Propriété `Salle (Room) > inPlace > mainEntityOfPage`
 
@@ -1053,18 +1017,18 @@ Valeur fixe: `"PostalAddress"`
 
 **Nom:** WebPage
 
-|                               |                                             |
-| ----------------------------- | ------------------------------------------- |
-| **Type**                      | `object`                                    |
-| **Requis**                    | Non                                         |
-| **Propriétés additionnelles** | Tout type permis                            |
-| **Défini dans**               | [WebPage](../utilities/web_page) |
+|                               |                                   |
+| ----------------------------- | --------------------------------- |
+| **Type**                      | `object`                          |
+| **Requis**                    | Non                               |
+| **Propriétés additionnelles** | Tout type permis                  |
+| **Défini dans**               | [WebPage](../web_page) |
 
-| Propriété                                                   | Description                                 | Type de donnée | Définition                                                    |
-| ----------------------------------------------------------- | ------------------------------------------- | -------------- | ------------------------------------------------------------- |
-| + [type](#inPlace_mainEntityOfPage_items_type )             | -                                           | const          | -                                                             |
-| + [url](#inPlace_mainEntityOfPage_items_url )               | -                                           | string         | -                                                             |
-| - [inLanguage](#inPlace_mainEntityOfPage_items_inLanguage ) | Langue de la page Web, au format ISO 639-1. | string         | [Code de langue](../datatypes/partials/language ) |
+| Propriété                                                   | Description                                 | Type de donnée | Définition                                      |
+| ----------------------------------------------------------- | ------------------------------------------- | -------------- | ----------------------------------------------- |
+| + [type](#inPlace_mainEntityOfPage_items_type )             | -                                           | const          | -                                               |
+| + [url](#inPlace_mainEntityOfPage_items_url )               | -                                           | string         | -                                               |
+| - [inLanguage](#inPlace_mainEntityOfPage_items_inLanguage ) | Langue de la page Web, au format ISO 639-1. | object         | [](../datatypes/partials/language ) |
 
 ##### <a name="inPlace_mainEntityOfPage_items_type"></a>9.10.1.1. Propriété `Salle (Room) > inPlace > mainEntityOfPage > WebPage > type`
 
@@ -1085,13 +1049,12 @@ Valeur fixe: `"WebPage"`
 
 ##### <a name="inPlace_mainEntityOfPage_items_inLanguage"></a>9.10.1.3. Propriété `Salle (Room) > inPlace > mainEntityOfPage > WebPage > inLanguage`
 
-**Nom:** Code de langue
-
-|                         |                          |
-| ----------------------- | ------------------------ |
-| **Type**                | `string`                 |
-| **Requis**              | Non                      |
-| **Même définition que** | [lang](#name_items_lang) |
+|                               |                                                          |
+| ----------------------------- | -------------------------------------------------------- |
+| **Type**                      | `object`                                                 |
+| **Requis**                    | Non                                                      |
+| **Propriétés additionnelles** | Tout type permis                                         |
+| **Défini dans**               | [inLanguage](../datatypes/partials/language) |
 
 **Description:** Langue de la page Web, au format ISO 639-1.
 
@@ -1233,20 +1196,20 @@ Valeur fixe: `"WebPage"`
 
 **Nom:** Configuration de salle
 
-|                               |                                                                      |
-| ----------------------------- | -------------------------------------------------------------------- |
-| **Type**                      | `object`                                                             |
-| **Requis**                    | Non                                                                  |
-| **Propriétés additionnelles** | Tout type permis                                                     |
-| **Défini dans**               | [Configuration de salle](../utilities/room_specification) |
+|                               |                                                            |
+| ----------------------------- | ---------------------------------------------------------- |
+| **Type**                      | `object`                                                   |
+| **Requis**                    | Non                                                        |
+| **Propriétés additionnelles** | Tout type permis                                           |
+| **Défini dans**               | [Configuration de salle](../room_specification) |
 
 **Description:** Précisions sur un configuration possible de la salle.
 
-| Propriété                                        | Description                                                                             | Type de donnée | Définition                |
-| ------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------- | ------------------------- |
-| + [type](#roomConfiguration_items_type )         | -                                                                                       | const          | -                         |
-| + [layout](#roomConfiguration_items_layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](term ) |
-| - [capacity](#roomConfiguration_items_capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                         |
+| Propriété                                        | Description                                                                             | Type de donnée | Définition                  |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------- | -------------- | --------------------------- |
+| + [type](#roomConfiguration_items_type )         | -                                                                                       | const          | -                           |
+| + [layout](#roomConfiguration_items_layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](../term ) |
+| - [capacity](#roomConfiguration_items_capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                           |
 
 #### <a name="roomConfiguration_items_type"></a>12.1.1. Propriété `Salle (Room) > roomConfiguration > Configuration de salle > type`
 
@@ -1280,4 +1243,4 @@ Valeur fixe: `"RoomConfiguration"`
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:44:06 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 17:17:56 -0400

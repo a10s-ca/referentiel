@@ -39,7 +39,7 @@
       "const": "Show"
     },
     "identifier": {
-      "$ref": "./utilities/identifier.schema.json"
+      "$ref": "./identifier.schema.json"
     },
     "name": {
       "description": "Nom du spectacle",
@@ -65,21 +65,21 @@
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/media.schema.json"
+        "$ref": "./media.schema.json"
       }
     },
     "hasContribution": {
       "description": "Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).\n\nLe contributeur peut être une personne ou une organisation.\n\nIl s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.\n\nSi un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/contribution.schema.json"
+        "$ref": "./contribution.schema.json"
       }
     },
     "mainEntityOfPage": {
       "description": "Vers des pages web donnant plus d'information sur le spectacle.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/web_page.schema.json"
+        "$ref": "./web_page.schema.json"
       }
     },
     "hasRelatedWork": {
@@ -93,14 +93,14 @@
       "description": "Identification des disciplines artistiques du spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/term.schema.json"
+        "$ref": "./term.schema.json"
       }
     },
     "audience": {
       "description": "Identification des publics cibles du spectacle.\n\nLorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/term.schema.json"
+        "$ref": "./term.schema.json"
       }
     },
     "inLanguage": {
@@ -125,14 +125,14 @@
       "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/term.schema.json"
+        "$ref": "./term.schema.json"
       }
     },
     "contentWarning": {
       "description": "Permet d'identifier des avertissements associés au spectacle.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/term.schema.json"
+        "$ref": "./term.schema.json"
       }
     },
     "hasPerformance": {

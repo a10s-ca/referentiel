@@ -14,7 +14,7 @@
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
 | + [@context](#@context )                               | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | const           | -                                                                           |
 | + [type](#type )                                       | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | const           | -                                                                           |
-| + [identifier](#identifier )                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | array           | [identifier](../utilities/identifier )                           |
+| + [identifier](#identifier )                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | array           | [identifier](../identifier )                                     |
 | + [name](#name )                                       | Nom du spectacle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | - [alternateName](#alternateName )                     | Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | + [description](#description )                         | Description du spectacle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
@@ -65,11 +65,11 @@ Valeur fixe: `"Show"`
 
 **Nom:** identifier
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `array`                                          |
-| **Requis**      | Oui                                              |
-| **Défini dans** | [identifier](../utilities/identifier) |
+|                 |                                        |
+| --------------- | -------------------------------------- |
+| **Type**        | `array`                                |
+| **Requis**      | Oui                                    |
+| **Défini dans** | [identifier](../identifier) |
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
@@ -492,26 +492,26 @@ Valeur fixe: `"PropertyValue"`
 
 **Nom:** Média
 
-|                               |                                        |
-| ----------------------------- | -------------------------------------- |
-| **Type**                      | `object`                               |
-| **Requis**                    | Non                                    |
-| **Propriétés additionnelles** | Tout type permis                       |
-| **Défini dans**               | [Média](../utilities/media) |
+|                               |                              |
+| ----------------------------- | ---------------------------- |
+| **Type**                      | `object`                     |
+| **Requis**                    | Non                          |
+| **Propriétés additionnelles** | Tout type permis             |
+| **Défini dans**               | [Média](../media) |
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                   |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                            |
-| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                            |
-| - [usageNote](#media_items_usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | string          | [Texte court](../datatypes/text_short )                          |
-| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                            |
-| - [inLanguage](#media_items_inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | string          | [Code de langue](../datatypes/partials/language )                |
-| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#media_items_license )                                    |
-| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#media_items_creditText )                                 |
-| - [copyrightHolder](#media_items_copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#media_items_description )                                |
+| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée | Définition                                            |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- |
+| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const          | -                                                     |
+| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer        | -                                                     |
+| - [usageNote](#media_items_usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | object         | [](../datatypes/text_short )              |
+| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string         | -                                                     |
+| - [inLanguage](#media_items_inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | object         | [](../datatypes/partials/language )       |
+| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array          | [Voir les détails](#media_items_license )             |
+| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array          | [Voir les détails](#media_items_creditText )          |
+| - [copyrightHolder](#media_items_copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | object         | [](../datatypes/text_short_multilingual ) |
+| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array          | [Voir les détails](#media_items_description )         |
 
 #### <a name="media_items_type"></a>9.1.1. Propriété `Spectacle (Show) > media > Média > type`
 
@@ -533,21 +533,14 @@ Valeur fixe: `"Media"`
 
 #### <a name="media_items_usageNote"></a>9.1.3. Propriété `Spectacle (Show) > media > Média > usageNote`
 
-**Nom:** Texte court
-
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Non                                              |
-| **Défini dans** | [usageNote](../datatypes/text_short) |
+|                               |                                                  |
+| ----------------------------- | ------------------------------------------------ |
+| **Type**                      | `object`                                         |
+| **Requis**                    | Non                                              |
+| **Propriétés additionnelles** | Tout type permis                                 |
+| **Défini dans**               | [usageNote](../datatypes/text_short) |
 
 **Description:** Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).
-
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
 
 #### <a name="media_items_url"></a>9.1.4. Propriété `Spectacle (Show) > media > Média > url`
 
@@ -561,13 +554,12 @@ Valeur fixe: `"Media"`
 
 #### <a name="media_items_inLanguage"></a>9.1.5. Propriété `Spectacle (Show) > media > Média > inLanguage`
 
-**Nom:** Code de langue
-
-|                         |                          |
-| ----------------------- | ------------------------ |
-| **Type**                | `string`                 |
-| **Requis**              | Non                      |
-| **Même définition que** | [lang](#name_items_lang) |
+|                               |                                                          |
+| ----------------------------- | -------------------------------------------------------- |
+| **Type**                      | `object`                                                 |
+| **Requis**                    | Non                                                      |
+| **Propriétés additionnelles** | Tout type permis                                         |
+| **Défini dans**               | [inLanguage](../datatypes/partials/language) |
 
 **Description:** Langue au format ISO 639-1.
 
@@ -588,21 +580,20 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                      | Description                                                                                 |
-| ----------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Texte court multilingue](#media_items_license_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+| Chaque item du tableau doit être                                  | Description                                                                                                   |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_short_multilingual](#media_items_license_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_license_items"></a>9.1.6.1. Spectacle (Show) > media > Média > license > Texte court multilingue
+##### <a name="media_items_license_items"></a>9.1.6.1. Spectacle (Show) > media > Média > license > text_short_multilingual
 
-**Nom:** Texte court multilingue
+|                               |                                                                               |
+| ----------------------------- | ----------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                      |
+| **Requis**                    | Non                                                                           |
+| **Propriétés additionnelles** | Tout type permis                                                              |
+| **Défini dans**               | [media_items_license_items](../datatypes/text_short_multilingual) |
 
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 #### <a name="media_items_creditText"></a>9.1.7. Propriété `Spectacle (Show) > media > Média > creditText`
 
@@ -621,31 +612,29 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                         | Description                                                                                 |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Texte court multilingue](#media_items_creditText_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
+| Chaque item du tableau doit être                                     | Description                                                                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_short_multilingual](#media_items_creditText_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_creditText_items"></a>9.1.7.1. Spectacle (Show) > media > Média > creditText > Texte court multilingue
+##### <a name="media_items_creditText_items"></a>9.1.7.1. Spectacle (Show) > media > Média > creditText > text_short_multilingual
 
-**Nom:** Texte court multilingue
+|                               |                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                         |
+| **Requis**                    | Non                                                                              |
+| **Propriétés additionnelles** | Tout type permis                                                                 |
+| **Défini dans**               | [media_items_creditText_items](../datatypes/text_short_multilingual) |
 
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 #### <a name="media_items_copyrightHolder"></a>9.1.8. Propriété `Spectacle (Show) > media > Média > copyrightHolder`
 
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
+|                               |                                                                     |
+| ----------------------------- | ------------------------------------------------------------------- |
+| **Type**                      | `object`                                                            |
+| **Requis**                    | Non                                                                 |
+| **Propriétés additionnelles** | Tout type permis                                                    |
+| **Défini dans**               | [copyrightHolder](../datatypes/text_short_multilingual) |
 
 **Description:** Personne ou organisation détenant les droits d'auteur du média.
 
@@ -666,21 +655,20 @@ Valeur fixe: `"Media"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                         | Description                                                                     |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [Texte long multilingue](#media_items_description_items) | Énumération de textes longs associés à un code de langue au standard ISO 639-1. |
+| Chaque item du tableau doit être                                     | Description                                                                                                   |
+| -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [text_long_multilingual](#media_items_description_items) | 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️ |
 
-##### <a name="media_items_description_items"></a>9.1.9.1. Spectacle (Show) > media > Média > description > Texte long multilingue
+##### <a name="media_items_description_items"></a>9.1.9.1. Spectacle (Show) > media > Média > description > text_long_multilingual
 
-**Nom:** Texte long multilingue
+|                               |                                                                                  |
+| ----------------------------- | -------------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                         |
+| **Requis**                    | Non                                                                              |
+| **Propriétés additionnelles** | Tout type permis                                                                 |
+| **Défini dans**               | [media_items_description_items](../datatypes/text_long_multilingual) |
 
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
-
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
+**Description:** 😅 ERROR in schema generation, a referenced schema could not be loaded, no documentation here unfortunately 🏜️
 
 ## <a name="hasContribution"></a>10. Propriété `Spectacle (Show) > hasContribution`
 
@@ -713,12 +701,12 @@ Si un même contributeur a plusieurs contributions pour un même spectacle, il e
 
 **Nom:** Contribution
 
-|                               |                                                      |
-| ----------------------------- | ---------------------------------------------------- |
-| **Type**                      | `object`                                             |
-| **Requis**                    | Non                                                  |
-| **Propriétés additionnelles** | Tout type permis                                     |
-| **Défini dans**               | [Contribution](../utilities/contribution) |
+|                               |                                            |
+| ----------------------------- | ------------------------------------------ |
+| **Type**                      | `object`                                   |
+| **Requis**                    | Non                                        |
+| **Propriétés additionnelles** | Tout type permis                           |
+| **Défini dans**               | [Contribution](../contribution) |
 
 **Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
@@ -726,9 +714,9 @@ Si un même contributeur a plusieurs contributions pour un même spectacle, il e
 | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------ |
 | + [type](#hasContribution_items_type )                         | -                                                                                                                                                                                                                                                                                                                                                                    | const          | -                                                            |
 | + [contributionType](#hasContribution_items_contributionType ) | Identification des types de contribution.                                                                                                                                                                                                                                                                                                                            | array          | [Voir les détails](#hasContribution_items_contributionType ) |
-| + [contributeur](#hasContribution_items_contributeur )         | Identification du contributeur                                                                                                                                                                                                                                                                                                                                       | object         | [Contributor](../contributor )                   |
+| + [contributeur](#hasContribution_items_contributeur )         | Identification du contributeur                                                                                                                                                                                                                                                                                                                                       | object         | [](../contributor )                              |
 | - [sequenceNumber](#hasContribution_items_sequenceNumber )     | Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).                                                                                                                                                                                                          | integer        | -                                                            |
-| - [usageNote](#hasContribution_items_usageNote )               | Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés. | string         | [Texte court](../datatypes/text_short )          |
+| - [usageNote](#hasContribution_items_usageNote )               | Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés. | object         | [](../datatypes/text_short )                     |
 
 #### <a name="hasContribution_items_type"></a>10.1.1. Propriété `Spectacle (Show) > hasContribution > Contribution > type`
 
@@ -785,14 +773,14 @@ Valeur fixe: `"Contribution"`
 }
 ```
 
-| Propriété                                                                         | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                   |
-| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#hasContribution_items_contributionType_items_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                            |
-| + [vocabulary](#hasContribution_items_contributionType_items_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | string          | [Texte court](../datatypes/text_short )                          |
-| - [version](#hasContribution_items_contributionType_items_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | string          | [Texte court](../datatypes/text_short )                          |
-| + [code](#hasContribution_items_contributionType_items_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | string          | [Texte court](../datatypes/text_short )                          |
-| - [label](#hasContribution_items_contributionType_items_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| + [sequenceNumber](#hasContribution_items_contributionType_items_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                            |
+| Propriété                                                                         | Description                                                                                                                                                                                                                                                                      | Type de donnée | Définition                                            |
+| --------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------- |
+| + [type](#hasContribution_items_contributionType_items_type )                     | -                                                                                                                                                                                                                                                                                | const          | -                                                     |
+| + [vocabulary](#hasContribution_items_contributionType_items_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | object         | [](../datatypes/text_short )              |
+| - [version](#hasContribution_items_contributionType_items_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | object         | [](../datatypes/text_short )              |
+| + [code](#hasContribution_items_contributionType_items_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | object         | [](../datatypes/text_short )              |
+| - [label](#hasContribution_items_contributionType_items_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | object         | [](../datatypes/text_short_multilingual ) |
+| + [sequenceNumber](#hasContribution_items_contributionType_items_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer        | -                                                     |
 
 ###### <a name="hasContribution_items_contributionType_items_type"></a>10.1.2.1.1. Propriété `Spectacle (Show) > hasContribution > Contribution > contributionType > Term > type`
 
@@ -805,57 +793,47 @@ Valeur fixe: `"Term"`
 
 ###### <a name="hasContribution_items_contributionType_items_vocabulary"></a>10.1.2.1.2. Propriété `Spectacle (Show) > hasContribution > Contribution > contributionType > Term > vocabulary`
 
-**Nom:** Texte court
-
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Oui                                              |
-| **Défini dans** | [usageNote](../datatypes/text_short) |
+|                               |                                                   |
+| ----------------------------- | ------------------------------------------------- |
+| **Type**                      | `object`                                          |
+| **Requis**                    | Oui                                               |
+| **Propriétés additionnelles** | Tout type permis                                  |
+| **Défini dans**               | [vocabulary](../datatypes/text_short) |
 
 **Description:** Identification du vocabulaire duquel est tiré le term.
 
 Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.
 
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
-
 ###### <a name="hasContribution_items_contributionType_items_version"></a>10.1.2.1.3. Propriété `Spectacle (Show) > hasContribution > Contribution > contributionType > Term > version`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Non                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                                |
+| ----------------------------- | ---------------------------------------------- |
+| **Type**                      | `object`                                       |
+| **Requis**                    | Non                                            |
+| **Propriétés additionnelles** | Tout type permis                               |
+| **Défini dans**               | [version](../datatypes/text_short) |
 
 **Description:** Version du vocabulaire utilisé, lorsque c'est applicable
 
 ###### <a name="hasContribution_items_contributionType_items_code"></a>10.1.2.1.4. Propriété `Spectacle (Show) > hasContribution > Contribution > contributionType > Term > code`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Oui                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                             |
+| ----------------------------- | ------------------------------------------- |
+| **Type**                      | `object`                                    |
+| **Requis**                    | Oui                                         |
+| **Propriétés additionnelles** | Tout type permis                            |
+| **Défini dans**               | [code](../datatypes/text_short) |
 
 **Description:** Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.
 
 ###### <a name="hasContribution_items_contributionType_items_label"></a>10.1.2.1.5. Propriété `Spectacle (Show) > hasContribution > Contribution > contributionType > Term > label`
 
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
+|                               |                                                           |
+| ----------------------------- | --------------------------------------------------------- |
+| **Type**                      | `object`                                                  |
+| **Requis**                    | Non                                                       |
+| **Propriétés additionnelles** | Tout type permis                                          |
+| **Défini dans**               | [label](../datatypes/text_short_multilingual) |
 
 **Description:** Version textuelle du terme tiré du vocabulaire choisi
 
@@ -870,8 +848,6 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 #### <a name="hasContribution_items_contributeur"></a>10.1.3. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur`
 
-**Nom:** Contributor
-
 |                               |                                            |
 | ----------------------------- | ------------------------------------------ |
 | **Type**                      | `object`                                   |
@@ -880,340 +856,6 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | **Défini dans**               | [contributeur](../contributor) |
 
 **Description:** Identification du contributeur
-
-| Propriété                                                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 | Type de donnée   | Définition                                                                       |
-| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------------------------------------------------------------- |
-| + [type](#hasContribution_items_contributeur_type )                                       | -                                                                                                                                                                                                                                                                                                                                                                                                                                           | const            | -                                                                                |
-| + [contributorType](#hasContribution_items_contributeur_contributorType )                 | Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.                                                                                                                                                                                                                                                                                                                                                         | enum (of string) | [Type de contributeur](../vocabularies/contributor_type )             |
-| + [identifier](#hasContribution_items_contributeur_identifier )                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                           | array            | [identifier](../utilities/identifier )                                |
-| + [name](#hasContribution_items_contributeur_name )                                       | Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.<br /><br />Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra. | array of object  | [Texte court multilingue](../datatypes/text_short_multilingual )      |
-| - [alternateName](#hasContribution_items_contributeur_alternateName )                     | Autres appellations parfois utilisées pour le contributeur.<br /><br />Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».<br />Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».                                                                                                                                                                                                                       | array            | [Voir les détails](#hasContribution_items_contributeur_alternateName )           |
-| - [description](#hasContribution_items_contributeur_description )                         | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                                                                                                                                                                                                             | array of object  | [Texte long multilingue](../datatypes/text_long_multilingual )        |
-| - [shortDescription](#hasContribution_items_contributeur_shortDescription )               | Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.                                                                                                                                                                                                                                                                                                            | array of object  | [Texte long multilingue](../datatypes/text_long_multilingual )        |
-| - [media](#hasContribution_items_contributeur_media )                                     | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.                                                                                                                                                                                                                                                                                                                                            | array            | [Voir les détails](#hasContribution_items_contributeur_media )                   |
-| - [typicalContributionType](#hasContribution_items_contributeur_typicalContributionType ) | Énumération des types de contributions habituellement faites par le contributeur.                                                                                                                                                                                                                                                                                                                                                           | array            | [Voir les détails](#hasContribution_items_contributeur_typicalContributionType ) |
-| - [hasGeographicRelation](#hasContribution_items_contributeur_hasGeographicRelation )     | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.                                                                                                                                                                                                                                                                                                        | array            | [Voir les détails](#hasContribution_items_contributeur_hasGeographicRelation )   |
-| - [hasMembers](#hasContribution_items_contributeur_hasMembers )                           | Énumération des membres des groupes, troupes et collectifs, etc.                                                                                                                                                                                                                                                                                                                                                                            | array            | [Voir les détails](#hasContribution_items_contributeur_hasMembers )              |
-
-##### <a name="hasContribution_items_contributeur_type"></a>10.1.3.1. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > type`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `const` |
-| **Requis** | Oui     |
-
-Valeur fixe: `"Contributor"`
-
-##### <a name="hasContribution_items_contributeur_contributorType"></a>10.1.3.2. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > contributorType`
-
-**Nom:** Type de contributeur
-
-|                 |                                                                |
-| --------------- | -------------------------------------------------------------- |
-| **Type**        | `enum (of string)`                                             |
-| **Requis**      | Oui                                                            |
-| **Défini dans** | [contributorType](../vocabularies/contributor_type) |
-
-**Description:** Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.
-
-Doit être un de:
-* "Person"
-* "Group"
-* "Organization"
-
-##### <a name="hasContribution_items_contributeur_identifier"></a>10.1.3.3. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > identifier`
-
-**Nom:** identifier
-
-|                         |                           |
-| ----------------------- | ------------------------- |
-| **Type**                | `array`                   |
-| **Requis**              | Oui                       |
-| **Même définition que** | [identifier](#identifier) |
-
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
-
-##### <a name="hasContribution_items_contributeur_name"></a>10.1.3.4. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > name`
-
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Oui               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.
-
-Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
-
-##### <a name="hasContribution_items_contributeur_alternateName"></a>10.1.3.5. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > alternateName`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `array` |
-| **Requis** | Non     |
-
-**Description:** Autres appellations parfois utilisées pour le contributeur.
-
-Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».
-Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
-
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Faux                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être                                                   | Description                                                                                 |
-| ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| [Texte court multilingue](#hasContribution_items_contributeur_alternateName_items) | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.) |
-
-###### <a name="hasContribution_items_contributeur_alternateName_items"></a>10.1.3.5.1. Spectacle (Show) > hasContribution > Contribution > contributeur > alternateName > Texte court multilingue
-
-**Nom:** Texte court multilingue
-
-|                         |                   |
-| ----------------------- | ----------------- |
-| **Type**                | `array of object` |
-| **Requis**              | Non               |
-| **Même définition que** | [name](#name)     |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
-
-##### <a name="hasContribution_items_contributeur_description"></a>10.1.3.6. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > description`
-
-**Nom:** Texte long multilingue
-
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
-
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
-
-##### <a name="hasContribution_items_contributeur_shortDescription"></a>10.1.3.7. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > shortDescription`
-
-**Nom:** Texte long multilingue
-
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
-
-**Description:** Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.
-
-##### <a name="hasContribution_items_contributeur_media"></a>10.1.3.8. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > media`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `array` |
-| **Requis** | Non     |
-
-**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.
-
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Faux                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être                         | Description                                                                                          |
-| -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Média](#hasContribution_items_contributeur_media_items) | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
-
-###### <a name="hasContribution_items_contributeur_media_items"></a>10.1.3.8.1. Spectacle (Show) > hasContribution > Contribution > contributeur > media > Média
-
-**Nom:** Média
-
-|                               |                       |
-| ----------------------------- | --------------------- |
-| **Type**                      | `object`              |
-| **Requis**                    | Non                   |
-| **Propriétés additionnelles** | Tout type permis      |
-| **Même définition que**       | [Média](#media_items) |
-
-**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
-
-##### <a name="hasContribution_items_contributeur_typicalContributionType"></a>10.1.3.9. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > typicalContributionType`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `array` |
-| **Requis** | Non     |
-
-**Description:** Énumération des types de contributions habituellement faites par le contributeur.
-
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Faux                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être                                          | Description                                                                             |
-| ------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#hasContribution_items_contributeur_typicalContributionType_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
-
-###### <a name="hasContribution_items_contributeur_typicalContributionType_items"></a>10.1.3.9.1. Spectacle (Show) > hasContribution > Contribution > contributeur > typicalContributionType > Term
-
-**Nom:** Term
-
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
-
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
-
-##### <a name="hasContribution_items_contributeur_hasGeographicRelation"></a>10.1.3.10. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `array` |
-| **Requis** | Non     |
-
-**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
-
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Faux                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être                                                                                 | Description                                                                                                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [Association Géographique (GeographicRelation)](#hasContribution_items_contributeur_hasGeographicRelation_items) | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc. |
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items"></a>10.1.3.10.1. Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation)
-
-**Nom:** Association Géographique (GeographicRelation)
-
-|                               |                                                                                              |
-| ----------------------------- | -------------------------------------------------------------------------------------------- |
-| **Type**                      | `object`                                                                                     |
-| **Requis**                    | Non                                                                                          |
-| **Propriétés additionnelles** | Pas permis                                                                                   |
-| **Défini dans**               | [Association Géographique (GeographicRelation)](../utilities/geographic_relation) |
-
-**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
-
-| Propriété                                                                                             | Description                                                                                             | Type de donnée | Définition                                          |
-| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------- |
-| + [type](#hasContribution_items_contributeur_hasGeographicRelation_items_type )                       | -                                                                                                       | const          | -                                                   |
-| - [relationType](#hasContribution_items_contributeur_hasGeographicRelation_items_relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | object         | [Term](term )                           |
-| - [addressCountry](#hasContribution_items_contributeur_hasGeographicRelation_items_addressCountry )   | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | string         | [Code Pays](../datatypes/country_code ) |
-| - [addressRegion](#hasContribution_items_contributeur_hasGeographicRelation_items_addressRegion )     | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
-| - [addressLocality](#hasContribution_items_contributeur_hasGeographicRelation_items_addressLocality ) | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items_type"></a>10.1.3.10.1.1. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > type`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `const` |
-| **Requis** | Oui     |
-
-Valeur fixe: `"GeographicRelation"`
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items_relationType"></a>10.1.3.10.1.2. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > relationType`
-
-**Nom:** Term
-
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
-
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressCountry"></a>10.1.3.10.1.3. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressCountry`
-
-**Nom:** Code Pays
-
-|                 |                                                         |
-| --------------- | ------------------------------------------------------- |
-| **Type**        | `string`                                                |
-| **Requis**      | Non                                                     |
-| **Défini dans** | [addressCountry](../datatypes/country_code) |
-
-**Description:** Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.
-
-| Restrictions                                   |                                                                             |
-| ---------------------------------------------- | --------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 3                                                                           |
-| **Longueur maximale**                          | 3                                                                           |
-| **Doit correspondre à l'expression régulière** | ```^[A-Z]{3}$``` [Test](https://regex101.com/?regex=%5E%5BA-Z%5D%7B3%7D%24) |
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressRegion"></a>10.1.3.10.1.4. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressRegion`
-
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Non                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
-
-**Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
-
-###### <a name="hasContribution_items_contributeur_hasGeographicRelation_items_addressLocality"></a>10.1.3.10.1.5. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasGeographicRelation > Association Géographique (GeographicRelation) > addressLocality`
-
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Non                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
-
-**Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
-
-##### <a name="hasContribution_items_contributeur_hasMembers"></a>10.1.3.11. Propriété `Spectacle (Show) > hasContribution > Contribution > contributeur > hasMembers`
-
-|            |         |
-| ---------- | ------- |
-| **Type**   | `array` |
-| **Requis** | Non     |
-
-**Description:** Énumération des membres des groupes, troupes et collectifs, etc.
-
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Faux                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Contributor](#hasContribution_items_contributeur_hasMembers_items) | les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre). |
-
-###### <a name="hasContribution_items_contributeur_hasMembers_items"></a>10.1.3.11.1. Spectacle (Show) > hasContribution > Contribution > contributeur > hasMembers > Contributor
-
-**Nom:** Contributor
-
-|                               |                                                     |
-| ----------------------------- | --------------------------------------------------- |
-| **Type**                      | `object`                                            |
-| **Requis**                    | Non                                                 |
-| **Propriétés additionnelles** | Tout type permis                                    |
-| **Même définition que**       | [contributeur](#hasContribution_items_contributeur) |
-
-**Description:** les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
 
 #### <a name="hasContribution_items_sequenceNumber"></a>10.1.4. Propriété `Spectacle (Show) > hasContribution > Contribution > sequenceNumber`
 
@@ -1226,13 +868,12 @@ Valeur fixe: `"GeographicRelation"`
 
 #### <a name="hasContribution_items_usageNote"></a>10.1.5. Propriété `Spectacle (Show) > hasContribution > Contribution > usageNote`
 
-**Nom:** Texte court
-
-|                         |                                     |
-| ----------------------- | ----------------------------------- |
-| **Type**                | `string`                            |
-| **Requis**              | Non                                 |
-| **Même définition que** | [usageNote](#media_items_usageNote) |
+|                               |                                                  |
+| ----------------------------- | ------------------------------------------------ |
+| **Type**                      | `object`                                         |
+| **Requis**                    | Non                                              |
+| **Propriétés additionnelles** | Tout type permis                                 |
+| **Défini dans**               | [usageNote](../datatypes/text_short) |
 
 **Description:** Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.
 
@@ -1263,18 +904,18 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 
 **Nom:** WebPage
 
-|                               |                                             |
-| ----------------------------- | ------------------------------------------- |
-| **Type**                      | `object`                                    |
-| **Requis**                    | Non                                         |
-| **Propriétés additionnelles** | Tout type permis                            |
-| **Défini dans**               | [WebPage](../utilities/web_page) |
+|                               |                                   |
+| ----------------------------- | --------------------------------- |
+| **Type**                      | `object`                          |
+| **Requis**                    | Non                               |
+| **Propriétés additionnelles** | Tout type permis                  |
+| **Défini dans**               | [WebPage](../web_page) |
 
-| Propriété                                           | Description                                 | Type de donnée | Définition                                                    |
-| --------------------------------------------------- | ------------------------------------------- | -------------- | ------------------------------------------------------------- |
-| + [type](#mainEntityOfPage_items_type )             | -                                           | const          | -                                                             |
-| + [url](#mainEntityOfPage_items_url )               | -                                           | string         | -                                                             |
-| - [inLanguage](#mainEntityOfPage_items_inLanguage ) | Langue de la page Web, au format ISO 639-1. | string         | [Code de langue](../datatypes/partials/language ) |
+| Propriété                                           | Description                                 | Type de donnée | Définition                                      |
+| --------------------------------------------------- | ------------------------------------------- | -------------- | ----------------------------------------------- |
+| + [type](#mainEntityOfPage_items_type )             | -                                           | const          | -                                               |
+| + [url](#mainEntityOfPage_items_url )               | -                                           | string         | -                                               |
+| - [inLanguage](#mainEntityOfPage_items_inLanguage ) | Langue de la page Web, au format ISO 639-1. | object         | [](../datatypes/partials/language ) |
 
 #### <a name="mainEntityOfPage_items_type"></a>11.1.1. Propriété `Spectacle (Show) > mainEntityOfPage > WebPage > type`
 
@@ -1295,13 +936,12 @@ Valeur fixe: `"WebPage"`
 
 #### <a name="mainEntityOfPage_items_inLanguage"></a>11.1.3. Propriété `Spectacle (Show) > mainEntityOfPage > WebPage > inLanguage`
 
-**Nom:** Code de langue
-
-|                         |                          |
-| ----------------------- | ------------------------ |
-| **Type**                | `string`                 |
-| **Requis**              | Non                      |
-| **Même définition que** | [lang](#name_items_lang) |
+|                               |                                                          |
+| ----------------------------- | -------------------------------------------------------- |
+| **Type**                      | `object`                                                 |
+| **Requis**                    | Non                                                      |
+| **Propriétés additionnelles** | Tout type permis                                         |
+| **Défini dans**               | [inLanguage](../datatypes/partials/language) |
 
 **Description:** Langue de la page Web, au format ISO 639-1.
 
@@ -1376,7 +1016,7 @@ Valeur fixe: `"WorkRelation"`
 | Propriété                                              | Description                                                                                                                       | Type de donnée  | Définition                                                                  |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
 | + [type](#hasRelatedWork_items_work_type )             | -                                                                                                                                 | const           | -                                                                           |
-| + [identifier](#hasRelatedWork_items_work_identifier ) | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois. | array           | [identifier](../utilities/identifier )                           |
+| + [identifier](#hasRelatedWork_items_work_identifier ) | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois. | array           | [identifier](../identifier )                                     |
 | + [name](#hasRelatedWork_items_work_name )             | Nom de l'oeuvre.                                                                                                                  | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 
 ##### <a name="hasRelatedWork_items_work_type"></a>12.1.2.1. Propriété `Spectacle (Show) > hasRelatedWork > Oeuvre Associée > work > type`
@@ -1674,7 +1314,7 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 | Propriété                                                                       | Description                                                                                                                                                                                                                                                                                             | Type de donnée  | Définition                                                                  |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
 | + [type](#hasPerformance_items_type )                                           | -                                                                                                                                                                                                                                                                                                       | const           | -                                                                           |
-| + [identifier](#hasPerformance_items_identifier )                               | Énumération des identifiants connus.                                                                                                                                                                                                                                                                    | array           | [identifier](../utilities/identifier )                           |
+| + [identifier](#hasPerformance_items_identifier )                               | Énumération des identifiants connus.                                                                                                                                                                                                                                                                    | array           | [identifier](../identifier )                                     |
 | + [startDateTime](#hasPerformance_items_startDateTime )                         | Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                     | string          | -                                                                           |
 | - [endDateTime](#hasPerformance_items_endDateTime )                             | Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                       | string          | -                                                                           |
 | - [duration](#hasPerformance_items_duration )                                   | Durée de la représentation en format ISO-8601                                                                                                                                                                                                                                                           | string          | -                                                                           |
@@ -1987,7 +1627,7 @@ Valeur fixe: `"Performance"`
 | Propriété                                                                    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Type de donnée  | Définition                                                                  |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | --------------------------------------------------------------------------- |
 | + [type](#hasPerformance_items_inSeries_items_type )                         | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | const           | -                                                                           |
-| + [identifier](#hasPerformance_items_inSeries_items_identifier )             | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                                                                                            | array           | [identifier](../utilities/identifier )                           |
+| + [identifier](#hasPerformance_items_inSeries_items_identifier )             | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                                                                                            | array           | [identifier](../identifier )                                     |
 | + [name](#hasPerformance_items_inSeries_items_name )                         | Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.                                                                                                                                                                                                                                                                                                                                             | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | - [alternateName](#hasPerformance_items_inSeries_items_alternateName )       | Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.<br /><br />Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aussi connu sous son acronyme FME.                                                                                                                                                                                                                                                                    | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | + [description](#hasPerformance_items_inSeries_items_description )           | Description de la série.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
@@ -2306,22 +1946,22 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 
 **Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
-| Propriété                                                                                                           | Description                                                                                                                                                                                                                                                                                             | Type de donnée | Définition                                    |
-| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------------- |
-| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_type )                                                 | -                                                                                                                                                                                                                                                                                                       | const          | -                                             |
-| + [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace )                                           | Lieu associé à l'offre (physique ou virtuel).                                                                                                                                                                                                                                                           | object         | [](../place )                     |
-| - [inRoom](#hasPerformance_items_inSeries_items_hasOffer_items_inRoom )                                             | Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.                                                                                                                                                                                                                     | object         | [](../room )                      |
-| - [roomConfiguration](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration )                       | Configuration de la salle dans le contexte de cette offre.                                                                                                                                                                                                                                              | object         | [](../room_specification )         |
-| + [isSoldout](#hasPerformance_items_inSeries_items_hasOffer_items_isSoldout )                                       | Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.                                                                                               | boolean        | -                                             |
-| - [soldoutSince](#hasPerformance_items_inSeries_items_hasOffer_items_soldoutSince )                                 | Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                           | string         | -                                             |
-| + [offerStatus](#hasPerformance_items_inSeries_items_hasOffer_items_offerStatus )                                   | Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.                                                                                                                                                                                             | object         | [](../vocabularies/event_status ) |
-| - [price](#hasPerformance_items_inSeries_items_hasOffer_items_price )                                               | Prix de départ en dollars canadiens.                                                                                                                                                                                                                                                                    | object         | [](../datatypes/currency )        |
-| + [isAccessibleForFree](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleForFree )                   | Indique que la présente offre est gratuite.                                                                                                                                                                                                                                                             | boolean        | -                                             |
-| + [isAccessibleFromAnotherOffer](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleFromAnotherOffer ) | Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.                                                                                                                                                                                            | boolean        | -                                             |
-| - [preSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_preSaleStart )                                 | Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                       | string         | -                                             |
-| - [generalSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_generalSaleStart )                         | Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times | string         | -                                             |
-| + [ticketLinkNotAvailable](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLinkNotAvailable )             | Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.                                                                                                                                                                                         | boolean        | -                                             |
-| - [ticketLink](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLink )                                     | URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.                                                                                                                                                                                      | string         | -                                             |
+| Propriété                                                                                                           | Description                                                                                                                                                                                                                                                                                             | Type de donnée | Définition                                                  |
+| ------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ----------------------------------------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_type )                                                 | -                                                                                                                                                                                                                                                                                                       | const          | -                                                           |
+| + [inPlace](#hasPerformance_items_inSeries_items_hasOffer_items_inPlace )                                           | Lieu associé à l'offre (physique ou virtuel).                                                                                                                                                                                                                                                           | object         | [](../place )                                   |
+| - [inRoom](#hasPerformance_items_inSeries_items_hasOffer_items_inRoom )                                             | Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.                                                                                                                                                                                                                     | object         | [](../room )                                    |
+| - [roomConfiguration](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration )                       | Configuration de la salle dans le contexte de cette offre.                                                                                                                                                                                                                                              | object         | [Configuration de salle](../room_specification ) |
+| + [isSoldout](#hasPerformance_items_inSeries_items_hasOffer_items_isSoldout )                                       | Permet d'indiquer si cette offre est complète (toutes les places disponibles sont comblées). Peut-être complété par la propriété Complet depuis pour préciser à quelle date l'offre est devenue complète.                                                                                               | boolean        | -                                                           |
+| - [soldoutSince](#hasPerformance_items_inSeries_items_hasOffer_items_soldoutSince )                                 | Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                           | string         | -                                                           |
+| + [offerStatus](#hasPerformance_items_inSeries_items_hasOffer_items_offerStatus )                                   | Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.                                                                                                                                                                                             | object         | [](../vocabularies/event_status )               |
+| - [price](#hasPerformance_items_inSeries_items_hasOffer_items_price )                                               | Prix de départ en dollars canadiens.                                                                                                                                                                                                                                                                    | object         | [](../datatypes/currency )                      |
+| + [isAccessibleForFree](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleForFree )                   | Indique que la présente offre est gratuite.                                                                                                                                                                                                                                                             | boolean        | -                                                           |
+| + [isAccessibleFromAnotherOffer](#hasPerformance_items_inSeries_items_hasOffer_items_isAccessibleFromAnotherOffer ) | Indique que la présente offre est accessible seulement lorsque le consommateur a souscrit à une autre offre.                                                                                                                                                                                            | boolean        | -                                                           |
+| - [preSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_preSaleStart )                                 | Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times                                                                       | string         | -                                                           |
+| - [generalSaleStart](#hasPerformance_items_inSeries_items_hasOffer_items_generalSaleStart )                         | Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times | string         | -                                                           |
+| + [ticketLinkNotAvailable](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLinkNotAvailable )             | Indication à l'effet qu'il n'existe pas de lien permettant d'obtenir, par le web, un accès à la représentation.                                                                                                                                                                                         | boolean        | -                                                           |
+| - [ticketLink](#hasPerformance_items_inSeries_items_hasOffer_items_ticketLink )                                     | URL d'une page permettant de souscire à l'offre, par exemple un lien vers la page de la plateforme de billetterie.                                                                                                                                                                                      | string         | -                                                           |
 
 ###### <a name="autogenerated_heading_4"></a>20.1.16.1.12.1.1. If (isAccessibleForFree = false)
 
@@ -2367,6 +2007,8 @@ Valeur fixe: `"Offer"`
 
 ###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration"></a>20.1.16.1.12.1.5. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > roomConfiguration`
 
+**Nom:** Configuration de salle
+
 |                               |                                                       |
 | ----------------------------- | ----------------------------------------------------- |
 | **Type**                      | `object`                                              |
@@ -2375,6 +2017,43 @@ Valeur fixe: `"Offer"`
 | **Défini dans**               | [roomConfiguration](../room_specification) |
 
 **Description:** Configuration de la salle dans le contexte de cette offre.
+
+| Propriété                                                                                     | Description                                                                             | Type de donnée | Définition                  |
+| --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | -------------- | --------------------------- |
+| + [type](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_type )         | -                                                                                       | const          | -                           |
+| + [layout](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](../term ) |
+| - [capacity](#hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                           |
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_type"></a>20.1.16.1.12.1.5.1. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > roomConfiguration > type`
+
+|            |         |
+| ---------- | ------- |
+| **Type**   | `const` |
+| **Requis** | Oui     |
+
+Valeur fixe: `"RoomConfiguration"`
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_layout"></a>20.1.16.1.12.1.5.2. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > roomConfiguration > layout`
+
+**Nom:** Term
+
+|                               |                                                       |
+| ----------------------------- | ----------------------------------------------------- |
+| **Type**                      | `object`                                              |
+| **Requis**                    | Oui                                                   |
+| **Propriétés additionnelles** | Tout type permis                                      |
+| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
+
+**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+
+###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_roomConfiguration_capacity"></a>20.1.16.1.12.1.5.3. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > roomConfiguration > capacity`
+
+|            |           |
+| ---------- | --------- |
+| **Type**   | `integer` |
+| **Requis** | Non       |
+
+**Description:** Capacité, en nombre de spectacteurs.
 
 ###### <a name="hasPerformance_items_inSeries_items_hasOffer_items_isSoldout"></a>20.1.16.1.12.1.6. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > inSeries > Série de représentations (Series) > hasOffer > Offre (Offer) > isSoldout`
 
@@ -2509,4 +2188,4 @@ Valeur fixe: `"Offer"`
 **Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:44:06 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 17:17:55 -0400

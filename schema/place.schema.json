@@ -29,10 +29,10 @@
     },
     "additionalType": {
       "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.",
-      "$ref": "./utilities/term.schema.json"
+      "$ref": "./term.schema.json"
     },
     "identifier": {
-      "$ref": "./utilities/identifier.schema.json"
+      "$ref": "./identifier.schema.json"
     },
     "name": {
       "$ref": "./datatypes/text_short_multilingual.schema.json"
@@ -53,20 +53,20 @@
     },
     "address": {
       "description": "Coordonnées complètes du lieu.",
-      "$ref": "./utilities/postal_address.schema.json"
+      "$ref": "./postal_address.schema.json"
     },
     "mainEntityOfPage": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/web_page.schema.json"
+        "$ref": "./web_page.schema.json"
       }
     },
     "placeAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {
-        "$ref": "./utilities/term.schema.json"
+        "$ref": "./term.schema.json"
       }
     },
     "geoCoordinates": {
