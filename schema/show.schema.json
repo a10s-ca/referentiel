@@ -42,7 +42,7 @@
       "$ref": "./utilities/identifier.schema.json"
     },
     "name": {
-      "description": "Nom du spectacle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
+      "description": "Nom du spectacle",
       "example": "Une Carmen pour tout le Québec",
       "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
