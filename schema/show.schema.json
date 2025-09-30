@@ -43,12 +43,14 @@
     },
     "name": {
       "description": "Nom du spectacle",
-      "example": "Une Carmen pour tout le Québec",
+      "examples": [
+        "Une Carmen pour tout le Québec"
+      ],
       "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
     "alternateName": {
       "description": "Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.",
-      "example": "Carmen au grand écran",
+      "examples": ["Carmen au grand écran"],
       "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
     "description": {

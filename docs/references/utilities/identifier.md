@@ -108,4 +108,4 @@ Valeur fixe: `"PropertyValue"`
 **Description:** Un identifiant URI sous forme de chaîne de caractères.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:28:22 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:44:06 -0400
