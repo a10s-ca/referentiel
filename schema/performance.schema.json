@@ -33,7 +33,7 @@
       "description": "Durée de la représentation en format ISO-8601",
       "pattern": "^P(?=\\d|T\\d)(\\d+Y)?(\\d+M)?(\\d+W)?(\\d+D)?(T(?=\\d)(\\d+H)?(\\d+M)?(\\d+(\\.\\d+)?S)?)?$",
       "minimum": 1,
-      "example": "PT1H30M"
+      "examples": ["PT1H30M"]
     },
     "previousStartDateTime": {
       "type": "string",

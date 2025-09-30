@@ -183,6 +183,18 @@ Valeur fixe: `"PropertyValue"`
 
 **Description:** Nom du spectacle
 
+**Exemple:**
+
+```json
+"Une Carmen pour tout le Québec"
+```
+
+**Exemple:**
+
+```json
+"Une Carmen pour tout le Québec"
+```
+
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
 | **Nombre d'items minimum** | N/A                    |
@@ -268,6 +280,18 @@ Valeur fixe: `"PropertyValue"`
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
 **Description:** Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.
+
+**Exemple:**
+
+```json
+"Carmen au grand écran"
+```
+
+**Exemple:**
+
+```json
+"Carmen au grand écran"
+```
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -1717,10 +1741,16 @@ Valeur fixe: `"Performance"`
 
 **Description:** Durée de la représentation en format ISO-8601
 
-| Restrictions                                   |                                                                                                                                                                                                                                                                                                                                  |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Doit correspondre à l'expression régulière** | ```^P(?=\d\|T\d)(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d)(\d+H)?(\d+M)?(\d+(\.\d+)?S)?)?$``` [Test](https://regex101.com/?regex=%5EP%28%3F%3D%5Cd%7CT%5Cd%29%28%5Cd%2BY%29%3F%28%5Cd%2BM%29%3F%28%5Cd%2BW%29%3F%28%5Cd%2BD%29%3F%28T%28%3F%3D%5Cd%29%28%5Cd%2BH%29%3F%28%5Cd%2BM%29%3F%28%5Cd%2B%28%5C.%5Cd%2B%29%3FS%29%3F%29%3F%24) |
-| **Minimum**                                    | &ge; 1                                                                                                                                                                                                                                                                                                                           |
+**Exemple:**
+
+```json
+"PT1H30M"
+```
+
+| Restrictions                                   |                                                                                                                                                                                                                                                                                                                                                           |
+| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Doit correspondre à l'expression régulière** | ```^P(?=\d\|T\d)(\d+Y)?(\d+M)?(\d+W)?(\d+D)?(T(?=\d)(\d+H)?(\d+M)?(\d+(\.\d+)?S)?)?$``` [Test](https://regex101.com/?regex=%5EP%28%3F%3D%5Cd%7CT%5Cd%29%28%5Cd%2BY%29%3F%28%5Cd%2BM%29%3F%28%5Cd%2BW%29%3F%28%5Cd%2BD%29%3F%28T%28%3F%3D%5Cd%29%28%5Cd%2BH%29%3F%28%5Cd%2BM%29%3F%28%5Cd%2B%28%5C.%5Cd%2B%29%3FS%29%3F%29%3F%24&testString=%22PT1H30M%22) |
+| **Minimum**                                    | &ge; 1                                                                                                                                                                                                                                                                                                                                                    |
 
 #### <a name="hasPerformance_items_previousStartDateTime"></a>20.1.6. Propriété `Spectacle (Show) > hasPerformance > Représentation (Performance) > previousStartDateTime`
 
@@ -2479,4 +2509,4 @@ Valeur fixe: `"Offer"`
 **Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:28:21 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-30 at 16:44:06 -0400
