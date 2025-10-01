@@ -19,11 +19,11 @@
     },
     "inPlace": {
       "description": "Lieu associé à l'offre (physique ou virtuel).",
-      "$ref": "../place.schema.json"
+      "$ref": "./place.schema.json"
     },
     "inRoom": {
       "description": "Salle associée à l'offre. La salle fait partie du lieu indiqué à la propriété Lieu.",
-      "$ref": "../room.schema.json"
+      "$ref": "./room.schema.json"
     },
     "roomConfiguration": {
       "description": "Configuration de la salle dans le contexte de cette offre.",
@@ -40,11 +40,11 @@
     },
     "offerStatus": {
       "description": "Statut de l'offre. La valeur doit être choisie parmi les valeurs du vocabulaire contrôlé Statut de l'offre.",
-      "$ref": "../vocabularies/event_status.schema.json"
+      "$ref": "./vocabularies/event_status.schema.json"
     },
     "price": {
       "description": "Prix de départ en dollars canadiens.",
-      "$ref": "../datatypes/currency.schema.json"
+      "$ref": "./datatypes/currency.schema.json"
     },
     "isAccessibleForFree": {
       "description": "Indique que la présente offre est gratuite.",

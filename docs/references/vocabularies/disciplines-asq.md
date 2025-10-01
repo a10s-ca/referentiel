@@ -560,4 +560,4 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-09-17._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-10-01._

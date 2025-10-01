@@ -10,9 +10,10 @@ json_for_schema_config = GenerationConfiguration(
 )
 
 CLASSES = ['show', 'performance', 'contributor', 'place', 'room', 'series', 'work', 'offer']
-UTILITIES = ['contribution', 'geographic_relations', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page']
+UTILITIES = ['contribution', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page', 'geographic_relation']
 DATATYPES = ['canada_postal_code', 'country_code', 'currency', 'geo_coordinates', 'text_long_multilingual', 'text_long', 'text_short_multilingual', 'text_short']
 PARTIALS = ['authorized_html', 'language', 'no_html']
+VOCABULARIES = ['event_status', 'contributor_type']
 
 def on_startup(command, dirty):
     for klass in CLASSES:
@@ -33,6 +34,11 @@ def on_startup(command, dirty):
     for klass in PARTIALS:
         source_filename = "schema/datatypes/partials/" + klass + ".schema.json"
         target_filename = "docs/references/datatypes/partials/" + klass + ".md"
+        generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
+        fix_links_in_file(target_filename)
+    for klass in VOCABULARIES:
+        source_filename = "schema/vocabularies/" + klass + ".schema.json"
+        target_filename = "docs/references/vocabularies/" + klass + ".md"
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
 
