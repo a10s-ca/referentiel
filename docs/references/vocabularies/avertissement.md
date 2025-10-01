@@ -113,4 +113,4 @@ Fournir des informations liées à la santé et sécurité du public.
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-09-17._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-10-01._

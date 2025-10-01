@@ -62,7 +62,7 @@ nav:
       - Adresse (postal_address): 'references/postal_address.md'
   - Vocabulaires contrôlés:
     - modele/vocabulaires_controles/index.md
-    - Accessibilité universelle: 'references/vocabularies/accessibiliteUniversellesTermes'
+    - Accessibilité universelle: 'references/vocabularies/accessibiliteUniversellesTermes.md'
     - Avertissements: 'references/vocabularies/avertissement.md'
     - Disciplines artistiques: 'references/vocabularies/disciplines-asq.md'
     - Public cible: 'references/vocabularies/publicCible.md'
@@ -83,4 +83,4 @@ extra:
       efforts de diffusion de Datascene.
 hooks:
   - schema_to_markdown.py
-  - vocabularies_to_markdown.py
+#  - vocabularies_to_markdown.py

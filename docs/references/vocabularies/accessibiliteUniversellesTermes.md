@@ -103,4 +103,4 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-09-17._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-10-01._

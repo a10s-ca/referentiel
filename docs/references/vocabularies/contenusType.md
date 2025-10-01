@@ -143,4 +143,4 @@ Liste des types de contenus sensibles pouvant nécessiter un avertissement pour 
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-09-17._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-10-01._

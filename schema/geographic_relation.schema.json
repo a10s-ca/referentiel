@@ -16,13 +16,13 @@
       "$ref": "term.schema.json"
     },
     "addressCountry": {
-      "$ref": "../datatypes/country_code.schema.json"
+      "$ref": "./datatypes/country_code.schema.json"
     },
     "addressRegion": {
-      "$ref": "../datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json"
     },
     "addressLocality": {
-      "$ref": "../datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json"
     }
   }
 }
