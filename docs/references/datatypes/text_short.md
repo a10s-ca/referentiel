@@ -6,7 +6,7 @@
 | --------------- | -------------------------------------- |
 | **Type**        | `string`                               |
 | **Requis**      | Non                                    |
-| **Défini dans** | [root](../partials/no_html) |
+| **Défini dans** | [root](../datatypes/partials/no_html) |
 
 **Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
 
@@ -17,4 +17,4 @@
 | **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400

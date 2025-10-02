@@ -14,7 +14,7 @@
       "const": "Work"
     },
     "identifier": {
-      "$ref": "./utilities/identifier.schema.json"
+      "$ref": "./identifier.schema.json"
     },
     "name": {
       "description": "Nom de l'oeuvre.",

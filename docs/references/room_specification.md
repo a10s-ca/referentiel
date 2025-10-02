@@ -10,11 +10,11 @@
 
 **Description:** Précisions sur un configuration possible de la salle.
 
-| Propriété                | Description                                                                             | Type de donnée | Définition                |
-| ------------------------ | --------------------------------------------------------------------------------------- | -------------- | ------------------------- |
-| + [type](#type )         | -                                                                                       | const          | -                         |
-| + [layout](#layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](term ) |
-| - [capacity](#capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                         |
+| Propriété                | Description                                                                             | Type de donnée | Définition                  |
+| ------------------------ | --------------------------------------------------------------------------------------- | -------------- | --------------------------- |
+| + [type](#type )         | -                                                                                       | const          | -                           |
+| + [layout](#layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](../term ) |
+| - [capacity](#capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                           |
 
 ## <a name="type"></a>1. Propriété `Configuration de salle > type`
 
@@ -29,12 +29,12 @@ Valeur fixe: `"RoomConfiguration"`
 
 **Nom:** Term
 
-|                               |                            |
-| ----------------------------- | -------------------------- |
-| **Type**                      | `object`                   |
-| **Requis**                    | Oui                        |
-| **Propriétés additionnelles** | Tout type permis           |
-| **Défini dans**               | [layout](term) |
+|                               |                              |
+| ----------------------------- | ---------------------------- |
+| **Type**                      | `object`                     |
+| **Requis**                    | Oui                          |
+| **Propriétés additionnelles** | Tout type permis             |
+| **Défini dans**               | [layout](../term) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -50,14 +50,14 @@ Valeur fixe: `"RoomConfiguration"`
 }
 ```
 
-| Propriété                                   | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                   |
-| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#layout_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                            |
+| Propriété                                   | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                  |
+| ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
+| + [type](#layout_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                           |
 | + [vocabulary](#layout_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | string          | [Texte court](../datatypes/text_short )                          |
 | - [version](#layout_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | string          | [Texte court](../datatypes/text_short )                          |
 | + [code](#layout_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | string          | [Texte court](../datatypes/text_short )                          |
 | - [label](#layout_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| + [sequenceNumber](#layout_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                            |
+| + [sequenceNumber](#layout_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                           |
 
 ### <a name="layout_type"></a>2.1. Propriété `Configuration de salle > layout > type`
 
@@ -72,10 +72,10 @@ Valeur fixe: `"Term"`
 
 **Nom:** Texte court
 
-|                 |                                                   |
-| --------------- | ------------------------------------------------- |
-| **Type**        | `string`                                          |
-| **Requis**      | Oui                                               |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Type**        | `string`                                         |
+| **Requis**      | Oui                                              |
 | **Défini dans** | [vocabulary](../datatypes/text_short) |
 
 **Description:** Identification du vocabulaire duquel est tiré le term.
@@ -116,10 +116,10 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 **Nom:** Texte court multilingue
 
-|                 |                                                           |
-| --------------- | --------------------------------------------------------- |
-| **Type**        | `array of object`                                         |
-| **Requis**      | Non                                                       |
+|                 |                                                          |
+| --------------- | -------------------------------------------------------- |
+| **Type**        | `array of object`                                        |
+| **Requis**      | Non                                                      |
 | **Défini dans** | [label](../datatypes/text_short_multilingual) |
 
 **Description:** Version textuelle du terme tiré du vocabulaire choisi
@@ -146,8 +146,8 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 | Propriété                             | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#layout_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#layout_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../partials/no_html )                |
+| + [lang](#layout_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#layout_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
 
 ##### <a name="layout_label_items_lang"></a>2.5.1.1. Propriété `Configuration de salle > layout > label > label items > lang`
 
@@ -157,7 +157,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../partials/language) |
+| **Défini dans** | [lang](../datatypes/partials/language) |
 
 **Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
@@ -188,7 +188,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | -------------------------------------------- |
 | **Type**        | `string`                                     |
 | **Requis**      | Oui                                          |
-| **Défini dans** | [vocabulary](../partials/no_html) |
+| **Défini dans** | [vocabulary](../datatypes/partials/no_html) |
 
 **Description:** HTML non-autorisées
 
@@ -217,4 +217,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400

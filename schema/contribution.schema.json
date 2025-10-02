@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/utilities/contribution.schema.json",
+  "$id": "https://datascene.ca/modele/contribution.schema.json",
   "title": "Contribution",
   "description": "Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.",
   "required": [
@@ -22,7 +22,7 @@
     },
     "contributeur": {
       "description": "Identification du contributeur",
-       "$ref": "../contributor.schema.json"
+       "$ref": "./contributor.schema.json"
     },
     "sequenceNumber": {
       "type": "integer",
@@ -30,8 +30,7 @@
     },
     "usageNote": {
       "description": "Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.",
-      "$ref": "../datatypes/text_short.schema.json"
-
+      "$ref": "./datatypes/text_short.schema.json"
     }
   }
 }

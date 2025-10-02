@@ -10,12 +10,12 @@
 
 **Description:** Permet d’indiquer l’adresse d’un lieu.
 
-| Propriété                              | Description                                                                                                                                   | Type de donnée | Définition                                                           |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------------------------- |
-| + [type](#type )                       | -                                                                                                                                             | const          | -                                                                    |
+| Propriété                              | Description                                                                                                                                   | Type de donnée | Définition                                                          |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------- |
+| + [type](#type )                       | -                                                                                                                                             | const          | -                                                                   |
 | + [streetAddress](#streetAddress )     | Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.                                | string         | [Texte court](../datatypes/text_short )                  |
 | + [addressLocality](#addressLocality ) | Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.                                                             | string         | [Texte court](../datatypes/text_short )                  |
-| + [addressRegion](#addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | string         | -                                                                    |
+| + [addressRegion](#addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | string         | -                                                                   |
 | + [addressCountry](#addressCountry )   | Code de pays à 3 caractères selon le standard ISO 3166-1                                                                                      | string         | [Code Pays](../datatypes/country_code )                  |
 | + [postalCode](#postalCode )           | Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union | string         | [Code Postal Canadien](../datatypes/canada_postal_code ) |
 
@@ -91,10 +91,10 @@ Valeur fixe: `"PostalAddress"`
 
 **Nom:** Texte court
 
-|                 |                                                      |
-| --------------- | ---------------------------------------------------- |
-| **Type**        | `string`                                             |
-| **Requis**      | Oui                                                  |
+|                 |                                                     |
+| --------------- | --------------------------------------------------- |
+| **Type**        | `string`                                            |
+| **Requis**      | Oui                                                 |
 | **Défini dans** | [streetAddress](../datatypes/text_short) |
 
 **Description:** Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.
@@ -130,10 +130,10 @@ Valeur fixe: `"PostalAddress"`
 
 **Nom:** Code Pays
 
-|                 |                                                         |
-| --------------- | ------------------------------------------------------- |
-| **Type**        | `string`                                                |
-| **Requis**      | Oui                                                     |
+|                 |                                                        |
+| --------------- | ------------------------------------------------------ |
+| **Type**        | `string`                                               |
+| **Requis**      | Oui                                                    |
 | **Défini dans** | [addressCountry](../datatypes/country_code) |
 
 **Description:** Code de pays à 3 caractères selon le standard ISO 3166-1
@@ -148,10 +148,10 @@ Valeur fixe: `"PostalAddress"`
 
 **Nom:** Code Postal Canadien
 
-|                 |                                                           |
-| --------------- | --------------------------------------------------------- |
-| **Type**        | `string`                                                  |
-| **Requis**      | Oui                                                       |
+|                 |                                                          |
+| --------------- | -------------------------------------------------------- |
+| **Type**        | `string`                                                 |
+| **Requis**      | Oui                                                      |
 | **Défini dans** | [postalCode](../datatypes/canada_postal_code) |
 
 **Description:** Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union
@@ -161,4 +161,4 @@ Valeur fixe: `"PostalAddress"`
 | **Doit correspondre à l'expression régulière** | ```^[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d$``` [Test](https://regex101.com/?regex=%5E%5BA-Za-z%5D%5Cd%5BA-Za-z%5D+%5Cd%5BA-Za-z%5D%5Cd%24) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400

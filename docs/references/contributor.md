@@ -14,7 +14,7 @@
 | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | --------------------------------------------------------------------------- |
 | + [type](#type )                                       | -                                                                                                                                                                                                                                                                                                                                                                                                                                           | const            | -                                                                           |
 | + [contributorType](#contributorType )                 | Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.                                                                                                                                                                                                                                                                                                                                                         | enum (of string) | [Type de contributeur](../vocabularies/contributor_type )        |
-| + [identifier](#identifier )                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                           | array            | [identifier](../utilities/identifier )                           |
+| + [identifier](#identifier )                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                                                                                                                                                                                                           | array            | [identifier](../identifier )                                     |
 | + [name](#name )                                       | Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.<br /><br />Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra. | array of object  | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | - [alternateName](#alternateName )                     | Autres appellations parfois utilisées pour le contributeur.<br /><br />Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».<br />Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».                                                                                                                                                                                                                       | array            | [Voir les détails](#alternateName )                                         |
 | - [description](#description )                         | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                                                                                                                                                                                                             | array of object  | [Texte long multilingue](../datatypes/text_long_multilingual )   |
@@ -54,11 +54,11 @@ Doit être un de:
 
 **Nom:** identifier
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `array`                                          |
-| **Requis**      | Oui                                              |
-| **Défini dans** | [identifier](../utilities/identifier) |
+|                 |                                        |
+| --------------- | -------------------------------------- |
+| **Type**        | `array`                                |
+| **Requis**      | Oui                                    |
+| **Défini dans** | [identifier](../identifier) |
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
@@ -196,8 +196,8 @@ Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
 
 | Propriété                     | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#name_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#name_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../partials/no_html )                |
+| + [lang](#name_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#name_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
 
 #### <a name="name_items_lang"></a>4.1.1. Propriété `Contributor > name > name items > lang`
 
@@ -207,7 +207,7 @@ Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../partials/language) |
+| **Défini dans** | [lang](../datatypes/partials/language) |
 
 **Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
@@ -238,7 +238,7 @@ Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [value](../partials/no_html) |
+| **Défini dans** | [value](../datatypes/partials/no_html) |
 
 **Description:** HTML non-autorisées
 
@@ -318,8 +318,8 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 | Propriété                            | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#description_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#description_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../partials/authorized_html )        |
+| + [lang](#description_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#description_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../datatypes/partials/authorized_html )        |
 
 #### <a name="description_items_lang"></a>6.1.1. Propriété `Contributor > description > description items > lang`
 
@@ -341,7 +341,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | --------------- | ----------------------------------------------- |
 | **Type**        | `string`                                        |
 | **Requis**      | Oui                                             |
-| **Défini dans** | [value](../partials/authorized_html) |
+| **Défini dans** | [value](../datatypes/partials/authorized_html) |
 
 **Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
 
@@ -409,26 +409,26 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 **Nom:** Média
 
-|                               |                                        |
-| ----------------------------- | -------------------------------------- |
-| **Type**                      | `object`                               |
-| **Requis**                    | Non                                    |
-| **Propriétés additionnelles** | Tout type permis                       |
-| **Défini dans**               | [Média](../utilities/media) |
+|                               |                              |
+| ----------------------------- | ---------------------------- |
+| **Type**                      | `object`                     |
+| **Requis**                    | Non                          |
+| **Propriétés additionnelles** | Tout type permis             |
+| **Défini dans**               | [Média](../media) |
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                   |
-| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                            |
-| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                            |
+| Propriété                                          | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                  |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
+| + [type](#media_items_type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                           |
+| - [sequenceNumber](#media_items_sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                           |
 | - [usageNote](#media_items_usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | string          | [Texte court](../datatypes/text_short )                          |
-| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                            |
+| + [url](#media_items_url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                           |
 | - [inLanguage](#media_items_inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | string          | [Code de langue](../datatypes/partials/language )                |
-| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#media_items_license )                                    |
-| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#media_items_creditText )                                 |
+| - [license](#media_items_license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#media_items_license )                                   |
+| - [creditText](#media_items_creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#media_items_creditText )                                |
 | - [copyrightHolder](#media_items_copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#media_items_description )                                |
+| - [description](#media_items_description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#media_items_description )                               |
 
 #### <a name="media_items_type"></a>8.1.1. Propriété `Contributor > media > Média > type`
 
@@ -452,10 +452,10 @@ Valeur fixe: `"Media"`
 
 **Nom:** Texte court
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Non                                              |
+|                 |                                                 |
+| --------------- | ----------------------------------------------- |
+| **Type**        | `string`                                        |
+| **Requis**      | Non                                             |
 | **Défini dans** | [usageNote](../datatypes/text_short) |
 
 **Description:** Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).
@@ -624,12 +624,12 @@ Valeur fixe: `"Media"`
 
 **Nom:** Term
 
-|                               |                                      |
-| ----------------------------- | ------------------------------------ |
-| **Type**                      | `object`                             |
-| **Requis**                    | Non                                  |
-| **Propriétés additionnelles** | Tout type permis                     |
-| **Défini dans**               | [Term](../utilities/term) |
+|                               |                            |
+| ----------------------------- | -------------------------- |
+| **Type**                      | `object`                   |
+| **Requis**                    | Non                        |
+| **Propriétés additionnelles** | Tout type permis           |
+| **Défini dans**               | [Term](../term) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -645,14 +645,14 @@ Valeur fixe: `"Media"`
 }
 ```
 
-| Propriété                                                          | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                   |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#typicalContributionType_items_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                            |
+| Propriété                                                          | Description                                                                                                                                                                                                                                                                      | Type de donnée  | Définition                                                                  |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
+| + [type](#typicalContributionType_items_type )                     | -                                                                                                                                                                                                                                                                                | const           | -                                                                           |
 | + [vocabulary](#typicalContributionType_items_vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | string          | [Texte court](../datatypes/text_short )                          |
 | - [version](#typicalContributionType_items_version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | string          | [Texte court](../datatypes/text_short )                          |
 | + [code](#typicalContributionType_items_code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | string          | [Texte court](../datatypes/text_short )                          |
 | - [label](#typicalContributionType_items_label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| + [sequenceNumber](#typicalContributionType_items_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                            |
+| + [sequenceNumber](#typicalContributionType_items_sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | integer         | -                                                                           |
 
 #### <a name="typicalContributionType_items_type"></a>9.1.1. Propriété `Contributor > typicalContributionType > Term > type`
 
@@ -667,10 +667,10 @@ Valeur fixe: `"Term"`
 
 **Nom:** Texte court
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Oui                                              |
+|                 |                                                 |
+| --------------- | ----------------------------------------------- |
+| **Type**        | `string`                                        |
+| **Requis**      | Oui                                             |
 | **Défini dans** | [usageNote](../datatypes/text_short) |
 
 **Description:** Identification du vocabulaire duquel est tiré le term.
@@ -753,19 +753,19 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 **Nom:** Association Géographique (GeographicRelation)
 
-|                               |                                                                                              |
-| ----------------------------- | -------------------------------------------------------------------------------------------- |
-| **Type**                      | `object`                                                                                     |
-| **Requis**                    | Non                                                                                          |
-| **Propriétés additionnelles** | Pas permis                                                                                   |
-| **Défini dans**               | [Association Géographique (GeographicRelation)](../utilities/geographic_relation) |
+|                               |                                                                                    |
+| ----------------------------- | ---------------------------------------------------------------------------------- |
+| **Type**                      | `object`                                                                           |
+| **Requis**                    | Non                                                                                |
+| **Propriétés additionnelles** | Pas permis                                                                         |
+| **Défini dans**               | [Association Géographique (GeographicRelation)](../geographic_relation) |
 
 **Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
-| Propriété                                                          | Description                                                                                             | Type de donnée | Définition                                          |
-| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | -------------- | --------------------------------------------------- |
-| + [type](#hasGeographicRelation_items_type )                       | -                                                                                                       | const          | -                                                   |
-| - [relationType](#hasGeographicRelation_items_relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | object         | [Term](term )                           |
+| Propriété                                                          | Description                                                                                             | Type de donnée | Définition                                         |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
+| + [type](#hasGeographicRelation_items_type )                       | -                                                                                                       | const          | -                                                  |
+| - [relationType](#hasGeographicRelation_items_relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | object         | [Term](term )                          |
 | - [addressCountry](#hasGeographicRelation_items_addressCountry )   | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | string         | [Code Pays](../datatypes/country_code ) |
 | - [addressRegion](#hasGeographicRelation_items_addressRegion )     | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
 | - [addressLocality](#hasGeographicRelation_items_addressLocality ) | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
@@ -796,10 +796,10 @@ Valeur fixe: `"GeographicRelation"`
 
 **Nom:** Code Pays
 
-|                 |                                                         |
-| --------------- | ------------------------------------------------------- |
-| **Type**        | `string`                                                |
-| **Requis**      | Non                                                     |
+|                 |                                                        |
+| --------------- | ------------------------------------------------------ |
+| **Type**        | `string`                                               |
+| **Requis**      | Non                                                    |
 | **Défini dans** | [addressCountry](../datatypes/country_code) |
 
 **Description:** Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.
@@ -869,4 +869,4 @@ Valeur fixe: `"GeographicRelation"`
 **Description:** les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:51 -0400

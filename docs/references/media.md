@@ -10,17 +10,17 @@
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-| Propriété                              | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                   |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| + [type](#type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                            |
-| - [sequenceNumber](#sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                            |
+| Propriété                              | Description                                                                                                                                                                                                                                    | Type de donnée  | Définition                                                                  |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
+| + [type](#type )                       | -                                                                                                                                                                                                                                              | const           | -                                                                           |
+| - [sequenceNumber](#sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | integer         | -                                                                           |
 | - [usageNote](#usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | string          | [Texte court](../datatypes/text_short )                          |
-| + [url](#url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                            |
+| + [url](#url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | string          | -                                                                           |
 | - [inLanguage](#inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | string          | [Code de langue](../datatypes/partials/language )                |
-| - [license](#license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#license )                                                |
-| - [creditText](#creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#creditText )                                             |
+| - [license](#license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | array           | [Voir les détails](#license )                                               |
+| - [creditText](#creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | array           | [Voir les détails](#creditText )                                            |
 | - [copyrightHolder](#copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| - [description](#description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#description )                                            |
+| - [description](#description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | array           | [Voir les détails](#description )                                           |
 
 ## <a name="type"></a>1. Propriété `Média > type`
 
@@ -44,10 +44,10 @@ Valeur fixe: `"Media"`
 
 **Nom:** Texte court
 
-|                 |                                                  |
-| --------------- | ------------------------------------------------ |
-| **Type**        | `string`                                         |
-| **Requis**      | Non                                              |
+|                 |                                                 |
+| --------------- | ----------------------------------------------- |
+| **Type**        | `string`                                        |
+| **Requis**      | Non                                             |
 | **Défini dans** | [usageNote](../datatypes/text_short) |
 
 **Description:** Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).
@@ -72,10 +72,10 @@ Valeur fixe: `"Media"`
 
 **Nom:** Code de langue
 
-|                 |                                                          |
-| --------------- | -------------------------------------------------------- |
-| **Type**        | `string`                                                 |
-| **Requis**      | Non                                                      |
+|                 |                                                         |
+| --------------- | ------------------------------------------------------- |
+| **Type**        | `string`                                                |
+| **Requis**      | Non                                                     |
 | **Défini dans** | [inLanguage](../datatypes/partials/language) |
 
 **Description:** Langue au format ISO 639-1.
@@ -124,10 +124,10 @@ Valeur fixe: `"Media"`
 
 **Nom:** Texte court multilingue
 
-|                 |                                                                             |
-| --------------- | --------------------------------------------------------------------------- |
-| **Type**        | `array of object`                                                           |
-| **Requis**      | Non                                                                         |
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| **Type**        | `array of object`                                                          |
+| **Requis**      | Non                                                                        |
 | **Défini dans** | [Texte court multilingue](../datatypes/text_short_multilingual) |
 
 **Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
@@ -154,8 +154,8 @@ Valeur fixe: `"Media"`
 
 | Propriété                              | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#license_items_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#license_items_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../partials/no_html )                |
+| + [lang](#license_items_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#license_items_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
 
 ##### <a name="license_items_items_lang"></a>6.1.1.1. Propriété `Média > license > Texte court multilingue > license items items > lang`
 
@@ -177,7 +177,7 @@ Valeur fixe: `"Media"`
 | --------------- | ------------------------------------------- |
 | **Type**        | `string`                                    |
 | **Requis**      | Oui                                         |
-| **Défini dans** | [usageNote](../partials/no_html) |
+| **Défini dans** | [usageNote](../datatypes/partials/no_html) |
 
 **Description:** HTML non-autorisées
 
@@ -257,10 +257,10 @@ Valeur fixe: `"Media"`
 
 **Nom:** Texte long multilingue
 
-|                 |                                                                           |
-| --------------- | ------------------------------------------------------------------------- |
-| **Type**        | `array of object`                                                         |
-| **Requis**      | Non                                                                       |
+|                 |                                                                          |
+| --------------- | ------------------------------------------------------------------------ |
+| **Type**        | `array of object`                                                        |
+| **Requis**      | Non                                                                      |
 | **Défini dans** | [Texte long multilingue](../datatypes/text_long_multilingual) |
 
 **Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
@@ -287,8 +287,8 @@ Valeur fixe: `"Media"`
 
 | Propriété                                  | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#description_items_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#description_items_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../partials/authorized_html )        |
+| + [lang](#description_items_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#description_items_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../datatypes/partials/authorized_html )        |
 
 ##### <a name="description_items_items_lang"></a>9.1.1.1. Propriété `Média > description > Texte long multilingue > description items items > lang`
 
@@ -310,7 +310,7 @@ Valeur fixe: `"Media"`
 | --------------- | ----------------------------------------------- |
 | **Type**        | `string`                                        |
 | **Requis**      | Oui                                             |
-| **Défini dans** | [value](../partials/authorized_html) |
+| **Défini dans** | [value](../datatypes/partials/authorized_html) |
 
 **Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
 
@@ -342,4 +342,4 @@ Valeur fixe: `"Media"`
 | **Doit correspondre à l'expression régulière** | ```^(?!.*<[^bius][^>]*>)(?!.*</?(?!b\|i\|u\|sup\|sub)[^>]*>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5Ebius%5D%5B%5E%3E%5D%2A%3E%29%28%3F%21.%2A%3C%2F%3F%28%3F%21b%7Ci%7Cu%7Csup%7Csub%29%5B%5E%3E%5D%2A%3E%29.%2A%24&testString=%22%3Cb%3ETexte+en+gras%3C%2Fb%3E%22) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:51 -0400

@@ -31,8 +31,8 @@
 
 | Propriété                | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../partials/authorized_html )        |
+| + [lang](#items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../datatypes/partials/authorized_html )        |
 
 ### <a name="items_lang"></a>1.1. Propriété `Texte long multilingue > root items > lang`
 
@@ -42,7 +42,7 @@
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../partials/language) |
+| **Défini dans** | [lang](../datatypes/partials/language) |
 
 **Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
@@ -73,7 +73,7 @@
 | --------------- | ----------------------------------------------- |
 | **Type**        | `string`                                        |
 | **Requis**      | Oui                                             |
-| **Défini dans** | [value](../partials/authorized_html) |
+| **Défini dans** | [value](../datatypes/partials/authorized_html) |
 
 **Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
 
@@ -105,4 +105,4 @@
 | **Doit correspondre à l'expression régulière** | ```^(?!.*<[^bius][^>]*>)(?!.*</?(?!b\|i\|u\|sup\|sub)[^>]*>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5Ebius%5D%5B%5E%3E%5D%2A%3E%29%28%3F%21.%2A%3C%2F%3F%28%3F%21b%7Ci%7Cu%7Csup%7Csub%29%5B%5E%3E%5D%2A%3E%29.%2A%24&testString=%22%3Cb%3ETexte+en+gras%3C%2Fb%3E%22) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-09-17 at 21:03:30 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400

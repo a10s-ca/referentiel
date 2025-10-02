@@ -10,9 +10,10 @@ json_for_schema_config = GenerationConfiguration(
 )
 
 CLASSES = ['show', 'performance', 'contributor', 'place', 'room', 'series', 'work', 'offer']
-UTILITIES = ['contribution', 'geographic_relations', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page']
+UTILITIES = ['contribution', 'identifier', 'media', 'postal_address', 'room_specification', 'term', 'web_page', 'geographic_relation']
 DATATYPES = ['canada_postal_code', 'country_code', 'currency', 'geo_coordinates', 'text_long_multilingual', 'text_long', 'text_short_multilingual', 'text_short']
 PARTIALS = ['authorized_html', 'language', 'no_html']
+VOCABULARIES = ['event_status', 'contributor_type']
 
 def on_startup(command, dirty):
     for klass in CLASSES:
@@ -21,8 +22,8 @@ def on_startup(command, dirty):
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
     for klass in UTILITIES:
-        source_filename = "schema/utilities/" + klass + ".schema.json"
-        target_filename = "docs/references/utilities/" + klass + ".md"
+        source_filename = "schema/" + klass + ".schema.json"
+        target_filename = "docs/references/" + klass + ".md"
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
     for klass in DATATYPES:
@@ -35,10 +36,16 @@ def on_startup(command, dirty):
         target_filename = "docs/references/datatypes/partials/" + klass + ".md"
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
+    for klass in VOCABULARIES:
+        source_filename = "schema/vocabularies/" + klass + ".schema.json"
+        target_filename = "docs/references/vocabularies/" + klass + ".md"
+        generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
+        fix_links_in_file(target_filename)
 
 def fix_links_in_file(filename: str):
     replace_in_file_regex(filename, r"(?<!\.)\./", "../")
     replace_in_file_regex(filename, r"\.schema\.json", "")
+    replace_in_file_regex(filename, r"\.\./partials", "../datatypes/partials")
 
 def replace_in_file_regex(filename: str, pattern: str, replacement: str):
     """
