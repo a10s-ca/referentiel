@@ -146,8 +146,8 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 | Propriété                             | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#layout_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#layout_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../partials/no_html )                |
+| + [lang](#layout_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#layout_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
 
 ##### <a name="layout_label_items_lang"></a>2.5.1.1. Propriété `Configuration de salle > layout > label > label items > lang`
 
@@ -157,7 +157,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../partials/language) |
+| **Défini dans** | [lang](../datatypes/partials/language) |
 
 **Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
@@ -188,7 +188,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | -------------------------------------------- |
 | **Type**        | `string`                                     |
 | **Requis**      | Oui                                          |
-| **Défini dans** | [vocabulary](../partials/no_html) |
+| **Défini dans** | [vocabulary](../datatypes/partials/no_html) |
 
 **Description:** HTML non-autorisées
 
@@ -217,4 +217,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:44:51 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400

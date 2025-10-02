@@ -166,8 +166,8 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 | Propriété                                     | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#additionalType_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#additionalType_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../partials/no_html )                |
+| + [lang](#additionalType_label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#additionalType_label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
 
 ##### <a name="additionalType_label_items_lang"></a>3.5.1.1. Propriété `Lieu (Place) > additionalType > label > label items > lang`
 
@@ -177,7 +177,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | --------------------------------------- |
 | **Type**        | `string`                                |
 | **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../partials/language) |
+| **Défini dans** | [lang](../datatypes/partials/language) |
 
 **Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
@@ -208,7 +208,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 | --------------- | -------------------------------------------- |
 | **Type**        | `string`                                     |
 | **Requis**      | Oui                                          |
-| **Défini dans** | [vocabulary](../partials/no_html) |
+| **Défini dans** | [vocabulary](../datatypes/partials/no_html) |
 
 **Description:** HTML non-autorisées
 
@@ -383,8 +383,8 @@ Valeur fixe: `"PropertyValue"`
 
 | Propriété                            | Description                                                                                                                                                | Type de donnée | Définition                                         |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#description_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../partials/language ) |
-| + [value](#description_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../partials/authorized_html )        |
+| + [lang](#description_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
+| + [value](#description_items_value ) | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | string         | [](../datatypes/partials/authorized_html )        |
 
 #### <a name="description_items_lang"></a>6.1.1. Propriété `Lieu (Place) > description > description items > lang`
 
@@ -406,7 +406,7 @@ Valeur fixe: `"PropertyValue"`
 | --------------- | ----------------------------------------------- |
 | **Type**        | `string`                                        |
 | **Requis**      | Oui                                             |
-| **Défini dans** | [value](../partials/authorized_html) |
+| **Défini dans** | [value](../datatypes/partials/authorized_html) |
 
 **Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
 
@@ -1198,4 +1198,4 @@ Valeur fixe: `"WebPage"`
 | **Requis** | Oui      |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:44:51 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:51 -0400

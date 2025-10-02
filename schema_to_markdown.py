@@ -45,6 +45,7 @@ def on_startup(command, dirty):
 def fix_links_in_file(filename: str):
     replace_in_file_regex(filename, r"(?<!\.)\./", "../")
     replace_in_file_regex(filename, r"\.schema\.json", "")
+    replace_in_file_regex(filename, r"\.\./partials", "../datatypes/partials")
 
 def replace_in_file_regex(filename: str, pattern: str, replacement: str):
     """
