@@ -2,7 +2,7 @@
 
 Documentation interne (pour les contributeurs du référentiel) à venir ici.
 
-## Dépendences
+## Dépendances
 
 ### Python
 
