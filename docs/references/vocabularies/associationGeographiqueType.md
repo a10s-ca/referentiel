@@ -83,4 +83,4 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-10-01._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2025-12-16._
