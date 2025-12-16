@@ -83,4 +83,4 @@ extra:
       efforts de diffusion de Datascene.
 hooks:
   - schema_to_markdown.py
-#  - vocabularies_to_markdown.py
+  - vocabularies_to_markdown.py
