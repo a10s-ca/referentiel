@@ -217,4 +217,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2025-10-01 at 17:58:52 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-07 at 12:04:40 -0500
