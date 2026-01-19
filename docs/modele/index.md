@@ -30,5 +30,5 @@ L'ensemble des classes sont nommées en français et en anglais. Le français es
 
 ## Définition JSON Schema téléchargeable
 
-L'ensemble de la documentation est disponbile sous forme de [fichiers JSON Schema](./datascene-json.zip).
+L'ensemble de la documentation est disponible sous forme de [fichiers JSON Schema téléchargeables ici](./datascene-json.zip).
 
