@@ -43,24 +43,7 @@ Valeur fixe: `"WebPage"`
 
 **Description:** Langue de la page Web, au format ISO 639-1.
 
-**Exemples:**
-
-```json
-"fr"
-```
-
-```json
-"en"
-```
-
-```json
-"mul"
-```
-
-| Restrictions                                   |                                                                                                       |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 2                                                                                                     |
-| **Doit correspondre à l'expression régulière** | ```^[a-z]{2,3}$``` [Test](https://regex101.com/?regex=%5E%5Ba-z%5D%7B2%2C3%7D%24&testString=%22fr%22) |
+[Voir la documentation de Code de langue](../datatypes/partials/language)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 14:00:53 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:04:18 -0500

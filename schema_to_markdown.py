@@ -6,6 +6,7 @@ import re
 json_for_schema_config = GenerationConfiguration(
     template_name='simplified_fr_md',
     show_toc=False,
+    recursive_detection_depth=1,
     template_md_options={'properties_table_columns': ['Propriété','Description','Type de donnée','Définition']}
 )
 

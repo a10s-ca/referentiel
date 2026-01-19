@@ -54,11 +54,7 @@ Valeur fixe: `"Term"`
 
 Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement.
 
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+[Voir la documentation de Texte court](../datatypes/text_short)
 
 ## <a name="version"></a>3. Propriété `Term > version`
 
@@ -96,79 +92,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 **Description:** Version textuelle du terme tiré du vocabulaire choisi
 
-|                            | Contraintes du tableau |
-| -------------------------- | ---------------------- |
-| **Nombre d'items minimum** | N/A                    |
-| **Nombre d'items maximum** | N/A                    |
-| **Unicité**                | Vrai                   |
-| **Items additionnels**     | Faux                   |
-| **Validation du tuple**    | Voir plus bas          |
-
-| Chaque item du tableau doit être | Description |
-| -------------------------------- | ----------- |
-| [label items](#label_items)      | -           |
-
-### <a name="label_items"></a>5.1. Term > label > label items
-
-|                               |            |
-| ----------------------------- | ---------- |
-| **Type**                      | `object`   |
-| **Requis**                    | Non        |
-| **Propriétés additionnelles** | Pas permis |
-
-| Propriété                      | Description                                                                                                                                                | Type de donnée | Définition                                         |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [lang](#label_items_lang )   | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | string         | [Code de langue](../datatypes/partials/language ) |
-| + [value](#label_items_value ) | HTML non-autorisées                                                                                                                                        | string         | [](../datatypes/partials/no_html )                |
-
-#### <a name="label_items_lang"></a>5.1.1. Propriété `Term > label > label items > lang`
-
-**Nom:** Code de langue
-
-|                 |                                         |
-| --------------- | --------------------------------------- |
-| **Type**        | `string`                                |
-| **Requis**      | Oui                                     |
-| **Défini dans** | [lang](../datatypes/partials/language) |
-
-**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-
-**Exemples:**
-
-```json
-"fr"
-```
-
-```json
-"en"
-```
-
-```json
-"mul"
-```
-
-| Restrictions                                   |                                                                                                       |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 2                                                                                                     |
-| **Doit correspondre à l'expression régulière** | ```^[a-z]{2,3}$``` [Test](https://regex101.com/?regex=%5E%5Ba-z%5D%7B2%2C3%7D%24&testString=%22fr%22) |
-
-#### <a name="label_items_value"></a>5.1.2. Propriété `Term > label > label items > value`
-
-**Nom:** Texte court
-
-|                 |                                              |
-| --------------- | -------------------------------------------- |
-| **Type**        | `string`                                     |
-| **Requis**      | Oui                                          |
-| **Défini dans** | [vocabulary](../datatypes/partials/no_html) |
-
-**Description:** HTML non-autorisées
-
-| Restrictions                                   |                                                                                                             |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Longueur minimale**                          | 1                                                                                                           |
-| **Longueur maximale**                          | 500                                                                                                         |
-| **Doit correspondre à l'expression régulière** | ```^(?!.*<[^>]+>).*$``` [Test](https://regex101.com/?regex=%5E%28%3F%21.%2A%3C%5B%5E%3E%5D%2B%3E%29.%2A%24) |
+[Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
 ## <a name="sequenceNumber"></a>6. Propriété `Term > sequenceNumber`
 
@@ -180,4 +104,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 14:00:53 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:04:18 -0500
