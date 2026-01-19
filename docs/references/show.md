@@ -543,4 +543,4 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 [Voir la documentation de Représentation (Performance)](../performance)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:04:18 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500

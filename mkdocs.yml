@@ -85,3 +85,4 @@ extra:
 hooks:
   - schema_to_markdown.py
   - vocabularies_to_markdown.py
+  - build_schema_zip.py

@@ -28,5 +28,7 @@ Datascène est à la fois :
 
 L'ensemble des classes sont nommées en français et en anglais. Le français est utilisé dans le cadre du référentiel, et l'anglais dans le cadre du format de sérialisation. Les propriétés sont nommées en anglais.
 
+## Définition JSON Schema téléchargeable
 
+L'ensemble de la documentation est disponbile sous forme de [fichiers JSON Schema](./datascene-json.zip).
 
