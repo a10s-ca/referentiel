@@ -252,4 +252,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-07 at 12:04:40 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 14:00:53 -0500
