@@ -10,19 +10,19 @@
 
 **Description:** Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
 
-| Propriété                                  | Description                                                                                                                                                      | Type de donnée  | Définition                                                                  |
-| ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | --------------------------------------------------------------------------- |
-| + [type](#type )                           | -                                                                                                                                                                | const           | -                                                                           |
-| + [identifier](#identifier )               | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | array           | [identifier](../identifier )                                     |
-| - [name](#name )                           | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | array of object | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| + [nameSameAsPlace](#nameSameAsPlace )     | -                                                                                                                                                                | boolean         | -                                                                           |
-| - [description](#description )             | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
-| - [shortDescription](#shortDescription )   | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | array of object | [Texte long multilingue](../datatypes/text_long_multilingual )   |
-| - [media](#media )                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | array           | [Voir les détails](#media )                                                 |
-| - [inPlace](#inPlace )                     | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | object          | [Lieu (Place)](../place )                                        |
-| - [address](#address )                     | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | object          | [Postal Address](../postal_address )                             |
-| - [roomAccessibility](#roomAccessibility ) | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | array           | [Voir les détails](#roomAccessibility )                                     |
-| - [roomConfiguration](#roomConfiguration ) | Précisions sur les configurations possibles de la salle.                                                                                                         | array           | [Voir les détails](#roomConfiguration )                                     |
+| Propriété                                | Description                                                                                                                                                      | Priorité           | Type et définition                                                                   |
+| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| [type](#type )                           | -                                                                                                                                                                | Obligatoire        | -                                                                                    |
+| [identifier](#identifier )               | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | Obligatoire (1..N) | [Identifiant](../identifier )                                             |
+| [name](#name )                           | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )          |
+| [nameSameAsPlace](#nameSameAsPlace )     | -                                                                                                                                                                | Obligatoire        | -                                                                                    |
+| [description](#description )             | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
+| [shortDescription](#shortDescription )   | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
+| [media](#media )                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                               |
+| [inPlace](#inPlace )                     | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | Optionnel          | [Lieu (Place)](../place )                                                 |
+| [address](#address )                     | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Postal Address](../postal_address )                                      |
+| [roomAccessibility](#roomAccessibility ) | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
+| [roomConfiguration](#roomConfiguration ) | Précisions sur les configurations possibles de la salle.                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Configuration de salle](../room_specification ) |
 
 Condition particulière:
 si (nameSameAsPlace = false) alors :
@@ -42,7 +42,7 @@ Valeur fixe: `"Room"`
 
 ## <a name="identifier"></a>2. Propriété `Salle (Room) > identifier`
 
-**Nom:** identifier
+**Nom:** Identifiant
 
 |                 |                                        |
 | --------------- | -------------------------------------- |
@@ -52,7 +52,7 @@ Valeur fixe: `"Room"`
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
-[Voir la documentation de identifier](../identifier)
+[Voir la documentation de Identifiant](../identifier)
 
 ## <a name="name"></a>3. Propriété `Salle (Room) > name`
 
@@ -236,4 +236,4 @@ Valeur fixe: `"Room"`
 [Voir la documentation de Configuration de salle](../room_specification)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:12 -0500

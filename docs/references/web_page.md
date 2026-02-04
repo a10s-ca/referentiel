@@ -8,11 +8,11 @@
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
 
-| Propriété                    | Description                                 | Type de donnée | Définition                                                   |
-| ---------------------------- | ------------------------------------------- | -------------- | ------------------------------------------------------------ |
-| + [type](#type )             | -                                           | const          | -                                                            |
-| + [url](#url )               | -                                           | string         | -                                                            |
-| - [inLanguage](#inLanguage ) | Langue de la page Web, au format ISO 639-1. | string         | [Code de langue](../datatypes/partials/language ) |
+| Propriété                  | Description                                 | Priorité    | Type et définition                                           |
+| -------------------------- | ------------------------------------------- | ----------- | ------------------------------------------------------------ |
+| [type](#type )             | -                                           | Obligatoire | -                                                            |
+| [url](#url )               | -                                           | Obligatoire | -                                                            |
+| [inLanguage](#inLanguage ) | Langue de la page Web, au format ISO 639-1. | Optionnel   | [Code de langue](../datatypes/partials/language ) |
 
 ## <a name="type"></a>1. Propriété `WebPage > type`
 
@@ -46,4 +46,4 @@ Valeur fixe: `"WebPage"`
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500

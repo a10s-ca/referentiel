@@ -1,6 +1,6 @@
-# identifier
+# Identifiant
 
-**Nom:** identifier
+**Nom:** Identifiant
 
 |            |         |
 | ---------- | ------- |
@@ -35,7 +35,7 @@
 | -------------------------------- | ----------- |
 | [root items](#items)             | -           |
 
-## <a name="items"></a>1. identifier > root items
+## <a name="items"></a>1. Identifiant > root items
 
 |                               |                  |
 | ----------------------------- | ---------------- |
@@ -48,7 +48,7 @@
 | [item 0](#items_anyOf_i0) |
 | [item 1](#items_anyOf_i1) |
 
-### <a name="items_anyOf_i0"></a>1.1. Propriété `identifier > root items > anyOf > item 0`
+### <a name="items_anyOf_i0"></a>1.1. Propriété `Identifiant > root items > anyOf > item 0`
 
 |                               |                  |
 | ----------------------------- | ---------------- |
@@ -56,13 +56,13 @@
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
 
-| Propriété                                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Type de donnée | Définition |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ---------- |
-| + [type](#items_anyOf_i0_type )             | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | const          | -          |
-| + [propertyID](#items_anyOf_i0_propertyID ) | Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles. | string         | -          |
-| + [value](#items_anyOf_i0_value )           | L'identifiant lui-même                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | string         | -          |
+| Propriété                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Priorité    | Type et définition |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
+| [type](#items_anyOf_i0_type )             | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire | -                  |
+| [propertyID](#items_anyOf_i0_propertyID ) | Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles. | Obligatoire | -                  |
+| [value](#items_anyOf_i0_value )           | L'identifiant lui-même                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Obligatoire | -                  |
 
-#### <a name="items_anyOf_i0_type"></a>1.1.1. Propriété `identifier > root items > anyOf > item 0 > type`
+#### <a name="items_anyOf_i0_type"></a>1.1.1. Propriété `Identifiant > root items > anyOf > item 0 > type`
 
 |            |         |
 | ---------- | ------- |
@@ -71,7 +71,7 @@
 
 Valeur fixe: `"PropertyValue"`
 
-#### <a name="items_anyOf_i0_propertyID"></a>1.1.2. Propriété `identifier > root items > anyOf > item 0 > propertyID`
+#### <a name="items_anyOf_i0_propertyID"></a>1.1.2. Propriété `Identifiant > root items > anyOf > item 0 > propertyID`
 
 |            |          |
 | ---------- | -------- |
@@ -84,7 +84,7 @@ Valeur fixe: `"PropertyValue"`
 | --------------------- | - |
 | **Longueur minimale** | 1 |
 
-#### <a name="items_anyOf_i0_value"></a>1.1.3. Propriété `identifier > root items > anyOf > item 0 > value`
+#### <a name="items_anyOf_i0_value"></a>1.1.3. Propriété `Identifiant > root items > anyOf > item 0 > value`
 
 |            |          |
 | ---------- | -------- |
@@ -97,7 +97,7 @@ Valeur fixe: `"PropertyValue"`
 | --------------------- | - |
 | **Longueur minimale** | 1 |
 
-### <a name="items_anyOf_i1"></a>1.2. Propriété `identifier > root items > anyOf > item 1`
+### <a name="items_anyOf_i1"></a>1.2. Propriété `Identifiant > root items > anyOf > item 1`
 
 |            |          |
 | ---------- | -------- |
@@ -108,4 +108,4 @@ Valeur fixe: `"PropertyValue"`
 **Description:** Un identifiant URI sous forme de chaîne de caractères.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500

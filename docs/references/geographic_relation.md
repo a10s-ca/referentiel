@@ -10,13 +10,13 @@
 
 **Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
-| Propriété                              | Description                                                                                             | Type de donnée | Définition                                         |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------- | -------------- | -------------------------------------------------- |
-| + [type](#type )                       | -                                                                                                       | const          | -                                                  |
-| - [relationType](#relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | object         | [Term](term )                          |
-| - [addressCountry](#addressCountry )   | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | string         | [Code Pays](../datatypes/country_code ) |
-| - [addressRegion](#addressRegion )     | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
-| - [addressLocality](#addressLocality ) | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | string         | [Texte court](../datatypes/text_short ) |
+| Propriété                            | Description                                                                                             | Priorité    | Type et définition                                 |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
+| [type](#type )                       | -                                                                                                       | Obligatoire | -                                                  |
+| [relationType](#relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | Optionnel   | [Term](term )                          |
+| [addressCountry](#addressCountry )   | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | Optionnel   | [Code Pays](../datatypes/country_code ) |
+| [addressRegion](#addressRegion )     | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
+| [addressLocality](#addressLocality ) | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
 
 ## <a name="type"></a>1. Propriété `Association Géographique (GeographicRelation) > type`
 
@@ -81,4 +81,4 @@ Valeur fixe: `"GeographicRelation"`
 **Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500

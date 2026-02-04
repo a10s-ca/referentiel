@@ -10,14 +10,14 @@
 
 **Description:** Permet d’indiquer l’adresse d’un lieu.
 
-| Propriété                              | Description                                                                                                                                   | Type de donnée | Définition                                                          |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------------- |
-| + [type](#type )                       | -                                                                                                                                             | const          | -                                                                   |
-| + [streetAddress](#streetAddress )     | Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.                                | string         | [Texte court](../datatypes/text_short )                  |
-| + [addressLocality](#addressLocality ) | Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.                                                             | string         | [Texte court](../datatypes/text_short )                  |
-| + [addressRegion](#addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | string         | -                                                                   |
-| + [addressCountry](#addressCountry )   | Code de pays à 3 caractères selon le standard ISO 3166-1                                                                                      | string         | [Code Pays](../datatypes/country_code )                  |
-| + [postalCode](#postalCode )           | Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union | string         | [Code Postal Canadien](../datatypes/canada_postal_code ) |
+| Propriété                            | Description                                                                                                                                   | Priorité    | Type et définition                                                  |
+| ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------- |
+| [type](#type )                       | -                                                                                                                                             | Obligatoire | -                                                                   |
+| [streetAddress](#streetAddress )     | Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.                                | Obligatoire | [Texte court](../datatypes/text_short )                  |
+| [addressLocality](#addressLocality ) | Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.                                                             | Obligatoire | [Texte court](../datatypes/text_short )                  |
+| [addressRegion](#addressRegion )     | Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.                                            | Obligatoire | -                                                                   |
+| [addressCountry](#addressCountry )   | Code de pays à 3 caractères selon le standard ISO 3166-1                                                                                      | Obligatoire | [Code Pays](../datatypes/country_code )                  |
+| [postalCode](#postalCode )           | Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union | Obligatoire | [Code Postal Canadien](../datatypes/canada_postal_code ) |
 
 Condition particulière:
 si (addressCountry = "CAN") alors :
@@ -115,4 +115,4 @@ Valeur fixe: `"PostalAddress"`
 [Voir la documentation de Code Postal Canadien](../datatypes/canada_postal_code)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500

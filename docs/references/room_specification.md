@@ -10,11 +10,11 @@
 
 **Description:** Précisions sur un configuration possible de la salle.
 
-| Propriété                | Description                                                                             | Type de donnée | Définition                  |
-| ------------------------ | --------------------------------------------------------------------------------------- | -------------- | --------------------------- |
-| + [type](#type )         | -                                                                                       | const          | -                           |
-| + [layout](#layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | object         | [Term](../term ) |
-| - [capacity](#capacity ) | Capacité, en nombre de spectacteurs.                                                    | integer        | -                           |
+| Propriété              | Description                                                                             | Priorité    | Type et définition          |
+| ---------------------- | --------------------------------------------------------------------------------------- | ----------- | --------------------------- |
+| [type](#type )         | -                                                                                       | Obligatoire | -                           |
+| [layout](#layout )     | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | Obligatoire | [Term](../term ) |
+| [capacity](#capacity ) | Capacité, en nombre de spectacteurs.                                                    | Optionnel   | -                           |
 
 ## <a name="type"></a>1. Propriété `Configuration de salle > type`
 
@@ -50,4 +50,4 @@ Valeur fixe: `"RoomConfiguration"`
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-01-19 at 16:15:47 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500

@@ -39,9 +39,12 @@
       "const": "Show"
     },
     "identifier": {
-      "$ref": "./identifier.schema.json"
+      "$ref": "./identifier.schema.json",
+      "title": "Identifiant",
+      "description": "Identification du spectacle, avec tous les identifiants connus."
     },
     "name": {
+      "title": "Nom",
       "description": "Nom du spectacle",
       "examples": [
         "Une Carmen pour tout le Québec"
@@ -49,6 +52,7 @@
       "$ref": "./datatypes/text_short_multilingual.schema.json"
     },
     "alternateName": {
+      "title": "Nom alternatif",
       "description": "Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.",
       "examples": ["Carmen au grand écran"],
       "$ref": "./datatypes/text_short_multilingual.schema.json"
