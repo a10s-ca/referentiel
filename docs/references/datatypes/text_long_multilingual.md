@@ -1,13 +1,11 @@
 # Texte long multilingue
 
-**Nom:** Texte long multilingue
+Énumération de textes longs associés à un code de langue au standard ISO 639-1.
 
 |            |                   |
 | ---------- | ----------------- |
 | **Type**   | `array of object` |
 | **Requis** | Non               |
-
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -34,9 +32,9 @@
 | [lang](#items_lang )<br/>_Langue_       | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | Obligatoire | [Code de langue](../datatypes/partials/language ) |
 | [value](#items_value )<br/>_Texte long_ | Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.                                                    | Obligatoire | [value](../datatypes/partials/authorized_html )   |
 
-### <a name="items_lang"></a>1.1. Propriété `Texte long multilingue > root items > lang`
+### <a name="items_lang"></a>1.1. Propriété `Texte long multilingue > root items > lang` (Langue)
 
-**Nom:** Langue
+Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
 |                 |                                         |
 | --------------- | --------------------------------------- |
@@ -44,13 +42,11 @@
 | **Requis**      | Oui                                     |
 | **Défini dans** | [lang](../datatypes/partials/language) |
 
-**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
-### <a name="items_value"></a>1.2. Propriété `Texte long multilingue > root items > value`
+### <a name="items_value"></a>1.2. Propriété `Texte long multilingue > root items > value` (Texte long)
 
-**Nom:** Texte long
+Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
 
 |                 |                                                 |
 | --------------- | ----------------------------------------------- |
@@ -58,9 +54,7 @@
 | **Requis**      | Oui                                             |
 | **Défini dans** | [value](../datatypes/partials/authorized_html) |
 
-**Description:** Texte long avec formatage, incluant des paragraphes et des balises HTML autorisées b, i, u, sup et sub.
-
 [Voir la documentation de ](../datatypes/partials/authorized_html)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:18 -0500

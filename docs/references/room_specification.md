@@ -1,14 +1,12 @@
 # Configuration de salle
 
-**Nom:** Configuration de salle
+Précisions sur un configuration possible de la salle.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** Précisions sur un configuration possible de la salle.
 
 | Propriété                             | Description                                                                             | Priorité    | Type et définition                  |
 | ------------------------------------- | --------------------------------------------------------------------------------------- | ----------- | ----------------------------------- |
@@ -25,9 +23,9 @@
 
 Valeur fixe: `"RoomConfiguration"`
 
-## <a name="layout"></a>2. Propriété `Configuration de salle > layout`
+## <a name="layout"></a>2. Propriété `Configuration de salle > layout` (Disposition)
 
-**Nom:** Disposition
+Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
 |                               |                              |
 | ----------------------------- | ---------------------------- |
@@ -36,20 +34,16 @@ Valeur fixe: `"RoomConfiguration"`
 | **Propriétés additionnelles** | Tout type permis             |
 | **Défini dans**               | [layout](../term) |
 
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
-
 [Voir la documentation de Terme (Term)](../term)
 
-## <a name="capacity"></a>3. Propriété `Configuration de salle > capacity`
+## <a name="capacity"></a>3. Propriété `Configuration de salle > capacity` (Capacité)
 
-**Nom:** Capacité
+Capacité, en nombre de spectacteurs.
 
 |            |           |
 | ---------- | --------- |
 | **Type**   | `integer` |
 | **Requis** | Non       |
 
-**Description:** Capacité, en nombre de spectacteurs.
-
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

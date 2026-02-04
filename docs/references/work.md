@@ -1,14 +1,12 @@
 # Oeuvre (Work)
 
-**Nom:** Oeuvre (Work)
+Cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** Cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.
 
 | Propriété                                    | Description                                                                                                                       | Priorité           | Type et définition                                                          |
 | -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------- |
@@ -25,9 +23,9 @@
 
 Valeur fixe: `"Work"`
 
-## <a name="identifier"></a>2. Propriété `Oeuvre (Work) > identifier`
+## <a name="identifier"></a>2. Propriété `Oeuvre (Work) > identifier` (Identifiant)
 
-**Nom:** Identifiant
+Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 |                 |                                        |
 | --------------- | -------------------------------------- |
@@ -35,13 +33,11 @@ Valeur fixe: `"Work"`
 | **Requis**      | Oui                                    |
 | **Défini dans** | [identifier](../identifier) |
 
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
-
 [Voir la documentation de Identifiant (Identifier)](../identifier)
 
-## <a name="name"></a>3. Propriété `Oeuvre (Work) > name`
+## <a name="name"></a>3. Propriété `Oeuvre (Work) > name` (Nom)
 
-**Nom:** Nom
+Nom de l'oeuvre.
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -49,9 +45,7 @@ Valeur fixe: `"Work"`
 | **Requis**      | Oui                                                     |
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
-**Description:** Nom de l'oeuvre.
-
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

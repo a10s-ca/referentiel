@@ -1,14 +1,12 @@
 # Contributeur (contributor)
 
-**Nom:** Contributeur (contributor)
+les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
 
 | Propriété                                                                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                 | Priorité           | Type et définition                                                                                           |
 | ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------------ |
@@ -33,9 +31,9 @@
 
 Valeur fixe: `"Contributor"`
 
-## <a name="contributorType"></a>2. Propriété `Contributeur (contributor) > contributorType`
+## <a name="contributorType"></a>2. Propriété `Contributeur (contributor) > contributorType` (Types de contributeur)
 
-**Nom:** Types de contributeur
+Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.
 
 |                 |                                                                |
 | --------------- | -------------------------------------------------------------- |
@@ -43,13 +41,11 @@ Valeur fixe: `"Contributor"`
 | **Requis**      | Oui                                                            |
 | **Défini dans** | [contributorType](../vocabularies/contributor_type) |
 
-**Description:** Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.
-
 [Voir la documentation de Type de contributeur](../vocabularies/contributor_type)
 
-## <a name="identifier"></a>3. Propriété `Contributeur (contributor) > identifier`
+## <a name="identifier"></a>3. Propriété `Contributeur (contributor) > identifier` (Identifiant)
 
-**Nom:** Identifiant
+Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 |                 |                                        |
 | --------------- | -------------------------------------- |
@@ -57,13 +53,13 @@ Valeur fixe: `"Contributor"`
 | **Requis**      | Oui                                    |
 | **Défini dans** | [identifier](../identifier) |
 
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
-
 [Voir la documentation de Identifiant (Identifier)](../identifier)
 
-## <a name="name"></a>4. Propriété `Contributeur (contributor) > name`
+## <a name="name"></a>4. Propriété `Contributeur (contributor) > name` (Nom)
 
-**Nom:** Nom
+Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.
+
+Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -71,25 +67,19 @@ Valeur fixe: `"Contributor"`
 | **Requis**      | Oui                                                     |
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
-**Description:** Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.
-
-Exemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.
-
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
-## <a name="alternateName"></a>5. Propriété `Contributeur (contributor) > alternateName`
+## <a name="alternateName"></a>5. Propriété `Contributeur (contributor) > alternateName` (Nom alternatif)
 
-**Nom:** Nom alternatif
+Autres appellations parfois utilisées pour le contributeur.
+
+Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».
+Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Autres appellations parfois utilisées pour le contributeur.
-
-Exemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».
-Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -105,7 +95,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 ### <a name="alternateName_items"></a>5.1. Contributeur (contributor) > alternateName > Texte court multilingue
 
-**Nom:** Texte court multilingue
+Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
 
 |                         |                   |
 | ----------------------- | ----------------- |
@@ -113,11 +103,9 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Requis**              | Non               |
 | **Même définition que** | [name](#name)     |
 
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
+## <a name="description"></a>6. Propriété `Contributeur (contributor) > description` (Description)
 
-## <a name="description"></a>6. Propriété `Contributeur (contributor) > description`
-
-**Nom:** Description
+Énumération de textes longs associés à un code de langue au standard ISO 639-1.
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -125,13 +113,11 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Requis**      | Non                                                           |
 | **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
-
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
-## <a name="shortDescription"></a>7. Propriété `Contributeur (contributor) > shortDescription`
+## <a name="shortDescription"></a>7. Propriété `Contributeur (contributor) > shortDescription` (Description courte)
 
-**Nom:** Description courte
+Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -139,20 +125,16 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Requis**      | Non                                                           |
 | **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
-**Description:** Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.
-
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
-## <a name="media"></a>8. Propriété `Contributeur (contributor) > media`
+## <a name="media"></a>8. Propriété `Contributeur (contributor) > media` (Médias)
 
-**Nom:** Médias
+Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -168,7 +150,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 ### <a name="media_items"></a>8.1. Contributeur (contributor) > media > Média (Media)
 
-**Nom:** Média (Media)
+Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
 |                               |                                      |
 | ----------------------------- | ------------------------------------ |
@@ -177,20 +159,16 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Propriétés additionnelles** | Tout type permis                     |
 | **Défini dans**               | [Média (Media)](../media) |
 
-**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
-
 [Voir la documentation de Média (Media)](../media)
 
-## <a name="typicalContributionType"></a>9. Propriété `Contributeur (contributor) > typicalContributionType`
+## <a name="typicalContributionType"></a>9. Propriété `Contributeur (contributor) > typicalContributionType` (Types de contribution typiques)
 
-**Nom:** Types de contribution typiques
+Énumération des types de contributions habituellement faites par le contributeur.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Énumération des types de contributions habituellement faites par le contributeur.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -206,7 +184,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 ### <a name="typicalContributionType_items"></a>9.1. Contributeur (contributor) > typicalContributionType > Terme (Term)
 
-**Nom:** Terme (Term)
+Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
 |                               |                                    |
 | ----------------------------- | ---------------------------------- |
@@ -215,20 +193,16 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Propriétés additionnelles** | Tout type permis                   |
 | **Défini dans**               | [Terme (Term)](../term) |
 
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
-
 [Voir la documentation de Terme (Term)](../term)
 
-## <a name="hasGeographicRelation"></a>10. Propriété `Contributeur (contributor) > hasGeographicRelation`
+## <a name="hasGeographicRelation"></a>10. Propriété `Contributeur (contributor) > hasGeographicRelation` (Relations géographiques)
 
-**Nom:** Relations géographiques
+Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -244,7 +218,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 ### <a name="hasGeographicRelation_items"></a>10.1. Contributeur (contributor) > hasGeographicRelation > Association Géographique (GeographicRelation)
 
-**Nom:** Association Géographique (GeographicRelation)
+Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
 |                               |                                                                                    |
 | ----------------------------- | ---------------------------------------------------------------------------------- |
@@ -253,20 +227,16 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Propriétés additionnelles** | Pas permis                                                                         |
 | **Défini dans**               | [Association Géographique (GeographicRelation)](../geographic_relation) |
 
-**Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
-
 [Voir la documentation de Association Géographique (GeographicRelation)](../geographic_relation)
 
-## <a name="hasMembers"></a>11. Propriété `Contributeur (contributor) > hasMembers`
+## <a name="hasMembers"></a>11. Propriété `Contributeur (contributor) > hasMembers` (Membres)
 
-**Nom:** Membres
+Énumération des membres des groupes, troupes et collectifs, etc.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Énumération des membres des groupes, troupes et collectifs, etc.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -282,7 +252,7 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 
 ### <a name="hasMembers_items"></a>11.1. Contributeur (contributor) > hasMembers > Contributeur (contributor)
 
-**Nom:** Contributeur (contributor)
+les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
 
 |                               |                                     |
 | ----------------------------- | ----------------------------------- |
@@ -291,7 +261,5 @@ Exemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».
 | **Propriétés additionnelles** | Tout type permis                    |
 | **Même définition que**       | [Contributeur (contributor)](#root) |
 
-**Description:** les contributeurs correspondent à des personnes physiques ou morales (compagnies, troupes, groupes…) associées à un spectacle à travers un lien de contribution. Le contributeur doit être distingué de sa contribution à un spectacle donné (ou à une représentation, ou une série), car un même contributeur peut faire des contributions différentes d’un spectacle à l’autre (par exemple, être comédien dans un cas et metteur en scène dans l’autre).
-
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:54 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

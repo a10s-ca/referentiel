@@ -1,14 +1,12 @@
 # Contribution (Contribution)
 
-**Nom:** Contribution (Contribution)
+Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
 | Propriété                                                          | Description                                                                                                                                                                                                                                                                                                                                                          | Priorité           | Type et définition                                           |
 | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------ |
@@ -27,16 +25,14 @@
 
 Valeur fixe: `"Contribution"`
 
-## <a name="contributionType"></a>2. Propriété `Contribution (Contribution) > contributionType`
+## <a name="contributionType"></a>2. Propriété `Contribution (Contribution) > contributionType` (Types de contribution)
 
-**Nom:** Types de contribution
+Identification des types de contribution.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Oui     |
-
-**Description:** Identification des types de contribution.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -52,7 +48,7 @@ Valeur fixe: `"Contribution"`
 
 ### <a name="contributionType_items"></a>2.1. Contribution (Contribution) > contributionType > Terme (Term)
 
-**Nom:** Terme (Term)
+Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
 |                               |                                    |
 | ----------------------------- | ---------------------------------- |
@@ -61,13 +57,11 @@ Valeur fixe: `"Contribution"`
 | **Propriétés additionnelles** | Tout type permis                   |
 | **Défini dans**               | [Terme (Term)](../term) |
 
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
-
 [Voir la documentation de Terme (Term)](../term)
 
-## <a name="contributor"></a>3. Propriété `Contribution (Contribution) > contributor`
+## <a name="contributor"></a>3. Propriété `Contribution (Contribution) > contributor` (Contributeur)
 
-**Nom:** Contributeur
+Identification du contributeur
 
 |                               |                                          |
 | ----------------------------- | ---------------------------------------- |
@@ -76,24 +70,20 @@ Valeur fixe: `"Contribution"`
 | **Propriétés additionnelles** | Tout type permis                         |
 | **Défini dans**               | [contributor](../contributor) |
 
-**Description:** Identification du contributeur
-
 [Voir la documentation de Contributeur (contributor)](../contributor)
 
-## <a name="sequenceNumber"></a>4. Propriété `Contribution (Contribution) > sequenceNumber`
+## <a name="sequenceNumber"></a>4. Propriété `Contribution (Contribution) > sequenceNumber` (Numéro de séquence)
 
-**Nom:** Numéro de séquence
+Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).
 
 |            |           |
 | ---------- | --------- |
 | **Type**   | `integer` |
 | **Requis** | Non       |
 
-**Description:** Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).
+## <a name="usageNote"></a>5. Propriété `Contribution (Contribution) > usageNote` (Note d'usage)
 
-## <a name="usageNote"></a>5. Propriété `Contribution (Contribution) > usageNote`
-
-**Nom:** Note d'usage
+Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.
 
 |                 |                                                  |
 | --------------- | ------------------------------------------------ |
@@ -101,9 +91,7 @@ Valeur fixe: `"Contribution"`
 | **Requis**      | Non                                              |
 | **Défini dans** | [vocabulary](../datatypes/text_short) |
 
-**Description:** Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.
-
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

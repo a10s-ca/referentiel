@@ -1,14 +1,12 @@
 # Série de représentations (Series)
 
-**Nom:** Série de représentations (Series)
+cette classe permet de regrouper des représentations n’étant pas nécessairement toutes associées à un même spectacle, mais liées entre elles par des éléments de commercialisation ou de modalités d’accès. Un festival est un exemple de série.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** cette classe permet de regrouper des représentations n’étant pas nécessairement toutes associées à un même spectacle, mais liées entre elles par des éléments de commercialisation ou de modalités d’accès. Un festival est un exemple de série.
 
 | Propriété                                                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Priorité           | Type et définition                                                                  |
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ | ----------------------------------------------------------------------------------- |
@@ -21,8 +19,8 @@
 | [media](#media )<br/>_Médias_                                   | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.                                                                                                                                                                                                                                                                                                                                                                                                                  | Optionnel (0..N)   | Tableau d'objets de type [Média (Media)](../media )                      |
 | [hasContribution](#hasContribution )<br/>_Contributions_        | Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.<br /><br />Exemple: un commanditaire d'un festival a une contribution à la série.<br /><br />Contre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même. | Optionnel (0..N)   | Tableau d'objets de type [Contribution (Contribution)](../contribution ) |
 | [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_          | Pages web donnant plus d'information sur la série.<br /><br />Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.                                                                                                                                                                                                                                                                                  | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                         |
-| [startDateTime](#startDateTime )<br/>_Date et heure de début_   | Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                                                                                                                                                                                                                                            | Obligatoire        | string                                                                              |
-| [endDateTime](#endDateTime )<br/>_Date et heure de fin_         | Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                                                                                                                                                                                                                                              | Optionnel          | string                                                                              |
+| [startDateTime](#startDateTime )<br/>_Date et heure de début_   | Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                                                                                                                                                                                                                                            | Obligatoire        | string (date-time)                                                                  |
+| [endDateTime](#endDateTime )<br/>_Date et heure de fin_         | Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                                                                                                                                                                                                                                              | Optionnel          | string (date-time)                                                                  |
 | [hasOffer](#hasOffer )<br/>_Offres_                             | Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.                                                                                                                                                                                                                           | Optionnel (1..1)   | Tableau d'objets de type [Offre (Offer)](../offer )                      |
 
 ## <a name="type"></a>1. Propriété `Série de représentations (Series) > type`
@@ -34,9 +32,9 @@
 
 Valeur fixe: `"Series"`
 
-## <a name="identifier"></a>2. Propriété `Série de représentations (Series) > identifier`
+## <a name="identifier"></a>2. Propriété `Série de représentations (Series) > identifier` (Identifiant)
 
-**Nom:** Identifiant
+Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 |                 |                                        |
 | --------------- | -------------------------------------- |
@@ -44,13 +42,11 @@ Valeur fixe: `"Series"`
 | **Requis**      | Oui                                    |
 | **Défini dans** | [identifier](../identifier) |
 
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
-
 [Voir la documentation de Identifiant (Identifier)](../identifier)
 
-## <a name="name"></a>3. Propriété `Série de représentations (Series) > name`
+## <a name="name"></a>3. Propriété `Série de représentations (Series) > name` (Nom)
 
-**Nom:** Nom
+Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -58,13 +54,13 @@ Valeur fixe: `"Series"`
 | **Requis**      | Oui                                                     |
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
-**Description:** Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
-
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
-## <a name="alternateName"></a>4. Propriété `Série de représentations (Series) > alternateName`
+## <a name="alternateName"></a>4. Propriété `Série de représentations (Series) > alternateName` (Nom alternatif)
 
-**Nom:** Nom alternatif
+Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.
+
+Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aussi connu sous son acronyme FME.
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -72,15 +68,11 @@ Valeur fixe: `"Series"`
 | **Requis**      | Non                                                     |
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
-**Description:** Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.
-
-Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aussi connu sous son acronyme FME.
-
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
-## <a name="description"></a>5. Propriété `Série de représentations (Series) > description`
+## <a name="description"></a>5. Propriété `Série de représentations (Series) > description` (Description)
 
-**Nom:** Description
+Description de la série.
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -88,13 +80,11 @@ Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aus
 | **Requis**      | Oui                                                           |
 | **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
-**Description:** Description de la série.
-
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
-## <a name="shortDescription"></a>6. Propriété `Série de représentations (Series) > shortDescription`
+## <a name="shortDescription"></a>6. Propriété `Série de représentations (Series) > shortDescription` (Description courte)
 
-**Nom:** Description courte
+Description résumée de la série. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -102,20 +92,16 @@ Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aus
 | **Requis**      | Non                                                           |
 | **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
-**Description:** Description résumée de la série. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
-
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
-## <a name="media"></a>7. Propriété `Série de représentations (Series) > media`
+## <a name="media"></a>7. Propriété `Série de représentations (Series) > media` (Médias)
 
-**Nom:** Médias
+Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -131,7 +117,7 @@ Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aus
 
 ### <a name="media_items"></a>7.1. Série de représentations (Series) > media > Média (Media)
 
-**Nom:** Média (Media)
+Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
 |                               |                                      |
 | ----------------------------- | ------------------------------------ |
@@ -140,24 +126,20 @@ Par exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aus
 | **Propriétés additionnelles** | Tout type permis                     |
 | **Défini dans**               | [Média (Media)](../media) |
 
-**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
-
 [Voir la documentation de Média (Media)](../media)
 
-## <a name="hasContribution"></a>8. Propriété `Série de représentations (Series) > hasContribution`
+## <a name="hasContribution"></a>8. Propriété `Série de représentations (Series) > hasContribution` (Contributions)
 
-**Nom:** Contributions
+Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.
+
+Exemple: un commanditaire d'un festival a une contribution à la série.
+
+Contre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.
-
-Exemple: un commanditaire d'un festival a une contribution à la série.
-
-Contre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -173,7 +155,7 @@ Contre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la s�
 
 ### <a name="hasContribution_items"></a>8.1. Série de représentations (Series) > hasContribution > Contribution (Contribution)
 
-**Nom:** Contribution (Contribution)
+Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
 |                               |                                                           |
 | ----------------------------- | --------------------------------------------------------- |
@@ -182,22 +164,18 @@ Contre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la s�
 | **Propriétés additionnelles** | Tout type permis                                          |
 | **Défini dans**               | [Contribution (Contribution)](../contribution) |
 
-**Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
-
 [Voir la documentation de Contribution (Contribution)](../contribution)
 
-## <a name="mainEntityOfPage"></a>9. Propriété `Série de représentations (Series) > mainEntityOfPage`
+## <a name="mainEntityOfPage"></a>9. Propriété `Série de représentations (Series) > mainEntityOfPage` (Pages web)
 
-**Nom:** Pages web
+Pages web donnant plus d'information sur la série.
+
+Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Pages web donnant plus d'information sur la série.
-
-Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -213,8 +191,6 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 
 ### <a name="mainEntityOfPage_items"></a>9.1. Série de représentations (Series) > mainEntityOfPage > WebPage
 
-**Nom:** WebPage
-
 |                               |                                   |
 | ----------------------------- | --------------------------------- |
 | **Type**                      | `object`                          |
@@ -224,9 +200,9 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 
 [Voir la documentation de WebPage](../web_page)
 
-## <a name="startDateTime"></a>10. Propriété `Série de représentations (Series) > startDateTime`
+## <a name="startDateTime"></a>10. Propriété `Série de représentations (Series) > startDateTime` (Date et heure de début)
 
-**Nom:** Date et heure de début
+Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
 
 |            |             |
 | ---------- | ----------- |
@@ -234,11 +210,9 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 | **Requis** | Oui         |
 | **Format** | `date-time` |
 
-**Description:** Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
+## <a name="endDateTime"></a>11. Propriété `Série de représentations (Series) > endDateTime` (Date et heure de fin)
 
-## <a name="endDateTime"></a>11. Propriété `Série de représentations (Series) > endDateTime`
-
-**Nom:** Date et heure de fin
+Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
 
 |            |             |
 | ---------- | ----------- |
@@ -246,18 +220,14 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 | **Requis** | Non         |
 | **Format** | `date-time` |
 
-**Description:** Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
+## <a name="hasOffer"></a>12. Propriété `Série de représentations (Series) > hasOffer` (Offres)
 
-## <a name="hasOffer"></a>12. Propriété `Série de représentations (Series) > hasOffer`
-
-**Nom:** Offres
+Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -273,7 +243,7 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 
 ### <a name="hasOffer_items"></a>12.1. Série de représentations (Series) > hasOffer > Offre (Offer)
 
-**Nom:** Offre (Offer)
+Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
 |                               |                                      |
 | ----------------------------- | ------------------------------------ |
@@ -282,9 +252,7 @@ Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la
 | **Propriétés additionnelles** | Tout type permis                     |
 | **Défini dans**               | [Offre (Offer)](../offer) |
 
-**Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
-
 [Voir la documentation de Offre (Offer)](../offer)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

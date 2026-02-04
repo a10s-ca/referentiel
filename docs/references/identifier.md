@@ -1,13 +1,11 @@
 # Identifiant (Identifier)
 
-**Nom:** Identifiant (Identifier)
+Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 **Exemples:**
 
@@ -71,31 +69,27 @@
 
 Valeur fixe: `"PropertyValue"`
 
-#### <a name="items_anyOf_i0_propertyID"></a>1.1.2. Propriété `Identifiant (Identifier) > root items > anyOf > item 0 > propertyID`
+#### <a name="items_anyOf_i0_propertyID"></a>1.1.2. Propriété `Identifiant (Identifier) > root items > anyOf > item 0 > propertyID` (Identifiant de propriété)
 
-**Nom:** Identifiant de propriété
+Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.
 
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
 | **Requis** | Oui      |
-
-**Description:** Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles.
 
 | Restrictions          |   |
 | --------------------- | - |
 | **Longueur minimale** | 1 |
 
-#### <a name="items_anyOf_i0_value"></a>1.1.3. Propriété `Identifiant (Identifier) > root items > anyOf > item 0 > value`
+#### <a name="items_anyOf_i0_value"></a>1.1.3. Propriété `Identifiant (Identifier) > root items > anyOf > item 0 > value` (Valeur)
 
-**Nom:** Valeur
+L'identifiant lui-même
 
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
 | **Requis** | Oui      |
-
-**Description:** L'identifiant lui-même
 
 | Restrictions          |   |
 | --------------------- | - |
@@ -103,13 +97,13 @@ Valeur fixe: `"PropertyValue"`
 
 ### <a name="items_anyOf_i1"></a>1.2. Propriété `Identifiant (Identifier) > root items > anyOf > item 1`
 
+Un identifiant URI sous forme de chaîne de caractères.
+
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
 | **Requis** | Non      |
 | **Format** | `uri`    |
 
-**Description:** Un identifiant URI sous forme de chaîne de caractères.
-
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

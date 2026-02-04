@@ -1,13 +1,11 @@
 # Texte court multilingue
 
-**Nom:** Texte court multilingue
+Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
 
 |            |                   |
 | ---------- | ----------------- |
 | **Type**   | `array of object` |
 | **Requis** | Non               |
-
-**Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -34,9 +32,9 @@
 | [lang](#items_lang )<br/>_Langue_        | Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry). | Obligatoire | [Code de langue](../datatypes/partials/language ) |
 | [value](#items_value )<br/>_Texte court_ | HTML non-autorisées                                                                                                                                        | Obligatoire | [value](../datatypes/partials/no_html )           |
 
-### <a name="items_lang"></a>1.1. Propriété `Texte court multilingue > root items > lang`
+### <a name="items_lang"></a>1.1. Propriété `Texte court multilingue > root items > lang` (Langue)
 
-**Nom:** Langue
+Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
 |                 |                                         |
 | --------------- | --------------------------------------- |
@@ -44,13 +42,11 @@
 | **Requis**      | Oui                                     |
 | **Défini dans** | [lang](../datatypes/partials/language) |
 
-**Description:** Code de langue au standard ISO 639-1. Voir [language-subtag-registry](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
-### <a name="items_value"></a>1.2. Propriété `Texte court multilingue > root items > value`
+### <a name="items_value"></a>1.2. Propriété `Texte court multilingue > root items > value` (Texte court)
 
-**Nom:** Texte court
+HTML non-autorisées
 
 |                 |                                         |
 | --------------- | --------------------------------------- |
@@ -58,9 +54,7 @@
 | **Requis**      | Oui                                     |
 | **Défini dans** | [value](../datatypes/partials/no_html) |
 
-**Description:** HTML non-autorisées
-
 [Voir la documentation de ](../datatypes/partials/no_html)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:18 -0500

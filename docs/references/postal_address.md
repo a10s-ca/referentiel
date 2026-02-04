@@ -1,14 +1,12 @@
 # Adresse postale (Postal Address)
 
-**Nom:** Adresse postale (Postal Address)
+Permet d’indiquer l’adresse d’un lieu.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** Permet d’indiquer l’adresse d’un lieu.
 
 | Propriété                                              | Description                                                                                                                                   | Priorité    | Type et définition                                                  |
 | ------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------------------------------------------------------- |
@@ -51,23 +49,9 @@ Sinon (addressCountry ≠ "CAN") alors :
 
 Valeur fixe: `"PostalAddress"`
 
-## <a name="streetAddress"></a>2. Propriété `Adresse postale (Postal Address) > streetAddress`
+## <a name="streetAddress"></a>2. Propriété `Adresse postale (Postal Address) > streetAddress` (Adresse postale)
 
-**Nom:** Adresse postale
-
-|                 |                                                     |
-| --------------- | --------------------------------------------------- |
-| **Type**        | `string`                                            |
-| **Requis**      | Oui                                                 |
-| **Défini dans** | [streetAddress](../datatypes/text_short) |
-
-**Description:** Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.
-
-[Voir la documentation de Texte court](../datatypes/text_short)
-
-## <a name="addressLocality"></a>3. Propriété `Adresse postale (Postal Address) > addressLocality`
-
-**Nom:** Localité
+Unité, numéro municipal, type de rue, nom de rue, direction de rue. Peut aussi contenir d'autres informations.
 
 |                 |                                                     |
 | --------------- | --------------------------------------------------- |
@@ -75,24 +59,32 @@ Valeur fixe: `"PostalAddress"`
 | **Requis**      | Oui                                                 |
 | **Défini dans** | [streetAddress](../datatypes/text_short) |
 
-**Description:** Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.
+[Voir la documentation de Texte court](../datatypes/text_short)
+
+## <a name="addressLocality"></a>3. Propriété `Adresse postale (Postal Address) > addressLocality` (Localité)
+
+Nom de la ville. Peut aussi contenir le nom de la municipalité ou de la localité.
+
+|                 |                                                     |
+| --------------- | --------------------------------------------------- |
+| **Type**        | `string`                                            |
+| **Requis**      | Oui                                                 |
+| **Défini dans** | [streetAddress](../datatypes/text_short) |
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="addressRegion"></a>4. Propriété `Adresse postale (Postal Address) > addressRegion`
+## <a name="addressRegion"></a>4. Propriété `Adresse postale (Postal Address) > addressRegion` (Région)
 
-**Nom:** Région
+Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.
 
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
 | **Requis** | Oui      |
 
-**Description:** Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.
+## <a name="addressCountry"></a>5. Propriété `Adresse postale (Postal Address) > addressCountry` (Pays)
 
-## <a name="addressCountry"></a>5. Propriété `Adresse postale (Postal Address) > addressCountry`
-
-**Nom:** Pays
+Code de pays à 3 caractères selon le standard ISO 3166-1
 
 |                 |                                                        |
 | --------------- | ------------------------------------------------------ |
@@ -100,13 +92,11 @@ Valeur fixe: `"PostalAddress"`
 | **Requis**      | Oui                                                    |
 | **Défini dans** | [addressCountry](../datatypes/country_code) |
 
-**Description:** Code de pays à 3 caractères selon le standard ISO 3166-1
-
 [Voir la documentation de Code Pays](../datatypes/country_code)
 
-## <a name="postalCode"></a>6. Propriété `Adresse postale (Postal Address) > postalCode`
+## <a name="postalCode"></a>6. Propriété `Adresse postale (Postal Address) > postalCode` (Code postal)
 
-**Nom:** Code postal
+Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union
 
 |                 |                                                          |
 | --------------- | -------------------------------------------------------- |
@@ -114,9 +104,7 @@ Valeur fixe: `"PostalAddress"`
 | **Requis**      | Oui                                                      |
 | **Défini dans** | [postalCode](../datatypes/canada_postal_code) |
 
-**Description:** Code postal, en majuscules. Séparer les trois premiers caractères du code postal des trois derniers. On ne doit pas utiliser le trait d’union
-
 [Voir la documentation de Code Postal Canadien](../datatypes/canada_postal_code)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500

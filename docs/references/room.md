@@ -1,14 +1,12 @@
 # Salle (Room)
 
-**Nom:** Salle (Room)
+Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
 
 |                               |                  |
 | ----------------------------- | ---------------- |
 | **Type**                      | `object`         |
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
-
-**Description:** Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
 
 | Propriété                                                                | Description                                                                                                                                                      | Priorité           | Type et définition                                                                   |
 | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
@@ -40,9 +38,9 @@ si (nameSameAsPlace = false) alors :
 
 Valeur fixe: `"Room"`
 
-## <a name="identifier"></a>2. Propriété `Salle (Room) > identifier`
+## <a name="identifier"></a>2. Propriété `Salle (Room) > identifier` (Identifiant)
 
-**Nom:** Identifiant
+Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
 |                 |                                        |
 | --------------- | -------------------------------------- |
@@ -50,13 +48,11 @@ Valeur fixe: `"Room"`
 | **Requis**      | Oui                                    |
 | **Défini dans** | [identifier](../identifier) |
 
-**Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
-
 [Voir la documentation de Identifiant (Identifier)](../identifier)
 
-## <a name="name"></a>3. Propriété `Salle (Room) > name`
+## <a name="name"></a>3. Propriété `Salle (Room) > name` (Nom)
 
-**Nom:** Nom
+Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -64,36 +60,18 @@ Valeur fixe: `"Room"`
 | **Requis**      | Non                                                     |
 | **Défini dans** | [name](../datatypes/text_short_multilingual) |
 
-**Description:** Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.
-
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
-## <a name="nameSameAsPlace"></a>4. Propriété `Salle (Room) > nameSameAsPlace`
-
-**Nom:** Nom identique au lieu
+## <a name="nameSameAsPlace"></a>4. Propriété `Salle (Room) > nameSameAsPlace` (Nom identique au lieu)
 
 |            |           |
 | ---------- | --------- |
 | **Type**   | `boolean` |
 | **Requis** | Oui       |
 
-## <a name="description"></a>5. Propriété `Salle (Room) > description`
+## <a name="description"></a>5. Propriété `Salle (Room) > description` (Description)
 
-**Nom:** Description
-
-|                 |                                                               |
-| --------------- | ------------------------------------------------------------- |
-| **Type**        | `array of object`                                             |
-| **Requis**      | Non                                                           |
-| **Défini dans** | [description](../datatypes/text_long_multilingual) |
-
-**Description:** Énumération de textes longs associés à un code de langue au standard ISO 639-1.
-
-[Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
-
-## <a name="shortDescription"></a>6. Propriété `Salle (Room) > shortDescription`
-
-**Nom:** Description courte
+Énumération de textes longs associés à un code de langue au standard ISO 639-1.
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -101,20 +79,28 @@ Valeur fixe: `"Room"`
 | **Requis**      | Non                                                           |
 | **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
-**Description:** Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
+[Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
+
+## <a name="shortDescription"></a>6. Propriété `Salle (Room) > shortDescription` (Description courte)
+
+Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
+
+|                 |                                                               |
+| --------------- | ------------------------------------------------------------- |
+| **Type**        | `array of object`                                             |
+| **Requis**      | Non                                                           |
+| **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
-## <a name="media"></a>7. Propriété `Salle (Room) > media`
+## <a name="media"></a>7. Propriété `Salle (Room) > media` (Médias)
 
-**Nom:** Médias
+Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -130,7 +116,7 @@ Valeur fixe: `"Room"`
 
 ### <a name="media_items"></a>7.1. Salle (Room) > media > Média (Media)
 
-**Nom:** Média (Media)
+Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
 |                               |                                      |
 | ----------------------------- | ------------------------------------ |
@@ -139,13 +125,11 @@ Valeur fixe: `"Room"`
 | **Propriétés additionnelles** | Tout type permis                     |
 | **Défini dans**               | [Média (Media)](../media) |
 
-**Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
-
 [Voir la documentation de Média (Media)](../media)
 
-## <a name="inPlace"></a>8. Propriété `Salle (Room) > inPlace`
+## <a name="inPlace"></a>8. Propriété `Salle (Room) > inPlace` (Lieu)
 
-**Nom:** Lieu
+Lieu associé à l'offre (physique ou virtuel).
 
 |                               |                                |
 | ----------------------------- | ------------------------------ |
@@ -154,13 +138,11 @@ Valeur fixe: `"Room"`
 | **Propriétés additionnelles** | Tout type permis               |
 | **Défini dans**               | [inPlace](../place) |
 
-**Description:** Lieu associé à l'offre (physique ou virtuel).
-
 [Voir la documentation de Lieu (Place)](../place)
 
-## <a name="address"></a>9. Propriété `Salle (Room) > address`
+## <a name="address"></a>9. Propriété `Salle (Room) > address` (Adresse)
 
-**Nom:** Adresse
+Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.
 
 |                               |                                         |
 | ----------------------------- | --------------------------------------- |
@@ -169,20 +151,16 @@ Valeur fixe: `"Room"`
 | **Propriétés additionnelles** | Tout type permis                        |
 | **Défini dans**               | [address](../postal_address) |
 
-**Description:** Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.
-
 [Voir la documentation de Adresse postale (Postal Address)](../postal_address)
 
-## <a name="roomAccessibility"></a>10. Propriété `Salle (Room) > roomAccessibility`
+## <a name="roomAccessibility"></a>10. Propriété `Salle (Room) > roomAccessibility` (Accessibilité de la salle)
 
-**Nom:** Accessibilité de la salle
+Caractéristiques d'accessibilité universelle pour la salle. 
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Caractéristiques d'accessibilité universelle pour la salle. 
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -198,7 +176,7 @@ Valeur fixe: `"Room"`
 
 ### <a name="roomAccessibility_items"></a>10.1. Salle (Room) > roomAccessibility > Terme (Term)
 
-**Nom:** Terme (Term)
+Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
 |                               |                                           |
 | ----------------------------- | ----------------------------------------- |
@@ -207,18 +185,14 @@ Valeur fixe: `"Room"`
 | **Propriétés additionnelles** | Tout type permis                          |
 | **Même définition que**       | [additionalType](#inPlace_additionalType) |
 
-**Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+## <a name="roomConfiguration"></a>11. Propriété `Salle (Room) > roomConfiguration` (Configuration de la salle)
 
-## <a name="roomConfiguration"></a>11. Propriété `Salle (Room) > roomConfiguration`
-
-**Nom:** Configuration de la salle
+Précisions sur les configurations possibles de la salle.
 
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
 | **Requis** | Non     |
-
-**Description:** Précisions sur les configurations possibles de la salle.
 
 |                            | Contraintes du tableau |
 | -------------------------- | ---------------------- |
@@ -234,7 +208,7 @@ Valeur fixe: `"Room"`
 
 ### <a name="roomConfiguration_items"></a>11.1. Salle (Room) > roomConfiguration > Configuration de salle
 
-**Nom:** Configuration de salle
+Précisions sur un configuration possible de la salle.
 
 |                               |                                                            |
 | ----------------------------- | ---------------------------------------------------------- |
@@ -243,9 +217,7 @@ Valeur fixe: `"Room"`
 | **Propriétés additionnelles** | Tout type permis                                           |
 | **Défini dans**               | [Configuration de salle](../room_specification) |
 
-**Description:** Précisions sur un configuration possible de la salle.
-
 [Voir la documentation de Configuration de salle](../room_specification)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500
