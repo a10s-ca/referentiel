@@ -8,11 +8,11 @@
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
 
-| Propriété                  | Description                                 | Priorité    | Type et définition                                           |
-| -------------------------- | ------------------------------------------- | ----------- | ------------------------------------------------------------ |
-| [type](#type )             | -                                           | Obligatoire | -                                                            |
-| [url](#url )               | -                                           | Obligatoire | -                                                            |
-| [inLanguage](#inLanguage ) | Langue de la page Web, au format ISO 639-1. | Optionnel   | [Code de langue](../datatypes/partials/language ) |
+| Propriété                                | Description                                 | Priorité    | Type et définition                                           |
+| ---------------------------------------- | ------------------------------------------- | ----------- | ------------------------------------------------------------ |
+| [type](#type )                           | -                                           | Obligatoire | const                                                        |
+| [url](#url )<br/>_URL_                   | -                                           | Obligatoire | string                                                       |
+| [inLanguage](#inLanguage )<br/>_Langues_ | Langue de la page Web, au format ISO 639-1. | Optionnel   | [Code de langue](../datatypes/partials/language ) |
 
 ## <a name="type"></a>1. Propriété `WebPage > type`
 
@@ -25,6 +25,8 @@ Valeur fixe: `"WebPage"`
 
 ## <a name="url"></a>2. Propriété `WebPage > url`
 
+**Nom:** URL
+
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
@@ -33,7 +35,7 @@ Valeur fixe: `"WebPage"`
 
 ## <a name="inLanguage"></a>3. Propriété `WebPage > inLanguage`
 
-**Nom:** Code de langue
+**Nom:** Langues
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -46,4 +48,4 @@ Valeur fixe: `"WebPage"`
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

@@ -9,7 +9,8 @@
     "type": "object",
     "properties": {
       "lang": {
-        "$ref": "./partials/language.schema.json"
+        "$ref": "./partials/language.schema.json",
+        "title": "Langue"
       },
       "value": {
         "title": "Texte court",

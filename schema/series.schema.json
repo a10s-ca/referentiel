@@ -16,55 +16,65 @@
       "const": "Series"
     },
     "identifier": {
-      "$ref": "./identifier.schema.json"
+      "$ref": "./identifier.schema.json",
+      "title": "Identifiant"
     },
     "name": {
       "description": "Nom de la série, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels.",
-      "$ref": "./datatypes/text_short_multilingual.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json",
+      "title": "Nom"
     },
     "alternateName": {
       "description": "Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.\n\nPar exemple, le Festival de musique émergente en Abitibi-Témiscamingue est aussi connu sous son acronyme FME.",
-      "$ref": "./datatypes/text_short_multilingual.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json",
+      "title": "Nom alternatif"
     },
     "description": {
       "description": "Description de la série.",
       "$ref": "./datatypes/text_long_multilingual.schema.json",
-      "minItems": 1
+      "minItems": 1,
+      "title": "Description"
     },
     "shortDescription": {
       "description": "Description résumée de la série. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.",
-      "$ref": "./datatypes/text_long_multilingual.schema.json"
+      "$ref": "./datatypes/text_long_multilingual.schema.json",
+      "title": "Description courte"
     },
     "media": {
       "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé à la série.",
       "type": "array",
       "items": {
         "$ref": "./media.schema.json"
-      }
+      },
+      "title": "Médias"
     },
     "hasContribution": {
       "description": "Énumération des contributions spécifiques à la série, et non pas aux représentations. Il s'agit typiquement de contributions de production, d'organisation ou de commandite. Les contributions artistiques seront typiquement associées aux spectacles et aux représentations.\n\nExemple: un commanditaire d'un festival a une contribution à la série.\n\nContre-exemple: un artiste sur scène lors d'un spectacle dans le cadre de la série n'a pas de contribution à la série elle-même.",
       "type": "array",
       "items": {
         "$ref": "./contribution.schema.json"
-      }
+      },
+      "title": "Contributions"
     },
     "mainEntityOfPage": {
       "description": "Pages web donnant plus d'information sur la série.\n\nPour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.",
       "type": "array",
       "items": {
         "$ref": "./web_page.schema.json"
-      }
+      },
+      "title": "Pages web"
     },
     "startDateTime": {
       "description": "Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "title": "Date et heure de début"
     },
     "endDateTime": {
       "description": "Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
       "type": "string",
-      "format": "date-time"
+      "format": "date-time",
+      "title": "Date et heure de fin"
     },
     "hasOffer": {
       "description": "Description des différentes modalités pour assister à la série. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour une série hybride. Une série contient donc au maximum deux offres.",
@@ -73,7 +83,8 @@
         "$ref": "./offer.schema.json"
       },
       "minItems": 1,
-      "maxItems": 2
+      "maxItems": 2,
+      "title": "Offres"
     }
   }
 }

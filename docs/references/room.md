@@ -10,19 +10,19 @@
 
 **Description:** Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
 
-| Propriété                                | Description                                                                                                                                                      | Priorité           | Type et définition                                                                   |
-| ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
-| [type](#type )                           | -                                                                                                                                                                | Obligatoire        | -                                                                                    |
-| [identifier](#identifier )               | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | Obligatoire (1..N) | [Identifiant](../identifier )                                             |
-| [name](#name )                           | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )          |
-| [nameSameAsPlace](#nameSameAsPlace )     | -                                                                                                                                                                | Obligatoire        | -                                                                                    |
-| [description](#description )             | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
-| [shortDescription](#shortDescription )   | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
-| [media](#media )                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                               |
-| [inPlace](#inPlace )                     | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | Optionnel          | [Lieu (Place)](../place )                                                 |
-| [address](#address )                     | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Postal Address](../postal_address )                                      |
-| [roomAccessibility](#roomAccessibility ) | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
-| [roomConfiguration](#roomConfiguration ) | Précisions sur les configurations possibles de la salle.                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Configuration de salle](../room_specification ) |
+| Propriété                                                                | Description                                                                                                                                                      | Priorité           | Type et définition                                                                   |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
+| [type](#type )                                                           | -                                                                                                                                                                | Obligatoire        | const                                                                                |
+| [identifier](#identifier )<br/>_Identifiant_                             | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | Obligatoire (1..N) | [Identifiant](../identifier )                                             |
+| [name](#name )<br/>_Nom_                                                 | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )          |
+| [nameSameAsPlace](#nameSameAsPlace )<br/>_Nom identique au lieu_         | -                                                                                                                                                                | Obligatoire        | boolean                                                                              |
+| [description](#description )<br/>_Description_                           | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
+| [shortDescription](#shortDescription )<br/>_Description courte_          | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
+| [media](#media )<br/>_Médias_                                            | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                               |
+| [inPlace](#inPlace )<br/>_Lieu_                                          | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | Optionnel          | [Lieu (Place)](../place )                                                 |
+| [address](#address )<br/>_Adresse_                                       | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Postal Address](../postal_address )                                      |
+| [roomAccessibility](#roomAccessibility )<br/>_Accessibilité de la salle_ | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
+| [roomConfiguration](#roomConfiguration )<br/>_Configuration de la salle_ | Précisions sur les configurations possibles de la salle.                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Configuration de salle](../room_specification ) |
 
 Condition particulière:
 si (nameSameAsPlace = false) alors :
@@ -56,7 +56,7 @@ Valeur fixe: `"Room"`
 
 ## <a name="name"></a>3. Propriété `Salle (Room) > name`
 
-**Nom:** Texte court multilingue
+**Nom:** Nom
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -70,6 +70,8 @@ Valeur fixe: `"Room"`
 
 ## <a name="nameSameAsPlace"></a>4. Propriété `Salle (Room) > nameSameAsPlace`
 
+**Nom:** Nom identique au lieu
+
 |            |           |
 | ---------- | --------- |
 | **Type**   | `boolean` |
@@ -77,7 +79,7 @@ Valeur fixe: `"Room"`
 
 ## <a name="description"></a>5. Propriété `Salle (Room) > description`
 
-**Nom:** Texte long multilingue
+**Nom:** Description
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -91,17 +93,21 @@ Valeur fixe: `"Room"`
 
 ## <a name="shortDescription"></a>6. Propriété `Salle (Room) > shortDescription`
 
-**Nom:** Texte long multilingue
+**Nom:** Description courte
 
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
+|                 |                                                               |
+| --------------- | ------------------------------------------------------------- |
+| **Type**        | `array of object`                                             |
+| **Requis**      | Non                                                           |
+| **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
 **Description:** Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.
 
+[Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
+
 ## <a name="media"></a>7. Propriété `Salle (Room) > media`
+
+**Nom:** Médias
 
 |            |         |
 | ---------- | ------- |
@@ -139,7 +145,7 @@ Valeur fixe: `"Room"`
 
 ## <a name="inPlace"></a>8. Propriété `Salle (Room) > inPlace`
 
-**Nom:** Lieu (Place)
+**Nom:** Lieu
 
 |                               |                                |
 | ----------------------------- | ------------------------------ |
@@ -154,18 +160,22 @@ Valeur fixe: `"Room"`
 
 ## <a name="address"></a>9. Propriété `Salle (Room) > address`
 
-**Nom:** Postal Address
+**Nom:** Adresse
 
-|                               |                             |
-| ----------------------------- | --------------------------- |
-| **Type**                      | `object`                    |
-| **Requis**                    | Non                         |
-| **Propriétés additionnelles** | Tout type permis            |
-| **Même définition que**       | [address](#inPlace_address) |
+|                               |                                         |
+| ----------------------------- | --------------------------------------- |
+| **Type**                      | `object`                                |
+| **Requis**                    | Non                                     |
+| **Propriétés additionnelles** | Tout type permis                        |
+| **Défini dans**               | [address](../postal_address) |
 
 **Description:** Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.
 
+[Voir la documentation de Postal Address](../postal_address)
+
 ## <a name="roomAccessibility"></a>10. Propriété `Salle (Room) > roomAccessibility`
+
+**Nom:** Accessibilité de la salle
 
 |            |         |
 | ---------- | ------- |
@@ -200,6 +210,8 @@ Valeur fixe: `"Room"`
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
 ## <a name="roomConfiguration"></a>11. Propriété `Salle (Room) > roomConfiguration`
+
+**Nom:** Configuration de la salle
 
 |            |         |
 | ---------- | ------- |
@@ -236,4 +248,4 @@ Valeur fixe: `"Room"`
 [Voir la documentation de Configuration de salle](../room_specification)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:12 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

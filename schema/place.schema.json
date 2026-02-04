@@ -12,7 +12,8 @@
   "if": {
     "properties": {
       "virtualPlace": {
-        "const": false
+        "const": false,
+        "title": "Lieu virtuel"
       }
     }
   },
@@ -29,48 +30,58 @@
     },
     "additionalType": {
       "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.",
-      "$ref": "./term.schema.json"
+      "$ref": "./term.schema.json",
+      "title": "Type additionnel"
     },
     "identifier": {
-      "$ref": "./identifier.schema.json"
+      "$ref": "./identifier.schema.json",
+      "title": "Identifiant"
     },
     "name": {
-      "$ref": "./datatypes/text_short_multilingual.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json",
+      "title": "Nom"
     },
     "description": {
       "$ref": "./datatypes/text_long_multilingual.schema.json",
-      "minItems": 1
+      "minItems": 1,
+      "title": "Description"
     },
     "virtualPlace": {
-      "type": "boolean"
+      "type": "boolean",
+      "title": "Lieu virtuel"
     },
     "inRoom": {
       "type": "array",
       "items": {
         "$ref": "./room.schema.json"
       },
-      "description": "Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle."
+      "description": "Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.",
+      "title": "Salle"
     },
     "address": {
       "description": "Coordonnées complètes du lieu.",
-      "$ref": "./postal_address.schema.json"
+      "$ref": "./postal_address.schema.json",
+      "title": "Adresse"
     },
     "mainEntityOfPage": {
       "description": "URL vers des pages web donnant plus d'information sur le lieu.",
       "type": "array",
       "items": {
         "$ref": "./web_page.schema.json"
-      }
+      },
+      "title": "Pages web"
     },
     "placeAccessibility": {
       "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"
-      }
+      },
+      "title": "Accessibilité du lieu"
     },
     "geoCoordinates": {
-      "$ref": "./datatypes/geo_coordinates.schema.json"
+      "$ref": "./datatypes/geo_coordinates.schema.json",
+      "title": "Coordonnées géographiques"
     }
   }
 }

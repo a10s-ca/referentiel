@@ -10,17 +10,17 @@
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-| Propriété                            | Description                                                                                                                                                                                                                                    | Priorité         | Type et définition                                                                                   |
-| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------- |
-| [type](#type )                       | -                                                                                                                                                                                                                                              | Obligatoire      | -                                                                                                    |
-| [sequenceNumber](#sequenceNumber )   | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | Optionnel        | -                                                                                                    |
-| [usageNote](#usageNote )             | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | Optionnel        | [Texte court](../datatypes/text_short )                                                   |
-| [url](#url )                         | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | Obligatoire      | -                                                                                                    |
-| [inLanguage](#inLanguage )           | Langue au format ISO 639-1.                                                                                                                                                                                                                    | Optionnel        | [Code de langue](../datatypes/partials/language )                                         |
-| [license](#license )                 | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | Optionnel (0..N) | Tableau d'objets de type [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| [creditText](#creditText )           | Crédits associés au média.                                                                                                                                                                                                                     | Optionnel (0..N) | Tableau d'objets de type [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| [copyrightHolder](#copyrightHolder ) | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | Optionnel        | [Texte court multilingue](../datatypes/text_short_multilingual )                          |
-| [description](#description )         | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | Optionnel (0..N) | Tableau d'objets de type [Texte long multilingue](../datatypes/text_long_multilingual )   |
+| Propriété                                                       | Description                                                                                                                                                                                                                                    | Priorité         | Type et définition                                                                                   |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------- |
+| [type](#type )                                                  | -                                                                                                                                                                                                                                              | Obligatoire      | const                                                                                                |
+| [sequenceNumber](#sequenceNumber )<br/>_Numéro de séquence_     | Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                       | Optionnel        | integer                                                                                              |
+| [usageNote](#usageNote )<br/>_Note d'usage_                     | Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).                                                                              | Optionnel        | [Texte court](../datatypes/text_short )                                                   |
+| [url](#url )<br/>_URL_                                          | URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible                                                                                     | Obligatoire      | string                                                                                               |
+| [inLanguage](#inLanguage )<br/>_Langues_                        | Langue au format ISO 639-1.                                                                                                                                                                                                                    | Optionnel        | [Code de langue](../datatypes/partials/language )                                         |
+| [license](#license )<br/>_Licence_                              | Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété. | Optionnel (0..N) | Tableau d'objets de type [Texte court multilingue](../datatypes/text_short_multilingual ) |
+| [creditText](#creditText )<br/>_Crédits_                        | Crédits associés au média.                                                                                                                                                                                                                     | Optionnel (0..N) | Tableau d'objets de type [Texte court multilingue](../datatypes/text_short_multilingual ) |
+| [copyrightHolder](#copyrightHolder )<br/>_Titulaire des droits_ | Personne ou organisation détenant les droits d'auteur du média.                                                                                                                                                                                | Optionnel        | [Texte court multilingue](../datatypes/text_short_multilingual )                          |
+| [description](#description )<br/>_Description_                  | Description courte (pouvant par exemple servir de «alt description» sur le web).                                                                                                                                                               | Optionnel (0..N) | Tableau d'objets de type [Texte long multilingue](../datatypes/text_long_multilingual )   |
 
 ## <a name="type"></a>1. Propriété `Média > type`
 
@@ -33,6 +33,8 @@ Valeur fixe: `"Media"`
 
 ## <a name="sequenceNumber"></a>2. Propriété `Média > sequenceNumber`
 
+**Nom:** Numéro de séquence
+
 |            |           |
 | ---------- | --------- |
 | **Type**   | `integer` |
@@ -42,7 +44,7 @@ Valeur fixe: `"Media"`
 
 ## <a name="usageNote"></a>3. Propriété `Média > usageNote`
 
-**Nom:** Texte court
+**Nom:** Note d'usage
 
 |                 |                                                 |
 | --------------- | ----------------------------------------------- |
@@ -56,6 +58,8 @@ Valeur fixe: `"Media"`
 
 ## <a name="url"></a>4. Propriété `Média > url`
 
+**Nom:** URL
+
 |            |          |
 | ---------- | -------- |
 | **Type**   | `string` |
@@ -66,7 +70,7 @@ Valeur fixe: `"Media"`
 
 ## <a name="inLanguage"></a>5. Propriété `Média > inLanguage`
 
-**Nom:** Code de langue
+**Nom:** Langues
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -79,6 +83,8 @@ Valeur fixe: `"Media"`
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
 ## <a name="license"></a>6. Propriété `Média > license`
+
+**Nom:** Licence
 
 |            |         |
 | ---------- | ------- |
@@ -115,6 +121,8 @@ Valeur fixe: `"Media"`
 
 ## <a name="creditText"></a>7. Propriété `Média > creditText`
 
+**Nom:** Crédits
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -148,17 +156,21 @@ Valeur fixe: `"Media"`
 
 ## <a name="copyrightHolder"></a>8. Propriété `Média > copyrightHolder`
 
-**Nom:** Texte court multilingue
+**Nom:** Titulaire des droits
 
-|                         |                                           |
-| ----------------------- | ----------------------------------------- |
-| **Type**                | `array of object`                         |
-| **Requis**              | Non                                       |
-| **Même définition que** | [Texte court multilingue](#license_items) |
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| **Type**        | `array of object`                                                          |
+| **Requis**      | Non                                                                        |
+| **Défini dans** | [Texte court multilingue](../datatypes/text_short_multilingual) |
 
 **Description:** Personne ou organisation détenant les droits d'auteur du média.
 
+[Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
+
 ## <a name="description"></a>9. Propriété `Média > description`
+
+**Nom:** Description
 
 |            |         |
 | ---------- | ------- |
@@ -194,4 +206,4 @@ Valeur fixe: `"Media"`
 [Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

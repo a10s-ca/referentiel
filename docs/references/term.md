@@ -22,14 +22,14 @@
 }
 ```
 
-| Propriété                          | Description                                                                                                                                                                                                                                                                      | Priorité    | Type et définition                                                          |
-| ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------- |
-| [type](#type )                     | -                                                                                                                                                                                                                                                                                | Obligatoire | -                                                                           |
-| [vocabulary](#vocabulary )         | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | Obligatoire | [Texte court](../datatypes/text_short )                          |
-| [version](#version )               | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | Optionnel   | [Texte court](../datatypes/text_short )                          |
-| [code](#code )                     | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | Obligatoire | [Texte court](../datatypes/text_short )                          |
-| [label](#label )                   | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | Optionnel   | [Texte court multilingue](../datatypes/text_short_multilingual ) |
-| [sequenceNumber](#sequenceNumber ) | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | Obligatoire | -                                                                           |
+| Propriété                                                   | Description                                                                                                                                                                                                                                                                      | Priorité    | Type et définition                                                          |
+| ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | --------------------------------------------------------------------------- |
+| [type](#type )                                              | -                                                                                                                                                                                                                                                                                | Obligatoire | const                                                                       |
+| [vocabulary](#vocabulary )<br/>_Vocabulaire_                | Identification du vocabulaire duquel est tiré le term.<br /><br />Typiquement, cette identification correspond à l'appellation du vocabulaire dont l'usage est le plus fréquent, tout en minuscules, sans accents, et avec les espaces remplacés par des barres de soulignement. | Obligatoire | [Texte court](../datatypes/text_short )                          |
+| [version](#version )<br/>_Version_                          | Version du vocabulaire utilisé, lorsque c'est applicable                                                                                                                                                                                                                         | Optionnel   | [Texte court](../datatypes/text_short )                          |
+| [code](#code )<br/>_Code_                                   | Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.                                                                                                                     | Obligatoire | [Texte court](../datatypes/text_short )                          |
+| [label](#label )<br/>_Libellé_                              | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | Optionnel   | [Texte court multilingue](../datatypes/text_short_multilingual ) |
+| [sequenceNumber](#sequenceNumber )<br/>_Numéro de séquence_ | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | Obligatoire | integer                                                                     |
 
 ## <a name="type"></a>1. Propriété `Term > type`
 
@@ -42,7 +42,7 @@ Valeur fixe: `"Term"`
 
 ## <a name="vocabulary"></a>2. Propriété `Term > vocabulary`
 
-**Nom:** Texte court
+**Nom:** Vocabulaire
 
 |                 |                                                  |
 | --------------- | ------------------------------------------------ |
@@ -58,31 +58,35 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 ## <a name="version"></a>3. Propriété `Term > version`
 
-**Nom:** Texte court
+**Nom:** Version
 
-|                         |                           |
-| ----------------------- | ------------------------- |
-| **Type**                | `string`                  |
-| **Requis**              | Non                       |
-| **Même définition que** | [vocabulary](#vocabulary) |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Type**        | `string`                                         |
+| **Requis**      | Non                                              |
+| **Défini dans** | [vocabulary](../datatypes/text_short) |
 
 **Description:** Version du vocabulaire utilisé, lorsque c'est applicable
 
+[Voir la documentation de Texte court](../datatypes/text_short)
+
 ## <a name="code"></a>4. Propriété `Term > code`
 
-**Nom:** Texte court
+**Nom:** Code
 
-|                         |                           |
-| ----------------------- | ------------------------- |
-| **Type**                | `string`                  |
-| **Requis**              | Oui                       |
-| **Même définition que** | [vocabulary](#vocabulary) |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Type**        | `string`                                         |
+| **Requis**      | Oui                                              |
+| **Défini dans** | [vocabulary](../datatypes/text_short) |
 
 **Description:** Identification du terme selon le vocabulaire identifié. En cas d'incohérence entre l'étiquette et le code transmis, c'est ce dernier qui doit être priorisé.
 
+[Voir la documentation de Texte court](../datatypes/text_short)
+
 ## <a name="label"></a>5. Propriété `Term > label`
 
-**Nom:** Texte court multilingue
+**Nom:** Libellé
 
 |                 |                                                          |
 | --------------- | -------------------------------------------------------- |
@@ -96,6 +100,8 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 ## <a name="sequenceNumber"></a>6. Propriété `Term > sequenceNumber`
 
+**Nom:** Numéro de séquence
+
 |            |           |
 | ---------- | --------- |
 | **Type**   | `integer` |
@@ -104,4 +110,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

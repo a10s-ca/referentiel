@@ -10,11 +10,11 @@
 
 **Description:** Cette classe sert à décrire des œuvres associées au spectacle, par exemple le texte d’une pièce de théâtre.
 
-| Propriété                  | Description                                                                                                                       | Priorité           | Type et définition                                                          |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------- |
-| [type](#type )             | -                                                                                                                                 | Obligatoire        | -                                                                           |
-| [identifier](#identifier ) | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois. | Obligatoire (1..N) | [Identifiant](../identifier )                                    |
-| [name](#name )             | Nom de l'oeuvre.                                                                                                                  | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual ) |
+| Propriété                                    | Description                                                                                                                       | Priorité           | Type et définition                                                          |
+| -------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------- |
+| [type](#type )                               | -                                                                                                                                 | Obligatoire        | const                                                                       |
+| [identifier](#identifier )<br/>_Identifiant_ | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois. | Obligatoire (1..N) | [Identifiant](../identifier )                                    |
+| [name](#name )<br/>_Nom_                     | Nom de l'oeuvre.                                                                                                                  | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 
 ## <a name="type"></a>1. Propriété `Oeuvre (Work) > type`
 
@@ -41,7 +41,7 @@ Valeur fixe: `"Work"`
 
 ## <a name="name"></a>3. Propriété `Oeuvre (Work) > name`
 
-**Nom:** Texte court multilingue
+**Nom:** Nom
 
 |                 |                                                         |
 | --------------- | ------------------------------------------------------- |
@@ -54,4 +54,4 @@ Valeur fixe: `"Work"`
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:12 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

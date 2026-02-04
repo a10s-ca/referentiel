@@ -13,11 +13,13 @@
       "const": "RoomConfiguration"
     },
     "layout": {
-      "$ref": "./term.schema.json"
+      "$ref": "./term.schema.json",
+      "title": "Disposition"
     },
     "capacity": {
       "description": "Capacité, en nombre de spectacteurs.",
-      "type": "integer"
+      "type": "integer",
+      "title": "Capacité"
     }
   }
 }

@@ -15,11 +15,13 @@
     "url": {
       "description": "",
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "title": "URL"
     },
     "inLanguage": {
       "description": "Langue de la page Web, au format ISO 639-1.",
-      "$ref": "./datatypes/partials/language.schema.json"
+      "$ref": "./datatypes/partials/language.schema.json",
+      "title": "Langues"
     }
   }
 }

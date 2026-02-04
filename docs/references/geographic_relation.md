@@ -10,13 +10,13 @@
 
 **Description:** Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
-| Propriété                            | Description                                                                                             | Priorité    | Type et définition                                 |
-| ------------------------------------ | ------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
-| [type](#type )                       | -                                                                                                       | Obligatoire | -                                                  |
-| [relationType](#relationType )       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | Optionnel   | [Term](term )                          |
-| [addressCountry](#addressCountry )   | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | Optionnel   | [Code Pays](../datatypes/country_code ) |
-| [addressRegion](#addressRegion )     | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
-| [addressLocality](#addressLocality ) | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
+| Propriété                                             | Description                                                                                             | Priorité    | Type et définition                                 |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
+| [type](#type )                                        | -                                                                                                       | Obligatoire | const                                              |
+| [relationType](#relationType )<br/>_Type de relation_ | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | Optionnel   | [Term](term )                          |
+| [addressCountry](#addressCountry )<br/>_Pays_         | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | Optionnel   | [Code Pays](../datatypes/country_code ) |
+| [addressRegion](#addressRegion )<br/>_Région_         | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
+| [addressLocality](#addressLocality )<br/>_Localité_   | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
 
 ## <a name="type"></a>1. Propriété `Association Géographique (GeographicRelation) > type`
 
@@ -29,7 +29,7 @@ Valeur fixe: `"GeographicRelation"`
 
 ## <a name="relationType"></a>2. Propriété `Association Géographique (GeographicRelation) > relationType`
 
-**Nom:** Term
+**Nom:** Type de relation
 
 |                               |                                  |
 | ----------------------------- | -------------------------------- |
@@ -44,7 +44,7 @@ Valeur fixe: `"GeographicRelation"`
 
 ## <a name="addressCountry"></a>3. Propriété `Association Géographique (GeographicRelation) > addressCountry`
 
-**Nom:** Code Pays
+**Nom:** Pays
 
 |                 |                                                        |
 | --------------- | ------------------------------------------------------ |
@@ -58,27 +58,31 @@ Valeur fixe: `"GeographicRelation"`
 
 ## <a name="addressRegion"></a>4. Propriété `Association Géographique (GeographicRelation) > addressRegion`
 
-**Nom:** Texte court
+**Nom:** Région
 
-|                         |                                        |
-| ----------------------- | -------------------------------------- |
-| **Type**                | `string`                               |
-| **Requis**              | Non                                    |
-| **Même définition que** | [vocabulary](#relationType_vocabulary) |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Type**        | `string`                                         |
+| **Requis**      | Non                                              |
+| **Défini dans** | [vocabulary](../datatypes/text_short) |
 
 **Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
+
+[Voir la documentation de Texte court](../datatypes/text_short)
 
 ## <a name="addressLocality"></a>5. Propriété `Association Géographique (GeographicRelation) > addressLocality`
 
-**Nom:** Texte court
+**Nom:** Localité
 
-|                         |                                        |
-| ----------------------- | -------------------------------------- |
-| **Type**                | `string`                               |
-| **Requis**              | Non                                    |
-| **Même définition que** | [vocabulary](#relationType_vocabulary) |
+|                 |                                                  |
+| --------------- | ------------------------------------------------ |
+| **Type**        | `string`                                         |
+| **Requis**      | Non                                              |
+| **Défini dans** | [vocabulary](../datatypes/text_short) |
 
 **Description:** Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne)
 
+[Voir la documentation de Texte court](../datatypes/text_short)
+
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

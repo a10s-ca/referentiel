@@ -10,19 +10,19 @@
 
 **Description:** Sert à décrire un lieu, typiquement associé à une représentation. La classe est générique et les lieux peuvent correspondre à des édifices ou à des lieux extérieurs. Il s’agit du lieu associé à une adresse, ou à des indications géographiques précises, qui serait présenté à un consommateur comme l’endroit où se présenter pour assister à une représentation.
 
-| Propriété                                  | Description                                                                                                                                                                                                                                        | Priorité           | Type et définition                                                                |
-| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------- |
-| [type](#type )                             | -                                                                                                                                                                                                                                                  | Obligatoire        | -                                                                                 |
-| [additionalType](#additionalType )         | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | Optionnel          | [Term](../term )                                                       |
-| [identifier](#identifier )                 | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | Obligatoire (1..N) | [Identifiant](../identifier )                                          |
-| [name](#name )                             | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)                                                                                                                                                        | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual )       |
-| [description](#description )               | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                    | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )         |
-| [virtualPlace](#virtualPlace )             | -                                                                                                                                                                                                                                                  | Obligatoire        | -                                                                                 |
-| [inRoom](#inRoom )                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
-| [address](#address )                       | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | Optionnel          | [Postal Address](../postal_address )                                   |
-| [mainEntityOfPage](#mainEntityOfPage )     | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                       |
-| [placeAccessibility](#placeAccessibility ) | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
-| [geoCoordinates](#geoCoordinates )         | Coordonnées géographiques                                                                                                                                                                                                                          | Optionnel          | [Coordonnées géographiques d'un point.](../datatypes/geo_coordinates ) |
+| Propriété                                                              | Description                                                                                                                                                                                                                                        | Priorité           | Type et définition                                                                |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------- |
+| [type](#type )                                                         | -                                                                                                                                                                                                                                                  | Obligatoire        | const                                                                             |
+| [additionalType](#additionalType )<br/>_Type additionnel_              | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | Optionnel          | [Term](../term )                                                       |
+| [identifier](#identifier )<br/>_Identifiant_                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | Obligatoire (1..N) | [Identifiant](../identifier )                                          |
+| [name](#name )<br/>_Nom_                                               | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)                                                                                                                                                        | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual )       |
+| [description](#description )<br/>_Description_                         | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                    | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )         |
+| [virtualPlace](#virtualPlace )<br/>_Lieu virtuel_                      | -                                                                                                                                                                                                                                                  | Obligatoire        | boolean                                                                           |
+| [inRoom](#inRoom )<br/>_Salle_                                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
+| [address](#address )<br/>_Adresse_                                     | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | Optionnel          | [Postal Address](../postal_address )                                   |
+| [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                 | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                       |
+| [placeAccessibility](#placeAccessibility )<br/>_Accessibilité du lieu_ | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
+| [geoCoordinates](#geoCoordinates )<br/>_Coordonnées géographiques_     | Coordonnées géographiques                                                                                                                                                                                                                          | Optionnel          | [Coordonnées géographiques d'un point.](../datatypes/geo_coordinates ) |
 
 Condition particulière:
 si (virtualPlace = false) alors :
@@ -43,7 +43,7 @@ Valeur fixe: `"Place"`
 
 ## <a name="additionalType"></a>2. Propriété `Lieu (Place) > additionalType`
 
-**Nom:** Term
+**Nom:** Type additionnel
 
 |                               |                                      |
 | ----------------------------- | ------------------------------------ |
@@ -72,19 +72,21 @@ Valeur fixe: `"Place"`
 
 ## <a name="name"></a>4. Propriété `Lieu (Place) > name`
 
-**Nom:** Texte court multilingue
+**Nom:** Nom
 
-|                         |                                |
-| ----------------------- | ------------------------------ |
-| **Type**                | `array of object`              |
-| **Requis**              | Oui                            |
-| **Même définition que** | [label](#additionalType_label) |
+|                 |                                                          |
+| --------------- | -------------------------------------------------------- |
+| **Type**        | `array of object`                                        |
+| **Requis**      | Oui                                                      |
+| **Défini dans** | [label](../datatypes/text_short_multilingual) |
 
 **Description:** Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)
 
+[Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
+
 ## <a name="description"></a>5. Propriété `Lieu (Place) > description`
 
-**Nom:** Texte long multilingue
+**Nom:** Description
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -98,12 +100,16 @@ Valeur fixe: `"Place"`
 
 ## <a name="virtualPlace"></a>6. Propriété `Lieu (Place) > virtualPlace`
 
+**Nom:** Lieu virtuel
+
 |            |           |
 | ---------- | --------- |
 | **Type**   | `boolean` |
 | **Requis** | Oui       |
 
 ## <a name="inRoom"></a>7. Propriété `Lieu (Place) > inRoom`
+
+**Nom:** Salle
 
 |            |         |
 | ---------- | ------- |
@@ -141,18 +147,22 @@ Valeur fixe: `"Place"`
 
 ## <a name="address"></a>8. Propriété `Lieu (Place) > address`
 
-**Nom:** Postal Address
+**Nom:** Adresse
 
-|                               |                                  |
-| ----------------------------- | -------------------------------- |
-| **Type**                      | `object`                         |
-| **Requis**                    | Non                              |
-| **Propriétés additionnelles** | Tout type permis                 |
-| **Même définition que**       | [address](#inRoom_items_address) |
+|                               |                                         |
+| ----------------------------- | --------------------------------------- |
+| **Type**                      | `object`                                |
+| **Requis**                    | Non                                     |
+| **Propriétés additionnelles** | Tout type permis                        |
+| **Défini dans**               | [address](../postal_address) |
 
 **Description:** Coordonnées complètes du lieu.
 
+[Voir la documentation de Postal Address](../postal_address)
+
 ## <a name="mainEntityOfPage"></a>9. Propriété `Lieu (Place) > mainEntityOfPage`
+
+**Nom:** Pages web
 
 |            |         |
 | ---------- | ------- |
@@ -188,6 +198,8 @@ Valeur fixe: `"Place"`
 
 ## <a name="placeAccessibility"></a>10. Propriété `Lieu (Place) > placeAccessibility`
 
+**Nom:** Accessibilité du lieu
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -222,7 +234,7 @@ Valeur fixe: `"Place"`
 
 ## <a name="geoCoordinates"></a>11. Propriété `Lieu (Place) > geoCoordinates`
 
-**Nom:** Coordonnées géographiques d'un point.
+**Nom:** Coordonnées géographiques
 
 |                               |                                                           |
 | ----------------------------- | --------------------------------------------------------- |
@@ -236,4 +248,4 @@ Valeur fixe: `"Place"`
 [Voir la documentation de Coordonnées géographiques d'un point.](../datatypes/geo_coordinates)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:12 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

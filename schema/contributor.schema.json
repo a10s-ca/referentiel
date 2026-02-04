@@ -16,56 +16,66 @@
     },
     "contributorType": {
       "description": "Indication à l'effet qu'il s'agit d'une personne physique ou d'une personne morale.",
-      "$ref": "./vocabularies/contributor_type.schema.json"
+      "$ref": "./vocabularies/contributor_type.schema.json",
+      "title": "Types de contributeur"
     },
     "identifier": {
-      "$ref": "./identifier.schema.json"
+      "$ref": "./identifier.schema.json",
+      "title": "Identifiant"
     },
     "name": {
       "description": "Nom complet du contributeur, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. Le prénom et le nom de sont pas traités dans des propriétés distinctes à cause de la diversité des appellations de contributions, qui sont parfois des personnes morales.\n\nExemples: Michel Rivard, Les Trois Accords, Koriass, Desjardins, Spectra.",
-      "$ref": "./datatypes/text_short_multilingual.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json",
+      "title": "Nom"
     },
     "alternateName": {
       "description": "Autres appellations parfois utilisées pour le contributeur.\n\nExemple: «Béatrice Martin» comme nom alternatif de «Cœur de pirate».\nExemple: «Compagnie Jean-Duceppe» comme nom alternatif de «Duceppe».",
       "type": "array",
       "items": {
         "$ref": "./datatypes/text_short_multilingual.schema.json"
-      }
+      },
+      "title": "Nom alternatif"
     },
     "description": {
-      "$ref": "./datatypes/text_long_multilingual.schema.json"
+      "$ref": "./datatypes/text_long_multilingual.schema.json",
+      "title": "Description"
     },
     "shortDescription": {
       "description": "Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.",
-      "$ref": "./datatypes/text_long_multilingual.schema.json"
+      "$ref": "./datatypes/text_long_multilingual.schema.json",
+      "title": "Description courte"
     },
     "media": {
       "type": "array",
       "items": {
         "$ref": "./media.schema.json"
       },
-      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur."
+      "description": "Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.",
+      "title": "Médias"
     },
     "typicalContributionType": {
       "type": "array",
-       "items": {
-         "$ref": "./term.schema.json"
+      "items": {
+        "$ref": "./term.schema.json"
       },
-      "description": "Énumération des types de contributions habituellement faites par le contributeur."
+      "description": "Énumération des types de contributions habituellement faites par le contributeur.",
+      "title": "Types de contribution typiques"
     },
     "hasGeographicRelation": {
       "description": "Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.",
       "type": "array",
       "items": {
         "$ref": "./geographic_relation.schema.json"
-      }
+      },
+      "title": "Relations géographiques"
     },
     "hasMembers": {
       "description": "Énumération des membres des groupes, troupes et collectifs, etc.",
       "type": "array",
       "items": {
         "$ref": "./contributor.schema.json"
-      }
+      },
+      "title": "Membres"
     }
   }
 }

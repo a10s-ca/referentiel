@@ -6,7 +6,7 @@
   "required": [
     "type",
     "contributionType",
-    "contributeur"
+    "contributor"
   ],
   "type": "object",
   "properties": {
@@ -14,23 +14,27 @@
       "const": "Contribution"
     },
     "contributionType": {
-      "type":"array",
+      "type": "array",
       "items": {
-         "$ref": "./term.schema.json"
+        "$ref": "./term.schema.json"
       },
-      "description": "Identification des types de contribution."
+      "description": "Identification des types de contribution.",
+      "title": "Types de contribution"
     },
-    "contributeur": {
+    "contributor": {
       "description": "Identification du contributeur",
-       "$ref": "./contributor.schema.json"
+      "$ref": "./contributor.schema.json",
+      "title": "Contributeur"
     },
     "sequenceNumber": {
       "type": "integer",
-      "description": "Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier)."
+      "description": "Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).",
+      "title": "Numéro de séquence"
     },
     "usageNote": {
       "description": "Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés.",
-      "$ref": "./datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json",
+      "title": "Note d'usage"
     }
   }
 }

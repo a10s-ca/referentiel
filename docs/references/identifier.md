@@ -56,11 +56,11 @@
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
 
-| Propriété                                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Priorité    | Type et définition |
-| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
-| [type](#items_anyOf_i0_type )             | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire | -                  |
-| [propertyID](#items_anyOf_i0_propertyID ) | Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles. | Obligatoire | -                  |
-| [value](#items_anyOf_i0_value )           | L'identifiant lui-même                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Obligatoire | -                  |
+| Propriété                                                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Priorité    | Type et définition |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | ------------------ |
+| [type](#items_anyOf_i0_type )                                            | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire | const              |
+| [propertyID](#items_anyOf_i0_propertyID )<br/>_Identifiant de propriété_ | Système d'identification utilisé. Dans la mesure du possible, il est suggéré d'utiliser des URI comme identifiants, lorsque ce n'est pas possible, [l'approche préconisée par Schema.org](https://schema.org/docs/datamodel.html#identifierBg) est utilisée: propertyID doit correspondre à l'identification dont l'usage est le plus fréquent pour le système d'identification, tout en minuscules. Il est entendu que les types d'identifiants seront différents selon la classe décrite. Par exemple, le type d'identifiant ISNI s'applique bien aux contributeurs mais pas aux spectacles. | Obligatoire | string             |
+| [value](#items_anyOf_i0_value )<br/>_Valeur_                             | L'identifiant lui-même                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Obligatoire | string             |
 
 #### <a name="items_anyOf_i0_type"></a>1.1.1. Propriété `Identifiant > root items > anyOf > item 0 > type`
 
@@ -72,6 +72,8 @@
 Valeur fixe: `"PropertyValue"`
 
 #### <a name="items_anyOf_i0_propertyID"></a>1.1.2. Propriété `Identifiant > root items > anyOf > item 0 > propertyID`
+
+**Nom:** Identifiant de propriété
 
 |            |          |
 | ---------- | -------- |
@@ -85,6 +87,8 @@ Valeur fixe: `"PropertyValue"`
 | **Longueur minimale** | 1 |
 
 #### <a name="items_anyOf_i0_value"></a>1.1.3. Propriété `Identifiant > root items > anyOf > item 0 > value`
+
+**Nom:** Valeur
 
 |            |          |
 | ---------- | -------- |
@@ -108,4 +112,4 @@ Valeur fixe: `"PropertyValue"`
 **Description:** Un identifiant URI sous forme de chaîne de caractères.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:13 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500

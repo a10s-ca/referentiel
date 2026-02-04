@@ -6,10 +6,12 @@
   "type": "object",
   "properties": {
     "longitude": {
-      "type":"number"
+      "type": "number",
+      "title": "Longitude"
     },
     "latitude": {
-      "type": "number"
+      "type": "number",
+      "title": "Latitude"
     }
   },
   "required": [

@@ -13,16 +13,20 @@
       "const": "GeographicRelation"
     },
     "relationType": {
-      "$ref": "term.schema.json"
+      "$ref": "term.schema.json",
+      "title": "Type de relation"
     },
     "addressCountry": {
-      "$ref": "./datatypes/country_code.schema.json"
+      "$ref": "./datatypes/country_code.schema.json",
+      "title": "Pays"
     },
     "addressRegion": {
-      "$ref": "./datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json",
+      "title": "Région"
     },
     "addressLocality": {
-      "$ref": "./datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json",
+      "title": "Localité"
     }
   }
 }

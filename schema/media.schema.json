@@ -14,45 +14,53 @@
     },
     "sequenceNumber": {
       "type": "integer",
-      "description": "Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé)."
+      "description": "Priorité d'utilisation du média (les nombres plus petits représentant un niveau de priorité plus élevé).",
+      "title": "Numéro de séquence"
     },
     "usageNote": {
       "description": "Texte libre permettant d'identifier les usages possibles du média (à l'intention des opérateurs des systèmes, pas du grand public, et donc pas pour publication).",
-      "$ref": "./datatypes/text_short.schema.json"
+      "$ref": "./datatypes/text_short.schema.json",
+      "title": "Note d'usage"
     },
     "url": {
       "description": "URL permettant d'obtenir le média. Il est suggéré de rendre disponibles les médias dans les formats standards du web, en haute résolution lorsque possible",
       "type": "string",
-      "format": "uri"
+      "format": "uri",
+      "title": "URL"
     },
     "inLanguage": {
       "description": "Langue au format ISO 639-1.",
-      "$ref": "./datatypes/partials/language.schema.json"
+      "$ref": "./datatypes/partials/language.schema.json",
+      "title": "Langues"
     },
     "license": {
       "description": "Licence d'utilisation du média. Une valeur vide ou non définie correspond à un média libre de droits. Si des conditions s'appliquent, elles doivent être définies dans cette propriété, ou sur le web à une URL intégrée dans cette propriété.",
       "type": "array",
       "items": {
         "$ref": "./datatypes/text_short_multilingual.schema.json"
-      }
+      },
+      "title": "Licence"
     },
     "creditText": {
       "description": "Crédits associés au média.",
       "type": "array",
       "items": {
         "$ref": "./datatypes/text_short_multilingual.schema.json"
-      }
+      },
+      "title": "Crédits"
     },
     "copyrightHolder": {
       "description": "Personne ou organisation détenant les droits d'auteur du média.",
-      "$ref": "./datatypes/text_short_multilingual.schema.json"
+      "$ref": "./datatypes/text_short_multilingual.schema.json",
+      "title": "Titulaire des droits"
     },
     "description": {
       "description": "Description courte (pouvant par exemple servir de «alt description» sur le web).",
       "type": "array",
       "items": {
         "$ref": "./datatypes/text_long_multilingual.schema.json"
-      }
+      },
+      "title": "Description"
     }
   }
 }

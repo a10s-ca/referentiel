@@ -10,25 +10,25 @@
 
 **Description:** Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.
 
-| Propriété                                                | Description                                                                                                                                                                                                                                                                                             | Priorité           | Type et définition                                                                  |
-| -------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
-| [type](#type )                                           | -                                                                                                                                                                                                                                                                                                       | Obligatoire        | -                                                                                   |
-| [identifier](#identifier )                               | Énumération des identifiants connus.                                                                                                                                                                                                                                                                    | Obligatoire (1..N) | [Identifiant](../identifier )                                            |
-| [startDateTime](#startDateTime )                         | Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                     | Obligatoire        | -                                                                                   |
-| [endDateTime](#endDateTime )                             | Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                       | Optionnel          | -                                                                                   |
-| [duration](#duration )                                   | Durée de la représentation en format ISO-8601                                                                                                                                                                                                                                                           | Optionnel          | -                                                                                   |
-| [previousStartDateTime](#previousStartDateTime )         | Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                       | Optionnel          | -                                                                                   |
-| [hasIntermission](#hasIntermission )                     | Indique la présence d'une ou plusieurs entractes                                                                                                                                                                                                                                                        | Optionnel          | -                                                                                   |
-| [isExtra](#isExtra )                                     | Indique si la représentation est une représentation supplémentaire                                                                                                                                                                                                                                      | Optionnel          | -                                                                                   |
-| [description](#description )                             | Propriété utilisée seulement si la description de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                                 | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
-| [shortDescription](#shortDescription )                   | Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                          | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
-| [media](#media )                                         | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) supplémentaires associés à la représentation, lorsqu'ils sont disponibles et qu'il n'est pas possible de les associer au spectacle. Les consignes d'utilisation de la classe Spectacle s'appliquent.                            | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                              |
-| [alternateName](#alternateName )                         | Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent                                                    | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )         |
-| [mainEntityOfPage](#mainEntityOfPage )                   | Propriété utilisée seulement si l'URL du PageWeb associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                       | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                         |
-| [hasAdditionalContribution](#hasAdditionalContribution ) | Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées.                                        | Optionnel (0..N)   | Tableau d'objets de type [Contribution](../contribution )                |
-| [hasRemovedContribution](#hasRemovedContribution )       | Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées                                 | Optionnel (0..N)   | Tableau d'objets de type [Contribution](../contribution )                |
-| [inSeries](#inSeries )                                   | Identification des séries dont la représentation fait partie.                                                                                                                                                                                                                                           | Optionnel (0..N)   | Tableau d'objets de type [Série de représentations (Series)](../series ) |
-| [hasOffer](#hasOffer )                                   | Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres. | Obligatoire (1..1) | Tableau d'objets de type [Offre (Offer)](../offer )                      |
+| Propriété                                                                                   | Description                                                                                                                                                                                                                                                                                             | Priorité           | Type et définition                                                                  |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
+| [type](#type )                                                                              | -                                                                                                                                                                                                                                                                                                       | Obligatoire        | const                                                                               |
+| [identifier](#identifier )<br/>_Identifiant_                                                | Énumération des identifiants connus.                                                                                                                                                                                                                                                                    | Obligatoire (1..N) | [Identifiant](../identifier )                                            |
+| [startDateTime](#startDateTime )<br/>_Date et heure de début_                               | Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                     | Obligatoire        | string                                                                              |
+| [endDateTime](#endDateTime )<br/>_Date et heure de fin_                                     | Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                       | Optionnel          | string                                                                              |
+| [duration](#duration )<br/>_Durée_                                                          | Durée de la représentation en format ISO-8601                                                                                                                                                                                                                                                           | Optionnel          | string                                                                              |
+| [previousStartDateTime](#previousStartDateTime )<br/>_Date et heure de début précédente_    | Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                       | Optionnel          | string                                                                              |
+| [hasIntermission](#hasIntermission )<br/>_Entracte_                                         | Indique la présence d'une ou plusieurs entractes                                                                                                                                                                                                                                                        | Optionnel          | boolean                                                                             |
+| [isExtra](#isExtra )<br/>_Supplémentaire_                                                   | Indique si la représentation est une représentation supplémentaire                                                                                                                                                                                                                                      | Optionnel          | boolean                                                                             |
+| [description](#description )<br/>_Description_                                              | Propriété utilisée seulement si la description de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                                 | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
+| [shortDescription](#shortDescription )<br/>_Description courte_                             | Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                          | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
+| [media](#media )<br/>_Médias_                                                               | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) supplémentaires associés à la représentation, lorsqu'ils sont disponibles et qu'il n'est pas possible de les associer au spectacle. Les consignes d'utilisation de la classe Spectacle s'appliquent.                            | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                              |
+| [alternateName](#alternateName )<br/>_Nom alternatif_                                       | Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent                                                    | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )         |
+| [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                                      | Propriété utilisée seulement si l'URL du PageWeb associée à la représentation est différente de celle du spectacle. Ne pas confondre à l'URL de billetterie de la section concernant les offres. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                       | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                         |
+| [hasAdditionalContribution](#hasAdditionalContribution )<br/>_Contributions additionnelles_ | Contributions à la représentation qui ne sont pas documentées dans le spectacle. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées.                                        | Optionnel (0..N)   | Tableau d'objets de type [Contribution](../contribution )                |
+| [hasRemovedContribution](#hasRemovedContribution )<br/>_Contributions retirées_             | Contributions documentées dans le spectacle qui ne s'appliquent pas à la représentation. Les contributions de la représentation sont donc l'ajout des contributions du spectacle et des contributions supplémentaires, desquelles ont retire les contributions retirées                                 | Optionnel (0..N)   | Tableau d'objets de type [Contribution](../contribution )                |
+| [inSeries](#inSeries )<br/>_Série_                                                          | Identification des séries dont la représentation fait partie.                                                                                                                                                                                                                                           | Optionnel (0..N)   | Tableau d'objets de type [Série de représentations (Series)](../series ) |
+| [hasOffer](#hasOffer )<br/>_Offres_                                                         | Description des différentes modalités pour assister à la représentation. Il peut y avoir des modalités pour le présentiel et/ou le virtuel. Les modalités pour le présentiel et le virtuel doivent être documentées pour un spectacle hybride. Une représentation contient donc au maximum deux offres. | Obligatoire (1..1) | Tableau d'objets de type [Offre (Offer)](../offer )                      |
 
 ## <a name="type"></a>1. Propriété `Représentation (Performance) > type`
 
@@ -55,6 +55,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="startDateTime"></a>3. Propriété `Représentation (Performance) > startDateTime`
 
+**Nom:** Date et heure de début
+
 |            |             |
 | ---------- | ----------- |
 | **Type**   | `string`    |
@@ -65,6 +67,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="endDateTime"></a>4. Propriété `Représentation (Performance) > endDateTime`
 
+**Nom:** Date et heure de fin
+
 |            |             |
 | ---------- | ----------- |
 | **Type**   | `string`    |
@@ -74,6 +78,8 @@ Valeur fixe: `"Performance"`
 **Description:** Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
 
 ## <a name="duration"></a>5. Propriété `Représentation (Performance) > duration`
+
+**Nom:** Durée
 
 |            |          |
 | ---------- | -------- |
@@ -95,6 +101,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="previousStartDateTime"></a>6. Propriété `Représentation (Performance) > previousStartDateTime`
 
+**Nom:** Date et heure de début précédente
+
 |            |             |
 | ---------- | ----------- |
 | **Type**   | `string`    |
@@ -105,6 +113,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="hasIntermission"></a>7. Propriété `Représentation (Performance) > hasIntermission`
 
+**Nom:** Entracte
+
 |            |           |
 | ---------- | --------- |
 | **Type**   | `boolean` |
@@ -113,6 +123,8 @@ Valeur fixe: `"Performance"`
 **Description:** Indique la présence d'une ou plusieurs entractes
 
 ## <a name="isExtra"></a>8. Propriété `Représentation (Performance) > isExtra`
+
+**Nom:** Supplémentaire
 
 |            |           |
 | ---------- | --------- |
@@ -123,7 +135,7 @@ Valeur fixe: `"Performance"`
 
 ## <a name="description"></a>9. Propriété `Représentation (Performance) > description`
 
-**Nom:** Texte long multilingue
+**Nom:** Description
 
 |                 |                                                               |
 | --------------- | ------------------------------------------------------------- |
@@ -137,17 +149,21 @@ Valeur fixe: `"Performance"`
 
 ## <a name="shortDescription"></a>10. Propriété `Représentation (Performance) > shortDescription`
 
-**Nom:** Texte long multilingue
+**Nom:** Description courte
 
-|                         |                             |
-| ----------------------- | --------------------------- |
-| **Type**                | `array of object`           |
-| **Requis**              | Non                         |
-| **Même définition que** | [description](#description) |
+|                 |                                                               |
+| --------------- | ------------------------------------------------------------- |
+| **Type**        | `array of object`                                             |
+| **Requis**      | Non                                                           |
+| **Défini dans** | [description](../datatypes/text_long_multilingual) |
 
 **Description:** Propriété utilisée seulement si la description courte de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.
 
+[Voir la documentation de Texte long multilingue](../datatypes/text_long_multilingual)
+
 ## <a name="media"></a>11. Propriété `Représentation (Performance) > media`
+
+**Nom:** Médias
 
 |            |         |
 | ---------- | ------- |
@@ -185,17 +201,21 @@ Valeur fixe: `"Performance"`
 
 ## <a name="alternateName"></a>12. Propriété `Représentation (Performance) > alternateName`
 
-**Nom:** Texte court multilingue
+**Nom:** Nom alternatif
 
-|                         |                                                       |
-| ----------------------- | ----------------------------------------------------- |
-| **Type**                | `array of object`                                     |
-| **Requis**              | Non                                                   |
-| **Même définition que** | [Texte court multilingue](#media_items_license_items) |
+|                 |                                                                            |
+| --------------- | -------------------------------------------------------------------------- |
+| **Type**        | `array of object`                                                          |
+| **Requis**      | Non                                                                        |
+| **Défini dans** | [Texte court multilingue](../datatypes/text_short_multilingual) |
 
 **Description:** Propriété utilisée seulement si l'autre nom de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle] s'appliquent
 
+[Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
+
 ## <a name="mainEntityOfPage"></a>13. Propriété `Représentation (Performance) > mainEntityOfPage`
+
+**Nom:** Pages web
 
 |            |         |
 | ---------- | ------- |
@@ -230,6 +250,8 @@ Valeur fixe: `"Performance"`
 [Voir la documentation de WebPage](../web_page)
 
 ## <a name="hasAdditionalContribution"></a>14. Propriété `Représentation (Performance) > hasAdditionalContribution`
+
+**Nom:** Contributions additionnelles
 
 |            |         |
 | ---------- | ------- |
@@ -267,6 +289,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="hasRemovedContribution"></a>15. Propriété `Représentation (Performance) > hasRemovedContribution`
 
+**Nom:** Contributions retirées
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -300,6 +324,8 @@ Valeur fixe: `"Performance"`
 **Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
 ## <a name="inSeries"></a>16. Propriété `Représentation (Performance) > inSeries`
+
+**Nom:** Série
 
 |            |         |
 | ---------- | ------- |
@@ -337,6 +363,8 @@ Valeur fixe: `"Performance"`
 
 ## <a name="hasOffer"></a>17. Propriété `Représentation (Performance) > hasOffer`
 
+**Nom:** Offres
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -370,4 +398,4 @@ Valeur fixe: `"Performance"`
 **Description:** Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-02 at 16:58:12 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
