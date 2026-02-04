@@ -1,6 +1,6 @@
-# Contribution
+# Contribution (Contribution)
 
-**Nom:** Contribution
+**Nom:** Contribution (Contribution)
 
 |                               |                  |
 | ----------------------------- | ---------------- |
@@ -10,15 +10,15 @@
 
 **Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
-| Propriété                                                          | Description                                                                                                                                                                                                                                                                                                                                                          | Priorité           | Type et définition                                   |
-| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ---------------------------------------------------- |
-| [type](#type )                                                     | -                                                                                                                                                                                                                                                                                                                                                                    | Obligatoire        | const                                                |
-| [contributionType](#contributionType )<br/>_Types de contribution_ | Identification des types de contribution.                                                                                                                                                                                                                                                                                                                            | Obligatoire (1..N) | Tableau d'objets de type [Term](../term ) |
-| [contributor](#contributor )<br/>_Contributeur_                    | Identification du contributeur                                                                                                                                                                                                                                                                                                                                       | Obligatoire        | [Contributor](../contributor )            |
-| [sequenceNumber](#sequenceNumber )<br/>_Numéro de séquence_        | Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).                                                                                                                                                                                                          | Optionnel          | integer                                              |
-| [usageNote](#usageNote )<br/>_Note d'usage_                        | Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés. | Optionnel          | [Texte court](../datatypes/text_short )   |
+| Propriété                                                          | Description                                                                                                                                                                                                                                                                                                                                                          | Priorité           | Type et définition                                           |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------ |
+| [type](#type )                                                     | -                                                                                                                                                                                                                                                                                                                                                                    | Obligatoire        | const                                                        |
+| [contributionType](#contributionType )<br/>_Types de contribution_ | Identification des types de contribution.                                                                                                                                                                                                                                                                                                                            | Obligatoire (1..N) | Tableau d'objets de type [Terme (Term)](../term ) |
+| [contributor](#contributor )<br/>_Contributeur_                    | Identification du contributeur                                                                                                                                                                                                                                                                                                                                       | Obligatoire        | [Contributeur (contributor)](../contributor )     |
+| [sequenceNumber](#sequenceNumber )<br/>_Numéro de séquence_        | Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).                                                                                                                                                                                                          | Optionnel          | integer                                                      |
+| [usageNote](#usageNote )<br/>_Note d'usage_                        | Note concernant la contribution, à l'intention des exploitants des systèmes d'information (et donc pas du grand public). Il peut s'agir d'une précision sur le type de contribution, qui ne pourrait pas être exprimée à travers la propriété Types. Les informations compilées dans les notes pourraient être utilisées pour améliorer les vocabulaires contrôllés. | Optionnel          | [Texte court](../datatypes/text_short )           |
 
-## <a name="type"></a>1. Propriété `Contribution > type`
+## <a name="type"></a>1. Propriété `Contribution (Contribution) > type`
 
 |            |         |
 | ---------- | ------- |
@@ -27,7 +27,7 @@
 
 Valeur fixe: `"Contribution"`
 
-## <a name="contributionType"></a>2. Propriété `Contribution > contributionType`
+## <a name="contributionType"></a>2. Propriété `Contribution (Contribution) > contributionType`
 
 **Nom:** Types de contribution
 
@@ -46,26 +46,26 @@ Valeur fixe: `"Contribution"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être | Description                                                                             |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#contributionType_items)  | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être        | Description                                                                             |
+| --------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#contributionType_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="contributionType_items"></a>2.1. Contribution > contributionType > Term
+### <a name="contributionType_items"></a>2.1. Contribution (Contribution) > contributionType > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
-|                               |                            |
-| ----------------------------- | -------------------------- |
-| **Type**                      | `object`                   |
-| **Requis**                    | Non                        |
-| **Propriétés additionnelles** | Tout type permis           |
-| **Défini dans**               | [Term](../term) |
+|                               |                                    |
+| ----------------------------- | ---------------------------------- |
+| **Type**                      | `object`                           |
+| **Requis**                    | Non                                |
+| **Propriétés additionnelles** | Tout type permis                   |
+| **Défini dans**               | [Terme (Term)](../term) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
-[Voir la documentation de Term](../term)
+[Voir la documentation de Terme (Term)](../term)
 
-## <a name="contributor"></a>3. Propriété `Contribution > contributor`
+## <a name="contributor"></a>3. Propriété `Contribution (Contribution) > contributor`
 
 **Nom:** Contributeur
 
@@ -78,9 +78,9 @@ Valeur fixe: `"Contribution"`
 
 **Description:** Identification du contributeur
 
-[Voir la documentation de Contributor](../contributor)
+[Voir la documentation de Contributeur (contributor)](../contributor)
 
-## <a name="sequenceNumber"></a>4. Propriété `Contribution > sequenceNumber`
+## <a name="sequenceNumber"></a>4. Propriété `Contribution (Contribution) > sequenceNumber`
 
 **Nom:** Numéro de séquence
 
@@ -91,7 +91,7 @@ Valeur fixe: `"Contribution"`
 
 **Description:** Précision sur l'ordre de présentation des contributions (les nombres plus petits correspondent à des contributions qui doivent être présentées en premier).
 
-## <a name="usageNote"></a>5. Propriété `Contribution > usageNote`
+## <a name="usageNote"></a>5. Propriété `Contribution (Contribution) > usageNote`
 
 **Nom:** Note d'usage
 
@@ -106,4 +106,4 @@ Valeur fixe: `"Contribution"`
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500

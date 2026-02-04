@@ -10,11 +10,11 @@
 
 **Description:** Précisions sur un configuration possible de la salle.
 
-| Propriété                             | Description                                                                             | Priorité    | Type et définition          |
-| ------------------------------------- | --------------------------------------------------------------------------------------- | ----------- | --------------------------- |
-| [type](#type )                        | -                                                                                       | Obligatoire | const                       |
-| [layout](#layout )<br/>_Disposition_  | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | Obligatoire | [Term](../term ) |
-| [capacity](#capacity )<br/>_Capacité_ | Capacité, en nombre de spectacteurs.                                                    | Optionnel   | integer                     |
+| Propriété                             | Description                                                                             | Priorité    | Type et définition                  |
+| ------------------------------------- | --------------------------------------------------------------------------------------- | ----------- | ----------------------------------- |
+| [type](#type )                        | -                                                                                       | Obligatoire | const                               |
+| [layout](#layout )<br/>_Disposition_  | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | Obligatoire | [Terme (Term)](../term ) |
+| [capacity](#capacity )<br/>_Capacité_ | Capacité, en nombre de spectacteurs.                                                    | Optionnel   | integer                             |
 
 ## <a name="type"></a>1. Propriété `Configuration de salle > type`
 
@@ -38,7 +38,7 @@ Valeur fixe: `"RoomConfiguration"`
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
-[Voir la documentation de Term](../term)
+[Voir la documentation de Terme (Term)](../term)
 
 ## <a name="capacity"></a>3. Propriété `Configuration de salle > capacity`
 
@@ -52,4 +52,4 @@ Valeur fixe: `"RoomConfiguration"`
 **Description:** Capacité, en nombre de spectacteurs.
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500

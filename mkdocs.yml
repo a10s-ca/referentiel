@@ -59,7 +59,7 @@ nav:
       - Offre (offer): 'references/offer.md'
       - Contribution (contribution): 'references/contribution.md'
       - Terme (term): 'references/term.md'
-      - Média (term): 'references/media.md'
+      - Média (media): 'references/media.md'
       - Adresse (postal_address): 'references/postal_address.md'
   - Vocabulaires contrôlés:
     - modele/vocabulaires_controles/index.md

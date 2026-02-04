@@ -1,6 +1,6 @@
-# Term
+# Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
 |                               |                  |
 | ----------------------------- | ---------------- |
@@ -31,7 +31,7 @@
 | [label](#label )<br/>_Libellé_                              | Version textuelle du terme tiré du vocabulaire choisi                                                                                                                                                                                                                            | Optionnel   | [Texte court multilingue](../datatypes/text_short_multilingual ) |
 | [sequenceNumber](#sequenceNumber )<br/>_Numéro de séquence_ | Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).                                                                                                                                                                         | Obligatoire | integer                                                                     |
 
-## <a name="type"></a>1. Propriété `Term > type`
+## <a name="type"></a>1. Propriété `Terme (Term) > type`
 
 |            |         |
 | ---------- | ------- |
@@ -40,7 +40,7 @@
 
 Valeur fixe: `"Term"`
 
-## <a name="vocabulary"></a>2. Propriété `Term > vocabulary`
+## <a name="vocabulary"></a>2. Propriété `Terme (Term) > vocabulary`
 
 **Nom:** Vocabulaire
 
@@ -56,7 +56,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="version"></a>3. Propriété `Term > version`
+## <a name="version"></a>3. Propriété `Terme (Term) > version`
 
 **Nom:** Version
 
@@ -70,7 +70,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="code"></a>4. Propriété `Term > code`
+## <a name="code"></a>4. Propriété `Terme (Term) > code`
 
 **Nom:** Code
 
@@ -84,7 +84,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="label"></a>5. Propriété `Term > label`
+## <a name="label"></a>5. Propriété `Terme (Term) > label`
 
 **Nom:** Libellé
 
@@ -98,7 +98,7 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
-## <a name="sequenceNumber"></a>6. Propriété `Term > sequenceNumber`
+## <a name="sequenceNumber"></a>6. Propriété `Terme (Term) > sequenceNumber`
 
 **Nom:** Numéro de séquence
 
@@ -110,4 +110,4 @@ Typiquement, cette identification correspond à l'appellation du vocabulaire don
 **Description:** Priorité d'utilisation du terme (les nombres plus petits représentant un niveau de priorité plus élevé).
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500

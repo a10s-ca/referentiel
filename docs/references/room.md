@@ -13,14 +13,14 @@
 | Propriété                                                                | Description                                                                                                                                                      | Priorité           | Type et définition                                                                   |
 | ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------------------------------------------------------------------------------ |
 | [type](#type )                                                           | -                                                                                                                                                                | Obligatoire        | const                                                                                |
-| [identifier](#identifier )<br/>_Identifiant_                             | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | Obligatoire (1..N) | [Identifiant](../identifier )                                             |
+| [identifier](#identifier )<br/>_Identifiant_                             | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                | Obligatoire (1..N) | [Identifiant (Identifier)](../identifier )                                |
 | [name](#name )<br/>_Nom_                                                 | Nom de la salle, écrit au long, de la façon dont il doit être affiché à des utilisateurs, avec la capitalisation d'usage, les accents et les espacements usuels. | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )          |
 | [nameSameAsPlace](#nameSameAsPlace )<br/>_Nom identique au lieu_         | -                                                                                                                                                                | Obligatoire        | boolean                                                                              |
 | [description](#description )<br/>_Description_                           | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                  | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
 | [shortDescription](#shortDescription )<br/>_Description courte_          | Description résumée de la salle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage en version courte.                   | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )            |
-| [media](#media )<br/>_Médias_                                            | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                               |
+| [media](#media )<br/>_Médias_                                            | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média (Media)](../media )                       |
 | [inPlace](#inPlace )<br/>_Lieu_                                          | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | Optionnel          | [Lieu (Place)](../place )                                                 |
-| [address](#address )<br/>_Adresse_                                       | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Postal Address](../postal_address )                                      |
+| [address](#address )<br/>_Adresse_                                       | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Adresse postale (Postal Address)](../postal_address )                    |
 | [roomAccessibility](#roomAccessibility )<br/>_Accessibilité de la salle_ | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
 | [roomConfiguration](#roomConfiguration )<br/>_Configuration de la salle_ | Précisions sur les configurations possibles de la salle.                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Configuration de salle](../room_specification ) |
 
@@ -52,7 +52,7 @@ Valeur fixe: `"Room"`
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
-[Voir la documentation de Identifiant](../identifier)
+[Voir la documentation de Identifiant (Identifier)](../identifier)
 
 ## <a name="name"></a>3. Propriété `Salle (Room) > name`
 
@@ -126,22 +126,22 @@ Valeur fixe: `"Room"`
 
 | Chaque item du tableau doit être | Description                                                                                          |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Média](#media_items)            | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
+| [Média (Media)](#media_items)    | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
 
-### <a name="media_items"></a>7.1. Salle (Room) > media > Média
+### <a name="media_items"></a>7.1. Salle (Room) > media > Média (Media)
 
-**Nom:** Média
+**Nom:** Média (Media)
 
-|                               |                              |
-| ----------------------------- | ---------------------------- |
-| **Type**                      | `object`                     |
-| **Requis**                    | Non                          |
-| **Propriétés additionnelles** | Tout type permis             |
-| **Défini dans**               | [Média](../media) |
+|                               |                                      |
+| ----------------------------- | ------------------------------------ |
+| **Type**                      | `object`                             |
+| **Requis**                    | Non                                  |
+| **Propriétés additionnelles** | Tout type permis                     |
+| **Défini dans**               | [Média (Media)](../media) |
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-[Voir la documentation de Média](../media)
+[Voir la documentation de Média (Media)](../media)
 
 ## <a name="inPlace"></a>8. Propriété `Salle (Room) > inPlace`
 
@@ -171,7 +171,7 @@ Valeur fixe: `"Room"`
 
 **Description:** Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.
 
-[Voir la documentation de Postal Address](../postal_address)
+[Voir la documentation de Adresse postale (Postal Address)](../postal_address)
 
 ## <a name="roomAccessibility"></a>10. Propriété `Salle (Room) > roomAccessibility`
 
@@ -192,13 +192,13 @@ Valeur fixe: `"Room"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être | Description                                                                             |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#roomAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être         | Description                                                                             |
+| ---------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#roomAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="roomAccessibility_items"></a>10.1. Salle (Room) > roomAccessibility > Term
+### <a name="roomAccessibility_items"></a>10.1. Salle (Room) > roomAccessibility > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
 |                               |                                           |
 | ----------------------------- | ----------------------------------------- |
@@ -248,4 +248,4 @@ Valeur fixe: `"Room"`
 [Voir la documentation de Configuration de salle](../room_specification)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500

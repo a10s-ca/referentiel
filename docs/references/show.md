@@ -14,22 +14,22 @@
 | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
 | [@context](#@context )                                                          | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Obligatoire        | const                                                                               |
 | [type](#type )                                                                  | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Obligatoire        | const                                                                               |
-| [identifier](#identifier )<br/>_Identifiant_                                    | Identification du spectacle, avec tous les identifiants connus.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Obligatoire (1..N) | [Identifiant](../identifier )                                            |
+| [identifier](#identifier )<br/>_Identifiant_                                    | Identification du spectacle, avec tous les identifiants connus.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Obligatoire (1..N) | [Identifiant (Identifier)](../identifier )                               |
 | [name](#name )<br/>_Nom_                                                        | Nom du spectacle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual )         |
 | [alternateName](#alternateName )<br/>_Nom alternatif_                           | Élément qui ne fait pas partie du nom, mais qui le complète, sans toutefois relever de la description elle-même.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Optionnel          | [Texte court multilingue](../datatypes/text_short_multilingual )         |
 | [description](#description )<br/>_Description_                                  | Description du spectacle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire        | [Texte long multilingue](../datatypes/text_long_multilingual )           |
 | [shortDescription](#shortDescription )<br/>_Description courte_                 | Description résumée du spectacle. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
-| [media](#media )<br/>_Médias_                                                   | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Média](../media )                              |
-| [hasContribution](#hasContribution )<br/>_Contributions_                        | Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).<br /><br />Le contributeur peut être une personne ou une organisation.<br /><br />Il s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.<br /><br />Si un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.                                                                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [Contribution](../contribution )                |
+| [media](#media )<br/>_Médias_                                                   | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Média (Media)](../media )                      |
+| [hasContribution](#hasContribution )<br/>_Contributions_                        | Énumération des contributions. Il peut s'agir de contribution à la création (ex: auteur.trice, metteur.se en scène), de contributions à l'exécution (ex: comédien.en, musicien.ne).<br /><br />Le contributeur peut être une personne ou une organisation.<br /><br />Il s'agit de contributeurs qui sont associés à toutes les représentations du spectacle. Pour les contributions spécifiques à une représentation, utiliser le champ correspondant dans la classe Représentation.<br /><br />Si un même contributeur a plusieurs contributions pour un même spectacle, il est suggéré de répéter plusieurs objets de la classe Contribution.                                                                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [Contribution (Contribution)](../contribution ) |
 | [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                          | Vers des pages web donnant plus d'information sur le spectacle.<br /><br />Pour des besoins plus précis, par exemple des URL de critiques du spectacle, la propriété Médias, qui permet d'inclure des notes d'usage, peut être utilisée.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                         |
 | [hasRelatedWork](#hasRelatedWork )<br/>_Oeuvres associées_                      | Énumérations d'oeuvres, de la même discipline ou pas, qui sont associées au spectacle. Il peut s'agir du texte d'une pièce de théâtre, d'un album musical associé à un spectacle, etc. Il doit s'agir d'associations avec des oeuvres qui ne peuvent pas être identifiées aisément à travers d'autres propriétés.<br /><br />Exemple 1: les données d'une pièce de théâtre peuvent pointer vers le texte de la pièce, disponible en librairie.<br /><br />Exemple 2: les données d'un spectacle musical peuvent énumérer des enregistrements des pièces jouées lors du spectacle.<br /><br />Contre exemple: il n'est pas utile que les données d'un spectacle d'humour énumère les autres spectacles du même humoriste, car il est possible d'obtenir cette information à travers les contributeurs. | Optionnel (0..N)   | Tableau d'objets de type [Oeuvres associées](#/definitions/WorkRelation )           |
-| [discipline](#discipline )<br/>_Disciplines_                                    | Identification des disciplines artistiques du spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire (1..N) | Tableau d'objets de type [Term](../term )                                |
-| [audience](#audience )<br/>_Publics cibles_                                     | Identification des publics cibles du spectacle.<br /><br />Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Obligatoire (1..N) | Tableau d'objets de type [Term](../term )                                |
+| [discipline](#discipline )<br/>_Disciplines_                                    | Identification des disciplines artistiques du spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Obligatoire (1..N) | Tableau d'objets de type [Terme (Term)](../term )                        |
+| [audience](#audience )<br/>_Publics cibles_                                     | Identification des publics cibles du spectacle.<br /><br />Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Obligatoire (1..N) | Tableau d'objets de type [Terme (Term)](../term )                        |
 | [inLanguage](#inLanguage )<br/>_Langues_                                        | Langues utilisées dans le spectacle, en ordre décroissant d'importance. La langue principale doit donc être mentionnée en premier.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Optionnel (0..N)   | Tableau d'objets de type [lang](../datatypes/partials/language )         |
 | [supportMaterialLanguage](#supportMaterialLanguage )<br/>_Langues des supports_ | Langues pour lesquelles des artéfacts d'aide à la compréhension du spectacle sont disponibles (surtitrage, programmes, traduction simultannée...)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [lang](../datatypes/partials/language )         |
 | [showWithoutWords](#showWithoutWords )<br/>_Spectacle sans paroles_             | Indication à l'effet que le spectacle ne contient pas de paroles.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Obligatoire        | boolean                                                                             |
-| [contentType](#contentType )<br/>_Types de contenus_                            | Permet d'identifier certains type de contenus qui sont présents dans le spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Optionnel (0..N)   | Tableau d'objets de type [Term](../term )                                |
-| [contentWarning](#contentWarning )<br/>_Avertissements de contenu_              | Permet d'identifier des avertissements associés au spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Term](../term )                                |
+| [contentType](#contentType )<br/>_Types de contenus_                            | Permet d'identifier certains type de contenus qui sont présents dans le spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Optionnel (0..N)   | Tableau d'objets de type [Terme (Term)](../term )                        |
+| [contentWarning](#contentWarning )<br/>_Avertissements de contenu_              | Permet d'identifier des avertissements associés au spectacle.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Terme (Term)](../term )                        |
 | [hasPerformance](#hasPerformance )<br/>_Représentations_                        | Énumération des représentations du spectacle, qu'elles soient passées ou futures.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [Représentation (Performance)](../performance ) |
 
 Condition particulière:
@@ -69,7 +69,7 @@ Valeur fixe: `"Show"`
 
 **Description:** Identification du spectacle, avec tous les identifiants connus.
 
-[Voir la documentation de Identifiant](../identifier)
+[Voir la documentation de Identifiant (Identifier)](../identifier)
 
 ## <a name="name"></a>4. Propriété `Spectacle (Show) > name`
 
@@ -160,22 +160,22 @@ Valeur fixe: `"Show"`
 
 | Chaque item du tableau doit être | Description                                                                                          |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Média](#media_items)            | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
+| [Média (Media)](#media_items)    | Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet. |
 
-### <a name="media_items"></a>8.1. Spectacle (Show) > media > Média
+### <a name="media_items"></a>8.1. Spectacle (Show) > media > Média (Media)
 
-**Nom:** Média
+**Nom:** Média (Media)
 
-|                               |                              |
-| ----------------------------- | ---------------------------- |
-| **Type**                      | `object`                     |
-| **Requis**                    | Non                          |
-| **Propriétés additionnelles** | Tout type permis             |
-| **Défini dans**               | [Média](../media) |
+|                               |                                      |
+| ----------------------------- | ------------------------------------ |
+| **Type**                      | `object`                             |
+| **Requis**                    | Non                                  |
+| **Propriétés additionnelles** | Tout type permis                     |
+| **Défini dans**               | [Média (Media)](../media) |
 
 **Description:** Cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 
-[Voir la documentation de Média](../media)
+[Voir la documentation de Média (Media)](../media)
 
 ## <a name="hasContribution"></a>9. Propriété `Spectacle (Show) > hasContribution`
 
@@ -202,24 +202,24 @@ Si un même contributeur a plusieurs contributions pour un même spectacle, il e
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être       | Description                                                                                                                                                                 |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Contribution](#hasContribution_items) | Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné. |
+| Chaque item du tableau doit être                      | Description                                                                                                                                                                 |
+| ----------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Contribution (Contribution)](#hasContribution_items) | Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné. |
 
-### <a name="hasContribution_items"></a>9.1. Spectacle (Show) > hasContribution > Contribution
+### <a name="hasContribution_items"></a>9.1. Spectacle (Show) > hasContribution > Contribution (Contribution)
 
-**Nom:** Contribution
+**Nom:** Contribution (Contribution)
 
-|                               |                                            |
-| ----------------------------- | ------------------------------------------ |
-| **Type**                      | `object`                                   |
-| **Requis**                    | Non                                        |
-| **Propriétés additionnelles** | Tout type permis                           |
-| **Défini dans**               | [Contribution](../contribution) |
+|                               |                                                           |
+| ----------------------------- | --------------------------------------------------------- |
+| **Type**                      | `object`                                                  |
+| **Requis**                    | Non                                                       |
+| **Propriétés additionnelles** | Tout type permis                                          |
+| **Défini dans**               | [Contribution (Contribution)](../contribution) |
 
 **Description:** Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.
 
-[Voir la documentation de Contribution](../contribution)
+[Voir la documentation de Contribution (Contribution)](../contribution)
 
 ## <a name="mainEntityOfPage"></a>10. Propriété `Spectacle (Show) > mainEntityOfPage`
 
@@ -322,20 +322,20 @@ Contre exemple: il n'est pas utile que les données d'un spectacle d'humour énu
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être | Description                                                                             |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#discipline_items)        | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être  | Description                                                                             |
+| --------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#discipline_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="discipline_items"></a>12.1. Spectacle (Show) > discipline > Term
+### <a name="discipline_items"></a>12.1. Spectacle (Show) > discipline > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
+|                               |                                                               |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Type**                      | `object`                                                      |
+| **Requis**                    | Non                                                           |
+| **Propriétés additionnelles** | Tout type permis                                              |
+| **Même définition que**       | [Terme (Term)](#hasContribution_items_contributionType_items) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -362,18 +362,18 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 
 | Chaque item du tableau doit être | Description                                                                             |
 | -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#audience_items)          | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| [Terme (Term)](#audience_items)  | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="audience_items"></a>13.1. Spectacle (Show) > audience > Term
+### <a name="audience_items"></a>13.1. Spectacle (Show) > audience > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
+|                               |                                                               |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Type**                      | `object`                                                      |
+| **Requis**                    | Non                                                           |
+| **Propriétés additionnelles** | Tout type permis                                              |
+| **Même définition que**       | [Terme (Term)](#hasContribution_items_contributionType_items) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -477,20 +477,20 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être | Description                                                                             |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#contentType_items)       | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être   | Description                                                                             |
+| ---------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#contentType_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="contentType_items"></a>17.1. Spectacle (Show) > contentType > Term
+### <a name="contentType_items"></a>17.1. Spectacle (Show) > contentType > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
+|                               |                                                               |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Type**                      | `object`                                                      |
+| **Requis**                    | Non                                                           |
+| **Propriétés additionnelles** | Tout type permis                                              |
+| **Même définition que**       | [Terme (Term)](#hasContribution_items_contributionType_items) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -513,20 +513,20 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être | Description                                                                             |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#contentWarning_items)    | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être      | Description                                                                             |
+| ------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#contentWarning_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="contentWarning_items"></a>18.1. Spectacle (Show) > contentWarning > Term
+### <a name="contentWarning_items"></a>18.1. Spectacle (Show) > contentWarning > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
-|                               |                                                       |
-| ----------------------------- | ----------------------------------------------------- |
-| **Type**                      | `object`                                              |
-| **Requis**                    | Non                                                   |
-| **Propriétés additionnelles** | Tout type permis                                      |
-| **Même définition que**       | [Term](#hasContribution_items_contributionType_items) |
+|                               |                                                               |
+| ----------------------------- | ------------------------------------------------------------- |
+| **Type**                      | `object`                                                      |
+| **Requis**                    | Non                                                           |
+| **Propriétés additionnelles** | Tout type permis                                              |
+| **Même définition que**       | [Terme (Term)](#hasContribution_items_contributionType_items) |
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
@@ -569,4 +569,4 @@ Lorsque le vocabulaire utilisé contient un terme équivalent à « tout public 
 [Voir la documentation de Représentation (Performance)](../performance)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:54 -0500

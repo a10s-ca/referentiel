@@ -13,13 +13,13 @@
 | Propriété                                                              | Description                                                                                                                                                                                                                                        | Priorité           | Type et définition                                                                |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | --------------------------------------------------------------------------------- |
 | [type](#type )                                                         | -                                                                                                                                                                                                                                                  | Obligatoire        | const                                                                             |
-| [additionalType](#additionalType )<br/>_Type additionnel_              | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | Optionnel          | [Term](../term )                                                       |
-| [identifier](#identifier )<br/>_Identifiant_                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | Obligatoire (1..N) | [Identifiant](../identifier )                                          |
+| [additionalType](#additionalType )<br/>_Type additionnel_              | Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.                                                                                             | Optionnel          | [Terme (Term)](../term )                                               |
+| [identifier](#identifier )<br/>_Identifiant_                           | Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.                                                                                                                  | Obligatoire (1..N) | [Identifiant (Identifier)](../identifier )                             |
 | [name](#name )<br/>_Nom_                                               | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)                                                                                                                                                        | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual )       |
 | [description](#description )<br/>_Description_                         | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                    | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )         |
 | [virtualPlace](#virtualPlace )<br/>_Lieu virtuel_                      | -                                                                                                                                                                                                                                                  | Obligatoire        | boolean                                                                           |
 | [inRoom](#inRoom )<br/>_Salle_                                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
-| [address](#address )<br/>_Adresse_                                     | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | Optionnel          | [Postal Address](../postal_address )                                   |
+| [address](#address )<br/>_Adresse_                                     | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | Optionnel          | [Adresse postale (Postal Address)](../postal_address )                 |
 | [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                 | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                       |
 | [placeAccessibility](#placeAccessibility )<br/>_Accessibilité du lieu_ | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
 | [geoCoordinates](#geoCoordinates )<br/>_Coordonnées géographiques_     | Coordonnées géographiques                                                                                                                                                                                                                          | Optionnel          | [Coordonnées géographiques d'un point.](../datatypes/geo_coordinates ) |
@@ -54,7 +54,7 @@ Valeur fixe: `"Place"`
 
 **Description:** Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.
 
-[Voir la documentation de Term](../term)
+[Voir la documentation de Terme (Term)](../term)
 
 ## <a name="identifier"></a>3. Propriété `Lieu (Place) > identifier`
 
@@ -68,7 +68,7 @@ Valeur fixe: `"Place"`
 
 **Description:** Classe permettant d’énumérer des identifiants uniques associés à un objet donné, dans plusieurs systèmes d’information à la fois.
 
-[Voir la documentation de Identifiant](../identifier)
+[Voir la documentation de Identifiant (Identifier)](../identifier)
 
 ## <a name="name"></a>4. Propriété `Lieu (Place) > name`
 
@@ -158,7 +158,7 @@ Valeur fixe: `"Place"`
 
 **Description:** Coordonnées complètes du lieu.
 
-[Voir la documentation de Postal Address](../postal_address)
+[Voir la documentation de Adresse postale (Postal Address)](../postal_address)
 
 ## <a name="mainEntityOfPage"></a>9. Propriété `Lieu (Place) > mainEntityOfPage`
 
@@ -215,13 +215,13 @@ Valeur fixe: `"Place"`
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être  | Description                                                                             |
-| --------------------------------- | --------------------------------------------------------------------------------------- |
-| [Term](#placeAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
+| Chaque item du tableau doit être          | Description                                                                             |
+| ----------------------------------------- | --------------------------------------------------------------------------------------- |
+| [Terme (Term)](#placeAccessibility_items) | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. |
 
-### <a name="placeAccessibility_items"></a>10.1. Lieu (Place) > placeAccessibility > Term
+### <a name="placeAccessibility_items"></a>10.1. Lieu (Place) > placeAccessibility > Terme (Term)
 
-**Nom:** Term
+**Nom:** Terme (Term)
 
 |                               |                                   |
 | ----------------------------- | --------------------------------- |
@@ -248,4 +248,4 @@ Valeur fixe: `"Place"`
 [Voir la documentation de Coordonnées géographiques d'un point.](../datatypes/geo_coordinates)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:54 -0500

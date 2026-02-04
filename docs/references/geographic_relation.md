@@ -13,7 +13,7 @@
 | Propriété                                             | Description                                                                                             | Priorité    | Type et définition                                 |
 | ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------- | -------------------------------------------------- |
 | [type](#type )                                        | -                                                                                                       | Obligatoire | const                                              |
-| [relationType](#relationType )<br/>_Type de relation_ | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | Optionnel   | [Term](term )                          |
+| [relationType](#relationType )<br/>_Type de relation_ | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.                 | Optionnel   | [Terme (Term)](term )                  |
 | [addressCountry](#addressCountry )<br/>_Pays_         | Code ISO 3166-1 alpha-3 à 3 caractères représentant un pays.                                            | Optionnel   | [Code Pays](../datatypes/country_code ) |
 | [addressRegion](#addressRegion )<br/>_Région_         | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
 | [addressLocality](#addressLocality )<br/>_Localité_   | Texte sans formatage, court et sans changement de paragraphes (typiquement affiché sur une seule ligne) | Optionnel   | [Texte court](../datatypes/text_short ) |
@@ -40,7 +40,7 @@ Valeur fixe: `"GeographicRelation"`
 
 **Description:** Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 
-[Voir la documentation de Term](term)
+[Voir la documentation de Terme (Term)](term)
 
 ## <a name="addressCountry"></a>3. Propriété `Association Géographique (GeographicRelation) > addressCountry`
 
@@ -85,4 +85,4 @@ Valeur fixe: `"GeographicRelation"`
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500

@@ -1,6 +1,6 @@
-# Postal Address
+# Adresse postale (Postal Address)
 
-**Nom:** Postal Address
+**Nom:** Adresse postale (Postal Address)
 
 |                               |                  |
 | ----------------------------- | ---------------- |
@@ -42,7 +42,7 @@ Sinon (addressCountry ≠ "CAN") alors :
 
 - `addressRegion` doit respecter le pattern : `^[A-Z]{2}$`
 
-## <a name="type"></a>1. Propriété `Postal Address > type`
+## <a name="type"></a>1. Propriété `Adresse postale (Postal Address) > type`
 
 |            |         |
 | ---------- | ------- |
@@ -51,7 +51,7 @@ Sinon (addressCountry ≠ "CAN") alors :
 
 Valeur fixe: `"PostalAddress"`
 
-## <a name="streetAddress"></a>2. Propriété `Postal Address > streetAddress`
+## <a name="streetAddress"></a>2. Propriété `Adresse postale (Postal Address) > streetAddress`
 
 **Nom:** Adresse postale
 
@@ -65,7 +65,7 @@ Valeur fixe: `"PostalAddress"`
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="addressLocality"></a>3. Propriété `Postal Address > addressLocality`
+## <a name="addressLocality"></a>3. Propriété `Adresse postale (Postal Address) > addressLocality`
 
 **Nom:** Localité
 
@@ -79,7 +79,7 @@ Valeur fixe: `"PostalAddress"`
 
 [Voir la documentation de Texte court](../datatypes/text_short)
 
-## <a name="addressRegion"></a>4. Propriété `Postal Address > addressRegion`
+## <a name="addressRegion"></a>4. Propriété `Adresse postale (Postal Address) > addressRegion`
 
 **Nom:** Région
 
@@ -90,7 +90,7 @@ Valeur fixe: `"PostalAddress"`
 
 **Description:** Abréviation des noms de provinces recommandés par Postes Canada, ou une région dans un autre pays.
 
-## <a name="addressCountry"></a>5. Propriété `Postal Address > addressCountry`
+## <a name="addressCountry"></a>5. Propriété `Adresse postale (Postal Address) > addressCountry`
 
 **Nom:** Pays
 
@@ -104,7 +104,7 @@ Valeur fixe: `"PostalAddress"`
 
 [Voir la documentation de Code Pays](../datatypes/country_code)
 
-## <a name="postalCode"></a>6. Propriété `Postal Address > postalCode`
+## <a name="postalCode"></a>6. Propriété `Adresse postale (Postal Address) > postalCode`
 
 **Nom:** Code postal
 
@@ -119,4 +119,4 @@ Valeur fixe: `"PostalAddress"`
 [Voir la documentation de Code Postal Canadien](../datatypes/canada_postal_code)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:37:16 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 16:44:55 -0500
