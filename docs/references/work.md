@@ -48,4 +48,4 @@ Nom de l'oeuvre.
 [Voir la documentation de Texte court multilingue](../datatypes/text_short_multilingual)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-04 at 17:07:17 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 20:27:42 -0500
