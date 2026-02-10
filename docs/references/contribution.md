@@ -94,4 +94,4 @@ Note concernant la contribution, à l'intention des exploitants des systèmes d'
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:49:27 -0500

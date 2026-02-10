@@ -352,4 +352,4 @@ Permet de décrire les propriétés d’une offre associée à une représentati
 | **Même définition que**       | [Offre (Offer)](#inSeries_items_hasOffer_items) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:49:27 -0500

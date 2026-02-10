@@ -28,8 +28,8 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un art qui utilise la parole et le langage pour communiquer des idées, des émotions ou des histoires.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Conte](http://scenepro.ca/taxonomies/Disciplines-asq#Conte)**    `code: Conte`
 - **[Lecture publique](http://scenepro.ca/taxonomies/Disciplines-asq#LecturePublique)**    `code: LecturePublique`
@@ -46,8 +46,8 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un spectacle qui combine des performances acrobatiques, de jonglerie, d'équilibre et d'autres arts du cirque.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Acrobatie](http://scenepro.ca/taxonomies/Disciplines-asq#Acrobatie)**    `code: Acrobatie`
 - **[Art clownesque](http://scenepro.ca/taxonomies/Disciplines-asq#ArtClownesque)**    `code: ArtClownesque`
@@ -76,150 +76,111 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un art du mouvement du corps, souvent en rythme avec la musique.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Ancienne](http://scenepro.ca/taxonomies/Disciplines-asq#Ancienne)**    `code: Ancienne`
-
-  Concepts plus spécifiques :
-
-  - **[Contra](http://scenepro.ca/taxonomies/Disciplines-asq#Contra)**      `code: Contra`
-  - **[Country-anglaise](http://scenepro.ca/taxonomies/Disciplines-asq#CountryAnglaise)**      `code: CountryAnglaise`
+    - **[Contra](http://scenepro.ca/taxonomies/Disciplines-asq#Contra)**        `code: Contra`
+    - **[Country-anglaise](http://scenepro.ca/taxonomies/Disciplines-asq#CountryAnglaise)**        `code: CountryAnglaise`
 - **[Asiatique](http://scenepro.ca/taxonomies/Disciplines-asq#Asiatique)**    `code: Asiatique`
-
-  Concepts plus spécifiques :
-
-  - **[Bhangra](http://scenepro.ca/taxonomies/Disciplines-asq#Bhangra)**      `code: Bhangra`
-  - **[Bharatanatyam](http://scenepro.ca/taxonomies/Disciplines-asq#Bharatanatyam)**      `code: Bharatanatyam`
-  - **[Bollywood](http://scenepro.ca/taxonomies/Disciplines-asq#Bollywood)**      `code: Bollywood`
-  - **[Butoh](http://scenepro.ca/taxonomies/Disciplines-asq#Butoh)**      `code: Butoh`
-  - **[Kathak](http://scenepro.ca/taxonomies/Disciplines-asq#Kathak)**      `code: Kathak`
+    - **[Bhangra](http://scenepro.ca/taxonomies/Disciplines-asq#Bhangra)**        `code: Bhangra`
+    - **[Bharatanatyam](http://scenepro.ca/taxonomies/Disciplines-asq#Bharatanatyam)**        `code: Bharatanatyam`
+    - **[Bollywood](http://scenepro.ca/taxonomies/Disciplines-asq#Bollywood)**        `code: Bollywood`
+    - **[Butoh](http://scenepro.ca/taxonomies/Disciplines-asq#Butoh)**        `code: Butoh`
+    - **[Kathak](http://scenepro.ca/taxonomies/Disciplines-asq#Kathak)**        `code: Kathak`
 - **[Autochtone](http://scenepro.ca/taxonomies/Disciplines-asq#Autochtone)**    `code: Autochtone`
-
-  Concepts plus spécifiques :
-
-  - **[Cri](http://scenepro.ca/taxonomies/Disciplines-asq#Cri)**      `code: Cri`
-  - **[Inuit](http://scenepro.ca/taxonomies/Disciplines-asq#Inuit)**      `code: Inuit`
-  - **[Métis](http://scenepro.ca/taxonomies/Disciplines-asq#Metis)**      `code: Metis`
-  - **[Pow-wow](http://scenepro.ca/taxonomies/Disciplines-asq#PowWow)**      `code: PowWow`
+    - **[Cri](http://scenepro.ca/taxonomies/Disciplines-asq#Cri)**        `code: Cri`
+    - **[Inuit](http://scenepro.ca/taxonomies/Disciplines-asq#Inuit)**        `code: Inuit`
+    - **[Métis](http://scenepro.ca/taxonomies/Disciplines-asq#Metis)**        `code: Metis`
+    - **[Pow-wow](http://scenepro.ca/taxonomies/Disciplines-asq#PowWow)**        `code: PowWow`
 - **[Ballet](http://scenepro.ca/taxonomies/Disciplines-asq#Ballet)**    `code: Ballet`
-
-  Concepts plus spécifiques :
-
-  - **[Classique](http://scenepro.ca/taxonomies/Disciplines-asq#BalletClassique)**      `code: BalletClassique`
-  - **[Contemporain](http://scenepro.ca/taxonomies/Disciplines-asq#Contemporain)**      `code: Contemporain`
-  - **[Jazz](http://scenepro.ca/taxonomies/Disciplines-asq#BalletJazz)**      `code: BalletJazz`
+    - **[Classique](http://scenepro.ca/taxonomies/Disciplines-asq#BalletClassique)**        `code: BalletClassique`
+    - **[Contemporain](http://scenepro.ca/taxonomies/Disciplines-asq#Contemporain)**        `code: Contemporain`
+    - **[Jazz](http://scenepro.ca/taxonomies/Disciplines-asq#BalletJazz)**        `code: BalletJazz`
 - **[Caribéenne et latino-américaine](http://scenepro.ca/taxonomies/Disciplines-asq#CaribeenneEtLatinoAmericaine)**    `code: CaribeenneEtLatinoAmericaine`
-
-  Concepts plus spécifiques :
-
-  - **[Afro-caribéenne](http://scenepro.ca/taxonomies/Disciplines-asq#AfroCaribeenne)**      `code: AfroCaribeenne`
-  - **[Bachata](http://scenepro.ca/taxonomies/Disciplines-asq#Bachata)**      `code: Bachata`
-  - **[Capoeira](http://scenepro.ca/taxonomies/Disciplines-asq#Capoeira)**      `code: Capoeira`
-  - **[Latine](http://scenepro.ca/taxonomies/Disciplines-asq#Latine)**      `code: Latine`
-  - **[Merengue](http://scenepro.ca/taxonomies/Disciplines-asq#Merengue)**      `code: Merengue`
-  - **[Salsa](http://scenepro.ca/taxonomies/Disciplines-asq#Salsa)**      `code: Salsa`
-  - **[Samba](http://scenepro.ca/taxonomies/Disciplines-asq#Samba)**      `code: Samba`
+    - **[Afro-caribéenne](http://scenepro.ca/taxonomies/Disciplines-asq#AfroCaribeenne)**        `code: AfroCaribeenne`
+    - **[Bachata](http://scenepro.ca/taxonomies/Disciplines-asq#Bachata)**        `code: Bachata`
+    - **[Capoeira](http://scenepro.ca/taxonomies/Disciplines-asq#Capoeira)**        `code: Capoeira`
+    - **[Latine](http://scenepro.ca/taxonomies/Disciplines-asq#Latine)**        `code: Latine`
+    - **[Merengue](http://scenepro.ca/taxonomies/Disciplines-asq#Merengue)**        `code: Merengue`
+    - **[Salsa](http://scenepro.ca/taxonomies/Disciplines-asq#Salsa)**        `code: Salsa`
+    - **[Samba](http://scenepro.ca/taxonomies/Disciplines-asq#Samba)**        `code: Samba`
 - **[Contemporaine et moderne](http://scenepro.ca/taxonomies/Disciplines-asq#ContemporaineEtModerne)**    `code: ContemporaineEtModerne`
-
-  Concepts plus spécifiques :
-
-  - **[Claquettes](http://scenepro.ca/taxonomies/Disciplines-asq#Claquettes)**      `code: Claquettes`
-  - **[Contact-improvisation](http://scenepro.ca/taxonomies/Disciplines-asq#ContactImprovisation)**      `code: ContactImprovisation`
-  - **[Contemporaine](http://scenepro.ca/taxonomies/Disciplines-asq#Contemporaine)**      `code: Contemporaine`
-  - **[Expérimentale](http://scenepro.ca/taxonomies/Disciplines-asq#Experimentale)**      `code: Experimentale`
-  - **[Habiletés diversifiées](http://scenepro.ca/taxonomies/Disciplines-asq#HabiletesDiversifiees)**      `code: HabiletesDiversifiees`
-  - **[Jazz](http://scenepro.ca/taxonomies/Disciplines-asq#ContemporaineEtModerneJazz)**      `code: ContemporaineEtModerneJazz`
-  - **[Lyrique](http://scenepro.ca/taxonomies/Disciplines-asq#Lyrique)**      `code: Lyrique`
-  - **[Moderne](http://scenepro.ca/taxonomies/Disciplines-asq#Moderne)**      `code: Moderne`
+    - **[Claquettes](http://scenepro.ca/taxonomies/Disciplines-asq#Claquettes)**        `code: Claquettes`
+    - **[Contact-improvisation](http://scenepro.ca/taxonomies/Disciplines-asq#ContactImprovisation)**        `code: ContactImprovisation`
+    - **[Contemporaine](http://scenepro.ca/taxonomies/Disciplines-asq#Contemporaine)**        `code: Contemporaine`
+    - **[Expérimentale](http://scenepro.ca/taxonomies/Disciplines-asq#Experimentale)**        `code: Experimentale`
+    - **[Habiletés diversifiées](http://scenepro.ca/taxonomies/Disciplines-asq#HabiletesDiversifiees)**        `code: HabiletesDiversifiees`
+    - **[Jazz](http://scenepro.ca/taxonomies/Disciplines-asq#ContemporaineEtModerneJazz)**        `code: ContemporaineEtModerneJazz`
+    - **[Lyrique](http://scenepro.ca/taxonomies/Disciplines-asq#Lyrique)**        `code: Lyrique`
+    - **[Moderne](http://scenepro.ca/taxonomies/Disciplines-asq#Moderne)**        `code: Moderne`
 - **[Country et canadienne](http://scenepro.ca/taxonomies/Disciplines-asq#CountryEtCanadienne)**    `code: CountryEtCanadienne`
-
-  Concepts plus spécifiques :
-
-  - **[Carrée](http://scenepro.ca/taxonomies/Disciplines-asq#Carree)**      `code: Carree`
-  - **[Clogging](http://scenepro.ca/taxonomies/Disciplines-asq#Clogging)**      `code: Clogging`
-  - **[Country-western](http://scenepro.ca/taxonomies/Disciplines-asq#CountryWestern)**      `code: CountryWestern`
-  - **[Danse en ligne](http://scenepro.ca/taxonomies/Disciplines-asq#DanseEnLigne)**      `code: DanseEnLigne`
-  - **[Gigue canadienne](http://scenepro.ca/taxonomies/Disciplines-asq#GigueCanadienne)**      `code: GigueCanadienne`
-  - **[Gigue québécoise](http://scenepro.ca/taxonomies/Disciplines-asq#GigueQuebecoise)**      `code: GigueQuebecoise`
-  - **[Ronde](http://scenepro.ca/taxonomies/Disciplines-asq#Ronde)**      `code: Ronde`
-  - **[Traditionnelle québécoise](http://scenepro.ca/taxonomies/Disciplines-asq#TraditionnelleQuebecoise)**      `code: TraditionnelleQuebecoise`
+    - **[Carrée](http://scenepro.ca/taxonomies/Disciplines-asq#Carree)**        `code: Carree`
+    - **[Clogging](http://scenepro.ca/taxonomies/Disciplines-asq#Clogging)**        `code: Clogging`
+    - **[Country-western](http://scenepro.ca/taxonomies/Disciplines-asq#CountryWestern)**        `code: CountryWestern`
+    - **[Danse en ligne](http://scenepro.ca/taxonomies/Disciplines-asq#DanseEnLigne)**        `code: DanseEnLigne`
+    - **[Gigue canadienne](http://scenepro.ca/taxonomies/Disciplines-asq#GigueCanadienne)**        `code: GigueCanadienne`
+    - **[Gigue québécoise](http://scenepro.ca/taxonomies/Disciplines-asq#GigueQuebecoise)**        `code: GigueQuebecoise`
+    - **[Ronde](http://scenepro.ca/taxonomies/Disciplines-asq#Ronde)**        `code: Ronde`
+    - **[Traditionnelle québécoise](http://scenepro.ca/taxonomies/Disciplines-asq#TraditionnelleQuebecoise)**        `code: TraditionnelleQuebecoise`
 - **[Danse Africaine](http://scenepro.ca/taxonomies/Disciplines-asq#Africaine)**    `code: Africaine`
-
-  Concepts plus spécifiques :
-
-  - **[Autre](http://scenepro.ca/taxonomies/Disciplines-asq#Autre)**      `code: Autre`
-  - **[Gumboot](http://scenepro.ca/taxonomies/Disciplines-asq#Gumboot)**      `code: Gumboot`
-  - **[Kizomba](http://scenepro.ca/taxonomies/Disciplines-asq#Kizomba)**      `code: Kizomba`
+    - **[Autre](http://scenepro.ca/taxonomies/Disciplines-asq#Autre)**        `code: Autre`
+    - **[Gumboot](http://scenepro.ca/taxonomies/Disciplines-asq#Gumboot)**        `code: Gumboot`
+    - **[Kizomba](http://scenepro.ca/taxonomies/Disciplines-asq#Kizomba)**        `code: Kizomba`
 - **[Européenne](http://scenepro.ca/taxonomies/Disciplines-asq#Europeenne)**    `code: Europeenne`
-
-  Concepts plus spécifiques :
-
-  - **[Country écossaise](http://scenepro.ca/taxonomies/Disciplines-asq#CountryEcossaise)**      `code: CountryEcossaise`
-  - **[Cèilidh écossaise](http://scenepro.ca/taxonomies/Disciplines-asq#CeilidhEcossaise)**      `code: CeilidhEcossaise`
-  - **[Céilí Irlandaise](http://scenepro.ca/taxonomies/Disciplines-asq#CeiliIrlandaise)**      `code: CeiliIrlandaise`
-  - **[D'Europe de l'Est](http://scenepro.ca/taxonomies/Disciplines-asq#DEuropeDeLEst)**      `code: DEuropeDeLEst`
-  - **[Des Balkans](http://scenepro.ca/taxonomies/Disciplines-asq#DesBalkans)**      `code: DesBalkans`
-  - **[Flamenco](http://scenepro.ca/taxonomies/Disciplines-asq#Flamenco)**      `code: Flamenco`
-  - **[Folklorique internationale](http://scenepro.ca/taxonomies/Disciplines-asq#FolkloriqueInternationale)**      `code: FolkloriqueInternationale`
-  - **[Gigue irlandaise](http://scenepro.ca/taxonomies/Disciplines-asq#GigueIrlandaise)**      `code: GigueIrlandaise`
-  - **[Grecque](http://scenepro.ca/taxonomies/Disciplines-asq#Grecque)**      `code: Grecque`
-  - **[Highland](http://scenepro.ca/taxonomies/Disciplines-asq#Highland)**      `code: Highland`
-  - **[Hongroise](http://scenepro.ca/taxonomies/Disciplines-asq#Hongroise)**      `code: Hongroise`
-  - **[Morris anglaise](http://scenepro.ca/taxonomies/Disciplines-asq#MorrisAnglaise)**      `code: MorrisAnglaise`
-  - **[Polonaise](http://scenepro.ca/taxonomies/Disciplines-asq#Polonaise)**      `code: Polonaise`
-  - **[Scandinave](http://scenepro.ca/taxonomies/Disciplines-asq#Scandinave)**      `code: Scandinave`
-  - **[Set irlandais](http://scenepro.ca/taxonomies/Disciplines-asq#SetIrlandais)**      `code: SetIrlandais`
-  - **[Ukrainienne](http://scenepro.ca/taxonomies/Disciplines-asq#Ukrainienne)**      `code: Ukrainienne`
+    - **[Country écossaise](http://scenepro.ca/taxonomies/Disciplines-asq#CountryEcossaise)**        `code: CountryEcossaise`
+    - **[Cèilidh écossaise](http://scenepro.ca/taxonomies/Disciplines-asq#CeilidhEcossaise)**        `code: CeilidhEcossaise`
+    - **[Céilí Irlandaise](http://scenepro.ca/taxonomies/Disciplines-asq#CeiliIrlandaise)**        `code: CeiliIrlandaise`
+    - **[D'Europe de l'Est](http://scenepro.ca/taxonomies/Disciplines-asq#DEuropeDeLEst)**        `code: DEuropeDeLEst`
+    - **[Des Balkans](http://scenepro.ca/taxonomies/Disciplines-asq#DesBalkans)**        `code: DesBalkans`
+    - **[Flamenco](http://scenepro.ca/taxonomies/Disciplines-asq#Flamenco)**        `code: Flamenco`
+    - **[Folklorique internationale](http://scenepro.ca/taxonomies/Disciplines-asq#FolkloriqueInternationale)**        `code: FolkloriqueInternationale`
+    - **[Gigue irlandaise](http://scenepro.ca/taxonomies/Disciplines-asq#GigueIrlandaise)**        `code: GigueIrlandaise`
+    - **[Grecque](http://scenepro.ca/taxonomies/Disciplines-asq#Grecque)**        `code: Grecque`
+    - **[Highland](http://scenepro.ca/taxonomies/Disciplines-asq#Highland)**        `code: Highland`
+    - **[Hongroise](http://scenepro.ca/taxonomies/Disciplines-asq#Hongroise)**        `code: Hongroise`
+    - **[Morris anglaise](http://scenepro.ca/taxonomies/Disciplines-asq#MorrisAnglaise)**        `code: MorrisAnglaise`
+    - **[Polonaise](http://scenepro.ca/taxonomies/Disciplines-asq#Polonaise)**        `code: Polonaise`
+    - **[Scandinave](http://scenepro.ca/taxonomies/Disciplines-asq#Scandinave)**        `code: Scandinave`
+    - **[Set irlandais](http://scenepro.ca/taxonomies/Disciplines-asq#SetIrlandais)**        `code: SetIrlandais`
+    - **[Ukrainienne](http://scenepro.ca/taxonomies/Disciplines-asq#Ukrainienne)**        `code: Ukrainienne`
 - **[Moyen-Orient](http://scenepro.ca/taxonomies/Disciplines-asq#MoyenOrient)**    `code: MoyenOrient`
-
-  Concepts plus spécifiques :
-
-  - **[Arabe](http://scenepro.ca/taxonomies/Disciplines-asq#Arabe)**      `code: Arabe`
-  - **[Du ventre](http://scenepro.ca/taxonomies/Disciplines-asq#DuVentre)**      `code: DuVentre`
-  - **[Israélienne](http://scenepro.ca/taxonomies/Disciplines-asq#Israelienne)**      `code: Israelienne`
-  - **[Raqs Sharqi](http://scenepro.ca/taxonomies/Disciplines-asq#RaqsSharqi)**      `code: RaqsSharqi`
-  - **[Turque](http://scenepro.ca/taxonomies/Disciplines-asq#Turque)**      `code: Turque`
+    - **[Arabe](http://scenepro.ca/taxonomies/Disciplines-asq#Arabe)**        `code: Arabe`
+    - **[Du ventre](http://scenepro.ca/taxonomies/Disciplines-asq#DuVentre)**        `code: DuVentre`
+    - **[Israélienne](http://scenepro.ca/taxonomies/Disciplines-asq#Israelienne)**        `code: Israelienne`
+    - **[Raqs Sharqi](http://scenepro.ca/taxonomies/Disciplines-asq#RaqsSharqi)**        `code: RaqsSharqi`
+    - **[Turque](http://scenepro.ca/taxonomies/Disciplines-asq#Turque)**        `code: Turque`
 - **[Sociale](http://scenepro.ca/taxonomies/Disciplines-asq#Sociale)**    `code: Sociale`
-
-  Concepts plus spécifiques :
-
-  - **[Balboa](http://scenepro.ca/taxonomies/Disciplines-asq#Balboa)**      `code: Balboa`
-  - **[Blues](http://scenepro.ca/taxonomies/Disciplines-asq#Blues)**      `code: Blues`
-  - **[Cha-cha-cha](http://scenepro.ca/taxonomies/Disciplines-asq#ChaChaCha)**      `code: ChaChaCha`
-  - **[Charleston](http://scenepro.ca/taxonomies/Disciplines-asq#Charleston)**      `code: Charleston`
-  - **[Danse sportive](http://scenepro.ca/taxonomies/Disciplines-asq#DanseSportive)**      `code: DanseSportive`
-  - **[De salon](http://scenepro.ca/taxonomies/Disciplines-asq#DeSalon)**      `code: DeSalon`
-  - **[Foxtrot](http://scenepro.ca/taxonomies/Disciplines-asq#Foxtrot)**      `code: Foxtrot`
-  - **[Hustle](http://scenepro.ca/taxonomies/Disciplines-asq#Hustle)**      `code: Hustle`
-  - **[Jive](http://scenepro.ca/taxonomies/Disciplines-asq#Jive)**      `code: Jive`
-  - **[Lindy Hop](http://scenepro.ca/taxonomies/Disciplines-asq#LindyHop)**      `code: LindyHop`
-  - **[Polka](http://scenepro.ca/taxonomies/Disciplines-asq#Polka)**      `code: Polka`
-  - **[Rock and roll](http://scenepro.ca/taxonomies/Disciplines-asq#RockAndRoll)**      `code: RockAndRoll`
-  - **[Rumba](http://scenepro.ca/taxonomies/Disciplines-asq#Rumba)**      `code: Rumba`
-  - **[Tango](http://scenepro.ca/taxonomies/Disciplines-asq#Tango)**      `code: Tango`
-  - **[Valse](http://scenepro.ca/taxonomies/Disciplines-asq#Valse)**      `code: Valse`
-  - **[West Coast Swing](http://scenepro.ca/taxonomies/Disciplines-asq#WestCoastSwing)**      `code: WestCoastSwing`
+    - **[Balboa](http://scenepro.ca/taxonomies/Disciplines-asq#Balboa)**        `code: Balboa`
+    - **[Blues](http://scenepro.ca/taxonomies/Disciplines-asq#Blues)**        `code: Blues`
+    - **[Cha-cha-cha](http://scenepro.ca/taxonomies/Disciplines-asq#ChaChaCha)**        `code: ChaChaCha`
+    - **[Charleston](http://scenepro.ca/taxonomies/Disciplines-asq#Charleston)**        `code: Charleston`
+    - **[Danse sportive](http://scenepro.ca/taxonomies/Disciplines-asq#DanseSportive)**        `code: DanseSportive`
+    - **[De salon](http://scenepro.ca/taxonomies/Disciplines-asq#DeSalon)**        `code: DeSalon`
+    - **[Foxtrot](http://scenepro.ca/taxonomies/Disciplines-asq#Foxtrot)**        `code: Foxtrot`
+    - **[Hustle](http://scenepro.ca/taxonomies/Disciplines-asq#Hustle)**        `code: Hustle`
+    - **[Jive](http://scenepro.ca/taxonomies/Disciplines-asq#Jive)**        `code: Jive`
+    - **[Lindy Hop](http://scenepro.ca/taxonomies/Disciplines-asq#LindyHop)**        `code: LindyHop`
+    - **[Polka](http://scenepro.ca/taxonomies/Disciplines-asq#Polka)**        `code: Polka`
+    - **[Rock and roll](http://scenepro.ca/taxonomies/Disciplines-asq#RockAndRoll)**        `code: RockAndRoll`
+    - **[Rumba](http://scenepro.ca/taxonomies/Disciplines-asq#Rumba)**        `code: Rumba`
+    - **[Tango](http://scenepro.ca/taxonomies/Disciplines-asq#Tango)**        `code: Tango`
+    - **[Valse](http://scenepro.ca/taxonomies/Disciplines-asq#Valse)**        `code: Valse`
+    - **[West Coast Swing](http://scenepro.ca/taxonomies/Disciplines-asq#WestCoastSwing)**        `code: WestCoastSwing`
 - **[Spirituelle](http://scenepro.ca/taxonomies/Disciplines-asq#Spirituelle)**    `code: Spirituelle`
-
-  Concepts plus spécifiques :
-
-  - **[En cercle](http://scenepro.ca/taxonomies/Disciplines-asq#EnCercle)**      `code: EnCercle`
-  - **[Extatique](http://scenepro.ca/taxonomies/Disciplines-asq#Extatique)**      `code: Extatique`
-  - **[Sacrée en cercle](http://scenepro.ca/taxonomies/Disciplines-asq#SacreeEnCercle)**      `code: SacreeEnCercle`
+    - **[En cercle](http://scenepro.ca/taxonomies/Disciplines-asq#EnCercle)**        `code: EnCercle`
+    - **[Extatique](http://scenepro.ca/taxonomies/Disciplines-asq#Extatique)**        `code: Extatique`
+    - **[Sacrée en cercle](http://scenepro.ca/taxonomies/Disciplines-asq#SacreeEnCercle)**        `code: SacreeEnCercle`
 - **[Urbaine](http://scenepro.ca/taxonomies/Disciplines-asq#Urbaine)**    `code: Urbaine`
-
-  Concepts plus spécifiques :
-
-  - **[B-boying / B-girling](http://scenepro.ca/taxonomies/Disciplines-asq#BBoyingOrBGirling)**      `code: BBoyingOrBGirling`
-  - **[Dancehall](http://scenepro.ca/taxonomies/Disciplines-asq#Dancehall)**      `code: Dancehall`
-  - **[Divers](http://scenepro.ca/taxonomies/Disciplines-asq#Divers)**      `code: Divers`
-  - **[Hip hop](http://scenepro.ca/taxonomies/Disciplines-asq#Hiphop)**      `code: Hiphop`
-  - **[House](http://scenepro.ca/taxonomies/Disciplines-asq#House)**      `code: House`
-  - **[Locking](http://scenepro.ca/taxonomies/Disciplines-asq#Locking)**      `code: Locking`
-  - **[Popping](http://scenepro.ca/taxonomies/Disciplines-asq#Popping)**      `code: Popping`
-  - **[Reggaeton](http://scenepro.ca/taxonomies/Disciplines-asq#Reggaeton)**      `code: Reggaeton`
-  - **[Waacking](http://scenepro.ca/taxonomies/Disciplines-asq#Waacking)**      `code: Waacking`
+    - **[B-boying / B-girling](http://scenepro.ca/taxonomies/Disciplines-asq#BBoyingOrBGirling)**        `code: BBoyingOrBGirling`
+    - **[Dancehall](http://scenepro.ca/taxonomies/Disciplines-asq#Dancehall)**        `code: Dancehall`
+    - **[Divers](http://scenepro.ca/taxonomies/Disciplines-asq#Divers)**        `code: Divers`
+    - **[Hip hop](http://scenepro.ca/taxonomies/Disciplines-asq#Hiphop)**        `code: Hiphop`
+    - **[House](http://scenepro.ca/taxonomies/Disciplines-asq#House)**        `code: House`
+    - **[Locking](http://scenepro.ca/taxonomies/Disciplines-asq#Locking)**        `code: Locking`
+    - **[Popping](http://scenepro.ca/taxonomies/Disciplines-asq#Popping)**        `code: Popping`
+    - **[Reggaeton](http://scenepro.ca/taxonomies/Disciplines-asq#Reggaeton)**        `code: Reggaeton`
+    - **[Waacking](http://scenepro.ca/taxonomies/Disciplines-asq#Waacking)**        `code: Waacking`
 
 
 
@@ -231,8 +192,8 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un art qui utilise le rire et la comédie pour divertir.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Absurde](http://scenepro.ca/taxonomies/Disciplines-asq#Absurde)**    `code: Absurde`
 - **[Burlesque](http://scenepro.ca/taxonomies/Disciplines-asq#Burlesque)**    `code: Burlesque`
@@ -256,26 +217,20 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un art qui utilise le son et le rythme pour créer des compositions musicales.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Avant-Garde](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGarde)**    `code: AvantGarde`
-
-  Concepts plus spécifiques :
-
-  - **[Contemporaine](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeContemporaine)**      `code: AvantGardeContemporaine`
-  - **[Expérimentale](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeExperimentale)**      `code: AvantGardeExperimentale`
-  - **[Électroacoustique](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeElectroacoustique)**      `code: AvantGardeElectroacoustique`
+    - **[Contemporaine](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeContemporaine)**        `code: AvantGardeContemporaine`
+    - **[Expérimentale](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeExperimentale)**        `code: AvantGardeExperimentale`
+    - **[Électroacoustique](http://scenepro.ca/taxonomies/Disciplines-asq#AvantGardeElectroacoustique)**        `code: AvantGardeElectroacoustique`
 - **[Blues](http://scenepro.ca/taxonomies/Disciplines-asq#MusiqueBlues)**    `code: MusiqueBlues`
 - **[Classique](http://scenepro.ca/taxonomies/Disciplines-asq#Classique)**    `code: Classique`
-
-  Concepts plus spécifiques :
-
-  - **[Baroque](http://scenepro.ca/taxonomies/Disciplines-asq#Baroque)**      `code: Baroque`
-  - **[De la Renaissance](http://scenepro.ca/taxonomies/Disciplines-asq#DeLaRenaissance)**      `code: DeLaRenaissance`
-  - **[Médiévale](http://scenepro.ca/taxonomies/Disciplines-asq#Medievale)**      `code: Medievale`
-  - **[Postromantique](http://scenepro.ca/taxonomies/Disciplines-asq#Postromantique)**      `code: Postromantique`
-  - **[Romantique](http://scenepro.ca/taxonomies/Disciplines-asq#Romantique)**      `code: Romantique`
+    - **[Baroque](http://scenepro.ca/taxonomies/Disciplines-asq#Baroque)**        `code: Baroque`
+    - **[De la Renaissance](http://scenepro.ca/taxonomies/Disciplines-asq#DeLaRenaissance)**        `code: DeLaRenaissance`
+    - **[Médiévale](http://scenepro.ca/taxonomies/Disciplines-asq#Medievale)**        `code: Medievale`
+    - **[Postromantique](http://scenepro.ca/taxonomies/Disciplines-asq#Postromantique)**        `code: Postromantique`
+    - **[Romantique](http://scenepro.ca/taxonomies/Disciplines-asq#Romantique)**        `code: Romantique`
 - **[Contemporaine](http://scenepro.ca/taxonomies/Disciplines-asq#MusiqueContemporaine)**    `code: MusiqueContemporaine`
 - **[Country](http://scenepro.ca/taxonomies/Disciplines-asq#Country)**    `code: Country`
 - **[Dance](http://scenepro.ca/taxonomies/Disciplines-asq#Dance)**    `code: Dance`
@@ -286,26 +241,23 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **[Hip-hop](http://scenepro.ca/taxonomies/Disciplines-asq#MusiqueHipHop)**    `code: MusiqueHipHop`
 - **[Indie](http://scenepro.ca/taxonomies/Disciplines-asq#Indie)**    `code: Indie`
 - **[Jazz](http://scenepro.ca/taxonomies/Disciplines-asq#Jazz)**    `code: Jazz`
-
-  Concepts plus spécifiques :
-
-  - **[Acid jazz](http://scenepro.ca/taxonomies/Disciplines-asq#AcidJazz)**      `code: AcidJazz`
-  - **[Be-bop](http://scenepro.ca/taxonomies/Disciplines-asq#BeBop)**      `code: BeBop`
-  - **[Big band](http://scenepro.ca/taxonomies/Disciplines-asq#BigBand)**      `code: BigBand`
-  - **[Bossa nova](http://scenepro.ca/taxonomies/Disciplines-asq#BossaNova)**      `code: BossaNova`
-  - **[Cool jazz](http://scenepro.ca/taxonomies/Disciplines-asq#CoolJazz)**      `code: CoolJazz`
-  - **[Dixieland](http://scenepro.ca/taxonomies/Disciplines-asq#Dixieland)**      `code: Dixieland`
-  - **[Free jazz](http://scenepro.ca/taxonomies/Disciplines-asq#FreeJazz)**      `code: FreeJazz`
-  - **[Funk](http://scenepro.ca/taxonomies/Disciplines-asq#Funk)**      `code: Funk`
-  - **[Hard bop](http://scenepro.ca/taxonomies/Disciplines-asq#HardBop)**      `code: HardBop`
-  - **[Jazz fusion](http://scenepro.ca/taxonomies/Disciplines-asq#JazzFusion)**      `code: JazzFusion`
-  - **[Jazz modal](http://scenepro.ca/taxonomies/Disciplines-asq#JazzModal)**      `code: JazzModal`
-  - **[Manouche](http://scenepro.ca/taxonomies/Disciplines-asq#Manouche)**      `code: Manouche`
-  - **[Néo-bop](http://scenepro.ca/taxonomies/Disciplines-asq#NeoBop)**      `code: NeoBop`
-  - **[Ragtime](http://scenepro.ca/taxonomies/Disciplines-asq#Ragtime)**      `code: Ragtime`
-  - **[Rhythm'n'blues](http://scenepro.ca/taxonomies/Disciplines-asq#RhythmNBlues)**      `code: RhythmNBlues`
-  - **[Smooth jazz](http://scenepro.ca/taxonomies/Disciplines-asq#SmoothJazz)**      `code: SmoothJazz`
-  - **[Swing](http://scenepro.ca/taxonomies/Disciplines-asq#Swing)**      `code: Swing`
+    - **[Acid jazz](http://scenepro.ca/taxonomies/Disciplines-asq#AcidJazz)**        `code: AcidJazz`
+    - **[Be-bop](http://scenepro.ca/taxonomies/Disciplines-asq#BeBop)**        `code: BeBop`
+    - **[Big band](http://scenepro.ca/taxonomies/Disciplines-asq#BigBand)**        `code: BigBand`
+    - **[Bossa nova](http://scenepro.ca/taxonomies/Disciplines-asq#BossaNova)**        `code: BossaNova`
+    - **[Cool jazz](http://scenepro.ca/taxonomies/Disciplines-asq#CoolJazz)**        `code: CoolJazz`
+    - **[Dixieland](http://scenepro.ca/taxonomies/Disciplines-asq#Dixieland)**        `code: Dixieland`
+    - **[Free jazz](http://scenepro.ca/taxonomies/Disciplines-asq#FreeJazz)**        `code: FreeJazz`
+    - **[Funk](http://scenepro.ca/taxonomies/Disciplines-asq#Funk)**        `code: Funk`
+    - **[Hard bop](http://scenepro.ca/taxonomies/Disciplines-asq#HardBop)**        `code: HardBop`
+    - **[Jazz fusion](http://scenepro.ca/taxonomies/Disciplines-asq#JazzFusion)**        `code: JazzFusion`
+    - **[Jazz modal](http://scenepro.ca/taxonomies/Disciplines-asq#JazzModal)**        `code: JazzModal`
+    - **[Manouche](http://scenepro.ca/taxonomies/Disciplines-asq#Manouche)**        `code: Manouche`
+    - **[Néo-bop](http://scenepro.ca/taxonomies/Disciplines-asq#NeoBop)**        `code: NeoBop`
+    - **[Ragtime](http://scenepro.ca/taxonomies/Disciplines-asq#Ragtime)**        `code: Ragtime`
+    - **[Rhythm'n'blues](http://scenepro.ca/taxonomies/Disciplines-asq#RhythmNBlues)**        `code: RhythmNBlues`
+    - **[Smooth jazz](http://scenepro.ca/taxonomies/Disciplines-asq#SmoothJazz)**        `code: SmoothJazz`
+    - **[Swing](http://scenepro.ca/taxonomies/Disciplines-asq#Swing)**        `code: Swing`
 - **[Latino](http://scenepro.ca/taxonomies/Disciplines-asq#Latino)**    `code: Latino`
 - **[Métal](http://scenepro.ca/taxonomies/Disciplines-asq#Metal)**    `code: Metal`
 - **[Opéra](http://scenepro.ca/taxonomies/Disciplines-asq#Opera)**    `code: Opera`
@@ -317,16 +269,13 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **[Rap](http://scenepro.ca/taxonomies/Disciplines-asq#Rap)**    `code: Rap`
 - **[Reggae](http://scenepro.ca/taxonomies/Disciplines-asq#Reggae)**    `code: Reggae`
 - **[Religieuse](http://scenepro.ca/taxonomies/Disciplines-asq#Religieuse)**    `code: Religieuse`
-
-  Concepts plus spécifiques :
-
-  - **[bouddhique](http://scenepro.ca/taxonomies/Disciplines-asq#Bouddhique)**      `code: Bouddhique`
-  - **[Chant chrétien](http://scenepro.ca/taxonomies/Disciplines-asq#ChantChretien)**      `code: ChantChretien`
-  - **[Gospel](http://scenepro.ca/taxonomies/Disciplines-asq#Gospel)**      `code: Gospel`
-  - **[islamique](http://scenepro.ca/taxonomies/Disciplines-asq#Islamique)**      `code: Islamique`
-  - **[juive](http://scenepro.ca/taxonomies/Disciplines-asq#Juive)**      `code: Juive`
-  - **[shintoïste](http://scenepro.ca/taxonomies/Disciplines-asq#Shintoiste)**      `code: Shintoiste`
-  - **[sikhe](http://scenepro.ca/taxonomies/Disciplines-asq#Sikhe)**      `code: Sikhe`
+    - **[bouddhique](http://scenepro.ca/taxonomies/Disciplines-asq#Bouddhique)**        `code: Bouddhique`
+    - **[Chant chrétien](http://scenepro.ca/taxonomies/Disciplines-asq#ChantChretien)**        `code: ChantChretien`
+    - **[Gospel](http://scenepro.ca/taxonomies/Disciplines-asq#Gospel)**        `code: Gospel`
+    - **[islamique](http://scenepro.ca/taxonomies/Disciplines-asq#Islamique)**        `code: Islamique`
+    - **[juive](http://scenepro.ca/taxonomies/Disciplines-asq#Juive)**        `code: Juive`
+    - **[shintoïste](http://scenepro.ca/taxonomies/Disciplines-asq#Shintoiste)**        `code: Shintoiste`
+    - **[sikhe](http://scenepro.ca/taxonomies/Disciplines-asq#Sikhe)**        `code: Sikhe`
 - **[Rock](http://scenepro.ca/taxonomies/Disciplines-asq#Rock)**    `code: Rock`
 - **[Soul](http://scenepro.ca/taxonomies/Disciplines-asq#Soul)**    `code: Soul`
 - **[Traditions du monde](http://scenepro.ca/taxonomies/Disciplines-asq#TraditionsDuMonde)**    `code: TraditionsDuMonde`
@@ -345,8 +294,8 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un art de la représentation dramatique, souvent sur scène, impliquant des acteurs et un public.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Anticipation](http://scenepro.ca/taxonomies/Disciplines-asq#Anticipation)**    `code: Anticipation`
 - **[Cabaret](http://scenepro.ca/taxonomies/Disciplines-asq#TheatreCabaret)**    `code: TheatreCabaret`
@@ -381,8 +330,8 @@ Taxonomie de Scène Pro pour la classification des disciplines artistiques.
 - **Définition** : Un spectacle qui combine plusieurs formes de divertissement, y compris la musique, la danse et le théâtre.
 
 
-**Concepts plus spécifiques :**
 
+#### Concepts plus précis
 
 - **[Cabaret](http://scenepro.ca/taxonomies/Disciplines-asq#Cabaret)**    `code: Cabaret`
 - **[Magie](http://scenepro.ca/taxonomies/Disciplines-asq#Magie)**    `code: Magie`

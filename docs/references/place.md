@@ -220,4 +220,4 @@ Coordonnées géographiques
 [Voir la documentation de Coordonnées géographiques d'un point.](../datatypes/geo_coordinates)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:49:27 -0500

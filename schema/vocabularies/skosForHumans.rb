@@ -40,7 +40,7 @@ end
 
 # Rendu récursif en Markdown d'une liste de narrower
 def render_narrower_md(narrower_concepts, level = 0)
-  indent = '  ' * level
+  indent = '    ' * level
   narrower_concepts.map do |c|
     label = c[:label] && !c[:label].empty? ? c[:label] : code_from_uri(c[:uri])
     line = "#{indent}- **[#{label}](#{c[:uri]})**  " \
@@ -49,8 +49,7 @@ def render_narrower_md(narrower_concepts, level = 0)
       line += "\n#{indent}  _Définition_: #{c[:definition]}"
     end
     if c[:narrower]&.any?
-      line += "\n\n#{indent}  Concepts plus spécifiques :\n\n" \
-              "#{render_narrower_md(c[:narrower], level + 1)}"
+      line += "\n#{render_narrower_md(c[:narrower], level + 1)}"
     end
     line
   end.join("\n")
@@ -142,8 +141,10 @@ template = <<~'MD'
   - **Définition** : <%= concept[:definition] %>
   <% end %>
   <% if concept[:narrower].any? %>
-  **Concepts plus spécifiques :**
-  <%= "\n\n" %><%= render_narrower_md(concept[:narrower], 0) %>
+
+  #### Concepts plus précis
+
+  <%= render_narrower_md(concept[:narrower], 0) %>
   <% end %>
 
   <% end %>

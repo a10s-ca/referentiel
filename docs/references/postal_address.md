@@ -107,4 +107,4 @@ Code postal, en majuscules. Séparer les trois premiers caractères du code post
 [Voir la documentation de Code Postal Canadien](../datatypes/canada_postal_code)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:49:27 -0500
