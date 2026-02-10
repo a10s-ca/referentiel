@@ -255,4 +255,4 @@ Permet de décrire les propriétés d’une offre associée à une représentati
 [Voir la documentation de Offre (Offer)](../offer)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 20:27:42 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500

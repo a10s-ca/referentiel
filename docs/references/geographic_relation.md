@@ -75,4 +75,4 @@ Texte sans formatage, court et sans changement de paragraphes (typiquement affic
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 20:27:43 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:28:36 -0500

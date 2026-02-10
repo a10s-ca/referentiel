@@ -21,9 +21,8 @@ Le [fork propriétaire de json-schema-for-humans](https://github.com/a10s-ca/jso
 
 Ruby est utilisé pour générer les fichiers de présentation des vocabulaires contrôlés.
 
-`gem install linkeddata` (ruby 3.1.2 or higher)
+Ce dépôt fournit un `Gemfile` et un fichier `.ruby-version` (Ruby 3.2.0). Il faut installer les librairies nécessaires avec `bundle install`. Les fichiers de présentation des vocabulaires sont générés au moment de lancer `mkdocs serve`.
 
 ## Conventions
 
 Les pages qui décrivent des classes principales contiennent la variable `iucd` (pour "indent utility class definitions"). Cette variable est passée au templates de présentation des classes utilitaires et permet d'en altérer l'apparence pour rendre leur présence plus visuelle dans les tableaux étendus des propriétés.
-

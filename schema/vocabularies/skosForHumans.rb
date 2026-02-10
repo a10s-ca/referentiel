@@ -43,13 +43,13 @@ def render_narrower_md(narrower_concepts, level = 0)
   indent = '  ' * level
   narrower_concepts.map do |c|
     label = c[:label] && !c[:label].empty? ? c[:label] : code_from_uri(c[:uri])
-    line = "#{indent}- **[#{label}](#{c[:uri]})**  \n" \
+    line = "#{indent}- **[#{label}](#{c[:uri]})**  " \
            "#{indent}  `code: #{code_from_uri(c[:uri])}`"
     if c[:definition] && !c[:definition].empty?
       line += "\n#{indent}  _Définition_: #{c[:definition]}"
     end
     if c[:narrower]&.any?
-      line += "\n#{indent}  Concepts plus spécifiques :\n" \
+      line += "\n\n#{indent}  Concepts plus spécifiques :\n\n" \
               "#{render_narrower_md(c[:narrower], level + 1)}"
     end
     line
@@ -143,7 +143,7 @@ template = <<~'MD'
   <% end %>
   <% if concept[:narrower].any? %>
   **Concepts plus spécifiques :**
-  <%= render_narrower_md(concept[:narrower], 0) %>
+  <%= "\n\n" %><%= render_narrower_md(concept[:narrower], 0) %>
   <% end %>
 
   <% end %>
