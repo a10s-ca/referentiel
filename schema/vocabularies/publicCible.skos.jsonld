@@ -24,9 +24,9 @@
   "prefLabel": "Public Cible",
   "hasTopConcept": [
     {
-      "@id": "datascene:ToutPublics",
+      "@id": "datascene:TousPublics",
       "@type": "Concept",
-      "prefLabel": "Tout publics",
+      "prefLabel": "Tous publics",
       "definition": "Un public général sans restriction d'âge ou de catégorie."
     },
     {
@@ -56,7 +56,7 @@
     {
       "@id": "datascene:Jeunesse",
       "@type": "Concept",
-      "prefLabel": "Jeunesse (13 ans à 16 ans)",
+      "prefLabel": "Jeunesse (13 à 16 ans)",
       "definition": "Un public composé de jeunes âgés de 13 à 16 ans."
     },
     {
@@ -66,10 +66,10 @@
       "definition": "Un public composé d'adultes."
     },
     {
-      "@id": "datascene:Aines",
+      "@id": "datascene:JeunesAdultes",
       "@type": "Concept",
-      "prefLabel": "Aînés",
-      "definition": "Un public composé de personnes âgées."
+      "prefLabel": "Jeunes adultes (16 à 25 ans)",
+      "definition": "Un public composé de jeunes adultes âgés de 16 à 25 ans."
     },
     {
       "@id": "datascene:Familles",

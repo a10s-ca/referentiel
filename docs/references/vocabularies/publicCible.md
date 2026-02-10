@@ -35,16 +35,6 @@
 
 
 
-### Aînés
-
-- **URI** : https://datascene.ca/modele#Aines
-- **Code** : `Aines`
-
-- **Définition** : Un public composé de personnes âgées.
-
-
-
-
 ### Enfance (8 à 12 ans)
 
 - **URI** : https://datascene.ca/modele#Enfance
@@ -65,7 +55,17 @@
 
 
 
-### Jeunesse (13 ans à 16 ans)
+### Jeunes adultes (16 à 25 ans)
+
+- **URI** : https://datascene.ca/modele#JeunesAdultes
+- **Code** : `JeunesAdultes`
+
+- **Définition** : Un public composé de jeunes adultes âgés de 16 à 25 ans.
+
+
+
+
+### Jeunesse (13 à 16 ans)
 
 - **URI** : https://datascene.ca/modele#Jeunesse
 - **Code** : `Jeunesse`
@@ -85,10 +85,10 @@
 
 
 
-### Tout publics
+### Tous publics
 
-- **URI** : https://datascene.ca/modele#ToutPublics
-- **Code** : `ToutPublics`
+- **URI** : https://datascene.ca/modele#TousPublics
+- **Code** : `TousPublics`
 
 - **Définition** : Un public général sans restriction d'âge ou de catégorie.
 
