@@ -8,11 +8,11 @@ Précisions sur un configuration possible de la salle.
 | **Requis**                    | Non              |
 | **Propriétés additionnelles** | Tout type permis |
 
-| Propriété                             | Description                                                                             | Priorité    | Type et définition                  |
-| ------------------------------------- | --------------------------------------------------------------------------------------- | ----------- | ----------------------------------- |
-| [type](#type )                        | -                                                                                       | Obligatoire | const                               |
-| [layout](#layout )<br/>_Disposition_  | Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé. | Obligatoire | [Terme (Term)](../term ) |
-| [capacity](#capacity )<br/>_Capacité_ | Capacité, en nombre de spectacteurs.                                                    | Optionnel   | integer                             |
+| Propriété                             | Description                                                                                                  | Priorité    | Type et définition                  |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------ | ----------- | ----------------------------------- |
+| [type](#type )                        | -                                                                                                            | Obligatoire | const                               |
+| [layout](#layout )<br/>_Disposition_  | Disposition de la salle.<br /><br />[Voir le vocabulaire suggéré](../vocabularies/configurationSalleTermes/) | Obligatoire | [Terme (Term)](../term ) |
+| [capacity](#capacity )<br/>_Capacité_ | Capacité, en nombre de spectacteurs.                                                                         | Optionnel   | integer                             |
 
 ## <a name="type"></a>1. Propriété `Configuration de salle > type`
 
@@ -25,7 +25,9 @@ Valeur fixe: `"RoomConfiguration"`
 
 ## <a name="layout"></a>2. Propriété `Configuration de salle > layout` (Disposition)
 
-Permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
+Disposition de la salle.
+
+[Voir le vocabulaire suggéré](../vocabularies/configurationSalleTermes/)
 
 |                               |                              |
 | ----------------------------- | ---------------------------- |
@@ -46,4 +48,4 @@ Capacité, en nombre de spectacteurs.
 | **Requis** | Non       |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:28 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:32:42 -0400

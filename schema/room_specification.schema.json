@@ -14,7 +14,8 @@
     },
     "layout": {
       "$ref": "./term.schema.json",
-      "title": "Disposition"
+      "title": "Disposition",
+      "description": "Disposition de la salle.\n\n[Voir le vocabulaire suggéré](../vocabularies/configurationSalleTermes/)"
     },
     "capacity": {
       "description": "Capacité, en nombre de spectacteurs.",

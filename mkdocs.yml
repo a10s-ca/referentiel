@@ -61,6 +61,7 @@ nav:
       - Terme (term): 'references/term.md'
       - Média (media): 'references/media.md'
       - Adresse (postal_address): 'references/postal_address.md'
+      - Configuration de la salle (room_specification): 'references/room_specification.md'
   - Vocabulaires contrôlés:
     - modele/vocabulaires_controles/index.md
     - Accessibilité universelle: 'references/vocabularies/accessibiliteUniversellesTermes.md'

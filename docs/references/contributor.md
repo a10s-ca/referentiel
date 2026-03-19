@@ -266,4 +266,4 @@ Les contributeurs correspondent à des personnes physiques ou morales (compagnie
 | **Même définition que**       | [Contributeur (contributor)](#root) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:27 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:32:42 -0400

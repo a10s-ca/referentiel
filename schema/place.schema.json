@@ -29,7 +29,7 @@
       "const": "Place"
     },
     "additionalType": {
-      "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.",
+      "description": "Identification du type de lieu. Ne pas confondre avec les caractéristiques de la salle, qui doivent être documentées dans un objet de la classe Salle.\n\nLe vocabulaire suggéré est celui de [Wikiproject Cultural venues](https://www.wikidata.org/wiki/Wikidata:WikiProject_Cultural_venues/Typology)",
       "$ref": "./term.schema.json",
       "title": "Type additionnel"
     },

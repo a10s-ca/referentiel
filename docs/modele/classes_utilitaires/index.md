@@ -8,3 +8,4 @@ Les classes principales sont complétées par les **classes utilitaires** suivan
 * [**Terme** (term)](/references/utilities/term/) : permet d’identifier un terme précis, dans une version donnée d’un vocabulaire contrôlé.
 * [**Médias** (media)](/references/utilities/media/) : cette classe permet de décrire des éléments médias (images, vidéos, documents…) associés à un objet.
 * [**Adresse** (address)](/references/utilities/address/) : permet d’indiquer l’adresse d’un lieu.
+* [**Configuration de salle** (room_specification)](/references/utilities/room_specification/) : permet de transmettre de l'information sur les configurations d'une salle.
