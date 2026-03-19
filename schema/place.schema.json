@@ -50,13 +50,13 @@
       "type": "boolean",
       "title": "Lieu virtuel"
     },
-    "inRoom": {
+    "hasRooms": {
       "type": "array",
       "items": {
         "$ref": "./room.schema.json"
       },
       "description": "Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.",
-      "title": "Salle"
+      "title": "Salles"
     },
     "address": {
       "description": "Coordonnées complètes du lieu.",

@@ -16,7 +16,7 @@ Sert à décrire un lieu, typiquement associé à une représentation. La classe
 | [name](#name )<br/>_Nom_                                               | Énumération de textes associés à un code de langue au standard ISO 639-1 (ex: fr, en, etc.)                                                                                                                                                                                                                      | Obligatoire        | [Texte court multilingue](../datatypes/text_short_multilingual )       |
 | [description](#description )<br/>_Description_                         | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                                                                                  | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )         |
 | [virtualPlace](#virtualPlace )<br/>_Lieu virtuel_                      | -                                                                                                                                                                                                                                                                                                                | Obligatoire        | boolean                                                                           |
-| [inRoom](#inRoom )<br/>_Salle_                                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.                                                               | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
+| [hasRooms](#hasRooms )<br/>_Salle_                                     | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.                                                               | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
 | [address](#address )<br/>_Adresse_                                     | Coordonnées complètes du lieu.                                                                                                                                                                                                                                                                                   | Optionnel          | [Adresse postale (Postal Address)](../postal_address )                 |
 | [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                 | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                                                                                   | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                       |
 | [placeAccessibility](#placeAccessibility )<br/>_Accessibilité du lieu_ | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.<br /><br />[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)                                                                    | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
@@ -97,7 +97,7 @@ Classe permettant d’énumérer des identifiants uniques associés à un objet 
 | **Type**   | `boolean` |
 | **Requis** | Oui       |
 
-## <a name="inRoom"></a>7. Propriété `Lieu (Place) > inRoom` (Salle)
+## <a name="hasRooms"></a>7. Propriété `Lieu (Place) > hasRooms` (Salle)
 
 Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle.
 
@@ -116,9 +116,9 @@ Classe permettant d’énumérer des identifiants uniques associés à un objet 
 
 | Chaque item du tableau doit être | Description                                                                                                                                             |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Salle (Room)](#inRoom_items)    | Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée. |
+| [Salle (Room)](#hasRooms_items)  | Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée. |
 
-### <a name="inRoom_items"></a>7.1. Lieu (Place) > inRoom > Salle (Room)
+### <a name="hasRooms_items"></a>7.1. Lieu (Place) > hasRooms > Salle (Room)
 
 Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et décrire la salle utilisée dans le contexte d’une représentation donnée.
 
@@ -224,4 +224,4 @@ Coordonnées géographiques
 [Voir la documentation de Coordonnées géographiques d'un point.](../datatypes/geo_coordinates)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 15:39:46 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 15:44:03 -0400
