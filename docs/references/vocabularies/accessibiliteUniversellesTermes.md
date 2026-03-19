@@ -1,4 +1,4 @@
-# Accessibilités universelles
+# Accessibilité universelle
 
 
 Vocabulaire contrôlé pour les accessibilités universelles.
