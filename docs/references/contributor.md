@@ -18,7 +18,7 @@ Les contributeurs correspondent à des personnes physiques ou morales (compagnie
 | [description](#description )<br/>_Description_                                            | Énumération de textes longs associés à un code de langue au standard ISO 639-1.                                                                                                                                                                                                                                                                                                                                                             | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )                                    |
 | [shortDescription](#shortDescription )<br/>_Description courte_                           | Description résumée du contributeur. La fourchette de 200 à 400 caractères est suggérée pour les différents besoins d'affichage.                                                                                                                                                                                                                                                                                                            | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )                                    |
 | [media](#media )<br/>_Médias_                                                             | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au contributeur.                                                                                                                                                                                                                                                                                                                                            | Optionnel (0..N)   | Tableau d'objets de type [Média (Media)](../media )                                               |
-| [typicalContributionType](#typicalContributionType )<br/>_Types de contribution typiques_ | Énumération des types de contributions habituellement faites par le contributeur.                                                                                                                                                                                                                                                                                                                                                           | Optionnel (0..N)   | Tableau d'objets de type [Terme (Term)](../term )                                                 |
+| [typicalContributionType](#typicalContributionType )<br/>_Types de contribution typiques_ | Énumération des types de contributions habituellement faites par le contributeur.<br /><br />[Voir le vocabulaire suggéré](../vocabularies/contributionType/)                                                                                                                                                                                                                                                                               | Optionnel (0..N)   | Tableau d'objets de type [Terme (Term)](../term )                                                 |
 | [hasGeographicRelation](#hasGeographicRelation )<br/>_Relations géographiques_            | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.                                                                                                                                                                                                                                                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Association Géographique (GeographicRelation)](../geographic_relation ) |
 | [hasMembers](#hasMembers )<br/>_Membres_                                                  | Énumération des membres des groupes, troupes et collectifs, etc.                                                                                                                                                                                                                                                                                                                                                                            | Optionnel (0..N)   | Tableau d'objets de type [Contributeur (contributor)](../contributor )                            |
 
@@ -165,6 +165,8 @@ Cette classe permet de décrire des éléments médias (images, vidéos, documen
 
 Énumération des types de contributions habituellement faites par le contributeur.
 
+[Voir le vocabulaire suggéré](../vocabularies/contributionType/)
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -212,13 +214,15 @@ Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu d
 | **Items additionnels**     | Faux                   |
 | **Validation du tuple**    | Voir plus bas          |
 
-| Chaque item du tableau doit être                                              | Description                                                                                                                          |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| [Association Géographique (GeographicRelation)](#hasGeographicRelation_items) | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc. |
+| Chaque item du tableau doit être                                              | Description                                                                                                                              |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| [Association Géographique (GeographicRelation)](#hasGeographicRelation_items) | Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc. ... |
 
 ### <a name="hasGeographicRelation_items"></a>10.1. Contributeur (contributor) > hasGeographicRelation > Association Géographique (GeographicRelation)
 
 Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
+
+[Voir le vocabulaire suggéré](../vocabularies/associationGeographiqueType/)
 
 |                               |                                                                                    |
 | ----------------------------- | ---------------------------------------------------------------------------------- |
@@ -262,4 +266,4 @@ Les contributeurs correspondent à des personnes physiques ou morales (compagnie
 | **Même définition que**       | [Contributeur (contributor)](#root) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:27 -0400

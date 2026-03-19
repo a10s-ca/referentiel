@@ -2,6 +2,8 @@
 
 Permet d'associer des lieux au contributeur, par exemple pour indiquer le lieu de naissance, de décès, le lieu du siège social, etc.
 
+[Voir le vocabulaire suggéré](../vocabularies/associationGeographiqueType/)
+
 |                               |            |
 | ----------------------------- | ---------- |
 | **Type**                      | `object`   |
@@ -75,4 +77,4 @@ Texte sans formatage, court et sans changement de paragraphes (typiquement affic
 [Voir la documentation de Texte court](../datatypes/text_short)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:28 -0400

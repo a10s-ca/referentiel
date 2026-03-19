@@ -72,7 +72,7 @@
       "title": "Pages web"
     },
     "placeAccessibility": {
-      "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.",
+      "description": "Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.\n\n[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"

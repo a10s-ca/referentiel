@@ -71,7 +71,7 @@
       "title": "Adresse"
     },
     "roomAccessibility": {
-      "description": "Caractéristiques d'accessibilité universelle pour la salle. ",
+      "description": "Caractéristiques d'accessibilité universelle pour la salle.\n\n[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"

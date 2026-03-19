@@ -42,4 +42,4 @@ Langue de la page Web, au format ISO 639-1.
 [Voir la documentation de Code de langue](../datatypes/partials/language)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:28 -0400

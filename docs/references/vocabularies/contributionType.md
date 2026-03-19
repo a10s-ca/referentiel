@@ -91,4 +91,4 @@ Vocabulaire contrôlé pour les types de contributions.
 
 
 ---
-_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2026-02-09._
+_Généré automatiquement par [skos-for-humans](http://culturecreates.com) le 2026-03-19._

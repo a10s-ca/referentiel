@@ -181,4 +181,4 @@ URL d'une page permettant de souscire à l'offre, par exemple un lien vers la pa
 | **Format** | `uri`    |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:28 -0400

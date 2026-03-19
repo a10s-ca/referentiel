@@ -58,7 +58,7 @@
       "items": {
         "$ref": "./term.schema.json"
       },
-      "description": "Énumération des types de contributions habituellement faites par le contributeur.",
+      "description": "Énumération des types de contributions habituellement faites par le contributeur.\n\n[Voir le vocabulaire suggéré](../vocabularies/contributionType/)",
       "title": "Types de contribution typiques"
     },
     "hasGeographicRelation": {

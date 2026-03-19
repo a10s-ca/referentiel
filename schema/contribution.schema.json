@@ -18,7 +18,7 @@
       "items": {
         "$ref": "./term.schema.json"
       },
-      "description": "Identification des types de contribution.",
+      "description": "Identification des types de contribution.\n\n[Voir le vocabulaire suggéré](../vocabularies/contributionType/)",
       "title": "Types de contribution"
     },
     "contributor": {

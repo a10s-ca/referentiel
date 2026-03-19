@@ -19,7 +19,7 @@ Certains lieux contiennent plusieurs salles. Cette classe permet de préciser et
 | [media](#media )<br/>_Médias_                                            | Éléments médiatiques (photo, audio, audiovidéo, articles, documents...) associé au lieux.                                                                        | Optionnel (0..N)   | Tableau d'objets de type [Média (Media)](../media )                       |
 | [inPlace](#inPlace )<br/>_Lieu_                                          | Lieu associé à l'offre (physique ou virtuel).                                                                                                                    | Optionnel          | [Lieu (Place)](../place )                                                 |
 | [address](#address )<br/>_Adresse_                                       | Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont différentes ou plus précises que celles du lieu.                                     | Optionnel          | [Adresse postale (Postal Address)](../postal_address )                    |
-| [roomAccessibility](#roomAccessibility )<br/>_Accessibilité de la salle_ | Caractéristiques d'accessibilité universelle pour la salle.                                                                                                      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
+| [roomAccessibility](#roomAccessibility )<br/>_Accessibilité de la salle_ | Caractéristiques d'accessibilité universelle pour la salle.<br /><br />[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)           | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                       |
 | [roomConfiguration](#roomConfiguration )<br/>_Configuration de la salle_ | Précisions sur les configurations possibles de la salle.                                                                                                         | Optionnel (0..N)   | Tableau d'objets de type [Configuration de salle](../room_specification ) |
 
 Condition particulière:
@@ -155,7 +155,9 @@ Coordonnées complètes de la salle, lorsque les coordonnées de la salle sont d
 
 ## <a name="roomAccessibility"></a>10. Propriété `Salle (Room) > roomAccessibility` (Accessibilité de la salle)
 
-Caractéristiques d'accessibilité universelle pour la salle. 
+Caractéristiques d'accessibilité universelle pour la salle.
+
+[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)
 
 |            |         |
 | ---------- | ------- |
@@ -220,4 +222,4 @@ Précisions sur un configuration possible de la salle.
 [Voir la documentation de Configuration de salle](../room_specification)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:28 -0400

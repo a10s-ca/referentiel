@@ -19,7 +19,7 @@ Sert à décrire un lieu, typiquement associé à une représentation. La classe
 | [inRoom](#inRoom )<br/>_Salle_                                         | Énumération des salles présentes dans le lieu. Recommandé pour les lieux contenant plusieurs salles, ou pour documenter des informations associés à la classe Salle (par exemple, les configurations possibles) dans un lieu avec une seule salle. | Optionnel (0..N)   | Tableau d'objets de type [Salle (Room)](../room )                      |
 | [address](#address )<br/>_Adresse_                                     | Coordonnées complètes du lieu.                                                                                                                                                                                                                     | Optionnel          | [Adresse postale (Postal Address)](../postal_address )                 |
 | [mainEntityOfPage](#mainEntityOfPage )<br/>_Pages web_                 | URL vers des pages web donnant plus d'information sur le lieu.                                                                                                                                                                                     | Optionnel (0..N)   | Tableau d'objets de type [WebPage](../web_page )                       |
-| [placeAccessibility](#placeAccessibility )<br/>_Accessibilité du lieu_ | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.                                                                                                 | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
+| [placeAccessibility](#placeAccessibility )<br/>_Accessibilité du lieu_ | Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.<br /><br />[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)      | Optionnel (0..N)   | Tableau d'objets de type [additionalType](../term )                    |
 | [geoCoordinates](#geoCoordinates )<br/>_Coordonnées géographiques_     | Coordonnées géographiques                                                                                                                                                                                                                          | Optionnel          | [Coordonnées géographiques d'un point.](../datatypes/geo_coordinates ) |
 
 Condition particulière:
@@ -178,6 +178,8 @@ URL vers des pages web donnant plus d'information sur le lieu.
 
 Caractéristiques d'accessibilité universelle pour le lieu. Des caractéristiques supplémentaires pourraient être documentées pour la ou les salles.
 
+[Voir le vocabulaire suggéré](../vocabularies/accessibiliteUniversellesTermes/)
+
 |            |         |
 | ---------- | ------- |
 | **Type**   | `array` |
@@ -220,4 +222,4 @@ Coordonnées géographiques
 [Voir la documentation de Coordonnées géographiques d'un point.](../datatypes/geo_coordinates)
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-02-09 at 21:53:34 -0500
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:05:27 -0400

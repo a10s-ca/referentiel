@@ -104,7 +104,7 @@
     },
     "discipline": {
       "title": "Disciplines",
-      "description": "Identification des disciplines artistiques du spectacle.",
+      "description": "Identification des disciplines artistiques du spectacle.\n\n[Voir le vocabulaire suggéré](../vocabularies/disciplines-asq/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"
@@ -112,7 +112,7 @@
     },
     "audience": {
       "title": "Publics cibles",
-      "description": "Identification des publics cibles du spectacle.\n\nLorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.",
+      "description": "Identification des publics cibles du spectacle.\n\nLorsque le vocabulaire utilisé contient un terme équivalent à « tout public », il est préférable de l'utiliser, que d'énumérer tous les types de publics.\n\n[Voir le vocabulaire suggéré](../vocabularies/publicCible/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"
@@ -141,7 +141,7 @@
     },
     "contentType": {
       "title": "Types de contenus",
-      "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.",
+      "description": "Permet d'identifier certains type de contenus qui sont présents dans le spectacle.\n\n[Voir le vocabulaire suggéré](../vocabularies/contenusType/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"
@@ -149,7 +149,7 @@
     },
     "contentWarning": {
       "title": "Avertissements de contenu",
-      "description": "Permet d'identifier des avertissements associés au spectacle.",
+      "description": "Permet d'identifier des avertissements associés au spectacle.\n\n[Voir le vocabulaire suggéré](../vocabularies/avertissement/)",
       "type": "array",
       "items": {
         "$ref": "./term.schema.json"
