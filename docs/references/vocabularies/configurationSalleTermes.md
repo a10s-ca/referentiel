@@ -5,7 +5,7 @@
 
 
 
-**URI :** https://datascene.ca/vocabularies/room_specificationTermes
+**URI :** https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes
 
 
 **Version :** 1.0
@@ -17,7 +17,7 @@
 
 ### Amphithéâtre
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Amphitheatre
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Amphitheatre
 - **Code** : `Amphitheatre`
 
 - **Définition** : Disposition en gradins, souvent utilisée pour des conférences ou des spectacles.
@@ -27,7 +27,7 @@
 
 ### Cabaret
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Cabaret
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Cabaret
 - **Code** : `Cabaret`
 
 - **Définition** : Configuration avec des tables et des chaises, souvent utilisée pour des spectacles intimistes.
@@ -37,7 +37,7 @@
 
 ### Conférence
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Conference
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Conference
 - **Code** : `Conference`
 
 - **Définition** : Disposition adaptée pour des conférences ou des présentations.
@@ -47,7 +47,7 @@
 
 ### Debout
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Debout
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Debout
 - **Code** : `Debout`
 
 - **Définition** : Configuration où le public reste debout.
@@ -57,7 +57,7 @@
 
 ### Formule hybride ou mixte (debout/assis)
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#HybrideMixte
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#HybrideMixte
 - **Code** : `HybrideMixte`
 
 - **Définition** : Configuration combinant des places assises et debout.
@@ -67,7 +67,7 @@
 
 ### Multifonctionnelle
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Multifonctionnelle
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Multifonctionnelle
 - **Code** : `Multifonctionnelle`
 
 - **Définition** : Salle pouvant être configurée de différentes manières selon les besoins.
@@ -77,7 +77,7 @@
 
 ### Théâtre
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Theatre
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Theatre
 - **Code** : `Theatre`
 
 - **Définition** : Disposition classique pour des représentations théâtrales.
@@ -87,7 +87,7 @@
 
 ### À l'italienne
 
-- **URI** : https://datascene.ca/vocabularies/room_specificationTermes#Italienne
+- **URI** : https://documentation.datascene.ca/references/vocabularies/configurationSalleTermes#Italienne
 - **Code** : `Italienne`
 
 - **Définition** : Configuration de salle classique avec des rangées de sièges face à la scène.

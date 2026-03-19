@@ -22,50 +22,50 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/ContributionType",
+  "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Type de contribution",
   "definition": "Vocabulaire contrôlé pour les types de contributions.",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/ContributionType#ArtisteSurScène",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#ArtisteSurScène",
       "@type": "Concept",
       "prefLabel": "Artiste sur scène",
       "definition": "Un artiste qui se produit directement sur scène, comme un acteur, un musicien ou un danseur."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#AuteurCréateur",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#AuteurCréateur",
       "@type": "Concept",
       "prefLabel": "Auteur ou créateur",
       "definition": "Une personne qui crée ou écrit une œuvre, comme un auteur, un compositeur ou un scénariste."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#PersonnelTechnique",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#PersonnelTechnique",
       "@type": "Concept",
       "prefLabel": "Personnel technique",
       "definition": "Les personnes responsables des aspects techniques d'une production, comme les techniciens de son, d'éclairage ou de scène."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#DirectionArtistiqueCréative",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#DirectionArtistiqueCréative",
       "@type": "Concept",
       "prefLabel": "Direction artistique ou créative",
       "definition": "Les personnes responsables de la vision artistique ou créative d'une production, comme les directeurs artistiques ou les metteurs en scène."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#ProducteurOrganisateurPromoteur",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#ProducteurOrganisateurPromoteur",
       "@type": "Concept",
       "prefLabel": "Producteur, organisateur ou promoteur",
       "definition": "Les personnes ou entités responsables de la production, de l'organisation ou de la promotion d'un événement ou d'une œuvre."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#Commanditaire",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#Commanditaire",
       "@type": "Concept",
       "prefLabel": "Commanditaire",
       "definition": "Une personne ou une organisation qui finance ou soutient une production ou un événement."
     },
     {
-      "@id": "https://datascene.ca/ContributionType#ContributeurAutre",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/contributionType#ContributeurAutre",
       "@type": "Concept",
       "prefLabel": "Autre contributeur",
       "definition": "Un contributeur qui ne correspond pas aux autres catégories définies."

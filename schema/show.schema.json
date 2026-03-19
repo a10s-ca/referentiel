@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/show.schema.json",
+  "$id": "https://documentation.datascene.ca/references/show.schema.json",
   "title": "Spectacle (Show)",
   "description": "La classe centrale du référentiel. Elle permet de documenter ce qui relève du spectacle au sens d'œuvre mise en scène. Par contraste, cela exclut donc les éléments descriptifs des représentations.",
   "required": [
@@ -34,7 +34,7 @@
   "additionalProperties": false,
   "properties": {
     "@context": {
-      "const": "https://datascence.ca/context.jsonld"
+      "const": "https://documentation.datascene.ca/references/context.json"
     },
     "type": {
       "const": "Show"
@@ -166,7 +166,7 @@
   },
   "definitions": {
     "WorkRelation": {
-      "$id": "https://datascene.ca/modele/WorkRelation",
+      "$id": "https://documentation.datascene.ca/references/WorkRelation",
       "title": "Oeuvres associées",
       "description": "Objets d'association à une oeuvre.",
       "required": [

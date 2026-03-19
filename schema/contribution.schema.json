@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/contribution.schema.json",
+  "$id": "https://documentation.datascene.ca/references/contribution.schema.json",
   "title": "Contribution (Contribution)",
   "description": "Cette classe permet de décrire le lien entre un contributeur et un spectacle, une représentation ou une série. Elle indique le rôle du contributeur dans un contexte donné.",
   "required": [

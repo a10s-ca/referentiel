@@ -2,7 +2,7 @@
   "@context": {
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "datascene": "https://datascene.ca/modele#",
+    "datascene": "https://documentation.datascene.ca/references/vocabularies/publicCible#",
     "prefLabel": {
       "@id": "skos:prefLabel",
       "@language": "fr"
@@ -18,61 +18,61 @@
       "@type": "@id"
     }
   },
-  "@id": "datascene:PublicCible",
+  "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Public Cible",
   "hasTopConcept": [
     {
-      "@id": "datascene:TousPublics",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#TousPublics",
       "@type": "Concept",
       "prefLabel": "Tous publics",
       "definition": "Un public général sans restriction d'âge ou de catégorie."
     },
     {
-      "@id": "datascene:AvecBebe",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#AvecBebe",
       "@type": "Concept",
       "prefLabel": "Avec bébé",
       "definition": "Un public accompagné de bébés."
     },
     {
-      "@id": "datascene:ToutPetits",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#ToutPetits",
       "@type": "Concept",
       "prefLabel": "Tout-petits (0 à 3 ans)",
       "definition": "Un public composé de jeunes enfants âgés de 0 à 3 ans."
     },
     {
-      "@id": "datascene:PetiteEnfance",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#PetiteEnfance",
       "@type": "Concept",
       "prefLabel": "Petite enfance (4 à 7 ans)",
       "definition": "Un public composé d'enfants âgés de 4 à 7 ans."
     },
     {
-      "@id": "datascene:Enfance",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#Enfance",
       "@type": "Concept",
       "prefLabel": "Enfance (8 à 12 ans)",
       "definition": "Un public composé d'enfants âgés de 8 à 12 ans."
     },
     {
-      "@id": "datascene:Jeunesse",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#Jeunesse",
       "@type": "Concept",
       "prefLabel": "Jeunesse (13 à 16 ans)",
       "definition": "Un public composé de jeunes âgés de 13 à 16 ans."
     },
     {
-      "@id": "datascene:Adultes",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#Adultes",
       "@type": "Concept",
       "prefLabel": "Adultes",
       "definition": "Un public composé d'adultes."
     },
     {
-      "@id": "datascene:JeunesAdultes",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#JeunesAdultes",
       "@type": "Concept",
       "prefLabel": "Jeunes adultes (16 à 25 ans)",
       "definition": "Un public composé de jeunes adultes âgés de 16 à 25 ans."
     },
     {
-      "@id": "datascene:Familles",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/publicCible#Familles",
       "@type": "Concept",
       "prefLabel": "Familles",
       "definition": "Un public composé de familles, incluant plusieurs générations."

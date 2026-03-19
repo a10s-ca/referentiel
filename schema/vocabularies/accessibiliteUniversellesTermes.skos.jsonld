@@ -22,7 +22,7 @@
       "@type": "@id"
     }
   },
-  "@id": "https://datascene.ca/AccessibilitéUniversellesTermes",
+  "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes",
   "@type": "ConceptScheme",
   "http://www.w3.org/2002/07/owl#versionInfo": "1.0",
   "prefLabel": "Accessibilités universelles",
@@ -30,49 +30,49 @@
   "source": "https://guide.caligram.com/concepts/classifications#accessibilite",
   "hasTopConcept": [
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#fauteuilRoulant",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#fauteuilRoulant",
       "@type": "Concept",
       "prefLabel": "Accessible aux personnes en fauteuil roulant",
       "definition": "Le lieu est accessible aux personnes en fauteuil roulant."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#animauxAdmis",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#animauxAdmis",
       "@type": "Concept",
       "prefLabel": "Animaux admis",
       "definition": "Les animaux sont admis dans le lieu."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#langueDesSignes",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#langueDesSignes",
       "@type": "Concept",
       "prefLabel": "Langue des signes ou traduction signée",
       "definition": "Un service de langue des signes ou de traduction signée est disponible."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#garderie",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#garderie",
       "@type": "Concept",
       "prefLabel": "Service de garderie",
       "definition": "Un service de garderie est disponible sur place."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#stationnement",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#stationnement",
       "@type": "Concept",
       "prefLabel": "Stationnement à proximité",
       "definition": "Un stationnement est disponible à proximité du lieu."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#toilettesAccessibles",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#toilettesAccessibles",
       "@type": "Concept",
       "prefLabel": "Toilettes accessibles aux personnes en fauteuil roulant",
       "definition": "Les toilettes sont accessibles aux personnes en fauteuil roulant."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#toilettesNonGenrees",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#toilettesNonGenrees",
       "@type": "Concept",
       "prefLabel": "Toilettes non-genrées",
       "definition": "Des toilettes non-genrées sont disponibles."
     },
     {
-      "@id": "https://datascene.ca/AccessibilitéUniversellesTermes#traductionChuchotee",
+      "@id": "https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#traductionChuchotee",
       "@type": "Concept",
       "prefLabel": "Traduction chuchotée",
       "definition": "Un service de traduction chuchotée est disponible."

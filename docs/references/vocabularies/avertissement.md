@@ -10,7 +10,7 @@ Fournir des informations liées à la santé et sécurité du public.
 **Source :** https://datascene.ca/references/vocabularies/avertissements/
 
 
-**URI :** https://datascene.ca/Avertissements
+**URI :** https://documentation.datascene.ca/references/vocabularies/avertissement
 
 
 **Version :** 1.0
@@ -22,7 +22,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Animaux
 
-- **URI** : https://datascene.ca/Avertissements#Animaux
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#Animaux
 - **Code** : `Animaux`
 
 - **Définition** : Présence d'animaux vivants sur scène pouvant provoquer des allergies ou des réactions inattendues.
@@ -32,7 +32,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Clignotements et effets stroboscopiques
 
-- **URI** : https://datascene.ca/Avertissements#ClignotementsEtEffetsStroboscopiques
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#ClignotementsEtEffetsStroboscopiques
 - **Code** : `ClignotementsEtEffetsStroboscopiques`
 
 - **Définition** : Présence de lumières clignotantes ou d'effets stroboscopiques pouvant affecter les personnes sensibles.
@@ -42,7 +42,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Fumée ou vapeur
 
-- **URI** : https://datascene.ca/Avertissements#FumeeOuVapeur
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#FumeeOuVapeur
 - **Code** : `FumeeOuVapeur`
 
 - **Définition** : Présence de fumée ou de vapeur pouvant gêner les personnes souffrant de problèmes respiratoires.
@@ -52,7 +52,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Lumières éblouissantes, lasers
 
-- **URI** : https://datascene.ca/Avertissements#LumieresEblouissantesLasers
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#LumieresEblouissantesLasers
 - **Code** : `LumieresEblouissantesLasers`
 
 - **Définition** : Présence de lumières intenses ou de lasers pouvant gêner les spectateurs.
@@ -62,7 +62,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Mouvement
 
-- **URI** : https://datascene.ca/Avertissements#Mouvement
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#Mouvement
 - **Code** : `Mouvement`
 
 - **Définition** : Des mouvements rapides ou intenses pouvant provoquer des sensations de vertige ou d'inconfort.
@@ -72,7 +72,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Mouvements rapides
 
-- **URI** : https://datascene.ca/Avertissements#MouvementsRapides
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#MouvementsRapides
 - **Code** : `MouvementsRapides`
 
 - **Définition** : Des actions rapides ou soudaines pouvant surprendre ou désorienter le public.
@@ -82,7 +82,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Pétards, explosions, artifices, pyrotechnique
 
-- **URI** : https://datascene.ca/Avertissements#PetardsExplosionsArtificesPyrotechnique
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#PetardsExplosionsArtificesPyrotechnique
 - **Code** : `PetardsExplosionsArtificesPyrotechnique`
 
 - **Définition** : Utilisation d'effets pyrotechniques ou d'explosions pouvant surprendre ou effrayer le public.
@@ -92,7 +92,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Simulation de mouvement
 
-- **URI** : https://datascene.ca/Avertissements#SimulationDeMouvement
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#SimulationDeMouvement
 - **Code** : `SimulationDeMouvement`
 
 - **Définition** : Effets visuels ou mécaniques simulant des mouvements pouvant affecter les personnes sensibles.
@@ -102,7 +102,7 @@ Fournir des informations liées à la santé et sécurité du public.
 
 ### Sons élevés et sons de basse fréquence
 
-- **URI** : https://datascene.ca/Avertissements#SonsElevesEtSonsDeBasseFrequence
+- **URI** : https://documentation.datascene.ca/references/vocabularies/avertissement#SonsElevesEtSonsDeBasseFrequence
 - **Code** : `SonsElevesEtSonsDeBasseFrequence`
 
 - **Définition** : Utilisation de sons très forts ou de basses fréquences pouvant affecter les personnes sensibles.

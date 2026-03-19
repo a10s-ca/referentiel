@@ -12,10 +12,10 @@ Décrit une représentation, qui est un événement unique associé à un lieu, 
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------- |
 | [type](#type )                                                                              | -                                                                                                                                                                                                                                                                                                       | Obligatoire        | const                                                                               |
 | [identifier](#identifier )<br/>_Identifiant_                                                | Énumération des identifiants connus.                                                                                                                                                                                                                                                                    | Obligatoire (1..N) | [Identifiant (Identifier)](../identifier )                               |
-| [startDateTime](#startDateTime )<br/>_Date et heure de début_                               | Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                     | Obligatoire        | string (date-time)                                                                  |
-| [endDateTime](#endDateTime )<br/>_Date et heure de fin_                                     | Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                                                                                                       | Optionnel          | string (date-time)                                                                  |
+| [startDateTime](#startDateTime )<br/>_Date et heure de début_                               | Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.                                                                                                                                                                    | Obligatoire        | string (date-time)                                                                  |
+| [endDateTime](#endDateTime )<br/>_Date et heure de fin_                                     | Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.                                                                                                                                                                      | Optionnel          | string (date-time)                                                                  |
 | [duration](#duration )<br/>_Durée_                                                          | Durée de la représentation en format ISO-8601                                                                                                                                                                                                                                                           | Optionnel          | string                                                                              |
-| [previousStartDateTime](#previousStartDateTime )<br/>_Date et heure de début précédente_    | Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.                                                                                       | Optionnel          | string (date-time)                                                                  |
+| [previousStartDateTime](#previousStartDateTime )<br/>_Date et heure de début précédente_    | Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.                                                                                      | Optionnel          | string (date-time)                                                                  |
 | [hasIntermission](#hasIntermission )<br/>_Entracte_                                         | Indique la présence d'une ou plusieurs entractes                                                                                                                                                                                                                                                        | Optionnel          | boolean                                                                             |
 | [isExtra](#isExtra )<br/>_Supplémentaire_                                                   | Indique si la représentation est une représentation supplémentaire                                                                                                                                                                                                                                      | Optionnel          | boolean                                                                             |
 | [description](#description )<br/>_Description_                                              | Propriété utilisée seulement si la description de la représentation est différente de celle du spectacle. Si elle est identique, il est recommandé de ne pas utiliser cette propriété. Les consignes d'utilisation de la classe Spectacle s'appliquent.                                                 | Optionnel          | [Texte long multilingue](../datatypes/text_long_multilingual )           |
@@ -51,7 +51,7 @@ Valeur fixe: `"Performance"`
 
 ## <a name="startDateTime"></a>3. Propriété `Représentation (Performance) > startDateTime` (Date et heure de début)
 
-Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
+Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.
 
 |            |             |
 | ---------- | ----------- |
@@ -61,7 +61,7 @@ Date et heure de début de la représentation. Voir https://json-schema.org/unde
 
 ## <a name="endDateTime"></a>4. Propriété `Représentation (Performance) > endDateTime` (Date et heure de fin)
 
-Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
+Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.
 
 |            |             |
 | ---------- | ----------- |
@@ -91,7 +91,7 @@ Durée de la représentation en format ISO-8601
 
 ## <a name="previousStartDateTime"></a>6. Propriété `Représentation (Performance) > previousStartDateTime` (Date et heure de début précédente)
 
-Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.
+Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.
 
 |            |             |
 | ---------- | ----------- |
@@ -352,4 +352,4 @@ Permet de décrire les propriétés d’une offre associée à une représentati
 | **Même définition que**       | [Offre (Offer)](#inSeries_items_hasOffer_items) |
 
 ----------------------------------------------------------------------------------------------------------------------------
-Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 14:32:42 -0400
+Généré avec [json-schema-for-humans](https://github.com/coveooss/json-schema-for-humans) le 2026-03-19 at 15:39:46 -0400

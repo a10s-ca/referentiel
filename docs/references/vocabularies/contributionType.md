@@ -8,7 +8,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 
 
-**URI :** https://datascene.ca/ContributionType
+**URI :** https://documentation.datascene.ca/references/vocabularies/contributionType
 
 
 **Version :** 1.0
@@ -20,7 +20,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Artiste sur scène
 
-- **URI** : https://datascene.ca/ContributionType#ArtisteSurScène
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#ArtisteSurScène
 - **Code** : `ArtisteSurScène`
 
 - **Définition** : Un artiste qui se produit directement sur scène, comme un acteur, un musicien ou un danseur.
@@ -30,7 +30,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Auteur ou créateur
 
-- **URI** : https://datascene.ca/ContributionType#AuteurCréateur
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#AuteurCréateur
 - **Code** : `AuteurCréateur`
 
 - **Définition** : Une personne qui crée ou écrit une œuvre, comme un auteur, un compositeur ou un scénariste.
@@ -40,7 +40,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Autre contributeur
 
-- **URI** : https://datascene.ca/ContributionType#ContributeurAutre
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#ContributeurAutre
 - **Code** : `ContributeurAutre`
 
 - **Définition** : Un contributeur qui ne correspond pas aux autres catégories définies.
@@ -50,7 +50,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Commanditaire
 
-- **URI** : https://datascene.ca/ContributionType#Commanditaire
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#Commanditaire
 - **Code** : `Commanditaire`
 
 - **Définition** : Une personne ou une organisation qui finance ou soutient une production ou un événement.
@@ -60,7 +60,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Direction artistique ou créative
 
-- **URI** : https://datascene.ca/ContributionType#DirectionArtistiqueCréative
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#DirectionArtistiqueCréative
 - **Code** : `DirectionArtistiqueCréative`
 
 - **Définition** : Les personnes responsables de la vision artistique ou créative d'une production, comme les directeurs artistiques ou les metteurs en scène.
@@ -70,7 +70,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Personnel technique
 
-- **URI** : https://datascene.ca/ContributionType#PersonnelTechnique
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#PersonnelTechnique
 - **Code** : `PersonnelTechnique`
 
 - **Définition** : Les personnes responsables des aspects techniques d'une production, comme les techniciens de son, d'éclairage ou de scène.
@@ -80,7 +80,7 @@ Vocabulaire contrôlé pour les types de contributions.
 
 ### Producteur, organisateur ou promoteur
 
-- **URI** : https://datascene.ca/ContributionType#ProducteurOrganisateurPromoteur
+- **URI** : https://documentation.datascene.ca/references/vocabularies/contributionType#ProducteurOrganisateurPromoteur
 - **Code** : `ProducteurOrganisateurPromoteur`
 
 - **Définition** : Les personnes ou entités responsables de la production, de l'organisation ou de la promotion d'un événement ou d'une œuvre.

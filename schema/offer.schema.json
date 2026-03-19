@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/offer.schema.json",
+  "$id": "https://documentation.datascene.ca/references/offer.schema.json",
   "title": "Offre (Offer)",
   "description": "Permet de décrire les propriétés d’une offre associée à une représentation ou une série, par exemple le prix et la disponibilité.",
   "required": [
@@ -38,7 +38,7 @@
       "title": "Complet"
     },
     "soldoutSince": {
-      "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
+      "description": "Date depuis laquelle l'offre est complète. La propriété Complet doit avoir la valeur vrai pour que Complet depuis puisse être utilisée. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times",
       "type": "string",
       "format": "date-time",
       "title": "Complet depuis"
@@ -64,13 +64,13 @@
       "title": "Accessible depuis une autre offre"
     },
     "preSaleStart": {
-      "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
+      "description": "Date et heure du début de la prévente. Si la propriété n'est pas documentée, la date de début de disponibilité générale doit être utilisée. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times",
       "type": "string",
       "format": "date-time",
       "title": "Début de prévente"
     },
     "generalSaleStart": {
-      "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times",
+      "description": "Date et heure du début de la disponibilité générale. Si la propriété n'est pas documentée, il faut considérer que l'offre est disponible en tout temps, jusqu'à la date de début et l'heure de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times",
       "type": "string",
       "format": "date-time",
       "title": "Début de la vente générale"

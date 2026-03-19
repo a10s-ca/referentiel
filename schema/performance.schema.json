@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/performance.schema.json",
+  "$id": "https://documentation.datascene.ca/references/performance.schema.json",
   "title": "Représentation (Performance)",
   "description": "Décrit une représentation, qui est un événement unique associé à un lieu, une date et une heure, et qui peut inclure des informations sur les artistes, les œuvres présentées, et d'autres détails pertinents.",
   "required": [
@@ -22,13 +22,13 @@
     "startDateTime": {
       "type": "string",
       "format": "date-time",
-      "description": "Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
+      "description": "Date et heure de début de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.",
       "title": "Date et heure de début"
     },
     "endDateTime": {
       "type": "string",
       "format": "date-time",
-      "description": "Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
+      "description": "Date et heure de fin de la représentation. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.",
       "title": "Date et heure de fin"
     },
     "duration": {
@@ -44,7 +44,7 @@
     "previousStartDateTime": {
       "type": "string",
       "format": "date-time",
-      "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
+      "description": "Date et heure de début initialement prévus pour la représentation, dans le cas où il s'agit d'une représentation reportée. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.",
       "title": "Date et heure de début précédente"
     },
     "hasIntermission": {

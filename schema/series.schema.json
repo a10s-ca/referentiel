@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft-07/schema#",
-  "$id": "https://datascene.ca/modele/series.schema.json",
+  "$id": "https://documentation.datascene.ca/references/series.schema.json",
   "title": "Série de représentations (Series)",
   "description": "cette classe permet de regrouper des représentations n’étant pas nécessairement toutes associées à un même spectacle, mais liées entre elles par des éléments de commercialisation ou de modalités d’accès. Un festival est un exemple de série.",
   "required": [
@@ -65,13 +65,13 @@
       "title": "Pages web"
     },
     "startDateTime": {
-      "description": "Date de début de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
+      "description": "Date de début de la série. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.",
       "type": "string",
       "format": "date-time",
       "title": "Date et heure de début"
     },
     "endDateTime": {
-      "description": "Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/reference/type#dates-and-times.",
+      "description": "Date de fin de la série. Voir https://json-schema.org/understanding-json-schema/references/type#dates-and-times.",
       "type": "string",
       "format": "date-time",
       "title": "Date et heure de fin"

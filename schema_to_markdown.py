@@ -2,6 +2,7 @@ from json_schema_for_humans.generate import generate_from_filename
 from json_schema_for_humans.generation_configuration import GenerationConfiguration
 
 import re
+import shutil
 
 json_for_schema_config = GenerationConfiguration(
     template_name='simplified_fr_md',
@@ -42,6 +43,7 @@ def on_startup(command, dirty):
         target_filename = "docs/references/vocabularies/" + klass + ".md"
         generate_from_filename(source_filename, target_filename, config=json_for_schema_config)
         fix_links_in_file(target_filename)
+    shutil.copyfile("schema/context.jsonld", "docs/references/context.json")
 
 def fix_links_in_file(filename: str):
     replace_in_file_regex(filename, r"(?<!\.)\./", "../")

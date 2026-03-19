@@ -79,7 +79,7 @@ Le même spectacle peut être sérialisé de la façon suivante
 
 ``` json
 {
-  "@context": "https://datascence.ca/context.jsonld",
+  "@context": "https://documentation.datascene.ca/references/context.json",
   "type": "Show",
   "identifier": [
     "http://lavitrine.com/spectacle/123456"

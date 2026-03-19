@@ -10,7 +10,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 **Source :** https://guide.caligram.com/concepts/classifications#accessibilite
 
 
-**URI :** https://datascene.ca/AccessibilitéUniversellesTermes
+**URI :** https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes
 
 
 **Version :** 1.0
@@ -22,7 +22,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Accessible aux personnes en fauteuil roulant
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#fauteuilRoulant
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#fauteuilRoulant
 - **Code** : `fauteuilRoulant`
 
 - **Définition** : Le lieu est accessible aux personnes en fauteuil roulant.
@@ -32,7 +32,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Animaux admis
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#animauxAdmis
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#animauxAdmis
 - **Code** : `animauxAdmis`
 
 - **Définition** : Les animaux sont admis dans le lieu.
@@ -42,7 +42,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Langue des signes ou traduction signée
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#langueDesSignes
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#langueDesSignes
 - **Code** : `langueDesSignes`
 
 - **Définition** : Un service de langue des signes ou de traduction signée est disponible.
@@ -52,7 +52,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Service de garderie
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#garderie
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#garderie
 - **Code** : `garderie`
 
 - **Définition** : Un service de garderie est disponible sur place.
@@ -62,7 +62,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Stationnement à proximité
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#stationnement
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#stationnement
 - **Code** : `stationnement`
 
 - **Définition** : Un stationnement est disponible à proximité du lieu.
@@ -72,7 +72,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Toilettes accessibles aux personnes en fauteuil roulant
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#toilettesAccessibles
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#toilettesAccessibles
 - **Code** : `toilettesAccessibles`
 
 - **Définition** : Les toilettes sont accessibles aux personnes en fauteuil roulant.
@@ -82,7 +82,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Toilettes non-genrées
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#toilettesNonGenrees
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#toilettesNonGenrees
 - **Code** : `toilettesNonGenrees`
 
 - **Définition** : Des toilettes non-genrées sont disponibles.
@@ -92,7 +92,7 @@ Vocabulaire contrôlé pour les accessibilités universelles.
 
 ### Traduction chuchotée
 
-- **URI** : https://datascene.ca/AccessibilitéUniversellesTermes#traductionChuchotee
+- **URI** : https://documentation.datascene.ca/references/vocabularies/accessibiliteUniversellesTermes#traductionChuchotee
 - **Code** : `traductionChuchotee`
 
 - **Définition** : Un service de traduction chuchotée est disponible.

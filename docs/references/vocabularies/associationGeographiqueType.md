@@ -10,7 +10,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 **Source :** https://datascene.ca/references/vocabularies/types_d_associations_geographiques_d_un_contributeur/
 
 
-**URI :** https://datascene.ca/AssociationGeographiqueType
+**URI :** https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType
 
 
 **Version :** 1.0
@@ -22,7 +22,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Décès
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#deces
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#deces
 - **Code** : `deces`
 
 - **Définition** : Lieu de décès d'une personne ou d'un contributeur.
@@ -32,7 +32,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Lieu de fondation
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#lieuDeFondation
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#lieuDeFondation
 - **Code** : `lieuDeFondation`
 
 - **Définition** : Lieu où une organisation ou un groupe a été fondé.
@@ -42,7 +42,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Lieu du siège social
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#lieuDuSiegeSocial
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#lieuDuSiegeSocial
 - **Code** : `lieuDuSiegeSocial`
 
 - **Définition** : Lieu où se trouve le siège social d'une organisation ou d'un groupe.
@@ -52,7 +52,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Naissance
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#naissance
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#naissance
 - **Code** : `naissance`
 
 - **Définition** : Lieu de naissance d'une personne ou d'un contributeur.
@@ -62,7 +62,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Nationalité
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#nationalite
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#nationalite
 - **Code** : `nationalite`
 
 - **Définition** : Nationalité associée à une personne ou un contributeur.
@@ -72,7 +72,7 @@ Vocabulaire contrôlé pour les types d'associations géographiques.
 
 ### Résidence
 
-- **URI** : https://datascene.ca/AssociationGeographiqueType#residence
+- **URI** : https://documentation.datascene.ca/references/vocabularies/associationGeographiqueType#residence
 - **Code** : `residence`
 
 - **Définition** : Lieu de résidence d'une personne ou d'un contributeur.
